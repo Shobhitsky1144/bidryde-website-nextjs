@@ -1,0 +1,251 @@
+.availability {
+  background-image: url(../../../../assets/images/Availability/hill.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 59vh;
+  margin-top: 30vh;
+  position: relative;
+}
+
+.availability::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.availabilityRightImage {
+  position: absolute;
+  left: 63%;
+  bottom: 3rem;
+  width: 36%;
+  object-fit: contain;
+  height: calc(100% + 26vh);
+  z-index: 2;
+}
+
+.availability::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../../../assets/images/Availability/ring.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 265px;
+  height: 400px;
+  top: -380px;
+  margin-right: -100px;
+  right: 0;
+  z-index: 1;
+}
+
+.availabilityContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 5rem 0 0 9rem;
+  position: relative;
+  z-index: 2;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.availabilityContainerTitle {
+  color: #fff;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.availabilityContainerTitle h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: -80px;
+}
+
+.availabilityContainerTitle p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.availabilityContainerContent p {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.availabilityContainerBadges {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.availabilityContainerBadges img {
+  width: 10rem;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .availabilityContainer {
+    padding: 3rem 0 0 5rem;
+  }
+
+  .availabilityContainerTitle h1 {
+    font-size: 2rem;
+  }
+
+  .availabilityContainerTitle p {
+    font-size: 1.25rem;
+  }
+
+  .availabilityRightImage {
+    left: 60%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .availability {
+    height: auto;
+    min-height: 60vh; /* Added min-height to ensure minimum vertical space */
+  }
+
+  .availabilityContainer {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .availabilityContainerBadges {
+    flex-wrap: wrap; /* Allow badges to wrap on smaller screens */
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .availabilityContainerBadges img {
+    width: 140px; /* Fixed width for better consistency */
+    height: auto; /* Let height adjust proportionally */
+    max-height: 45px; /* Maximum height to maintain proportion */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .availability {
+    height: auto;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .availabilityRightImage {
+    display: none;
+  }
+
+  .availabilityContainer {
+    padding: 1.5rem 1rem;
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .availabilityContainerTitle {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .availabilityContainerTitle h1 {
+    font-size: 1.4rem;
+    margin-top: -40px;
+    width: 100%;
+  }
+
+  .availabilityContainerTitle p {
+    font-size: 1rem;
+    line-height: 1.4;
+    width: 100%;
+  }
+
+  .availabilityContainerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .availabilityContainerContent p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
+    width: 100%;
+  }
+
+  .availabilityContainerContentBadges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .availabilityContainerBadges {
+    gap: 0.75rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .availabilityContainerBadges img {
+    width: 40px;
+    max-height: 40px;
+  }
+
+  .image {
+    width: 200px;
+    height: 80px;
+  }
+
+  .availability::after {
+    width: 150px;
+    height: 225px;
+    top: -220px;
+  }
+}
+
+/* Added extra small screen optimization */
+@media screen and (max-width: 360px) {
+  .availabilityContainerBadges img {
+    width: 100px; /* Even smaller for very small screens */
+    max-height: 35px;
+  }
+
+  .availabilityContainerTitle h1 {
+    font-size: 1.2rem;
+  }
+
+  .availabilityContainerTitle p {
+    font-size: 0.9rem;
+  }
+}

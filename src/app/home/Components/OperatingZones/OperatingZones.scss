@@ -1,0 +1,223 @@
+.operatingZones {
+  margin-top: clamp(2rem, 5vw, 5rem);
+  width: 100%;
+  height: 100%;
+
+  &Container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .SectionTitle {
+      margin-right: clamp(1rem, 10%, 13.5%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: Black;
+      max-width: fit-content;
+
+      h1 {
+        font-family: "Archivo Black";
+        font-size: clamp(1.5rem, 3vw, 3.125rem);
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 5px;
+        font-size: clamp(1rem, 1.5vw, 1.375rem);
+      }
+    }
+
+    &Content {
+      margin-top: clamp(2rem, 5vw, 5rem);
+      position: relative;
+      width: 100%;
+      display: flex;
+
+      &BG {
+        position: absolute;
+        z-index: -2;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+          width: min(100%, 1920px);
+          height: clamp(68px, 10vw, 98px);
+          object-fit: contain;
+        }
+      }
+
+      &Location {
+        z-index: 99;
+        position: absolute;
+        img {
+          object-fit: contain;
+          width: clamp(45%, 50%, 55%);
+        }
+      }
+
+      &Cards {
+        width: 100%;
+        display: flex;
+        gap: clamp(0.5rem, 2%, 2rem);
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: clamp(1rem, 19.25%, 27.5%);
+      }
+    }
+  }
+}
+
+.card__2__3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: clamp(1rem, 26%, 37%);
+  margin-left: clamp(3rem, 6.5rem, 9.3rem);
+  margin-right: clamp(-2rem, -3.1rem, -4.4rem);
+}
+
+/* Large Desktop (1400px and above) */
+@media (min-width: 1400px) {
+  .operatingZonesContainerContentLocation {
+    bottom: 19%;
+    right: 64.5%;
+  }
+}
+
+/* Desktop (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .operatingZonesContainerContentLocation {
+    bottom: 13%;
+    right: 45%;
+
+    img {
+      margin-right: 101px;
+      margin-bottom: 9px;
+    }
+  }
+}
+
+/* Small Desktop (969px - 1199px) */
+@media (min-width: 969px) and (max-width: 1199px) {
+  .operatingZonesContainerContentLocation {
+    bottom: 13%;
+    right: 45%;
+  }
+}
+
+/* Tablet and below (max-width: 968px) */
+@media screen and (max-width: 968px) {
+  .operatingZones {
+    &Container {
+      align-items: center;
+
+      .SectionTitle {
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      &Content {
+        &BG {
+          display: none; /* Hide background for better spacing */
+        }
+
+        &Location {
+          bottom: 55%;
+          left: 50%;
+          transform: translateX(-50%);
+          img {
+            width: 60%; /* Adjust size for better fit */
+            margin: 0 auto;
+          }
+        }
+
+        &Cards {
+          margin: 0 auto;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  .operatingZonesContainerContentCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+
+  .card__1 {
+    margin-top: 1rem;
+    width: 100%; /* Full width for cards */
+  }
+
+  .card__2__3 {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    gap: 1rem; /* Space between cards */
+    margin: 1rem auto;
+    width: 100%; /* Full width for stacked cards */
+  }
+}
+
+/* Mobile (max-width: 500px) */
+@media screen and (max-width: 500px) {
+  .operatingZonesContainerContentLocation {
+    margin: 0 0 30px 40px;
+    transform: translateX(-50%);
+    img {
+      width: 50%; /* Smaller size for mobile */
+    }
+  }
+
+  .operatingZones {
+    &Container {
+      .SectionTitle {
+        h1 {
+          font-size: clamp(1.5rem, 4vw, 2rem);
+        }
+        p {
+          font-size: clamp(0.875rem, 3vw, 1.125rem);
+        }
+      }
+
+      &Content {
+        &Cards {
+          flex-wrap: wrap;
+          gap: 1rem; /* Smaller gap for mobile */
+          justify-content: center;
+          margin: 0 auto;
+          padding: 0.5rem; /* Add slight padding for spacing */
+        }
+      }
+    }
+  }
+
+  .operatingZonesContainerContentCards {
+    flex-direction: column; /* Stack all cards vertically */
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem; /* Additional spacing */
+  }
+
+  .card__1,
+  .card__2__3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card__2__3 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

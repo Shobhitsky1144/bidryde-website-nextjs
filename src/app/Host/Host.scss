@@ -1,0 +1,492 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@600&family=Archivo+Black&display=swap");
+
+/* Base Layout */
+.hostLayout {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Host Intro Section */
+.hostIntro {
+  display: flex;
+  min-height: min(680px, 90vh);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5%;
+  background-color: #f8f4f4;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hostIntroLeft {
+  width: min(50%, 600px);
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.hostIntroHeader {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.hostIntroHeader .p1 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 4vw, 28px);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hostIntroHeader .p2 {
+  font-family: "Krona One", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 60px);
+  line-height: 1.2;
+}
+
+.hostIntroIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hostIntroIcon img {
+  width: min(329px, 100%);
+  height: auto;
+  aspect-ratio: 329/319;
+  margin: 1rem auto;
+}
+
+.hostIntroRight {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hostIntroRight img {
+  width: min(650px, 100%);
+  height: auto;
+  aspect-ratio: 650/539.7;
+}
+
+/* Steps Section */
+.stepsSection {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+
+.steps {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.step__ {
+  width: 90%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #e3f0ff;
+  border: 4px solid #276ebc;
+  padding: 1.5rem;
+  border-radius: 70px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Zigzag positioning */
+.step__:nth-child(odd) {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.step__:nth-child(even) {
+  margin-left: auto;
+  margin-right: 0;
+  // flex-direction: row-reverse;
+}
+
+.step__:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(39, 110, 188, 0.1);
+}
+
+.step__:nth-child(odd):not(:last-child)::after {
+  right: 40px;
+  transform: rotate(45deg);
+  transform-origin: bottom;
+}
+
+.step__:nth-child(even):not(:last-child)::after {
+  left: 40px;
+  transform: rotate(-45deg);
+  transform-origin: bottom;
+}
+
+.icon__img {
+  flex: 0 0 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.paper__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.matter__host {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.car__ver {
+  position: relative;
+}
+
+.verifiedBadge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+}
+
+.decCircle {
+  position: absolute;
+  width: min(329px, 30%);
+  height: auto;
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%);
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Form Section */
+.hformSection {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 5%;
+  gap: 2rem;
+  text-align: center;
+  min-height: min(480px, 100vh);
+}
+
+/* Blue background overlay */
+.hformSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #2e78ca;
+  z-index: 1;
+}
+
+.hformSectionLeft {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.formSectionHeader {
+  margin-bottom: clamp(1rem, 5%, 3rem);
+}
+
+.hformSection .p1 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hformSection .p2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 3vw, 22px);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.hformSection .form {
+  flex: 1 1 300px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hformSection .hostIntroIcon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: -20%; /* Adjusted for better placement */
+  width: min(450px, 40%); /* Increased size */
+  height: auto;
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hformSection .hostIntroIcon .decImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+/* Host Section Headers */
+.hostSection2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.hostSectionHeader,
+.hostSectionHeader__ {
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: min(90%, 800px);
+}
+
+.hostSectionHeader h1,
+.hostSectionHeader__ h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+}
+
+.hostSectionHeader p,
+.hostSectionHeader__ p {
+  font-size: clamp(1rem, 3vw, 22px);
+  margin-bottom: 0.5rem;
+}
+
+/* Host Cards Section */
+.hostCardSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hostCardSection .MuiGrid-container {
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hostCardSection .MuiGrid-container .MuiGrid-item {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.host-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.host-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(39, 110, 188, 0.15);
+}
+
+.host-card .card-image {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.host-card .card-image .feature-icon {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.host-card .card-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  color: #276ebc;
+  margin: 0;
+  text-align: center;
+}
+
+.host-card .card-description {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .stepsSection {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  .steps {
+    gap: 2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .step__ {
+    width: 95%;
+    padding: 1.25rem;
+    gap: 1rem;
+    border-radius: 60px;
+    min-height: 100px;
+  }
+
+  .step__:nth-child(even) {
+    margin-left: 7%;
+  }
+
+  .icon__img {
+    flex: 0 0 60px;
+    height: 60px;
+  }
+
+  .verifiedBadge {
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    right: -10px;
+  }
+
+  .decCircle {
+    width: 40%;
+    right: -20%;
+  }
+
+  .hostIntro {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hostIntroLeft,
+  .hostIntroRight {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hformSection {
+    padding: 2rem 1rem;
+  }
+
+  .hformSection::before {
+    height: 75%;
+    border-radius: 40px;
+  }
+
+  .hformSection .form {
+    width: 90%;
+  }
+
+  .hformSection .hostIntroIcon {
+    top: 150%;
+    left: -35%;
+    width: 100%;
+  }
+  .hostCardSection {
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .hostCardSection .MuiGrid-container {
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hostCardSection .MuiGrid-container .MuiGrid-item {
+    padding: 0;
+    width: 100%;
+  }
+
+  .host-card {
+    min-height: 250px;
+  }
+
+  .host-card .card-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Ensure text wrapping works properly on mobile */
+  .matter__host {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,289 @@
+/* Base footer styles - Mobile First */
+.footer {
+  position: relative;
+  width: 100%;
+  background: url("foot.jpeg") no-repeat center center;
+  background-size: cover;
+  padding: 60px 5% 80px;
+  overflow: hidden;
+}
+
+/* Overlay */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 6, 6, 0.86);
+  z-index: 1;
+}
+
+/* Ring decoration */
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -5%;
+}
+
+/* Ensure content stays above overlay */
+.footer * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Main content grid - Mobile layout */
+.footer .x {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mobile layout ordering */
+.footerLeft {
+  order: 1;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerLeft .footerLogo img {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+}
+.footerLogo {
+  margin-top: -80px;
+  margin-left: -18px;
+}
+
+.footerText {
+  margin-top: -60px;
+  text-align: start;
+  line-height: 1.6;
+}
+
+.footerLeft .footerText {
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.socialIcons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footerRight {
+  order: 2;
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Modified: Icon grid layout */
+.iconGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: start;
+}
+
+/* Modified: Icon grid item layout */
+.iconGridItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerRight .callIcon,
+.footerRight .milIconImg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.footerRight .iconText {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.linkSectionContainer {
+  margin-top: 20px;
+  order: 3;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  text-align: start;
+}
+
+/* Link section - Mobile layout */
+.linkSection {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.linkSection:first-of-type {
+  order: 1;
+}
+
+.linkSection:last-of-type {
+  order: 3;
+}
+
+.linkSection .footerLink {
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 0;
+  line-height: 1.5;
+}
+
+/* Horizontal line */
+.footer .line {
+  width: 90%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+}
+
+/* Copyright text */
+.copy_right_text {
+  width: 100%;
+  font-family: "Archivo", sans-serif;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Tablet view */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .footer {
+    padding: 60px 5% 100px;
+  }
+
+  .footerLeft .footerText {
+    font-size: 16px;
+  }
+
+  .footerRight .callIcon,
+  .footerRight .milIconImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footerRight .iconText {
+    font-size: 16px;
+  }
+
+  .footer::after {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1025px) {
+  /* .footer {
+    padding: 80px 5% 100px;
+  } */
+
+  .footer .x {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    /* gap: 50px; */
+    align-items: start;
+  }
+
+  .footerLogo {
+    margin-top: -70px;
+  }
+
+  .footerText {
+    margin-top: -30px;
+  }
+
+  .footerLeft,
+  .footerRight,
+  .linkSectionContainer {
+    order: unset;
+    margin: 0;
+  }
+
+  /* .footerLeft {
+    gap: 30px;
+  } */
+
+  /* .footerLeft .footerLogo img {
+    width: 180px;
+  } */
+
+  .footerLeft .footerText {
+    font-size: 18px;
+  }
+
+  .socialIcons {
+    justify-content: flex-start;
+    gap: 120px;
+    margin-top: 20px;
+  }
+
+  .linkSectionContainer {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 0;
+  }
+
+  .footerRight .callIcon,
+  .footerRight .milIconImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer::after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .copy_right_text {
+    font-size: 14px;
+    bottom: 25px;
+  }
+}

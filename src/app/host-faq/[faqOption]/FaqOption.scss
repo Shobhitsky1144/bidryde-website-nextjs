@@ -1,0 +1,57 @@
+.faqOption {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw; /* Corrected typo from 100wv to 100vw */
+  align-items: center;
+}
+
+.faqOptionContainer {
+  margin-top: 2rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Re-enabled the gap for better spacing */
+}
+
+.faqOptionQuestions {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.colored_Item {
+  background-color: #f6f1f1;
+  border-radius: 6px;
+  padding: 1rem; /* Added padding for better aesthetics */
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 900px) {
+  .faqOption {
+    width: 90vw; /* Slightly reduce width for better spacing on smaller screens */
+    align-items: center;
+  }
+
+  .faqOptionContainer {
+    width: 85%; /* Increase width on smaller screens */
+    gap: 1.5rem; /* Adjust gap to prevent elements from being too far apart */
+  }
+
+  .faqOptionQuestions {
+    margin-top: 2rem; /* Reduce the top margin for a more compact layout */
+    gap: 1.5rem; /* Adjust gap for better spacing */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .faqOptionContainer {
+    width: 90%; /* Full width on very small screens */
+  }
+
+  .faqOptionQuestions {
+    margin-top: 1.5rem; /* Further reduce the top margin on mobile */
+    gap: 1.2rem; /* Adjust the gap for a more compact view */
+  }
+}
