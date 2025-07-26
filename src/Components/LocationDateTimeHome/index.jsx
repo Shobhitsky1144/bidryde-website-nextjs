@@ -17,7 +17,7 @@ import SearchPageHeadingHome from "../SearchPageHeadingHome";
 import { getLatLong, getLocations } from "@/app/SearchPage/utils/utils";
 import { Black_And_White_Picture } from "next/font/google";
 import { toast } from "react-toastify";
-
+ 
 import { setCookie } from "cookies-next";
 
 const SLIDER_MARKS = {
@@ -727,9 +727,13 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                 <div className="loader" />
               </div>
             ) : (
+              // <span className="responsive-text">
+              //   {window.innerWidth < 768 ? "Get Your Car" : "Search Cars"}
+              // </span>
               <span className="responsive-text">
-                {window.innerWidth < 768 ? "Get Your Car" : "Search Cars"}
-              </span>
+              {isMobile ? "Get Your Car" : "Search Cars"}
+            </span>
+            
             )
           }
           backgroundColor={isLoading ? "#cccccc" : "#276EBC"} // Grey background when loading
