@@ -731,7 +731,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
               //   {window.innerWidth < 768 ? "Get Your Car" : "Search Cars"}
               // </span>
               <span className="responsive-text">
-              {isMobile ? "Get Your Car" : "Search Cars"}
+              {isMobile ? "Get Your Car" : "Search Carsddbb"}
             </span>
             
             )
