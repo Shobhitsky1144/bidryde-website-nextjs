@@ -22,7 +22,7 @@ function Footer() {
   return (
     <div className="footer">
       <Grid container className="x" style={{paddingBottom:'60px'}}>
-        <Grid item style={{width:'100%'}}> 
+        <Grid item style={{width:'100%',paddingTop:'30px'}}> 
           <div className="footerLeft">
             <div className="footerLogo">
               <Image src={footerAssets.carLogo} alt="Car Logo" />
@@ -94,44 +94,15 @@ function Footer() {
           </div>
         </Grid>
 
-        <Grid item className="linkSectionContainer">
+        <Grid item className="linkSectionContainer" style={{paddingTop:'30px'}}>
+       
+
           <Grid item>
             <div className="linkSection quicklinks text-center">
               <h4
                 style={{
                   color: "#276EBC",
-                  marginBottom: "2.125rem",
-                  fontSize: "18px",
-                }}
-              >
-                Quick links
-              </h4>
-              <Grid container spacing={3}>
-                <Grid item xs={12} md={12}>
-                  <Link href="/Host" className="footerLink">
-                    Host Car
-                  </Link>
-                </Grid>
-                <Grid item xs={12} md={12}>
-                  <Link href="/joinWithUs" className="footerLink">
-                    Join us
-                  </Link>
-                </Grid>
-                <Grid item xs={12} md={12}>
-                  <Link href="/faq" className="footerLink">
-                    FAQ&apos;s
-                  </Link>
-                </Grid>
-              </Grid>
-            </div>
-          </Grid>
-
-          <Grid item>
-            <div className="linkSection">
-              <h4
-                style={{
-                  color: "#276EBC",
-                  marginBottom: "2.125rem",
+                  marginBottom: "0.7rem",
                   fontSize: "18px",
                 }}
               >
@@ -156,9 +127,42 @@ function Footer() {
               </Grid>
             </div>
           </Grid>
+
+          <Grid item>
+            <div className="linkSection ">
+              <h4
+                style={{
+                  color: "#276EBC",
+                  marginBottom: "0.7rem",
+                  fontSize: "18px",
+                }}
+              >
+                Quick links
+              </h4>
+              <Grid container spacing={3}>
+                <Grid item xs={12} md={12}>
+                  <Link href="/Host" className="footerLink">
+                    Host Car
+                  </Link>
+                </Grid>
+                <Grid item xs={12} md={12}>
+                  <Link href="/joinWithUs" className="footerLink">
+                    Join us
+                  </Link>
+                </Grid>
+                <Grid item xs={12} md={12}>
+                  <Link href="/faq" className="footerLink">
+                    FAQ&apos;s
+                  </Link>
+                </Grid>
+              </Grid>
+            </div>
+          </Grid>
         </Grid>
 
-        <Grid item>
+        <Grid container justifyContent={{ xs: "flex-start", sm: "flex-start", md: "flex-end" }}>
+
+        <Grid item  >
         <div className="footerRight">
   <Grid container className="iconGrid">
     <Grid item className="iconGridItem">
@@ -194,7 +198,7 @@ function Footer() {
   </Grid>
 </div>
 
-
+</Grid>
         </Grid>
       </Grid>
 

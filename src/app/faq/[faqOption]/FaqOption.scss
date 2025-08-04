@@ -32,15 +32,19 @@
 }
 
 .breadcrumb {
-  font-size: 50px;
+  font-size: 40px;
   color: #000000; /* Link color for FAQ's > */
   cursor: pointer;
   text-decoration: none;
+  letter-spacing:3px;
+  font-weight:900;
 }
 
 .pageTitle {
-  font-size: 50px;
+  font-size: 40px;
   color: #808080; /* Gray color for the title */
+  letter-spacing:2px;
+  font-weight:900;
 }
 
 .colored_Item {
@@ -60,12 +64,12 @@
       font-size: 30px; /* Adjust heading size */
 
       .breadcrumb {
-        font-size: 20px; /* Smaller breadcrumb size */
+        font-size: 30px; /* Smaller breadcrumb size */
       }
 
       .pageTitle {
         margin-top: 8px;
-        font-size: 20px; /* Smaller title size */
+        font-size: 30px; /* Smaller title size */
       }
     }
   }
@@ -80,4 +84,7 @@
     margin-top:1rem;
   }
   
+}
+.faqOptionContainerQuestions{
+  margin-top:0.8rem;
 }

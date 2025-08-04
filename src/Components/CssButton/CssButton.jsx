@@ -62,7 +62,7 @@ function CssButtonSolid({
   const getButtonWidth = () => {
     if (typeof window !== "undefined") {
       const screenWidth = window.innerWidth;
-      if (screenWidth <= 1000) return "130px";
+      if (screenWidth <= 1000) return "100px";
       if (screenWidth <= 1450) return "160px";
       if (screenWidth <= 1800) return "200px";
     }

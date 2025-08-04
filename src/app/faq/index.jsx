@@ -75,7 +75,7 @@ const Faq = () => {
         </div>
         <Footer />
       </div>
-      <div className="buttonn">
+      <div className="floatingButton">
         {/* FloatingButton component */}
         <FloatingButton />
       </div>

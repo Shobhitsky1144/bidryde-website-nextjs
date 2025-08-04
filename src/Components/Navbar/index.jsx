@@ -116,11 +116,11 @@ function Navbar({ home, hidePageButtons }) {
   backgroundColor="#FFFFFF"
   textColor="#276EBC"
   margin="0 0.8rem 0 0.8rem"
-  fontSize="18px"
+  fontSize="17px"
   fontFamily="archivo"
   
-  width="123px"
-  height="52px"
+  width="115px"
+  height="47px"
   border="2px solid #276EBC"
   onClick={() => handleJoin(false)}
 />
@@ -130,9 +130,9 @@ function Navbar({ home, hidePageButtons }) {
   title="Become a Host"
   backgroundColor="#276EBC"
   textColor="#fff"
-  fontSize="18px"
+  fontSize="17px"
   width="169px !important"  // Added !important
-  height="52px"
+  height="47px"
   border="2px solid #276EBC"
 // fontFamily="'Inter', sans-serif"
   onClick={() => handleBecomeHost(false)}
