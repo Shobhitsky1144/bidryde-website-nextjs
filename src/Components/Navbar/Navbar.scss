@@ -201,3 +201,17 @@
     font-size: 1rem;
   }
 }
+
+
+.scrollActive{
+  -webkit-backdrop-filter: blur(15px);
+  -moz-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: hsla(0,0%,100%,.5);
+  box-shadow: 0 25px 26px -1px rgba(0,0,0,.1);
+}
+
+
+.navbar{
+  height:90px;
+}

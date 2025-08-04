@@ -66,7 +66,7 @@
 }
 
 .footerLeft .footerLogo img {
-  width: 150px;
+  width: 162px;
   height: auto;
   max-width: 100%;
 }
@@ -325,6 +325,12 @@
   display:none
 }
 @media (max-width: 480px) {
+
+  .socialIcons{
+margin-top: 0px;
+margin-bottom: 30px;
+  }
+  
   .iconGrid{
     flex-direction: column!important;
     gap: 35px;
@@ -345,12 +351,14 @@
     background-size: cover; /* This ensures the image covers the whole area */
     background-repeat: no-repeat;
     background-position: center center;
+    padding: 64px 2% 28px;
   }
   .footerLeft .footerText{
 font-size: 16px;
   }
   .linkSectionContainer{
-    padding-top:18px;
+    padding-top:10px!important;
+    margin-bottom: 0px;
   }
   .linkSection h4{
     margin-bottom: 0px!important;
@@ -371,3 +379,10 @@ font-size: 16px;
 
 
 
+.footerText{
+  margin-top: -68px;
+}
+
+.footerRight{
+  padding-top: 10px!important;
+}

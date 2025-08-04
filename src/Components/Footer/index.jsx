@@ -205,7 +205,7 @@ function Footer() {
       <div className="line"></div>
 
       <div className="copy_right_text">
-        © Bid rYde Mobility Technologies Private Limited. All Rights Reserved
+        © Bidryde Mobility Technologies Private Limited. All Rights Reserved
       </div>
     </div>
   );
