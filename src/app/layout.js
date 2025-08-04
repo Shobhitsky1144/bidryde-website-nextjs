@@ -1,23 +1,17 @@
-// app/layout.js
+import { Inter } from 'next/font/google'
 import './globals.scss'
-import { Inter, Archivo, Archivo_Black, Krona_One } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const archivo = Archivo({ subsets: ['latin'], variable: '--font-archivo' })
-const archivoBlack = Archivo_Black({ subsets: ['latin'], variable: '--font-archivo-black' })
-const krona = Krona_One({ subsets: ['latin'], variable: '--font-krona' })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'BidRyde',
-  description: 'Reserve your ride',
+  description: 'Reservce your ride',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${archivo.variable} ${archivoBlack.variable} ${krona.variable}`}>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
