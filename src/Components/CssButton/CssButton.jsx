@@ -66,7 +66,7 @@ function CssButtonSolid({
       if (screenWidth <= 1450) return "160px";
       if (screenWidth <= 1800) return "200px";
     }
-    return "200px"; // default width
+    return "160px"; // default width
   };
 
   const [buttonWidth, setButtonWidth] = useState(getButtonWidth);
