@@ -117,7 +117,7 @@ function Navbar({ home, hidePageButtons }) {
   textColor="#276EBC"
   margin="0 0.8rem 0 0.8rem"
   fontSize="17px"
-  fontFamily="archivo"
+  // fontFamily="archivo"
   
   width="115px"
   height="47px"
