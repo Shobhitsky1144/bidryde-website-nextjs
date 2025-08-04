@@ -37,15 +37,14 @@
   cursor: pointer;
   text-decoration: none;
   letter-spacing:3px;
-  font-weight:900;
+  font-weight:900!important;
 }
 
 .pageTitle {
   font-size: 40px;
   color: #808080; /* Gray color for the title */
   letter-spacing:2px;
-  font-weight:900;
-}
+  font-weight:900!important;}
 
 .colored_Item {
   border-radius: 20px;
