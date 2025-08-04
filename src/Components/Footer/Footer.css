@@ -3,9 +3,15 @@
   position: relative;
   width: 100%;
   background: url("foot.jpeg") no-repeat center center;
-  background-size: cover;
-  padding: 60px 5% 80px;
+  
+  /* background-size: cover; */
+  padding: 60px 2% 80px;
   overflow: hidden;
+
+
+  background-size: cover; /* This ensures the image covers the whole area */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* Overlay */
@@ -107,7 +113,7 @@
 .iconGrid {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 65px;
   text-align: start;
 }
 
@@ -128,7 +134,7 @@
 .footerRight .iconText {
   color: #fff;
   font-size: 14px;
-  margin-top: 0;
+  margin-top: 10px;
   line-height: 1.5;
 }
 
@@ -273,8 +279,8 @@
 
   .footerRight .callIcon,
   .footerRight .milIconImg {
-    width: 60px;
-    height: 60px;
+    width: 125px;
+    height: 125px;
   }
 
   .footer::after {
@@ -287,3 +293,80 @@
     bottom: 25px;
   }
 }
+
+.iconContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+  /* .milIconImg {
+    width: 30px;
+    height: 30px;
+  } */
+
+  /* .iconText {
+    font-size: 1rem;
+    margin: 0;
+  } */
+  .iconContent {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+.footerweb{
+  display:block
+}
+.footermobile{
+  display:none
+}
+@media (max-width: 480px) {
+  .iconGrid{
+    flex-direction: column!important;
+    gap: 35px;
+
+  }
+  .iconText{
+    padding-left: 10px;
+    padding-bottom:5px;
+  }
+  .footerweb{
+    display:none;
+  }
+  .footermobile{
+    display:block;
+  }
+  .footer {
+    background: url("../../assets/images/Footer/footerImgMobile.jpg") no-repeat center center;
+    background-size: cover; /* This ensures the image covers the whole area */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .footerLeft .footerText{
+font-size: 16px;
+  }
+  .linkSectionContainer{
+    padding-top:18px;
+  }
+  .linkSection h4{
+    margin-bottom: 0px!important;
+
+  }
+
+
+  .iconContent {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+

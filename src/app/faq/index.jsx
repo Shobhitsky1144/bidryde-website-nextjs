@@ -54,7 +54,7 @@ const Faq = () => {
           <div className="faqHeader">
             <div className="titleContainer">
               <div className="title">FAQ&apos;s</div>
-              <div className="subtitle">On the road to answers</div>
+              <div className="subtitle">Answers towards the road</div>
               <Divider />
             </div>
             <div className="searchField">

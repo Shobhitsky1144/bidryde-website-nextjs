@@ -39,11 +39,18 @@
 
 @media screen and (max-width: 968px) {
   .buttonHolder {
-    display: none;
+    // display: block;
   }
 
   .icon {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 56px;
+    height: 50px;
+  }
+  .scroll-animation{
+bottom: 8px;
+right: 12px;
+  }
+  .floatingButton{
+    right: 22px;
   }
 }

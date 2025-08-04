@@ -7,7 +7,9 @@
 
   &Container {
     margin-top: 2rem;
-    width: 70%;
+    margin-bottom: 2rem;
+
+    width: 83%;
     display: flex;
     flex-direction: column;
     // gap: 2rem;
@@ -42,7 +44,7 @@
 }
 
 .colored_Item {
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 .coloredem {
@@ -67,4 +69,15 @@
       }
     }
   }
+}
+
+
+@media screen and (max-width: 480px) {
+  .colored_Item {
+    border-radius: 5px;
+  }
+  .faqOptionContainerQuestions {
+    margin-top:1rem;
+  }
+  
 }

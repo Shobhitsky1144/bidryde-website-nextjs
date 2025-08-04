@@ -92,7 +92,8 @@ function Host() {
           <div className="hostSectionHeader">
             <h1>Host your Car</h1>
             <p className="p__header__host">Host a car in just 3 simple steps</p>
-            <Divider />
+            <div className=""style={{width:'40%'}}><Divider />
+            </div>
           </div>
 
           <div className="stepsSection">
@@ -106,8 +107,8 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                  Join us by filling the form <br />
-                  and our experts will reach <br /> out for the onboarding
+                  Join us by filling the form 
+                  and our experts will reach out for the onboarding
                   process.
                 </div>
               </div>
@@ -126,7 +127,7 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                  After fixing the Appointment, our expert will visit to inspect
+                  After fixing the Appointment, our expert  will visit to inspect
                   and install Safety Devices to your Car
                 </div>
               </div>

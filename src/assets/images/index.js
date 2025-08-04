@@ -1,10 +1,13 @@
 import appLogo from "./appLogo.png";
+import appLogoMobile from "./appLogoMobile.png";
 import heroBgMobile from "./heroBgMobile.png";
 import heroBgWeb from "./heroBgWeb.png";
 import AppleButton from "./Apple download button.png";
 import GoogleButton from "./Google download button.png";
 import WhatsappButton from "./whatsapp icon.png";
 import MenuIcon from "./menu-icon.png";
+import nofoundmobileimg from "./nofoundmobileimg.png";
+
 
 import { arrow, location, Time } from "./hero";
 
@@ -107,7 +110,9 @@ import feePolicyImg from "./feePolicy";
 
 export const images = {
   appLogo,
+  appLogoMobile,
   heroBgMobile,
+  nofoundmobileimg,
   heroBgWeb,
   AppleButton,
   GoogleButton,

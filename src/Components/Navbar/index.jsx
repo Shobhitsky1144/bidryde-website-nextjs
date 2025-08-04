@@ -64,6 +64,7 @@ function Navbar({ home, hidePageButtons }) {
             <Image
               src={assets.images.appLogo}
               alt="App Logo"
+           
               width="10px"
               height="10px"
             />
@@ -115,12 +116,12 @@ function Navbar({ home, hidePageButtons }) {
   backgroundColor="#FFFFFF"
   textColor="#276EBC"
   margin="0 0.8rem 0 0.8rem"
-  fontSize="1rem"
+  fontSize="18px"
   fontFamily="archivo"
   
   width="123px"
   height="52px"
-  border="1px solid #276EBC"
+  border="2px solid #276EBC"
   onClick={() => handleJoin(false)}
 />
 
@@ -129,10 +130,10 @@ function Navbar({ home, hidePageButtons }) {
   title="Become a Host"
   backgroundColor="#276EBC"
   textColor="#fff"
-  fontSize="0.8rem"
+  fontSize="18px"
   width="169px !important"  // Added !important
   height="52px"
-  border="1px solid #276EBC"
+  border="2px solid #276EBC"
 // fontFamily="'Inter', sans-serif"
   onClick={() => handleBecomeHost(false)}
 />

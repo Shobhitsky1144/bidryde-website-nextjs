@@ -1,7 +1,19 @@
 const FAQ_LIST = {
   general: [
+    // {
+    //   header: "GENERAL-What is bidryde?",
+    //   content: "Best car rentals at affordable price",
+    // },
     {
-      header: "GENERAL-What is bidryde?",
+      header: "What is bidryde?",
+      content: "Best car rentals at affordable price",
+    },
+    {
+      header: "What types of vehicle does Bidryde provide?",
+      content: "Best car rentals at affordable price",
+    },
+    {
+      header: "Do the vehicles have manual or automatic transmission?",
       content: "Best car rentals at affordable price",
     },
     {
@@ -9,7 +21,11 @@ const FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
     {
-      header: "What is bidryde?",
+      header: "What types of vehicle does Bidryde provide?",
+      content: "Best car rentals at affordable price",
+    },
+    {
+      header: "Do the vehicles have manual or automatic transmission?",
       content: "Best car rentals at affordable price",
     },
     {
@@ -17,27 +33,11 @@ const FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
     {
-      header: "What is bidryde?",
+      header: "What types of vehicle does Bidryde provide?",
       content: "Best car rentals at affordable price",
     },
     {
-      header: "What is bidryde?",
-      content: "Best car rentals at affordable price",
-    },
-    {
-      header: "What is bidryde?",
-      content: "Best car rentals at affordable price",
-    },
-    {
-      header: "What is bidryde?",
-      content: "Best car rentals at affordable price",
-    },
-    {
-      header: "What is bidryde?",
-      content: "Best car rentals at affordable price",
-    },
-    {
-      header: "What is bidryde?",
+      header: "Do the vehicles have manual or automatic transmission?",
       content: "Best car rentals at affordable price",
     },
   ],

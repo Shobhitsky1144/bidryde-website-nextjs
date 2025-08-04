@@ -7,8 +7,8 @@
 
   &Container {
     margin-top: 25px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -68,6 +68,7 @@
       .searchField {
         width: 40vw;
         height: 55px;
+        margin-right:33px;
         @media only screen and (max-width: 900px) {
           width: 100%;
           height: 55px;
@@ -82,7 +83,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 9px;
+      gap: 27px;
       margin-top: 25px;
       margin-bottom: 100px;
 
@@ -115,4 +116,22 @@
       }
     }
   }
+}
+
+
+@media only screen and (max-width: 480px) {
+.faqPageContainer .faqHeader .searchField {
+  width: 100%;
+  height: 55px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right:0px!important;
+
+}
+.faqPageContainer .faqOptions{
+  gap:5px
+}
 }

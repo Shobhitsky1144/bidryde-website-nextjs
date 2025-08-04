@@ -29,12 +29,12 @@ const Searchbar = ({ suggestions }) => {
   return (
     <div style={{ position: "relative" }}>
       <div className="searchbar">
-        <SearchIcon />
+        <SearchIcon style={{color:'#276EBC'}}/>
         <input
           type="text"
           value={inputValue}
           onChange={handleInputChange}
-          placeholder="Search your requests"
+          placeholder="Search your queries"
         />
       </div>
       {filteredSuggestions.length > 0 && (
