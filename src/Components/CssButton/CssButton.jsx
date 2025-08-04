@@ -29,7 +29,7 @@ const CssButtonOutline = ({
     margin,
     fontSize: mobile ? "16px" : fontSize,
     fontWeight: "normal",
-    fontFamily: fontFamily ?? "Archivo",
+    fontFamily: fontFamily ?? "",
     borderRadius: "5px",
     cursor: "pointer",
     width: width ?? "500px",
