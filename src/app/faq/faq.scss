@@ -170,3 +170,74 @@ font-weight:900!important;
 letter-spacing:3px;
 
 }
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+
+  .faqPageContainer .faqOptions .faqOptionCard{
+width: 42vw;
+
+  }
+  .faqPageContainer .faqOptions{
+    justify-content: flex-start;
+    // padding-left: 34px;
+  }
+  .searchbar{
+    width: 100%;
+  }
+  .faqPageContainer{
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .faqPageContainer .faqOptions{
+    padding-left: 0;
+  }
+
+  .faqPageContainer .faqHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: unset;
+    width: 100%;
+}
+.faqPageContainer .faqHeader .titleContainer .title{
+  text-align: left;
+}
+.faqPageContainer .faqHeader .titleContainer .subtitle{
+  text-align:left;
+}
+.faqPageContainer .faqHeader .searchField{
+  justify-content: end;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+
+  .faqPageContainer .faqOptions .faqOptionCard{
+    width: 40vw;
+    
+      }
+      .searchbar{
+        width: 100%;
+      }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px){
+  // .faqPageContainer .faqOptions .faqOptionCard{
+  //   width: 40vw;
+    
+  //     }
+}
+
+@media (min-width: 1440px){
+
+ .faqPageContainer .faqOptions .faqOptionCard{
+    width: 19vw;
+    
+      }
+
+}

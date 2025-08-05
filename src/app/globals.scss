@@ -44,6 +44,7 @@ a {
 /* Hide desktop SVG on small screens */
 .mobile-only {
   display: block;
+  width:100%;
 }
 .desktop-only {
   display: none;

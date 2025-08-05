@@ -29,7 +29,7 @@ function Footer() {
             </div>
             <p className="footerText footerweb">
               A self-drive car rental marketplace where
-              <br /> you can book any car you want and at the <br />
+             you can book any car you want and at the 
               same time, host any car you have.
 
             
@@ -160,7 +160,7 @@ function Footer() {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={{ xs: "flex-start", sm: "flex-start", md: "flex-end" }}>
+        <Grid container justifyContent={{ xs: "flex-start", sm: "flex-start", md: "flex-start",lg: "flex-end" }} className="numberemailparent">
 
         <Grid item  >
         <div className="footerRight">

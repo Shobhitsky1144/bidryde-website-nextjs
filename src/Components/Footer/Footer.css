@@ -324,6 +324,18 @@
 .footermobile{
   display:none
 }
+
+.footerText{
+  margin-top: -68px;
+}
+
+.footerRight{
+  padding-top: 10px!important;
+}
+
+
+
+
 @media (max-width: 480px) {
 
   .socialIcons{
@@ -373,16 +385,149 @@ font-size: 16px;
   }
 }
 
+@media (min-width: 480px) and (max-width: 767px){
+
+
+  .footer{
+  padding: 60px 2% 0px;
+  }
+  .socialIcons{
+
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  .faqPageContainer .faqHeader .searchField{
+    margin-right: 0px;
+  }
+
+  .iconGrid{
+    flex-direction: column;
+  }
+
+  .iconContent{
+    flex-direction: row;
+    gap:17px;
+  }
+
+  .footerRight .iconText{
+    margin-top:0px;
+  }
+  .iconGrid{
+    gap:40px;
+  }
+
+  .footerText{
+width: 70%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .footer{
+    padding: 60px 2% 0px;
+    }
+    .socialIcons{
+  
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+    .faqPageContainer .faqHeader .searchField{
+      margin-right: 0px;
+    }
+  
+    .iconGrid{
+      flex-direction: column;
+    }
+  
+    .iconContent{
+      flex-direction: row;
+      gap:17px;
+    }
+  
+    .footerRight .iconText{
+      margin-top:0px;
+    }
+    .iconGrid{
+      gap:40px;
+    }
+    .footerText{
+      width: 70%;
+        }
+  
+}
 
 
 
+@media (min-width: 992px) and (max-width: 1199px)
+{
+  .footer{
+    padding: 60px 2% 40px;
+    }
+    .socialIcons{
+  
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+    .faqPageContainer .faqHeader .searchField{
+      margin-right: 0px;
+    }
+  
+    .iconGrid{
+      flex-direction: column;
+    }
+  
+    .iconContent{
+      flex-direction: row;
+      gap:17px;
+    }
+  
+    .footerRight .iconText{
+      margin-top:0px;
+    }
+    .iconGrid{
+      gap:40px;
+    }
+    .footerText{
+      width: 70%;
+        }
+
+        .footerLeft, .footerRight, .linkSectionContainer{
+          order:1;
+        }
+
+        .footer .x{
+        display: grid;
+        grid-template-columns: none;
+        /* gap: 50px; */
+        align-items: start;
+        grid: none;
+        }
+} 
 
 
+@media (min-width: 1200px) and (max-width: 1439px)
+{
+  .footerText{
+    width: 80%;
+      }
+
+
+} 
+
+
+
+@media (min-width: 1440px){
 
 .footerText{
-  margin-top: -68px;
-}
+  width: 70%;
+    }
+    
 
-.footerRight{
-  padding-top: 10px!important;
-}
+    .footer .x{
+      display:grid;
+      align-items: start;
+      max-width:unset;
+      grid-template-columns: 1.6fr 1fr 1fr!important;
+    }
+} 

@@ -215,3 +215,35 @@
 .navbar{
   height:90px;
 }
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar-logo img {
+    height: 105px;
+  
+  }
+  .navbar-container{
+    // padding: 0px 42px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.navbar-logo img {
+  height: 150px;
+
+}
+.navbar-container{
+  padding: 0px 42px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-logo img {
+    height: 150px;
+  
+  }
+  .navbar-container{
+    padding: 0px 42px;
+  }
+  }
