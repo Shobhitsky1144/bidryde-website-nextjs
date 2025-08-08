@@ -17,8 +17,33 @@ import SearchPageHeadingHome from "../SearchPageHeadingHome";
 import { getLatLong, getLocations } from "@/app/SearchPage/utils/utils";
 import { Black_And_White_Picture } from "next/font/google";
 import { toast } from "react-toastify";
+
+import { useTheme, useMediaQuery } from "@mui/material";
+
  
 import { setCookie } from "cookies-next";
+
+function useResponsiveValue(values) {
+    
+  const theme = useTheme();
+  
+
+
+  // MUI breakpoints order: xs < sm < md < lg < xl
+  const matches = {
+    xl: useMediaQuery(theme.breakpoints.up("xl")),
+    lg: useMediaQuery(theme.breakpoints.up("lg")),
+    md: useMediaQuery(theme.breakpoints.up("md")),
+    sm: useMediaQuery(theme.breakpoints.up("sm")),
+    xs: true, // default fallback
+  };
+
+  if (matches.xl && values.xl !== undefined) return values.xl;
+  if (matches.lg && values.lg !== undefined) return values.lg;
+  if (matches.md && values.md !== undefined) return values.md;
+  if (matches.sm && values.sm !== undefined) return values.sm;
+  return values.xs;
+}
 
 const SLIDER_MARKS = {
   0: "12:00 AM",
@@ -53,10 +78,14 @@ const MIN_RENTAL_TIME = 12;
 const LocationDateTimePickerHome = ({ actionHandler }) => {
   const [isMobile, setIsMobile] = useState(false);
 
+
   const [showPicker, setShowPicker] = useState(false);
   const [startTime, setStartTime] = useState(9);
   const [endTime, setEndTime] = useState(9);
   const [isLoading, setIsLoading] = useState(false);
+
+
+const monthsToShow = useResponsiveValue({ xs: 1,sm:1, md: 2, lg: 3 });
 
   const getValidDate = (d, type) => {
     if (type == "start") {
@@ -346,7 +375,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobileDevice = window.innerWidth <= 1180;
+      const isMobileDevice = window.innerWidth <= 768;
       setIsMobile(isMobileDevice);
     };
 
@@ -403,14 +432,14 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
             >
               <div
                 style={{
-                  padding: "0 10%",
+                  // padding: "0 10%",
                 }}
               >
                 <InputLabel
                   htmlFor="city"
                   style={{
                     marginTop: "1rem",
-                    marginBottom: "1rem",
+                    marginBottom: "0.3rem",
                     color: "#000000", // Black color for label text
                     fontSize: "1rem",
                   }}
@@ -419,7 +448,9 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                 </InputLabel>
 
                 {/* Select Component */}
-                <Select
+                <Select 
+className="popupDropdown"
+
                   id="city"
                   value={city}
                   onChange={handleCityChange}
@@ -464,7 +495,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                   htmlFor="area"
                   style={{
                     marginTop: "1rem",
-                    marginBottom: "1rem",
+                    marginBottom: "0.3rem",
                     color: "#000000",
                     fontSize: "1rem",
                   }}
@@ -473,7 +504,8 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                 </InputLabel>
 
                 {/* Select Component */}
-                <Select
+                <Select 
+className="popupDropdown"
                   id="area"
                   value={area}
                   onChange={handleAreaChange}
@@ -482,11 +514,11 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                       {...props}
                       style={{
                         position: "relative",
-                        marginLeft: "15px",
-                        marginRight: "15px",
+                        marginLeft: "10px",
+                        marginRight: "10px",
                         marginTop: "7px",
-                        width: "20px",
-                        height: "20px",
+                        width: "16px",
+                        height: "10px",
                       }}
                     >
                       <div
@@ -518,8 +550,8 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                 className="homeModalButtonContainer"
                 style={{
                   display: "flex",
-                  justifyContent: "center",
-                  gap: "8px", // Space between buttons
+                  justifyContent: "end",
+                  gap: "19px", // Space between buttons
                   marginTop: "1.5rem",
                 }}
               >
@@ -528,20 +560,22 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                   backgroundColor="#FFFFFF"
                   textColor="#276EBC"
                   fontSize="1rem"
-                  width="80px"
-                  height="38px"
+                  borderRadius="9px"
+                  width="100px"
+                  height="42px"
                   fontWeight="normal"
                   border="1px solid #276EBC"
                   onClick={() => handleLocationCancel()}
                 />
                 <CssButtonSolid
-                  title="Okay"
+                  title="Ok"
                   backgroundColor="#276EBC"
                   textColor="#fff"
-                  fontSize="0.8rem"
+                  fontSize="1rem"
+                  borderRadius="9px"
                   fontWeight="normal"
-                  width="80px"
-                  height="38px"
+                  width="100px"
+                  height="42px"
                   border="1px solid #276EBC"
                   onClick={() => handleLocationClose()}
                 />
@@ -566,10 +600,11 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                 boxShadow: "1px 1px 1px 1px #EFEFEF",
                 borderRadius: "10px",
                 padding: "2%",
+                outline:'none',
                 // height: isMobile ? "90vh" : "80vh",
                 maxHeight: "1000px",
                 overflowY: "scroll",
-                width: isMobile ? "90%" : "auto",
+                // width: isMobile ? "90%" : "auto",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -583,7 +618,8 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                   showMonthAndYearPickers={true}
                   minDate={getMinDate()}
                   maxDate={getMaxDate()}
-                  months={isMobile ? 1 : 3}
+                  months={monthsToShow}
+                  // months={isMobile ? 1 : 3}
                   direction="horizontal"
                   color="#276ebc"
                   startDatePlaceholder="Start Date"
@@ -603,7 +639,9 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                     style={{
                       flex: 1,
                       fontFamily: "Archivo",
-                      fontWeight: "bold",
+                      fontWeight: "400",
+                      fontSize: "14px",
+
                     }}
                   >
                     <label>Start Time</label>
@@ -623,7 +661,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                     style={{
                       flex: 1,
                       fontFamily: "Archivo",
-                      fontWeight: "bold",
+                      fontWeight: "400",
                       fontSize: "14px",
                     }}
                   >
@@ -645,7 +683,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "end",
                   marginTop: "30px", // Increased margin top
                   marginBottom: "20px", // Added margin bottom
                   gap: "1rem",

@@ -479,14 +479,17 @@ const LocationDateTimePicker = ({ actionHandler }) => {
               showMonthAndYearPickers={true}
               minDate={getMinDate()}
               maxDate={getMaxDate()}
-              months={isMobile ? 1 : 2}
+              months={3}
+              // months={isMobile ? 1 : 2}
               direction="horizontal"
               color="#276ebc"
+              className="popupdaterange"
               startDatePlaceholder="Start Date"
               endDatePlaceholder="End Date"
             />
             <div style={{ margin: "10px" }}>
               <label>Start Time:</label>
+              
               <Slider
                 min={0}
                 max={23}

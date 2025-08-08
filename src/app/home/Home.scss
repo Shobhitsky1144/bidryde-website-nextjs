@@ -45,13 +45,15 @@
   width: clamp(28px, 4vw, 40px);
   height: clamp(28px, 4vw, 40px);
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 }
 
 .rdrNextPrevButton:hover {
   background: #999a9c;
 }
+
+
 
 /* Navigation Arrows */
 .rdrNextButton i {
@@ -71,10 +73,11 @@
 
 /* Month Name */
 .rdrMonthName {
+
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
   color: #ffffff !important;
   padding: clamp(8px, 1.5vw, 20px);
   background-color: #276ebc;
@@ -82,7 +85,8 @@
   border-radius: clamp(4px, 0.8vw, 6.2px);
   width: fit-content;
   margin: auto;
-  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  font-weight:normal;
+  font-size: clamp(0.875rem, 1.2vw, 14px);
 }
 
 /* Slider styles */
@@ -161,4 +165,34 @@
   .rdrMonthAndYearPickers select {
     min-height: 44px;
   }
+}
+
+.rdrMonthName {
+  font-size:14px;
+}
+
+
+
+
+
+/* LocationDateTimePicker.scss */
+
+/* Sab months ka background remove kar do */
+.rdrMonthName {
+  background: none !important;
+}
+.rdrMonthsVertical .rdrMonthName,
+.rdrMonthsHorizontal .rdrMonthName {
+  color: rgb(39, 110, 188) !important; /* apna desired background */
+  // border-radius: 6px;
+  // padding: 4px;
+}
+
+/* Sirf current month ka background dikhao */
+.rdrMonthsVertical > div:first-child .rdrMonthName,
+.rdrMonthsHorizontal > div:first-child .rdrMonthName {
+  background-color: rgb(39, 110, 188) !important; /* apna desired background */
+  color:#fff !important; 
+  border-radius: 6px;
+  padding:15px;
 }

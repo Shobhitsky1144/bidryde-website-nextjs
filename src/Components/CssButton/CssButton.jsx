@@ -17,6 +17,7 @@ const CssButtonOutline = ({
   height,
   border,
   props,
+  borderRadius,
 }) => {
   const mobile = useMediaQuery("(max-width:600px)");
 
@@ -30,7 +31,7 @@ const CssButtonOutline = ({
     fontSize: mobile ? "16px" : fontSize,
     fontWeight: "normal",
     fontFamily: fontFamily ?? "",
-    borderRadius: "5px",
+    borderRadius: borderRadius?borderRadius:"5px",
     cursor: "pointer",
     width: width ?? "500px",
     height: height ?? "50px",
@@ -55,8 +56,10 @@ function CssButtonSolid({
   type,
   disabled,
   props,
+  width,
   weight,
   height,
+  borderRadius
 }) {
   // Function to determine button width based on screen size
   const getButtonWidth = () => {
@@ -86,14 +89,14 @@ function CssButtonSolid({
   const styles = {
     background: backgroundColor,
     color: textColor,
-    width: buttonWidth,
+    width: width ? width : buttonWidth,
     height: height ?? "50px",
     padding,
     fontSize: fontSize ?? "1rem",
     outlineWidth: "0",
     margin,
     fontWeight: weight ?? "normal",
-    borderRadius: "5px",
+    borderRadius: borderRadius?borderRadius:"5px",
     border: "none",
     cursor: "pointer",
     ...props,

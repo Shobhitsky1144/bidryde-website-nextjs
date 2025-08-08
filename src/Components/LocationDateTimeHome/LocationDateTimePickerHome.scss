@@ -36,11 +36,13 @@
   box-shadow: 1px 1px 1px 1px #cfcfcf;
   border-radius: 35px;
   padding: 1%;
-  width: 100%;
+  width: 90%;
   max-width: 600px; /* Adjusted to make it responsive */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
+  outline: none!important;
+  // border: none!important;
   justify-content: space-around;
 }
 
@@ -52,7 +54,8 @@
 }
 
 .homeModalButtonContainer {
-  margin: 10% 0;
+  // margin-top:10px;
+  // margin: 10% 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -101,6 +104,7 @@
   .homeLocationOptionsContainer {
     flex-direction: column;
     width: 90%;
+   
   }
 
   .homeTimeMainContainer {
@@ -109,7 +113,7 @@
   }
 
   .homeModalButtonContainer {
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -156,7 +160,27 @@
 
   .homeLocationOptionsContainer {
     width: 37.44rem;
-    height: 22.06rem;
+    // height: 22.06rem;
     max-width: 100%; /* Ensure it scales down on smaller screens */
   }
 }
+
+
+/* City dropdown ka input padding control */
+.popupDropdown {
+border-radius: 12px;
+border:1px solid rgb(39, 110, 188);
+.MuiOutlinedInput-input {
+  padding: 12px 12px !important; /* apne hisaab se adjust karo */
+  box-sizing: border-box;
+  border:none;
+  outline:none;
+
+}
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+
