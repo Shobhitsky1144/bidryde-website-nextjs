@@ -469,7 +469,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                     fontSize: "1rem",
                   }}
                 >
-                  Select Area
+                  Select Hub 
                 </InputLabel>
 
                 {/* Select Component */}

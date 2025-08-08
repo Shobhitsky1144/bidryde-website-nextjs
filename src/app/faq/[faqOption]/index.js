@@ -19,16 +19,36 @@ const FaqOption = ({ params }) => {
     setfaqData(getFAQ(option));
   }, [params.faqOption]);
 
+  const formatTitle = (text) => {
+    if (!text) return "";
+  
+    // Special case: if it's exactly "host_a_car"
+    if (text === "host_a_car") return "Host a Car";
+
+    if (text === "paymentCharges") return "Payment & Charges";
+
+    if (text === "deliveryCollection") return "Delivery & Collection";
+  
+    // Default: Convert to Title Case
+    return text
+      .split('_')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(' ');
+  };
+  
+  
+
   return (
     <div className="faqOption">
       <Navbar />
       <div className="faqOptionContainer">
-        {/* Heading with breadcrumb and title */}
+        {/* Heading with breadcrumb and title  ,*/}
         <h1 className="faqHeading">
           <Link href="/faq">
             <span className="breadcrumb">FAQ&apos;s &gt;</span>
           </Link>
-          <span className="pageTitle">{capitalize(params.faqOption)}</span>
+          {/* <span className="pageTitle">{capitalize(params.faqOption)}</span> */}
+          <span className="pageTitle">{formatTitle(params.faqOption)}</span>
         </h1>
         <div className="faqOptionContainerQuestions">
           {faqData.map((question) => (

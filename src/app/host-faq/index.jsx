@@ -15,12 +15,12 @@ const faqOptions = [
   {
     title: "Bid Help",
     icon: assets.images.faqPage.BidHelp,
-    link: "bidHelp",
+    link: "bid_help",
   },
   {
     title: "Trip Help",
     icon: assets.images.faqPage.TripIcon,
-    link: "tripHelp",
+    link: "trip_help",
   },
   {
     title: "Delivery & Collection",
@@ -30,7 +30,7 @@ const faqOptions = [
   {
     title: "Account Help",
     icon: assets.images.faqPage.accountHelp,
-    link: "accountHelp",
+    link: "account_help",
   },
   {
     title: "Payment & Charges",
@@ -40,12 +40,12 @@ const faqOptions = [
   {
     title: "Host a car",
     icon: assets.images.faqPage.HostCar,
-    link: "hostCar",
+    link: "hostACar",
   },
   {
     title: "Host a car",
     icon: assets.images.faqPage.HostCar,
-    link: "hostCar",
+    link: "host_a_car",
   },
 ];
 

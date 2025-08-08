@@ -67,7 +67,7 @@
       }
 
       .pageTitle {
-        margin-top: 8px;
+        // margin-top: 8px;
         font-size: 30px; /* Smaller title size */
       }
     }
@@ -82,8 +82,14 @@
   .faqOptionContainerQuestions {
     margin-top:1rem;
   }
+
+  .open .collapsiblePanel__content{
+    margin-top: 1rem;
+    }
   
 }
+
+
 .faqOptionContainerQuestions{
   margin-top:0.8rem;
 }

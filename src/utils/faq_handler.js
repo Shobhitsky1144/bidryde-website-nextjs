@@ -41,7 +41,7 @@ const FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  bidHelp: [
+  bid_help: [
     {
       header: "BIDHELP-What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -83,7 +83,7 @@ const FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  tripHelp: [
+  trip_help: [
     {
       header: "TRIPHELP-What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -167,7 +167,7 @@ const FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  accountHelp: [
+  account_help: [
     {
       header: "What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -251,7 +251,7 @@ const FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  hostCar: [
+  host_a_car: [
     {
       header: "What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -338,7 +338,7 @@ const HOST_FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  bidHelp: [
+  bid_help: [
     {
       header: "HOST_BIDHELP-What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -380,7 +380,7 @@ const HOST_FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  tripHelp: [
+  trip_help: [
     {
       header: "HOST_TRIPHELP-What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -464,7 +464,7 @@ const HOST_FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  accountHelp: [
+  account_help: [
     {
       header: "What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -548,7 +548,7 @@ const HOST_FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  hostCar: [
+  host_a_car: [
     {
       header: "What is bidryde?",
       content: "Best car rentals at affordable price",
