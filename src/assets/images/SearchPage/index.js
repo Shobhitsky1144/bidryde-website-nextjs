@@ -9,7 +9,8 @@ import fuelIcon from "./fuelIcon.png";
 import ePlug from "./electricPlugIcon.png";
 import automaticTransmission from "./automaticTransmissionIcon.png";
 import manualTransmission from "./manualGearIcon.png";
-import NoCarsImage from "./NoCarsImage.jpg"
+import NoCarsImage from "./NoCarsImage.jpg";
+import iphoneImage from './iphoneImage.png';
 import BookNowCardBackground from "./BookNowCardBackGroundImage.png"
 
 export {
@@ -25,5 +26,6 @@ export {
   automaticTransmission,
   manualTransmission,
   NoCarsImage,
+  iphoneImage,
   BookNowCardBackground
 };
