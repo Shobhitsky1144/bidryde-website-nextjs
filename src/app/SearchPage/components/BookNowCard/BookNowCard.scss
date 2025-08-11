@@ -3,7 +3,8 @@
   height: 50vh;
   background-image: url("../../../../assets/images/SearchPage/BookNowCardBackGroundImage.png");
   background-position: center;
-  border-radius: 30px;
+  background-size: cover;
+  border-radius: 16px;
   box-shadow: 0 0 5px 1px #202020;
   position: absolute;
   top: 50%;
@@ -14,68 +15,279 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  padding: 20px 30px;
 
-  &_closeButton {
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    cursor: pointer;
+
+  .appDescription_parent{
+    width: 100%;
   }
 
-  .titleStyling {
+  /* Title */
+  .appTitle {
     color: #fff;
-    font-size: 1.6rem;
-    margin:0!important;
-    padding:0!important;
+    font-size: 2rem;
+    font-weight:500;
+    margin: 60px 0 10px 0;
     font-family: Archivo;
+    text-align: center;
   }
 
+  /* Paragraph description */
+  .appDescription {
+    color: #ddd;
+    font-size: 0.7rem;
+    padding:0px 5px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-family: Archivo;
+    text-align: center;
+    max-width: 400px;
+  }
+
+  /* Offer text */
+  .offerMain {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    .star {
+      font-size: 0.6em;      // smaller than main text
+      vertical-align: super; // moves to top
+    }
+  }
+
+  .offerSub {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 4px 0 13px;
+    text-align: center;
+  }
+
+  /* Code box */
+  .codeContainer {
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    // margin: 0px 38px;
+    margin-bottom: 16px;
+
+    .codeLeft {
+      padding: 8px 16px;
+      color: #ffffff;
+      background: transparent;
+      font-size: 1rem;
+      font-family: Archivo;
+      width:100%;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+      font-weight: 400!important;
+    }
+
+    .codeRight {
+      padding: 8px 16px;
+      background: transparent;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1rem;
+      font-family: Archivo;
+      width:100%;
+      text-align: center;
+
+    }
+  }
+
+  /* Download label */
+  .downloadLabel {
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 0 0 10px 20px;
+    text-align: center;
+  }
+
+  /* Store buttons */
   &_Buttons {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin:0px 10px 0px 10px;
+    
 
     img {
-      width: 8rem;
-
+      width: 6.7rem;
       height: auto;
       object-fit: contain;
     }
   }
-  .OfferTextStyling {
-    color: #fff;
-    font-size: 2rem;
-    font-family: Archivo;
-  }
 }
 
-@media screen and (max-width: 1024px) {
-  .BookNowCardMainContainer {
+/* ====================== Responsive Breakpoints ====================== */
+
+.BookNowCardMainContainer {
+  width: 50vw;
+  height: 50vh;
+  background-image: url("../../../../assets/images/SearchPage/BookNowCardBackGroundImage.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  box-shadow: 0 0 5px 1px #202020;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 30px;
+
+  // ===================== BREAKPOINTS =====================
+
+  @media (max-width: 399px) {
     width: 90vw;
-    height: 300px;
-    gap: 5px;
-
-    .titleStyling {
-      color: #fff;
-      font-size: 2rem;
-      font-family: Archivo;
+    height: auto;
+    padding: 15px;
+    .appTitle { font-size:28px; }
+    .offerSub { margin:0 ;padding:5px 0px 15px 0px}
+    .appDescription{
+      padding: 0px 15px;
     }
-
-    &_Buttons {
-      display: flex;
-      flex-direction: row;
-      gap: 5px;
-
-      img {
-        width: 8rem;
-        height: 50px;
-        object-fit: contain;
+    .offerMain { font-size :28px; }
+    .codeContainer {
+      & {
+        .codeLeft,
+        .codeRight {
+          font-size: 1rem;
+        }
       }
     }
-    .OfferTextStyling {
-      color: #fff;
-      font-size: 1rem;
-      font-family: Archivo;
+    .downloadLabel{
+      margin: 0;
+      padding-bottom: 7px;
+    }    
+    .BookNowCard_GridContainer {
+      padding-left: 10px;
+      padding-right: 10px;
     }
+    .BookNowCard_CloseButton {
+      right: 10px;
+    }
+    .BookNowCardMainContainer_Buttons{
+      margin-bottom: 14px;
+    }
+  }
+  @media (min-width:400px) and (max-width: 480px) {
+    width: 90vw;
+    height: auto;
+    padding: 15px;
+    .appTitle { font-size:34px; }
+    .offerSub { margin:0 ;padding:5px 0px 15px 0px}
+    .appDescription{
+      padding: 0px 15px;
+    }
+    .offerMain { font-size :33px; }
+    .codeContainer {
+      & {
+        .codeLeft,
+        .codeRight {
+          font-size: 1rem;
+        }
+      }
+    }
+    .downloadLabel{
+      margin: 0;
+      padding-bottom: 7px;
+    }    
+    .BookNowCard_GridContainer {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .BookNowCard_CloseButton {
+      right: 10px;
+    }
+    .BookNowCardMainContainer_Buttons{
+      margin-bottom: 14px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 85vw;
+    height: auto;
+    padding: 15px;
+    .appTitle {  font-size: 33px}
+    
+    .offerSub { margin:0 ;padding:5px 0px 15px 0px}
+    .appDescription{
+      padding: 0px 15px;
+      text-align: center;
+      width: 100%!important;
+      max-width: 100%;
+    }
+    .offerMain { font-size :33px; }
+    .codeContainer {
+      & {
+        .codeLeft,
+        .codeRight {
+          font-size: 1rem;
+        }
+      }
+    }
+    .downloadLabel{
+      margin: 0;
+      padding-bottom: 7px;
+    }    
+    .BookNowCard_GridContainer {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .BookNowCard_CloseButton {
+      right: 10px;
+    }
+    .BookNowCardMainContainer_Buttons{
+      margin-bottom: 14px;
+    }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 70vw;
+    height: auto;
+    .appTitle {  font-size: 45px}
+    .appDescription_parent{
+      text-align: center!important;
+      display: flex;
+      justify-content: center
+    }
+    .appDescription{
+width: 80%;
+padding: 0;
+    }
+    .offerMain { font-size :40px; }
+  }
+
+  @media (min-width: 992px) and (max-width: 1191px) {
+    width: 60vw;
+    .appTitle {  font-size: 51px}
+    .appDescription{
+      padding: 0px 55px;
+      text-align: center;
+      width: 100%!important;
+      max-width: 100%;
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1192px) and (max-width: 1439px) {
+    width: 60vw;
+  }
+
+  @media (min-width: 1440px) {
+    width: 50vw;
   }
 }

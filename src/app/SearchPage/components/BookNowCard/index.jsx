@@ -23,77 +23,119 @@ function BookNowCard({ onClose }) {
     >
       {/* Close Button absolute to whole card */}
       <IconButton
+       className="BookNowCard_CloseButton"
+
         sx={{
           position: "absolute",
-          top: 8,
-          right: 8,
+          top: 15,
+          right: 40,
           zIndex: 10,
           color:'#fff',
+        
           // backgroundColor: "rgba(255,255,255,0.8)",
           // "&:hover": { backgroundColor: "rgba(255,255,255,1)" },
         }}
         onClick={handleClose}
       >
-        <CloseIcon />
+        <CloseIcon style={{  fontSize:'20px'}}/>
       </IconButton>
 
-      <Grid container spacing={0} alignItems="center">
-        {/* LEFT IMAGE */}
-        <Grid item xs={12} md={6} lg={6}>
-          <Box
-            sx={{
-              position: "relative",
-              width: "100%",
-              height: { xs: 250, md: 400 },
-            }}
-          >
-            <Image
-              // src={assets.images.searchPage.iPhoneImage} // your image here
-              src={iPhoneImage}
-              alt="BidrYde Banner"
-              fill
-              style={{ objectFit: "cover", borderRadius: 8 }}
-            />
-          </Box>
-        </Grid>
+      <Grid
+  container
+  alignItems="flex-start"
+  sx={{
+    px: "32px", // left & right padding = 30px
+    // py: { xs: 2, md: 4 }, // optional top & bottom padding
+  }}
+  className="BookNowCard_GridContainer"
+
+>
+  {/* LEFT IMAGE */}
+  <Grid
+  item
+  xs={12}
+  md={12}
+  lg={6}
+  sx={{
+    display: { xs: 'none', sm: 'none', md: 'none' ,lg:'block'} // hide on <768px
+  }}
+>
+  <Box
+    sx={{
+      position: "relative",
+      width: "100%",
+      height: { xs: 250, md: 400 },
+    }}
+  >
+    <Image
+      src={iPhoneImage}
+      alt="BidrYde Banner"
+      fill
+      style={{ objectFit: "cover"}}
+    />
+  </Box>
+</Grid>
+
+
 
         {/* RIGHT TEXT */}
-        <Grid item xs={12} md={6} lg={6}>
-          <h5 className="titleStyling" style={{ fontFamily: "Krona One" }}>
-            Get the BidrYde App
-          </h5>
-          {/* <h1 className="titleStyling">Available on</h1> */}
+        <Grid item xs={12} md={12} lg={6} >
+  {/* Title */}
+  <Box
+     
+    >
+  <h2 className="appTitle">Get the BidrYde App</h2>
 
-    
+  {/* Paragraph */}
+  <div className="appDescription_parent">
+  <p className="appDescription">
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it.
+  </p>
+  </div>
 
-          {/* <h3 className="OfferTextStyling" style={{ marginTop: 16 }}>
-            Use &quot; RYDE10&quot;, Get 10% OFF
-          </h3> */}
+  {/* Offer */}
+  <h3 className="offerMain">Upto ₹1000 OFF<span className="star">*</span>
+  </h3>
+  <p className="offerSub">on your first rYde</p>
 
-          <Box className="BookNowCardMainContainer_Buttons" sx={{ mt: 2 }}>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.bidryde.customer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={assets.images.GoogleButton}
-                alt="google download button"
-              />
-            </a>
+  {/* Code box */}
+  <Box className="codeContainer">
+    <div className="codeLeft">Use Code</div>
+    <div className="codeRight">RYDE1000</div>
+  </Box>
 
-            <a
-              href="https://apps.apple.com/us/app/bid-ryde-self-drive-cars/id6448796800"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={assets.images.AppleButton}
-                alt="apple download button"
-              />
-            </a>
-          </Box>
-        </Grid>
+  {/* Download text */}
+  <p className="downloadLabel">Download app from</p>
+
+  {/* Download buttons */}
+  <Box className="BookNowCardMainContainer_Buttons" sx={{ mt: 1 }}>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.bidryde.customer"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src={assets.images.GoogleButton}
+        alt="google download button"
+      />
+    </a>
+
+    <a
+      href="https://apps.apple.com/us/app/bid-ryde-self-drive-cars/id6448796800"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src={assets.images.AppleButton}
+        alt="apple download button"
+      />
+    </a>
+    </Box>
+  </Box>
+</Grid>
+
+
       </Grid>
     </Box>
   );
@@ -103,55 +145,3 @@ export default BookNowCard;
 
 
 
-
-// import React from "react";
-
-
-// import "./BookNowCard.scss";
-// import Image from "next/image";
-// import { assets } from "@/assets";
-// import CloseIcon from "@mui/icons-material/Close";
-
-// function BookNowCard({onClose}) {
-
-//     const handleClose  = () => {
-//         onClose()
-//     }
-
-//   return (
-//     <div className="BookNowCardMainContainer">
-//       <div className="BookNowCardMainContainer_closeButton">
-//         <CloseIcon onClick= {handleClose} />
-//       </div>
-//       <h1 className="titleStyling" style={{fontFamily:"Krona One"}}>BidrYde</h1>
-//       <h1 className="titleStyling">Available ond</h1>
-//       <div className="BookNowCardMainContainer_Buttons">
-//         <a
-//           href="https://play.google.com/store/apps/details?id=com.bidryde.customer"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             src={assets.images.GoogleButton}
-//             alt="google download button"
-//           />
-//         </a>
-
-//         <a
-//           href="https://apps.apple.com/us/app/bid-ryde-self-drive-cars/id6448796800"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           {" "}
-//           <Image
-//             src={assets.images.AppleButton}
-//             alt="apple download button"
-//           />{" "}
-//         </a>
-//       </div>
-//       <h3 className="OfferTextStyling">Use &quot; RYDE10&quot;, Get 10% OFF</h3>
-//     </div>
-//   );
-// }
-
-// export default BookNowCard;
