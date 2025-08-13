@@ -61,17 +61,19 @@ function BookNowCard({ onClose }) {
 >
   <Box
     sx={{
-    //   position: "relative",
-    //   width: "100%",
-    //   height: { xs: 250, md: 400 },
-    position: "relative", width: "50%", height: "300px" 
-    // }}
+      position: "relative",
+      width: "100%",
+      height: { xs: 250, md: 400 },
     }}
+    
   >
     <Image
-      src="/images/SearchPage/iPhoneImage.png" 
-      alt="BidrYde Banner"
-      fill
+      src="/images/iPhoneImage.png" 
+      // alt="BidrYde Banner"
+      // fill
+      alt="My Image"
+      width={400}
+      height={300}
       style={{ objectFit: "cover"}}
     />
   </Box>
