@@ -68,7 +68,7 @@ export default function Custom404() {
   };
 
 
-  const handle = () => {
+  const redirectHomePage = () => {
     router.push("/", { scroll: false });
   };
 
@@ -102,7 +102,7 @@ export default function Custom404() {
             margin="0 0 11rem 0"
             border="2px solid #276EBC"
             fontSize="18px"
-            onClick={() => handle()}
+            onClick={() => redirectHomePage()}
 
             // width="150px"
       width={"305px"}
