@@ -75,7 +75,42 @@
 }
 
 
+
+
+
+
+@media (min-width: 481px)  and (max-width:767px){
+
+  .faqOption .faqHeading{
+    font-size: 22px; 
+    .breadcrumb {
+      font-size: 22px; 
+    }
+    .pageTitle{
+      font-size: 22px;
+    }
+
+  }
+
+
+}
+
 @media screen and (max-width: 480px) {
+  .faqOption .faqHeading{
+    font-size: 17px; 
+    letter-spacing: 1px;
+    .breadcrumb {
+      font-size: 17px; 
+      letter-spacing: 1px;
+    }
+    .pageTitle{
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
+  }
+
+
   .colored_Item {
     border-radius: 5px;
   }
