@@ -61,9 +61,11 @@ function BookNowCard({ onClose }) {
 >
   <Box
     sx={{
-      position: "relative",
-      width: "100%",
-      height: { xs: 250, md: 400 },
+    //   position: "relative",
+    //   width: "100%",
+    //   height: { xs: 250, md: 400 },
+    position: "relative", width: "50%", height: "300px" 
+    // }}
     }}
   >
     <Image
