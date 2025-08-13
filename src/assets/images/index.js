@@ -85,7 +85,7 @@ import {
   automaticTransmission,
   manualTransmission,
   NoCarsImage,
-  iPhoneImage,
+  // iPhoneImage,
   BookNowCardBackground
 } from "./SearchPage";
 
@@ -209,7 +209,7 @@ export const images = {
     automaticTransmission,
     manualTransmission,
     NoCarsImage,
-    iPhoneImage,
+    // iPhoneImage,
     BookNowCardBackground
   },
   howToBid: {
