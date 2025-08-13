@@ -49,7 +49,7 @@ function Form() {
       
       <form onSubmit={handleSubmit}>
         <label>
-          Full Name:
+          Full Name <span className="required-star">*</span>
           <br />
           <input
             type="text"
@@ -61,7 +61,7 @@ function Form() {
         </label>
 
         <label>
-          Job Title:
+          Job Title <span className="required-star">*</span>
           <br />
           <input
             type="text"
@@ -73,7 +73,7 @@ function Form() {
         </label>
 
         <label>
-          Business Name:
+          Business Name <span className="required-star">*</span>
           <br />
           <input
             type="text"
@@ -85,7 +85,7 @@ function Form() {
         </label>
 
         <label>
-          Contact No:
+          Contact No <span className="required-star">*</span>
           <br />
           <input
             type="tel"
@@ -96,8 +96,8 @@ function Form() {
           />
         </label>
 
-        <label>
-          Email:
+        <label style={{marginBottom:'30px'}}>
+          Email <span className="required-star">*</span>
           <br />
           <input
             type="email"
@@ -112,9 +112,10 @@ function Form() {
           title="Connect"
           backgroundColor="#276EBC"
           textColor="#fff"
+          borderRadius="10px"
           fontSize="1rem"
           width="100%"
-          height="45px"
+          height="50px"
           border="1px solid #276EBC"
         //   onClick={() => handleBecomeHost(false)}
         />

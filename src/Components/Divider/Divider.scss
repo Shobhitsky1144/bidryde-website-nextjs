@@ -16,3 +16,19 @@
   background-color: var(--line-color, #276EBC);  /* This will fallback to the default if not set */
   height: 4px;
 }
+
+
+
+
+.divider .aboutcircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+  background-color: var(--circle-color, #FFC727);  /* This will fallback to the default if not set */
+}
+
+.divider .aboutline {
+  width: 100%;
+  background-color: var(--line-color, #FFC727);  /* This will fallback to the default if not set */
+  height: 4px;
+}

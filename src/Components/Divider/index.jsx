@@ -1,12 +1,12 @@
 import React from 'react'
 import './Divider.scss'
 
-const Divider = () => {
+const Divider = ({data}) => {
   return (
     <div className='divider'>
-      <div className='circle'></div>
-      <div className='line'></div>
-      <div className='circle'></div>
+      <div className={`${data ?? ""}circle`}></div>
+      <div className={`${data ?? ""}line`}></div>
+      <div className={`${data ?? ""}circle`}></div>
     </div>
   )
 }

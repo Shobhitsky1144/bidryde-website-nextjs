@@ -22,27 +22,27 @@ const JoinWithUsAssets = {
 const cardData = [
   {
     title: "Booking Share",
-    text: "BidRyde offers a transparent and professional revenue-sharing system, providing businesses with 80% of the revenue generated for each booking made through the platform",
+    text: "Bid rYde offers a transparent and professional revenue-sharing system, providing businesses with 80% of the revenue generated for each booking made through the platform. This approach ensures a strong alignment between the platform's success and the businesses that utilize it.",
     illustration: JoinWithUsAssets.BookingShareIllus,
   },
   {
     title: "Offline Organic Reach",
-    text: "Bid rYde's branding initiatives go beyond the online platform. The company proactively enhances its presence through offline channels, including events, partnerships, and collaborations. This comprehensive strategy contributes to increased booking opportunities",
+    text: "Bid rYde's branding initiatives go beyond the online platform. The company proactively enhances its presence through offline channels, including events, partnerships, and collaborations. This comprehensive strategy contributes to increased booking opportunities.",
     illustration: JoinWithUsAssets.OrganicReach,
   },
   {
     title: "Minimal Business Guarantee",
-    text: "Bid rYde implements a modest business guarantee for its partners, fostering a mutually benefitting collaboration and motivating active engagement from the partnered self-drive car rentals",
+    text: "Bid rYde implements a modest business guarantee for its partners, fostering a mutually benefitting collaboration and motivating active engagement from the partnered self-drive car rentals.",
     illustration: JoinWithUsAssets.MinimalBussiness,
   },
   {
     title: "Branding and Marketing",
-    text: "One distinctive aspect of Bid rYde is its commitment to enhancing branding and marketing efforts for its partners. Through collaboration with Bid rYde, businesses can harness the power of the Bid rYde brand, both online and offline, to boost their credibility and exposure in the market",
+    text: "One distinctive aspect of Bid rYde is its commitment to enhancing branding and marketing efforts for its partners. Through collaboration with Bid rYde, businesses can harness the power of the Bid rYde brand, both online and offline, to boost their credibility and exposure in the market.",
     illustration: JoinWithUsAssets.Branding,
   },
   {
     title: "Dashboard for Management",
-    text: "One distinctive aspect of Bid rYde is its commitment to enhancing branding and marketing efforts for its partners. Through collaboration with Bid rYde, businesses can harness the power of the Bid rYde brand, both online and offline, to boost their credibility and exposure in the market",
+    text: "One distinctive aspect of Bid rYde is its commitment to enhancing branding and marketing efforts for its partners. Through collaboration with Bid rYde, businesses can harness the power of the Bid rYde brand, both online and offline, to boost their credibility and exposure in the market.",
     illustration: JoinWithUsAssets.Dashboard,
   },
 ];
@@ -78,9 +78,9 @@ function JoinWithUs() {
       </div> */}
 
           <div className="joinSectionHeader__top">
-            <h1 align="center">Join With Us</h1>
-            <p className="p__header__join__top" align="center">Empowering Self-drive Car Rentals</p>
-            <Divider />
+            <h1 align="center">Join with us</h1>
+            <p className="p__header__join__top" align="center">Empowering Self-Drive Car Rentals</p>
+            <Divider data="about"/>
           </div>
       <div className="cards">
         <p>BidRyde Pioneers</p>
@@ -103,8 +103,14 @@ function JoinWithUs() {
           /> */}
           <div className="joinSectionHeader__bottom">
             <h1>Ready to partner for sucess?</h1>
+            <div style={{width:'fit-content'}}> 
+
             <p className="p__header__join__bottom">Reach out to us and join BidRyde</p>
-            <Divider />
+          
+            <Divider data="about"/>
+              </div>
+            {/* </div> */}
+           
           </div>
           <Image src={JoinWithUsAssets.DecorativeCircle} alt="avatar" />
         </div>
