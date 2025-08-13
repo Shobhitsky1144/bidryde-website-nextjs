@@ -4,7 +4,7 @@ import Image from "next/image";
 import { assets } from "@/assets";
 import CloseIcon from "@mui/icons-material/Close";
 import { Grid, Box, IconButton } from "@mui/material";
-import iPhoneImage from '../../../../assets/images/SearchPage/iPhoneImage.png';
+// import iPhoneImage from '../../../../assets/images/SearchPage/iPhoneImage.png';
 
 function BookNowCard({ onClose }) {
   const handleClose = () => {
@@ -59,7 +59,7 @@ function BookNowCard({ onClose }) {
             }}
           >
             <Image
-              src={iPhoneImage}
+              src={'/images/iPhoneImage.png'}
               alt="BidrYde Banner"
               fill
               style={{ objectFit: "cover" }}
