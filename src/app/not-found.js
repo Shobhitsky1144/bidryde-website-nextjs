@@ -1,9 +1,14 @@
+"use client";
 import { CssButtonOutline, Footer, Navbar } from "@/Components";
 import FloatingButton from "@/Components/FloatingButton";
 import { assets } from "@/assets";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 export default function Custom404() {
+  const router = useRouter();
+
   // Base styles
   const pageStyle = {
     height: "100%",
@@ -15,7 +20,7 @@ export default function Custom404() {
     position: "relative",
     padding: "1rem",
     overflow: "hidden",
-    minHeight: "calc(100vh - 64px)",
+    // minHeight: "calc(100vh - 64px)",
   };
 
   const contentStyle = {
@@ -62,6 +67,11 @@ export default function Custom404() {
     height: "auto",
   };
 
+
+  const handle = () => {
+    router.push("/", { scroll: false });
+  };
+
   return (
     <div
       style={{
@@ -92,6 +102,8 @@ export default function Custom404() {
             margin="0 0 11rem 0"
             border="2px solid #276EBC"
             fontSize="18px"
+            onClick={() => handle()}
+
             // width="150px"
       width={"305px"}
             height="50px"

@@ -39,8 +39,9 @@ const FaqOption = ({ params }) => {
   
 
   return (
+    <>
+    <Navbar />
     <div className="faqOption">
-      <Navbar />
       <div className="faqOptionContainer">
         {/* Heading with breadcrumb and title  ,*/}
         <h1 className="faqHeading">
@@ -63,6 +64,7 @@ const FaqOption = ({ params }) => {
       </div>
       <Footer />
     </div>
+  </>
   );
 };
 
