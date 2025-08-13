@@ -67,7 +67,7 @@ function BookNowCard({ onClose }) {
     }}
     
   >
-    <Image
+    {/* <Image
       src="/images/iPhoneImage.png" 
       // alt="BidrYde Banner"
       // fill
@@ -75,7 +75,7 @@ function BookNowCard({ onClose }) {
       width={400}
       height={300}
       style={{ objectFit: "cover"}}
-    />
+    /> */}
   </Box>
 </Grid>
 
