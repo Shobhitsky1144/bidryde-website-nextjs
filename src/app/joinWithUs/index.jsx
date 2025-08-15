@@ -103,7 +103,7 @@ function JoinWithUs() {
           /> */}
           <div className="joinSectionHeader__bottom">
             <h1>Ready to partner for sucess?</h1>
-            <div style={{width:'fit-content'}}> 
+            <div className="joinSectionHeader__bottom_parent" style={{width:'fit-content'}}> 
 
             <p className="p__header__join__bottom">Reach out to us and join BidRyde</p>
           
@@ -112,7 +112,7 @@ function JoinWithUs() {
             {/* </div> */}
            
           </div>
-          <Image src={JoinWithUsAssets.DecorativeCircle} alt="avatar" />
+          <Image src={JoinWithUsAssets.DecorativeCircle} alt="avatar" className="formImg" />
         </div>
         <div className="form">
           <Form />

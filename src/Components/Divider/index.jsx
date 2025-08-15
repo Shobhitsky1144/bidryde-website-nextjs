@@ -3,7 +3,7 @@ import './Divider.scss'
 
 const Divider = ({data}) => {
   return (
-    <div className='divider'>
+    <div className={`${data ?? ""}divider`}>
       <div className={`${data ?? ""}circle`}></div>
       <div className={`${data ?? ""}line`}></div>
       <div className={`${data ?? ""}circle`}></div>

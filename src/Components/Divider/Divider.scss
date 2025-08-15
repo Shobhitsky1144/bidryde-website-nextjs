@@ -4,6 +4,8 @@
   align-items: center;
 }
 
+
+
 .divider .circle {
   width: 10px;
   height: 10px;
@@ -20,15 +22,40 @@
 
 
 
-.divider .aboutcircle {
-  width: 10px;
-  height: 10px;
-  border-radius: 99px;
-  background-color: var(--circle-color, #FFC727);  /* This will fallback to the default if not set */
-}
 
-.divider .aboutline {
+
+
+
+
+
+// about divider
+
+
+.aboutdivider {
   width: 100%;
-  background-color: var(--line-color, #FFC727);  /* This will fallback to the default if not set */
-  height: 4px;
-}
+  display: flex;
+  align-items: center;
+  // padding: 0px 20px;
+  }
+  
+
+  .aboutdivider .aboutcircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 99px;
+    background-color: var(--circle-color, #FFC727);  /* This will fallback to the default if not set */
+  }
+  
+  .aboutdivider .aboutline {
+    width: 100%;
+    background-color: var(--line-color, #FFC727);  /* This will fallback to the default if not set */
+    height: 4px;
+  }
+
+  @media  (min-width:481px) and  (max-width:767px) {
+
+    .aboutdivider{
+      padding: 0!important;
+    }
+
+  }
