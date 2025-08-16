@@ -11,7 +11,7 @@
 
 .hForm label {
   margin: 5% 0;
-  font-family: Archivo;
+  /* font-family: Archivo; */
 }
 
 .hinput {
@@ -62,7 +62,7 @@
 @media only screen and (max-width: 768px) {
   .hFormHeading {
     color: black;
-    font-family: Archivo;
+    /* font-family: Archivo; */
     font-size: 23px;
     font-style: normal;
     font-weight: bold;

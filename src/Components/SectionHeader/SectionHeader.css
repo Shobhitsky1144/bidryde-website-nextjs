@@ -49,7 +49,7 @@
 
 .tagLinesTextStyling {
     color: var(--Text-black, #262626);
-    font-family: Archivo;
+    /* font-family: Archivo; */
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -60,7 +60,7 @@
 @media screen and (max-width: 960px) {
     .sectionTitleTextStyling {
         color: var(--Text-black, #262626);
-        font-family: Archivo Black;
+        /* font-family: Archivo Black; */
         font-size: 30px;
         font-style: normal;
         font-weight: 400;
@@ -70,7 +70,7 @@
 
     .tagLinesTextStyling {
         color: var(--Text-black, #262626);
-        font-family: Archivo;
+        /* font-family: Archivo; */
         font-size: 14px;
         font-style: normal;
         font-weight: 500;

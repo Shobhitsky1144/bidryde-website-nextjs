@@ -28,7 +28,7 @@
     
     width: fit-content;
     color: #262626;
-    font-family: Archivo;
+    /* font-family: Archivo; */
     font-size: 25px;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -36,7 +36,7 @@
   }
   .cardcontainer p {
     color: #262626;
-    font-family: Archivo;
+    /* font-family: Archivo; */
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -52,7 +52,7 @@
       height: 58px;
     }
     .cardcontainer h4{
-      font-family: Archivo;
+      /* font-family: Archivo; */
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -60,7 +60,7 @@ line-height: 24px;
 letter-spacing: 0.36px;
     }
     .cardcontainer p{
-      font-family: Archivo;
+      /* font-family: Archivo; */
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
