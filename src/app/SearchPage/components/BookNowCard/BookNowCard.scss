@@ -273,6 +273,7 @@ padding: 0;
 
   @media (min-width: 992px) and (max-width: 1191px) {
     width: 60vw;
+    height: 30vh;
     .appTitle {  font-size: 51px}
     .appDescription{
       padding: 0px 55px;
@@ -281,13 +282,17 @@ padding: 0;
       max-width: 100%;
       font-size: 15px;
     }
+
+  
   }
 
   @media (min-width: 1192px) and (max-width: 1439px) {
     width: 60vw;
+    height: 30vh;
   }
 
   @media (min-width: 1440px) {
     width: 50vw;
+    height: 50vh;
   }
 }

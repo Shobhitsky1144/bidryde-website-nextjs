@@ -593,6 +593,7 @@ className="popupDropdown"
             }}
           >
             <div
+            className="datepickerParent"
               style={{
                 position: "absolute",
                 zIndex: 1000,
@@ -608,6 +609,7 @@ className="popupDropdown"
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+               
               }}
             >
               <div>
@@ -701,10 +703,10 @@ className="popupDropdown"
                   onClick={() => handleDateTimeCancel()}
                 />
                 <CssButtonSolid
-                  title="Okay"
+                  title="Ok"
                   backgroundColor="#276EBC"
                   textColor="#FFFFFF"
-                  fontSize="0.8rem"
+                  fontSize="1rem"
                   width="100px"
                   height="38px"
                   border="1px solid #276EBC"
