@@ -599,7 +599,7 @@ className="popupDropdown"
                 zIndex: 1000,
                 backgroundColor: "#ffffff",
                 boxShadow: "1px 1px 1px 1px #EFEFEF",
-                borderRadius: "10px",
+                borderRadius: "20px",
                 padding: "2%",
                 outline:'none',
                 // height: isMobile ? "90vh" : "80vh",
@@ -626,6 +626,12 @@ className="popupDropdown"
                   color="#276ebc"
                   startDatePlaceholder="Start Date"
                   endDatePlaceholder="End Date"
+
+                  renderMonthAndYear={(month, date) => (
+                    <span style={{ fontWeight: "600", fontSize: "16px" }}>
+                      {date.toLocaleString("default", { month: "long" })}
+                    </span>
+                  )}
                 />
                 <div
                   style={{
@@ -640,7 +646,7 @@ className="popupDropdown"
                   <div
                     style={{
                       flex: 1,
-                      fontFamily: "Archivo",
+                      // fontFamily: "Archivo",
                       fontWeight: "400",
                       fontSize: "14px",
 
@@ -698,7 +704,8 @@ className="popupDropdown"
                   margin="0"
                   fontSize="1rem"
                   width="100px"
-                  height="38px"
+                  height="45px"
+                  borderRadius="11px"
                   border="1px solid #276EBC"
                   onClick={() => handleDateTimeCancel()}
                 />
@@ -708,7 +715,9 @@ className="popupDropdown"
                   textColor="#FFFFFF"
                   fontSize="1rem"
                   width="100px"
-                  height="38px"
+                  height="45px"
+                                    borderRadius="11px"
+
                   border="1px solid #276EBC"
                   onClick={() => handleDateClose()}
                 />

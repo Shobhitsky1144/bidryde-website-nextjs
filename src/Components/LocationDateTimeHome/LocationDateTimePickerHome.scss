@@ -122,6 +122,12 @@
 }
 
 @media screen and (max-width: 600px) {
+
+
+.rdrNextPrevButton i {
+  border-width: 9px!important;
+}
+
   .selectCity {
     width: 100%; /* Full width for mobile devices */
     max-width: none; /* Remove max-width for smaller screens */
@@ -192,3 +198,28 @@ border:1px solid rgb(39, 110, 188);
 
 
 }
+
+
+
+
+
+/* Increase rc-slider track and rail thickness */
+.rc-slider-rail {
+  height: 8px !important;   // default ~4px hota hai
+  background-color: #e0e0e0; // rail color (optional)
+  border-radius: 6px;
+}
+
+.rc-slider-track {
+  height: 8px !important;
+  background-color: #276EBC; // active track color (blue)
+  border-radius: 6px;
+}
+
+.rc-slider-handle {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: -7px !important; // center align handle on thick bar
+  border: 2px solid #276EBC;
+}
+
