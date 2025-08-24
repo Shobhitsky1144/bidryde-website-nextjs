@@ -131,7 +131,7 @@ function Navbar({ home, hidePageButtons }) {
   backgroundColor="#276EBC"
   textColor="#fff"
   fontSize="17px"
-  width="169px !important"  // Added !important
+  width="169px"  // Added !important
   height="47px"
   border="2px solid #276EBC"
 // fontFamily="'Inter', sans-serif"

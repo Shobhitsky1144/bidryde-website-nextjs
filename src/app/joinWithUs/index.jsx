@@ -8,6 +8,8 @@ import { assets } from "@/assets";
 import { Divider, Footer, Navbar, SectionHeader } from "@/Components";
 import { uid } from "react-uid";
 import FloatingButton from "@/Components/FloatingButton";
+import clouds from "../../assets/images/JoinWithUs/clouds.png";
+
 
 const JoinWithUsAssets = {
   INTRO_IMAGE: assets.images.joinWithUs.aboutusHero,
@@ -54,7 +56,19 @@ function JoinWithUs() {
     
       <div className="left_right_margin">
       <div className="intro">
-        <div className="clouds"></div>
+      <div className="clouds">
+        
+
+        </div>
+        {/* <div className="cloudsz">
+        <Image 
+    src={clouds} 
+    width={500} 
+    height={500} 
+    alt="Intro Image" 
+  />
+
+        </div> */}
         <div className="intro_content">
           <div className="intro_text">
             <p>
