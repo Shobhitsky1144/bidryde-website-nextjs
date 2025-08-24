@@ -257,6 +257,9 @@
     height: auto;
     padding: 15px;
     .appTitle {  font-size: 33px}
+    .offerSubSecond{
+      padding-bottom: 0px!important;
+    }
     
     .offerSub { margin:0 ;padding:5px 0px 15px 0px}
     .appDescription{
@@ -328,7 +331,7 @@ padding: 0;
   }
 
   @media (min-width: 1440px) {
-    width: 53vw;
-    height: 56vh;
+    width: 63vw;
+    height: 31vh;
   }
 }
