@@ -628,9 +628,12 @@ className="popupDropdown"
                   endDatePlaceholder="End Date"
 
                   renderMonthAndYear={(month, date) => (
-                    <span style={{ fontWeight: "600", fontSize: "16px" }}>
-                      {date.toLocaleString("default", { month: "long" })}
-                    </span>
+                    <div
+                      className="rdrMonthName"
+                      data-month={format(date, "MMMM")} // 👈 sirf month inject
+                    >
+                      {format(date, "MMMM")} {/* Sirf month name */}
+                    </div>
                   )}
                 />
                 <div

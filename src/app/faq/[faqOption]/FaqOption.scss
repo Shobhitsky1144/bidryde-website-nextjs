@@ -100,11 +100,11 @@
     font-size: 17px; 
     letter-spacing: 1px;
     .breadcrumb {
-      font-size: 17px; 
+      font-size: 23px; 
       letter-spacing: 1px;
     }
     .pageTitle{
-      font-size: 17px;
+      font-size: 22px;
       letter-spacing: 1px;
     }
 
@@ -122,6 +122,21 @@
     margin-top: 1rem;
     }
   
+}
+
+@media screen and (max-width: 400px) {
+
+  .breadcrumb {
+    font-size: 18px!important; 
+    
+  }
+  .pageTitle{
+    font-size: 18px!important;
+    letter-spacing: 1px;
+  }
+
+
+
 }
 
 
