@@ -53,7 +53,17 @@ function BookNowCard({ onClose }) {
             display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' }
           }}
         >
-          <Box
+
+<div className="">
+            <Image
+              src={assets.images.heroBgWeb}
+              alt="Hero section illustration"
+              width={300}
+              height={500}
+              priority
+            />
+          </div>
+          {/* <Box
             sx={{
             //   // position: "relative",
               width: "100%",
@@ -69,7 +79,7 @@ function BookNowCard({ onClose }) {
             />
             {/* <img src="/images/iPhoneImage.png" alt="BidrYde Banner"  /> */}
 
-          </Box>
+          {/* </Box>  */}
         </Grid>
 
         {/* RIGHT TEXT */}
