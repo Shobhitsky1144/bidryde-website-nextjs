@@ -54,15 +54,21 @@ function BookNowCard({ onClose }) {
           }}
         >
 
-<div className="">
+<Box
+            sx={{
+            //   // position: "relative",
+              width: "100%",
+              height: { lg: 400, xl: 450 },
+            }}
+          >
             <Image
-              src={assets.images.heroBgWeb}
-              alt="Hero section illustration"
-              width={300}
-              height={500}
-              priority
+              src={assets.images.iphoneImage}
+              alt="BidrYde Banner"
+              width={500}
+              height={450}
+               style={{ objectFit: "cover" }}
             />
-          </div>
+          </Box>
           {/* <Box
             sx={{
             //   // position: "relative",

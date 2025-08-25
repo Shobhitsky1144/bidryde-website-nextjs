@@ -8,6 +8,8 @@ import WhatsappButton from "./whatsapp icon.png";
 import MenuIcon from "./menu-icon.png";
 import nofoundmobileimg from "./nofoundmobileimg.png";
 
+import iphoneImage from  "./iphoneImage.png"
+
 
 import { arrow, location, Time } from "./hero";
 
@@ -115,6 +117,7 @@ export const images = {
   heroBgMobile,
   nofoundmobileimg,
   heroBgWeb,
+  iphoneImage,
   AppleButton,
   GoogleButton,
   WhatsappButton,
