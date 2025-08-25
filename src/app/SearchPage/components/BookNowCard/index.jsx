@@ -33,14 +33,14 @@ function BookNowCard({ onClose }) {
         }}
         onClick={handleClose}
       >
-        <CloseIcon style={{ fontSize: '20px' }} />
+        <CloseIcon style={{ fontSize: '25px' }} />
       </IconButton>
 
       <Grid
         container
         alignItems="flex-start"
         sx={{
-          px: { xs: "8px", sm: "12px", md: "20px", lg: "32px" },
+          px: { xs: "8px", sm: "12px", md: "20px", lg: "22px" },
         }}
         className="BookNowCard_GridContainer"
       >
@@ -49,12 +49,14 @@ function BookNowCard({ onClose }) {
           item
           xs={12}
           lg={6}
+          xl={6}
           sx={{
             display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' }
           }}
+          className="imgg"
         >
 
-<Box
+<Box className="imgParent"
             sx={{
             //   // position: "relative",
               width: "100%",
@@ -89,7 +91,7 @@ function BookNowCard({ onClose }) {
         </Grid>
 
         {/* RIGHT TEXT */}
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6} xl={6} className="secondGrid">
           <Box>
             {/* Title */}
             <h2 className="appTitle">Get the BidrYde App</h2>

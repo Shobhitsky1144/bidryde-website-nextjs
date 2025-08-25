@@ -1,3 +1,6 @@
+
+
+
 .BookNowCardMainContainer {
   width: 50vw;
   height: 50vh;
@@ -92,6 +95,7 @@
   /* Code box */
   .codeContainer {
     display: flex;
+    justify-content: center;
     border: 1px solid #ffffff;
     border-radius: 6px;
     overflow: hidden;
@@ -100,7 +104,7 @@
     margin-bottom: 16px;
 
     .codeLeft {
-      padding: 8px 16px;
+      padding: 8px 12px;
       color: #ffffff;
       background: transparent;
       font-size: 1rem;
@@ -112,7 +116,7 @@
     }
 
     .codeRight {
-      padding: 8px 16px;
+      padding: 8px 12px;
       background: transparent;
       color: #ffffff;
       font-weight: 600;
@@ -177,6 +181,9 @@
     width: 90vw;
     height: auto;
     padding: 15px;
+    .downloadParent{
+      padding-top: 0;
+    }
     .appTitle { font-size:25px; }
     .offerSub { margin:0 ;padding:5px 0px 15px 0px}
     .appDescription{
@@ -216,6 +223,9 @@
     width: 90vw;
     height: auto;
     padding: 15px;
+    .downloadParent{
+      padding-top: 0;
+    }
  .offerSubSecond{
       padding-bottom: 0px!important;
     }
@@ -254,7 +264,28 @@
 
   @media (min-width: 481px) and (max-width: 767px) {
     width: 85vw;
-    height: auto;
+    height: 480px;
+    .codeContainer {
+
+      display: flex;
+      justify-content: center;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 68%;
+      margin-bottom: 16px;
+      margin: 0 auto;
+    
+    
+    .codeLeft{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+    .codeRight{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+  }
     padding: 15px;
     .appTitle {  font-size: 33px}
     .offerSubSecond{
@@ -296,7 +327,28 @@
 
   @media (min-width: 768px) and (max-width: 991px) {
     width: 70vw;
-    height: auto;
+    height: 480px;
+    .codeContainer {
+
+      display: flex;
+      justify-content: center;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 68%;
+      margin-bottom: 16px;
+      margin: 0 auto;
+    
+    
+    .codeLeft{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+    .codeRight{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+  }
     .appTitle {  font-size: 45px}
     .appDescription_parent{
       text-align: center!important;
@@ -312,7 +364,28 @@ padding: 0;
 
   @media (min-width: 992px) and (max-width: 1191px) {
     width: 60vw;
-    height: 50vh;
+    height: 480px;
+    .codeContainer {
+
+      display: flex;
+      justify-content: center;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 68%;
+      margin-bottom: 16px;
+      margin: 0 auto;
+    
+    
+    .codeLeft{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+    .codeRight{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+  }
     .appTitle {  font-size: 51px}
     .appDescription{
       padding: 0px 55px;
@@ -326,12 +399,77 @@ padding: 0;
   }
 
   @media (min-width: 1192px) and (max-width: 1439px) {
-    width: 68vw;
-    height: 32vh;
+    width: 55vw;
+    height: 450px;
+    .imgg{
+      display: none!important;
+    }
+    .secondGrid{
+      width: 100%;
+    }
+    .appTitle{
+      margin: 42px 0px 10px 0px;
+      font-size: 45px!important;
+    }
+    .codeContainer {
+
+      display: flex;
+      justify-content: center;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 68%;
+      margin-bottom: 16px;
+      margin: 0 auto;
+    
+    
+    .codeLeft{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+    .codeRight{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+    
+   
+  }
   }
 
   @media (min-width: 1440px) {
-    width: 63vw;
-    height: 31vh;
+    width: 58vw;
+    height: 430px;
+    .imgg{
+      display: block!important;
+      width: 50%!important;
+    }
+    .imgParent{
+      height: 100%!important;
+    }
+    .codeContainer {
+
+      display: flex;
+      justify-content: center;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 68%;
+      margin-bottom: 16px;
+      margin: 0 auto;
+    
+    
+    .codeLeft{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+    .codeRight{
+      width: 50%!important;
+      padding: 6px 12px;
+    }
+    .appTitle{
+      margin: 42px 0px 10px 0px;
+    }
+   
+  }
   }
 }
