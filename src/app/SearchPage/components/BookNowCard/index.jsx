@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Grid, Box, IconButton } from "@mui/material";
 // import clouds from "../../assets/images/JoinWithUs/clouds.png";
 // import iPhoneImage from '../../../../assets/images/SearchPage/iPhoneImage.png';
-import iPhoneImage from '../../../../assets/images/SearchPage/iPhoneImage.png';
+// import iPhoneImage from '../../../../assets/images/SearchPage/iPhoneImage.png';
 
 function BookNowCard({ onClose }) {
   const handleClose = () => {
