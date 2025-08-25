@@ -437,8 +437,11 @@ padding: 0;
   }
 
   @media (min-width: 1440px) {
-    width: 58vw;
+    width: 56vw;
     height: 430px;
+    .phnImg{
+      width: 26rem;
+    }
     .imgg{
       display: block!important;
       width: 50%!important;

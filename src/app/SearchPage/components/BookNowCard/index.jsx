@@ -64,6 +64,7 @@ function BookNowCard({ onClose }) {
             }}
           >
             <Image
+            className="phnImg"
               src={assets.images.iphoneImage}
               alt="BidrYde Banner"
               width={500}
@@ -91,7 +92,18 @@ function BookNowCard({ onClose }) {
         </Grid>
 
         {/* RIGHT TEXT */}
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={6} className="secondGrid">
+        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}  sx={{
+  '@media (min-width:1200px) and (max-width:1438px)': {
+    flexBasis: '100% !important',
+    maxWidth: '100% !important',
+  },
+  '@media (min-width:1439px)': {
+    flexBasis: '50% !important',
+    maxWidth: '50% !important',
+  },
+}}
+
+  className="secondGrid">
           <Box>
             {/* Title */}
             <h2 className="appTitle">Get the BidrYde App</h2>
