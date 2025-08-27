@@ -10,7 +10,7 @@ import offer2 from "@/assets/images/TrendingOffers/offer2.png";
 const TrendingOffers = () => {
   const [trendingOffers, setTrendingOffers] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [cardsPerSlide, setCardsPerSlide] = useState(2); // Adjust cards based on screen size
+  const [cardsPerSlide, setCardsPerSlide] = useState(3); // 👈 default 3 cards per slide
 
   const staticOffers = [
     {
@@ -42,7 +42,8 @@ const TrendingOffers = () => {
     // Adjust cards per slide based on screen width
     const updateCardsPerSlide = () => {
       if (window.innerWidth < 768) setCardsPerSlide(1);
-      else setCardsPerSlide(2);
+      else if (window.innerWidth < 1024) setCardsPerSlide(2);
+      else setCardsPerSlide(3); // 👈 show 3 cards on large screens
     };
 
     updateCardsPerSlide();
@@ -98,14 +99,17 @@ const TrendingOffers = () => {
           </div>
 
           <div className="dots">
-            {Array.from({ length: totalSlides }).map((_, i) => (
-              <span
-                key={i}
-                className={`dot ${i === currentSlide ? "active" : ""}`}
-                onClick={() => setCurrentSlide(i)}
-              ></span>
-            ))}
-          </div>
+  {(totalSlides > 1 && !(cardsPerSlide === 3 && trendingOffers.length <= 3)) && (
+    Array.from({ length: totalSlides }).map((_, i) => (
+      <span
+        key={i}
+        className={`dot ${i === currentSlide ? "active" : ""}`}
+        onClick={() => setCurrentSlide(i)}
+      ></span>
+    ))
+  )}
+</div>
+
         </div>
       </div>
     </div>

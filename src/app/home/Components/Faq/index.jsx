@@ -118,7 +118,7 @@ const faqs = [
   },
 ];
 
-const Faq = () => {
+const Faq = ({data}) => {
   const [questions, setQuestions] = useState(faqs[0].questions);
   const [activeChip, setActiveChip] = useState("General");
   const router = useRouter();
@@ -133,8 +133,9 @@ const Faq = () => {
   }
 
   return (
-    <div className="faq">
-      <div className="faqContainer">
+    <div className={`faq `} id={data}>
+      <div className={`faqContainer `} >
+
         <div className="SectionTitle">
           <h1>FAQ&apos;s</h1>
           <p>On the road to answers</p>

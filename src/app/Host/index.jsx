@@ -9,7 +9,7 @@ import {
   SectionHeader,
 } from "@/Components";
 import "./Host.scss";
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { assets } from "@/assets";
 import { Form, HostSquareCard } from "./components";
 import { uid } from "react-uid";
@@ -59,15 +59,21 @@ function Host() {
     <>
       <Navbar />
       <div className="hostLayout">
+    
         <div className="left_right_margin"></div>
+       
 
         <div className="hostIntro">
           <div className="hostIntroLeft">
             <div className="hostIntroHeader">
               <p className="p1">Share your ryde</p>
               <p className="p2">Earn on your terms</p>
+           
             </div>
-            <div className="hostIntroIcon">
+
+            <Image src={hostImages.decorativeCircle} alt="avatar" className="hostCircle"/>
+            {/* <div className="hostIntroIcon"> */}
+          
               {/* <Image src={hostImages.decorativeCircle} alt="decorativeCircle" /> */}
               {/* <Link href="#InterestForm">
                 <CssButtonOutline
@@ -81,18 +87,23 @@ function Host() {
                   border="1px solid #276EBC"
                 />
               </Link> */}
-            </div>
+            {/* </div> */}
           </div>
+          
           <div className="hostIntroRight">
             <Image src={hostImages.hostIntroImage} alt="hostIntroImage" />
           </div>
+         
         </div>
 
         <div className="route">
           <div className="hostSectionHeader">
             <h1>Host your Car</h1>
+            <div style={{ display: 'inline-block' }}>
+
             <p className="p__header__host">Host a car in just 3 simple steps</p>
-            <div className=""style={{width:'40%'}}><Divider />
+       
+              <Divider />
             </div>
           </div>
 
@@ -107,9 +118,7 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                  Join us by filling the form 
-                  and our experts will reach out for the onboarding
-                  process.
+                Join us by filling the form and our experts will reach out for onboarding process.
                 </div>
               </div>
 
@@ -127,8 +136,7 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                  After fixing the Appointment, our expert  will visit to inspect
-                  and install Safety Devices to your Car
+                After fixing the appointment, our expert will visit to inspect and install safety devices to your car
                 </div>
               </div>
 
@@ -141,8 +149,9 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                  Upon Confirmation, you will be part of next Generation Host
-                  enablement Platform to achieve your Financial Freedom
+                Upon confirmation, you will be part 
+of next generation Host enablement 
+platform to achieve your financial freedom
                 </div>
               </div>
             </div>
@@ -151,6 +160,7 @@ function Host() {
               className="decCircle"
               src={hostImages.decorativeCircle}
               alt="decorative circle"
+              
             />
           </div>
         </div>
@@ -158,10 +168,27 @@ function Host() {
         <div className="hformSection">
           <div className="hformSectionLeft">
             <div className="hostIntroIcon">
+            {/* <Box
+            sx={{
+              position: "relative",
+              width: "100%",
+              height: { lg: 400, xl: 450 },
+            }}
+          >
+            <Image
+              src="/images/circles.png"
+              alt="BidrYde Banner"
+              fill
+               className="decImg"
+              // style={{ objectFit: "cover" }}
+            />
+          </Box> */}
               <Image
                 className="decImg"
+                
                 src={hostImages.decorativeCircle}
                 alt="decorativeCircle"
+              
               />
             </div>
             <div className="formSectionHeader">
@@ -174,11 +201,13 @@ function Host() {
           </div>
         </div>
         <div className="hostSection2">
-          <div className="hostSectionHeader__">
+          <div className="hostSectionH hostseader__ hostsecond">
             <h1 className="h1_headr__2">Why host with us?</h1>
+            <div style={{ display: 'inline-block' }}>
 
             <p className="p__header__host">Trust and security at the core</p>
             <Divider />
+            </div>
           </div>
         </div>
         <div className="hostCardSection">
@@ -194,7 +223,7 @@ function Host() {
             ))}
           </Grid>
         </div>
-        <Faq />
+        <Faq  isHost={true}/>
         <Footer />
         <div className="floatingButton">
           <FloatingButton />

@@ -1,15 +1,16 @@
 /* Base styles for the host card */
 .hostCard {
-  height: 360px;
-  width: 24rem;
+  height: 300px;
+  width: 100%;
+
   border-radius: 20px;
   background: #f6f1f1;
-  padding: 50px;
+  padding: 32px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px;
+  /* margin: 0px 10px; */
   transition-duration: 0.5s;
 }
 
@@ -19,10 +20,10 @@
 }
 
 .hostCard .image {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  object-fit: cover; /* Added to ensure images maintain aspect ratio */
+  width: 80px;
+  height: 80px;
+  /* border-radius: 15px;
+  object-fit: cover; Added to ensure images maintain aspect ratio */
 }
 
 /* Improved desktop container styles */
@@ -32,15 +33,17 @@
   align-items: center;
   justify-content: center;
   width: 100%; /* Changed from fixed width to be more flexible */
-  max-width: 250px; /* Added max-width for larger screens */
+  /* max-width: 250px;  */
   text-align: center; /* Ensures consistent text alignment */
 }
 
 .hostCardcontainer h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
   width: 100%; /* Changed from fit-content to full width */
   color: #262626;
   font-family: Archivo, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.2; /* Changed to relative unit */
   letter-spacing: 0.5px;
   margin: 0 0 10px 0; /* Consolidated margin */
@@ -50,94 +53,11 @@
 .hostCardcontainer p {
   color: #262626;
   font-family: Archivo, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 1.5; /* Changed to relative unit */
   letter-spacing: 0.18px;
   margin: 0; /* Added to remove default margins */
   width: 100%; /* Added for consistent width */
 }
 
-/* Large screens (1200px to 1399px) */
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .hostCard {
-    height: 330px;
-    width: 24rem;
-    padding: 50px;
-    margin: 10px;
-  }
-
-  .hostCard .image {
-    width: 85px;
-    height: 85px;
-  }
-
-  .hostCardcontainer {
-    max-width: 200px;
-  }
-
-  .hostCardcontainer h4 {
-    font-size: 22px;
-  }
-
-  .hostCardcontainer p {
-    font-size: 14px;
-  }
-}
-
-/* Medium screens (821px to 1199px) */
-@media (min-width: 821px) and (max-width: 1199px) {
-  .hostCard {
-    height: 300px;
-    width: 22rem;
-    padding: 45px;
-  }
-
-  .hostCard .image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .hostCardcontainer {
-    max-width: 190px;
-  }
-
-  .hostCardcontainer h4 {
-    font-size: 20px;
-  }
-
-  .hostCardcontainer p {
-    font-size: 13px;
-  }
-}
-
-/* Small screens (up to 820px) */
-@media (max-width: 820px) {
-  .hostCard {
-    width: calc(100% - 40px); /* Adjusted to account for padding */
-    height: auto;
-    min-height: 250px; /* Added minimum height */
-    padding: 20px;
-    margin: 10px auto; /* Centered card */
-  }
-
-  .hostCard .image {
-    width: 66px;
-    height: 66px;
-    border-radius: 10px;
-  }
-
-  .hostCardcontainer {
-    max-width: 100%;
-  }
-
-  .hostCardcontainer h4 {
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  .hostCardcontainer p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-}

@@ -118,7 +118,7 @@ const faqs = [
   },
 ];
 
-const Faq = () => {
+const Faq = ({isHost}) => {
   const [questions, setQuestions] = useState(faqs[0].questions);
   const [activeChip, setActiveChip] = useState("General");
   const router = useRouter();
@@ -133,10 +133,11 @@ const Faq = () => {
   }
 
   return (
-    <div className="faq">
+<div className={`faq ${isHost ? "hostHeads" : ""}`}>
+
       <div className="faqContainer">
         <div className="SectionTitle">
-          <h1>FAQ&apos;s</h1>
+          <h1 className={isHost?"hostHead":""}>FAQ&apos;s</h1>
           <p>On the road to answers</p>
           <Divider />
         </div>
@@ -151,7 +152,7 @@ const Faq = () => {
             ))
           }
         </div> */}
-        <div className="faqContainerQuestions">
+        <div className={`faqContainerQuestions ${isHost ? "isHostQuestionContainer" : ""}`}>
   {questions.map((question) => (
     <CollapsiblePanel 
       data={question} 

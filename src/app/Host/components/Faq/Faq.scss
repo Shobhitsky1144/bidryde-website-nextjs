@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+ 
 
   &Container {
     padding: 0.5rem;
@@ -71,7 +72,12 @@
       gap: 2rem;
     }
   }
+
+ 
 }
+
+
+
 
 
 .btn__FAQ{
@@ -106,3 +112,56 @@
   
 }
 
+
+// host apeg separte style for collapse--
+
+
+.hostHead{
+  font-size: 40px;
+  padding-top: 1rem;
+}
+
+.hostHeads{
+  margin-top: 5rem!important;
+  margin-bottom: 2rem!important;
+
+  .faqContainer {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    width: 100%;
+    background-color: #F6F1F1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 20px;
+    margin: 0px 95px 50px 95px ;
+
+  }
+ 
+}
+
+.isHostQuestionContainer {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+@media  (min-width:481px) and  (max-width:767px) {
+.hostHeads{
+  margin-top: 0!important;
+}
+
+}
+
+@media only screen and   (max-width:480px) {
+  .hostHeads{
+    margin-top: 0!important;
+  }
+  
+  }

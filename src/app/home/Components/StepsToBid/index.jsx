@@ -13,23 +13,24 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 const cardsInfo = [
   {
     image: assets.images.howToBid.illustration_01,
-    firstLine: "Select location and travel dates",
-    secondLine: "",
+    firstLine: "Select location and ",
+    secondLine: "travel dates",
   },
   {
     image: assets.images.howToBid.illustration_02,
-    firstLine: "Choose car and verify yourself",
-    secondLine: "",
+    firstLine: "Choose car and ",
+    secondLine: "verify yourself",
   },
   {
     image: assets.images.howToBid.illustration_03,
-    firstLine: "Score Your Wheels with Your Own Price Tag",
-    secondLine: "",
+    firstLine: "Place your bid and win ",
+    secondLine: "the car at your price",
   },
   {
     image: assets.images.howToBid.illustration_04,
-    firstLine: "Make payment and get the car delivered at your doorstep",
-    secondLine: "",
+    firstLine: "Make payment and get the ",
+    secondLine: "car delivered at your ",
+    thirdLine: " doorstep",
   },
 ];
 

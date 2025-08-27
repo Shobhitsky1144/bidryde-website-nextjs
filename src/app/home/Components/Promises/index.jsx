@@ -132,7 +132,7 @@ const PromisesAndCommitments = () => {
             <h1>Why BidrYde</h1>
             <p>Our Promise and commitments to you</p>
             <div>
-              <Divider />
+              <Divider data={"home"}/>
             </div>
           </div>
 

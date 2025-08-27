@@ -3,12 +3,12 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  padding: 2% 0;
+  padding: 2% 2rem;
 
   &Container {
     background: #f6f1f1;
     width: 90%;
-    padding: 3%;
+    padding: 0 2rem;
     margin: auto;
     border-radius: 20px;
     display: flex;
@@ -23,23 +23,26 @@
       color: black;
 
       h1 {
-        font-family: "Archivo Black";
-        font-weight: 400;
+        // font-family: "Archivo Black";
+        font-weight: 800;
         font-size: 2.5rem;
         text-align: center;
+        letter-spacing: 2px;
       }
 
       p {
-        font-family: "Archivo";
-        font-size: 1.2rem;
-        font-weight: 200;
-        text-align: center;
+           /* font-family: "Archivo"; */
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 0px;
+    text-align: center;
       }
     }
 
     .carousel {
       position: relative;
       width: 100%;
+      margin-top: 1rem;
     }
 
     .trendingOffersContainerCards {
@@ -49,13 +52,18 @@
       gap: 2%;
       transition: transform 0.3s ease-in-out;
       margin: auto;
+
+
+     
     }
 
     .trendingCardContainer {
-      flex: 1 1 calc(48% - 10px);
-      min-width: 150px;
-      max-width: 45%;
-      margin: 1%;
+     
+
+      flex: 1 1 calc(32% - 10px); // 👈 3 cards per row
+      max-width: 32%;
+      min-width: 200px;
+      margin: 1% 0;
       border-radius: 20px;
       background: white;
       display: flex;
@@ -67,6 +75,9 @@
     .offerImage {
       margin-right: 1rem;
       border-radius: 10px;
+
+      width: 127px;
+    height: 146px;
     }
 
     .offerContent {
@@ -74,9 +85,9 @@
       flex-direction: column;
 
       h3 {
-        font-family: "Archivo", sans-serif;
-        font-size: 1.8rem;
-        font-weight: 800;
+        // font-family: "Archivo", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
         color: #276ebc;
       }
 
@@ -85,21 +96,23 @@
         font-size: 1rem;
         font-weight: 300;
         line-height: 1.5;
+        padding: 3px 0px 10px 0px;
       }
 
       .customOfferCode {
-        font-weight: 700;
+        font-weight: 300;
         font-size: 1rem;
-        color: #276ebc;
-        padding: 5px 10px;
+        width: fit-content;
+        padding: 2px 12px;
         background: #e6f2ff;
         border-radius: 5px;
         margin: 8px 0;
+        text-align: center;
       }
 
       .customOfferValidity {
         font-size: 0.9rem;
-        color: gray;
+        // color: gray;
       }
     }
 
@@ -186,6 +199,10 @@
   }
 
   @media (max-width: 480px) {
+
+   
+      padding: 14rem 2rem;
+    
     &Container {
       padding: 15px;
       width: 100%;
@@ -229,5 +246,6 @@
         }
       }
     }
+  
   }
 }

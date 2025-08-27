@@ -41,16 +41,26 @@ const filtersData = {
     type: "Car Type",
     filters: [
       { icon: SearchPageAssets.Hatchback, title: "Hatchback" },
+
       { icon: SearchPageAssets.Sedan, title: "Sedan" },
+      { icon: SearchPageAssets.ECar, title: "EV" },
       { icon: SearchPageAssets.SUV, title: "SUV" },
       { icon: SearchPageAssets.MUV, title: "MUV" },
     ],
   },
   seaterFilters: {
-    type: "Seaters",
+    type: "Seats",
     filters: [
       { icon: SearchPageAssets.SeaterIcon, title: "5 Seater" },
       { icon: SearchPageAssets.SeaterIcon, title: "7 Seater" },
+    ],
+  },
+  carsFuelFilters: {
+    type: "Fuel Type",
+    filters: [
+      { icon: SearchPageAssets.FuelIcon, title: "Petrol" },
+      { icon: SearchPageAssets.FuelIcon, title: "Diesel" },
+      { icon: SearchPageAssets.Eplug, title: "Electric" },
     ],
   },
   transmissionFilters: {
@@ -60,13 +70,22 @@ const filtersData = {
       { icon: SearchPageAssets.AutomaticTransmission, title: "Automatic" },
     ],
   },
-  carsFuelFilters: {
-    type: "Fuel Type",
-    filters: [
-      { icon: SearchPageAssets.FuelIcon, title: "Petrol" },
-      { icon: SearchPageAssets.FuelIcon, title: "Diesel" },
-    ],
-  },
+  // Ratings: {
+  //   type: "Ratings",
+  //   filters: [
+  //     { icon: SearchPageAssets.ManualTransmission, title: "4+ rate" },
+  //     { icon: SearchPageAssets.AutomaticTransmission, title: "3+ rate" },
+  //     { icon: SearchPageAssets.AutomaticTransmission, title: "All" },
+  //   ],
+  // },
+  // AddOns: {
+  //   type: "Add ons",
+  //   filters: [
+  //     { icon: SearchPageAssets.ManualTransmission, title: "FAStag" },
+ 
+  //   ],
+  // },
+
 };
 
 
@@ -282,9 +301,9 @@ function SearchPage() {
             <CloseIcon />
           </div>
           <div className="filterHeader">
-            <p>Filters</p>
+            <p>Filter</p>
             <CssButtonSolid
-              title="reset"
+              title="Reset"
               backgroundColor="#FFFFFF"
               textColor="#276EBC"
               margin="0 1rem 0 1rem"
@@ -300,6 +319,21 @@ function SearchPage() {
               {getFilterComponent(filter)}
             </div>
           ))}
+          <div className="downloadApp">
+         <div>
+          {/* <h4> Car booking is
+only supported on 
+the mobile app</h4>
+
+<button>Download App</button> */}
+         </div>
+         <div>
+          {/* <Image
+          src="../images/serachBg.png"
+          fill
+          /> */}
+         </div>
+          </div>
         </div>
         <div
           className={`carsLayout ${isScreenSmall && showFilter ? "hideElement" : ""

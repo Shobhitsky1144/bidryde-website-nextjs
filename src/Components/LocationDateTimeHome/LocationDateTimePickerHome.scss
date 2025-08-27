@@ -1,12 +1,14 @@
 .homeMainContainer {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 100%;
-  background-color: transparent;
-  padding: 2%; /* Adjusted padding for better spacing */
-  border-radius: 10px;
-  align-items: center;
-  flex-wrap: wrap; /* Added to handle wrapping in small screen sizes */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: 10px 26px 10px 10px;
+  flex-direction: row;
 }
 
 .homeLocationDateContainer {
@@ -156,9 +158,9 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .homeMainContainer {
-    padding: 3%;
-  }
+  // .homeMainContainer {
+  //   padding: 3%;
+  // }
 
   .selectCity {
     width: 540px; /* Maintain original width on larger screens */

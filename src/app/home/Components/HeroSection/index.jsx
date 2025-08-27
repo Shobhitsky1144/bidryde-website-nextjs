@@ -65,7 +65,7 @@ const HeroSection = () => {
           </div>
           <div className="heroSectionContainer__left-bottom">
             <p>Reserve your drive now</p>
-            <LocationDateTimePickerHome actionHandler={handleGetYourCar} />
+            <LocationDateTimePickerHome actionHandler={handleGetYourCar} data="homeSearchBtn" />
           </div>
         </div>
       </div>

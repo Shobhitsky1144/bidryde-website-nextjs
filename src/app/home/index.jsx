@@ -32,7 +32,7 @@ export default function Home() {
         <OperatingZones />
         <Testimonials />
         <Availability />
-        <Faq />
+        <Faq data="home"/>
         <Footer />
         <div className="floatingButton">
           <FloatingButton />

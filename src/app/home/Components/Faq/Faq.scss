@@ -26,9 +26,10 @@
       // max-width: fit-content;
 
       h1 {
-      font-size: 3.175rem;
-        letter-spacing: 2px;
-        font-family: 'Archivo Black';
+      font-size: 40px;
+        letter-spacing: 4px;
+        padding-top: 1rem;
+        // font-family: 'Archivo Black';
       }
 
       p {
@@ -157,4 +158,26 @@
      // margin-bottom: 5px;
     }
   }
+}
+
+
+// home faq
+
+#home{
+
+margin-bottom: 3rem;
+  .faqContainer{
+    width: 85%;
+  }
+  
+}
+
+
+@media screen and (min-width:1439px) {
+  
+
+#home .faqContainer{
+width: 87%;
+}
+
 }

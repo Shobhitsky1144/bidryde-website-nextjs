@@ -61,6 +61,7 @@ function BookNowCard({ onClose }) {
             //   // position: "relative",
               width: "100%",
               height: { lg: 400, xl: 450 },
+              zIndex:9999
             }}
           >
             <Image

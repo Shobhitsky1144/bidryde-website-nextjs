@@ -1,26 +1,41 @@
 .heroSection {
   background-color: #f0f0f0;
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
 .heroSectionContainer {
-  width: 100%;
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: clamp(1rem, 3vw, 3rem);
+  // width: 100%;
+  // max-width: 1800px;
+  // margin: 0 auto;
+  // padding: clamp(1rem, 3vw, 3rem);
+  // display: flex;
+  // position: relative;
+
+
+  width: 94%;
+  /* max-width: 1800px; */
+  margin: 0 4rem;
+padding: 20px 10px;
   display: flex;
   position: relative;
+
+  h1{
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-top: 4rem;
+  }
 }
 
 .heroSectionContainer__left {
-  width: 50%;
+  width: 60%;
   padding: clamp(1rem, 2vw, 3rem);
   display: flex;
   flex-direction: column;
-  gap: clamp(1.5rem, 3vw, 3rem);
+  // gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .heroSectionContainer__left-top {
@@ -45,12 +60,13 @@
 .heroSectionContainer__left-middle {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 2vw, 20px);
+  gap:1rem;
+  padding-top: 2rem;
 }
 
 .heroSectionContainer__left-middle p {
-  font-weight: 500;
-  font-size: clamp(1rem, 1.5vw, 22px);
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .heroSectionContainer__left-middleLogos {
@@ -60,13 +76,14 @@
 }
 
 .heroSectionContainer__left-middleLogos img {
-  width: clamp(120px, 15vw, 200px);
+  width:140px;
   height: auto;
   object-fit: contain;
 }
 
 .heroSectionContainer__left-bottom {
   width: 100%;
+  padding-top: 3rem;
 }
 
 .heading2 {
@@ -123,7 +140,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -132,87 +149,266 @@
 
 .heroSectionContainer__right img {
   width: 100%;
-  max-width: 853px;
-  height: auto;
+  // max-width: 853px;
+  // height: auto;
   object-fit: contain;
 }
 
-@media (max-width: 1024px) {
-  .heroSectionContainer {
-    flex-direction: column;
-  }
+// @media (max-width: 1024px) {
+//   .heroSectionContainer {
+//     flex-direction: column;
+//   }
 
-  .heroSectionContainer__left {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
+//   .heroSectionContainer__left {
+//     width: 100%;
+//     align-items: center;
+//     text-align: center;
+//   }
 
-  .heroSectionContainer__right {
-    position: relative;
-    width: 100%;
-    margin-top: 2rem;
-  }
+//   .heroSectionContainer__right {
+//     position: relative;
+//     width: 100%;
+//     margin-top: 2rem;
+//   }
 
-  .heroSectionContainer__left-middleLogos {
-    justify-content: center;
-  }
+//   .heroSectionContainer__left-middleLogos {
+//     justify-content: center;
+//   }
 
-  .heroSectionContainer__left-bottomWrapper {
-    margin: 0 auto;
-  }
-}
+//   .heroSectionContainer__left-bottomWrapper {
+//     margin: 0 auto;
+//   }
+// }
 
-@media (max-width: 768px) {
-  .heroSectionContainer__left-bottomLeft-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+// @media (max-width: 768px) {
+//   .heroSectionContainer__left-bottomLeft-row {
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
 
-  .heroSectionContainer__left-bottomLeft-rowLeft {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+//   .heroSectionContainer__left-bottomLeft-rowLeft {
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .heroSectionContainer__left {
+//     color: #f0f0f0;
+//   }
+//   .heroSectionContainer {
+//     width: 100%;
+//     max-height: 650px;
+//     max-width: 1800px;
+//     margin: 0 auto;
+//     padding: clamp(1rem, 3vw, 3rem);
+//     display: flex;
+//     position: relative;
+//     background-color: #276ebc;
+//     border-radius: 30px;
+//   }
+
+//   .heroSectionContainer__left-bottom {
+//     background-color: #fff;
+//     color: black;
+//     border-radius: 20px;
+//   }
+
+//   .heroSectionContainer__left h1 {
+//     font-size: xx-large;
+//   }
+
+//   .heroSectionContainer__left p {
+//     font-size: x-large;
+//   }
+//   // .heroSectionContainer__left-middleLogos img {
+//   //   width: 100%;
+//   //   max-width: 150px;
+//   // }
+//   .heroSectionContainer__left-middle {
+//     display: none;
+//   }
+
+//   .heroSectionContainer__right img {
+//     max-width: 300px;
+//   }
+// }
+
 
 @media (max-width: 480px) {
-  .heroSectionContainer__left {
-    color: #f0f0f0;
-  }
-  .heroSectionContainer {
+
+  .heroSection {
+    background-color: #276EBC;
+    overflow: unset;
     width: 100%;
-    max-height: 650px;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: clamp(1rem, 3vw, 3rem);
-    display: flex;
-    position: relative;
-    background-color: #276ebc;
-    border-radius: 30px;
+    .heroSectionContainer {
+      width: 100%;
+      /* max-width: 1800px; */
+      /* margin: 0 4rem; */
+      padding: 20px 10px;
+      display: flex
+  ;
+      position: relative;
+      flex-direction: column;
+      margin: 0;
+      h1{
+        color: #fff;
+        font-size: 60px;
+        text-align: center;
+      }
+      p{
+        color: #fff;
+        font-size: 18px!important;
+        padding: 9px 11px;
+
+      }
+
+      .heroSectionContainer__left {
+        width: 100%;
+        padding: clamp(1rem, 2vw, 3rem);
+        display: flex
+    ;
+        flex-direction: column;
+    }
+    .heroSectionContainer__right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: flex
+  ;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 85%;
+        object-fit: contain;
+        margin-top: 14rem;
+        height: auto;
+    }
   }
 
-  .heroSectionContainer__left-bottom {
-    background-color: #fff;
-    color: black;
-    border-radius: 20px;
-  }
-
-  .heroSectionContainer__left h1 {
-    font-size: xx-large;
-  }
-
-  .heroSectionContainer__left p {
-    font-size: x-large;
-  }
-  // .heroSectionContainer__left-middleLogos img {
-  //   width: 100%;
-  //   max-width: 150px;
-  // }
-  .heroSectionContainer__left-middle {
+  .heroSectionContainer__left-middle{
     display: none;
   }
 
-  .heroSectionContainer__right img {
-    max-width: 300px;
+  .heroSectionContainer__left-bottom p{
+    display: none;
   }
+  .heroSectionContainer__left-bottom{
+    padding-top: 24rem;
+  }
+
+  .homeMainContainer {
+    display: flex;
+box-shadow: 0px 4px 10px 0px #0000001A;
+
+    /* justify-content: space-between; */
+    width: 90%;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    // background-color: #fff;
+    border-radius: 20px;
+    margin-top: 1rem;
+    padding:20px 15px;
+    flex-direction: column;
+    gap: 0rem;
+
+    position: absolute;
+        bottom: -12rem;
+
+        position: absolute;
+bottom: -12rem;
+left: 1.5rem;
+right: 1.5rem;   /* equal margins from both sides */
+margin: 0 auto; /* center horizontally */
+width: auto;    /* content-based width */
+
+
+    .homeLocationDateContainer{
+      align-items: flex-start;
+    }
+}
+  }
+
+  .infoCardHome .titleContainerHome {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .descriptionHome{
+      font-size: 21px;
+    }
+
+    .miniContainerHome{
+justify-content: flex-start;
+margin-bottom: 8px;
+
+    .iconContainerHome{
+      padding-right: 3px;
+    }
+
+    .titleHome{
+      font-size: 18px;
+      color: #505050;
+    }
+    
+  }
+  
+  }
+  .homeTimeMainContainer{
+    width: 100%;
+    
+  }
+  .homelocationMainContainer{
+    width: 100%;
+  }
+}
+
+.availabilityContainer{
+  padding: 0 1rem;
+}
+.availabilityRightImage{
+  display: none;
+}
+
+.availabilityContainerTitle h1 {
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 7px;
+  padding-top: 11rem;
+}
+
+.availability{
+  background-position: center;
+  margin-bottom: 1rem;
+  // background-image: url(../../../../assets/images/Availability/hill.jpeg);
+  background-image: url(../../../../assets/images/Availability/minimalist-photorealistic-desert-road.png);
+  .availabilityContainerTitle p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+    // padding-top: 6rem;
+    padding: 6rem 3px 0rem 3px;
+}
+.availabilityContainerContent{
+  width: 100%;
+  p{
+  text-align: center;
+  font-size: 16px;
+}
+}
+
+}
+.availabilityContainerContentBadges{
+  text-align: center;
+  margin-bottom: 1rem;
+  img{
+    width: 168px!important;
+    height: 100%!important;
+    object-fit: contain;
+  }
+}
+
 }

@@ -24,7 +24,7 @@ function CollapsiblePanel({ data, bgColor = "#F6F1F1" }) {
           role="button"
           tabIndex="0"
         >
-          <h3 style={{fontWeight:'400',color:"#262626",fontSize:'17px'}}>{data.header}</h3>
+          <h3 style={{fontWeight:'400',color:"#262626",fontSize:'16px'}}>{data.header}</h3>
           {isCollapse ? (
             <FaMinusSquare
               style={{ color: "#276EBC", fontSize: "20px", marginRight: "0.2%" }}

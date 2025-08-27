@@ -75,7 +75,7 @@ const SLIDER_MARKS = {
 const BUFFER_TIME = 2;
 const MIN_RENTAL_TIME = 12;
 
-const LocationDateTimePickerHome = ({ actionHandler }) => {
+const LocationDateTimePickerHome = ({ actionHandler,data }) => {
   const [isMobile, setIsMobile] = useState(false);
 
 
@@ -394,7 +394,7 @@ const monthsToShow = useResponsiveValue({ xs: 1,sm:1, md: 2, lg: 3 });
         <div className="homelocationMainContainer">
           <div onClick={handleLocationOpen} style={{ cursor: "pointer" }}>
             <SearchPageHeadingHome
-              icon={<LocationOnIcon fontSize="small" color="primary" />}
+              icon={<LocationOnIcon fontSize="medium" color="primary" />}
               title="Location"
               description={
                 isLocationSelected ? (
@@ -782,7 +782,7 @@ className="popupDropdown"
               // <span className="responsive-text">
               //   {window.innerWidth < 768 ? "Get Your Car" : "Search Cars"}
               // </span>
-              <span className="responsive-text">
+              <span className="responsive-text" >
               {isMobile ? "Get Your Car" : "Search Cars"}
             </span>
             
@@ -790,7 +790,7 @@ className="popupDropdown"
           }
           backgroundColor={isLoading ? "#cccccc" : "#276EBC"} // Grey background when loading
           textColor="#fff"
-          width="130px"
+          width="170px"
           margin="0 0rem 0 0rem"
           weight="normal"
           fontSize="1rem"
