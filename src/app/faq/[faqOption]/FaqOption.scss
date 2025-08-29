@@ -105,11 +105,11 @@
     font-size: 17px; 
     letter-spacing: 1px;
     .breadcrumb {
-      font-size: 31px; 
+      font-size: 28px; 
       letter-spacing: 3px;
     }
     .pageTitle{
-      font-size: 31px;
+      font-size: 28px;
       letter-spacing: 2px;
       color: #26262673;
     }
@@ -133,11 +133,11 @@
 @media screen and (max-width: 400px) {
 
   .breadcrumb {
-    font-size: 25px!important; 
+    font-size: 23px!important; 
     
   }
   .pageTitle{
-    font-size: 25px!important;
+    font-size: 23px!important;
     letter-spacing: 2px;
   }
 
@@ -145,6 +145,21 @@
 
 }
 
+
+@media screen and (max-width: 333px) {
+
+  .breadcrumb {
+    font-size: 17px!important; 
+    
+  }
+  .pageTitle{
+    font-size: 17px!important;
+    letter-spacing: 2px;
+  }
+
+
+
+}
 
 .faqOptionContainerQuestions{
   margin-top:0.8rem;
