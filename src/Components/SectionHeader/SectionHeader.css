@@ -39,7 +39,7 @@
 
 .sectionTitleTextStyling {
     color: var(--Text-black, #262626);
-    font-family: "Archivo black";
+    /* font-family: "Archivo black"; */
     font-size: 50px;
     font-style: normal;
     font-weight: 400;

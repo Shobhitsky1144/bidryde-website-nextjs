@@ -59,17 +59,18 @@
 }
 
 .hostIntroHeader .p1 {
-  font-family: "Inter", sans-serif;
+  // font-family: "Inter", sans-serif;
   font-size: clamp(1rem, 4vw, 18px);
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.5rem;
   text-align:left;
 }
 
 .hostIntroHeader .p2 {
-  font-family: "Krona One", sans-serif;
+  // font-family: "Krona One", sans-serif;
   font-size: clamp(1.5rem, 5vw, 40px);
   line-height: 1.2;
+  font-weight: 500;
 }
 
 .hostIntroIcon {
@@ -268,7 +269,7 @@
 
 .hformSection .p1 {
   color: #fff;
-  font-family: "Inter", sans-serif;
+  // font-family: "Inter", sans-serif;
   // font-size: clamp(1.5rem, 5vw, 3.5rem);
   font-size: 44px;
   font-weight: 600;
@@ -278,9 +279,9 @@
 
 .hformSection .p2 {
   color: #fff;
-  font-family: "Inter", sans-serif;
+  // font-family: "Inter", sans-serif;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 1rem;
   text-align: left;
 }
@@ -349,11 +350,12 @@
 
 .hostSectionHeader h1,
 .hostSectionHeader__ h1 {
-  font-family: "Archivo Black", sans-serif;
+  // font-family: "Archivo Black", sans-serif;
   font-size: clamp(1.5rem, 5vw, 2rem);
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
   font-weight: 400;
+  font-weight: 800;
 }
 
 .hostSectionHeader p,
@@ -422,7 +424,7 @@
 }
 
 .host-card .card-title {
-  font-family: "Archivo Black", sans-serif;
+  // font-family: "Archivo Black", sans-serif;
   font-size: clamp(1.25rem, 2vw, 1.75rem);
   color: #276ebc;
   margin: 0;
@@ -430,7 +432,7 @@
 }
 
 .host-card .card-description {
-  font-family: "Inter", sans-serif;
+  // font-family: "Inter", sans-serif;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
   line-height: 1.6;
   color: #555;

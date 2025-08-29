@@ -44,13 +44,19 @@ const FaqOption = ({ params }) => {
     <div className="faqOption">
       <div className="faqOptionContainer">
         {/* Heading with breadcrumb and title  ,*/}
-        <h1 className="faqHeading">
+        {/* <h1 className="faqHeading">
           <Link href="/faq">
             <span className="breadcrumb">FAQ&apos;s &gt;</span>
           </Link>
-          {/* <span className="pageTitle">{capitalize(params.faqOption)}</span> */}
           <span className="pageTitle">{formatTitle(params.faqOption)}</span>
-        </h1>
+        </h1> */}
+        <h1 className="faqHeading">
+  <Link href="/faq">
+    <span className="breadcrumb">FAQ&apos;s &gt;</span>
+  </Link>
+  <span className="pageTitle">{formatTitle(params.faqOption)}</span>
+</h1>
+
         <div className="faqOptionContainerQuestions">
           {faqData.map((question) => (
             <div className="colored_Item" key={uid(question)}>

@@ -26,9 +26,9 @@
 }
 
 .hFormHeading {
-  font-family: Archivo Black;
+  /* font-family: Archivo Black; */
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 32px;
   letter-spacing: 1.4px;
   text-align: left;

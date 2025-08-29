@@ -82,12 +82,14 @@
 @media (min-width: 481px)  and (max-width:767px){
 
   .faqOption .faqHeading{
-    font-size: 22px; 
+    // font-size: 31px; 
     .breadcrumb {
-      font-size: 22px; 
+      font-size: 31px; 
+      letter-spacing: 3px;
     }
     .pageTitle{
-      font-size: 22px;
+      font-size: 31px;
+      letter-spacing: 3px;
     }
 
   }
@@ -96,16 +98,20 @@
 }
 
 @media screen and (max-width: 480px) {
+
+
+
   .faqOption .faqHeading{
     font-size: 17px; 
     letter-spacing: 1px;
     .breadcrumb {
-      font-size: 22px; 
-      letter-spacing: 1px;
+      font-size: 31px; 
+      letter-spacing: 3px;
     }
     .pageTitle{
-      font-size: 22px;
-      letter-spacing: 1px;
+      font-size: 31px;
+      letter-spacing: 2px;
+      color: #26262673;
     }
 
   }
@@ -127,12 +133,12 @@
 @media screen and (max-width: 400px) {
 
   .breadcrumb {
-    font-size: 18px!important; 
+    font-size: 25px!important; 
     
   }
   .pageTitle{
-    font-size: 18px!important;
-    letter-spacing: 1px;
+    font-size: 25px!important;
+    letter-spacing: 2px;
   }
 
 
@@ -143,3 +149,27 @@
 .faqOptionContainerQuestions{
   margin-top:0.8rem;
 }
+
+
+
+
+
+
+.faqHeading {
+  display: flex;
+  flex-wrap: wrap;   /* break hone par wrap allow karega */
+  gap: 6px;
+  align-items: center;
+}
+
+.faqHeading .breadcrumb {
+  white-space: nowrap; /* FAQ's > kabhi cut na ho */
+  flex-shrink: 0;
+}
+
+.faqHeading .pageTitle {
+  white-space: nowrap;     /* ek word bhi cut na ho */
+  overflow: hidden;        
+  text-overflow: ellipsis; /* (optional) overflow me "..." dikhana ho to */
+}
+
