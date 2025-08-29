@@ -172,19 +172,19 @@
 
 .faqHeading {
   display: flex;
-  flex-wrap: wrap;   /* break hone par wrap allow karega */
+  flex-wrap: wrap; 
   gap: 6px;
   align-items: center;
 }
 
 .faqHeading .breadcrumb {
-  white-space: nowrap; /* FAQ's > kabhi cut na ho */
+  white-space: nowrap; 
   flex-shrink: 0;
 }
 
 .faqHeading .pageTitle {
-  white-space: nowrap;     /* ek word bhi cut na ho */
+  // white-space: nowrap;     
   overflow: hidden;        
-  text-overflow: ellipsis; /* (optional) overflow me "..." dikhana ho to */
+  text-overflow: ellipsis; 
 }
 
