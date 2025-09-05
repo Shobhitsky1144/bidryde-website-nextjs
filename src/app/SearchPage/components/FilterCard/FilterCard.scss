@@ -9,7 +9,7 @@
 
 .filterCardLayout{
     padding: 3%;
-    margin: 2% 0;
+    margin: 0% 0;
     box-shadow: 0px 0px 0px 1px #EEEEEE;
     border-radius: 15px;
 }
@@ -24,7 +24,7 @@
     padding-bottom: 2%;
     // font-family: Archivo;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 00;
     line-height: 17px;
     letter-spacing: 0.02em;
     text-align: left;
@@ -38,4 +38,45 @@
       font-size: 12px;
       line-height: 13px;
     }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .filterCardTitle{
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    
+  }
+  .filterCardLayout{
+   padding: 10px;
+  }
+  .filterHeader{
+    padding: 0;
+    padding-left: 10px;
+    padding-bottom: 2rem;
+  }
+  .filterCard{
+    margin: 0;
+  }
+  .FilterIconLayout > p{
+    font-size: 17px;
+    font-weight:400;
+  }
+  .FilterIconLayout{
+    padding:12px 16px;
+    height: unset!important;;
+    img{
+      width: 40px;
+      height: 30px;
+    }
+  }
+
+  .reduceSize img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+ 
 }

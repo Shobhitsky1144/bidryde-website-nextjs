@@ -17,10 +17,19 @@ import { ConstructionOutlined, LegendToggleTwoTone } from "@mui/icons-material";
 import { Value } from "sass";
 import NoCars from "./components/NoCarsCard";
 import { getLatLong } from "./utils/utils";
+import { BsChevronDown } from "react-icons/bs";
+import { IoIosArrowDown } from "react-icons/io";
+
+
+import Image from "next/image";  
+
+import { MdArrowDropDown, MdOutlineArrowBack } from "react-icons/md";
+
 
 
 import { getCookie } from "cookies-next";
 import BookNowCard from "./components/BookNowCard";
+import { FaArrowLeft } from "react-icons/fa";
 
 const SearchPageAssets = {
   Hatchback: assets.images.searchPage.hatchback,
@@ -34,6 +43,8 @@ const SearchPageAssets = {
   Eplug: assets.images.searchPage.ePlug,
   AutomaticTransmission: assets.images.searchPage.automaticTransmission,
   ManualTransmission: assets.images.searchPage.manualTransmission,
+  fastTag: assets.images.searchPage.fastTag,
+  searchBg:assets.images.searchPage.searchBg
 };
 
 const filtersData = {
@@ -70,21 +81,21 @@ const filtersData = {
       { icon: SearchPageAssets.AutomaticTransmission, title: "Automatic" },
     ],
   },
-  // Ratings: {
-  //   type: "Ratings",
-  //   filters: [
-  //     { icon: SearchPageAssets.ManualTransmission, title: "4+ rate" },
-  //     { icon: SearchPageAssets.AutomaticTransmission, title: "3+ rate" },
-  //     { icon: SearchPageAssets.AutomaticTransmission, title: "All" },
-  //   ],
-  // },
-  // AddOns: {
-  //   type: "Add ons",
-  //   filters: [
-  //     { icon: SearchPageAssets.ManualTransmission, title: "FAStag" },
+  Ratings: {
+    type: "Ratings",
+    filters: [
+      {  title: "4+ rate" },
+      { title: "3+ rate" },
+      { title: "All" },
+    ],
+  },
+  AddOns: {
+    type: "Add ons",
+    filters: [
+      { icon: SearchPageAssets.fastTag, title: "FAStag" },
  
-  //   ],
-  // },
+    ],
+  },
 
 };
 
@@ -102,7 +113,7 @@ function SearchPage() {
   const [isPeakHour, setPeakHour] = useState(false);
 
   const [selectedCarFiltersList, setCarsSelectedTypesFilters] = useState([]);
-  const isScreenSmall = useMediaQuery("(max-width: 960px)");
+  const isScreenSmall = useMediaQuery("(max-width: 1024px)");
   const [showFilter, setShowFilter] = useState(false);
 
   const [showBookNowCard, setShowBookNowCard] = useState(false);
@@ -251,138 +262,389 @@ function SearchPage() {
 
   const getCarsList = () => {
     if (filteredCars.length > 0) {
-      return filteredCars.map((car) => (
-        <CarCard
-          image={car.image}
-          carName={car.name}
-          rating="4.5"
-          bidrydePrice={getDiscountedPrice(mpCalculate(
-            "2024-02-15 10:00:00.000",
-            "2024-02-17 13:00:00.000",
-            car.rates.normalrate,
-            car.rates.peakrate,
-            isPeakHour
-          ), car.rates.bidryde_discount)}
+      return [
+        // sabse pehle ek custom image card
+        // <div className="carCardContainer" key="promo">
+        //   <div className="imgContainer">
+        //     <Image 
+        //       src={assets.images.offer}   // apna image path yaha do
+        //       alt="Promo Banner"  
+        //       className="imgContainer_img" 
+        //       width={200}
+        //       height={300}
+        //     />
+        //   </div>
+        // </div>,
 
-          price={mpCalculate(
-            "2024-02-15 10:00:00.000",
-            "2024-02-17 13:00:00.000",
-            car.rates.normalrate,
-            car.rates.peakrate,
-            isPeakHour
-          )}
-          fuel={car.specifications.fuel}
-          gear={car.specifications.transmis}
-          seat={car.specifications.seater}
-          key={car.id}
+        <div className="carCardContainer" key="promo">
+        <div className="container">
+      <div className="card">
+        {/* Decorative Circles */}
+        <div className="circle circle1"></div>
+        <div className="circle circle2"></div>
+        <div className="circle circle3"></div>
+        <div className="circle circle4"></div>
 
-          originalPrice={car.specifications.segment}
-          onBookNow={openBookNowCardModal}
-        />
-      ));
+        {/* Content */}
+        <h2 className="titless">Diwali Offer</h2>
+
+        <div className="offer-box">
+          <p className="offer-text">20% off on every drive</p>
+
+          <div className="offerdiv">
+          <button className="offer-code">Code: DIW01</button>
+          <p className="validity">valid till 15 November</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>,
+  
+        // baaki normal cars render karo
+        ...filteredCars.map((car) => (
+          <CarCard
+            image={car.image}
+            carName={car.name}
+            rating="4.5"
+            bidrydePrice={getDiscountedPrice(mpCalculate(
+              "2024-02-15 10:00:00.000",
+              "2024-02-17 13:00:00.000",
+              car.rates.normalrate,
+              car.rates.peakrate,
+              isPeakHour
+            ), car.rates.bidryde_discount)}
+            price={mpCalculate(
+              "2024-02-15 10:00:00.000",
+              "2024-02-17 13:00:00.000",
+              car.rates.normalrate,
+              car.rates.peakrate,
+              isPeakHour
+            )}
+            fuel={car.specifications.fuel}
+            gear={car.specifications.transmis}
+            seat={car.specifications.seater}
+            key={car.id}
+            originalPrice={car.specifications.segment}
+            onBookNow={openBookNowCardModal}
+          />
+        ))
+      ];
     } else {
       return <NoCars />;
     }
   };
-
+  
   const handleToggle = () => {
     setShowFilter((prevState) => !prevState);
   };
 
   return (
     <>
-      <Navbar />
-      <div className="SearchPageLayout">
-        <div
-          className={`filtersLayout ${isScreenSmall && !showFilter && "hideElement"
-            }`}
-        >
-          <div className="closeButton" onClick={handleToggle}>
-            <CloseIcon />
-          </div>
-          <div className="filterHeader">
-            <p>Filter</p>
-            <CssButtonSolid
-              title="Reset"
-              backgroundColor="#FFFFFF"
-              textColor="#276EBC"
-              margin="0 1rem 0 1rem"
-              padding="10px 30px"
-              width="0"
-              height="0"
-              fontSize="1rem"
-              onClick={() => resetSelected()}
-            />
-          </div>
-          {Object.values(filtersData).map((filter) => (
-            <div className="filtersList" key={filter.type}>
-              {getFilterComponent(filter)}
-            </div>
-          ))}
-          <div className="downloadApp">
-         <div>
-          {/* <h4> Car booking is
-only supported on 
-the mobile app</h4>
+   {/* {showFilter && */}
+    <Navbar />
+    {/* } */}
 
-<button>Download App</button> */}
-         </div>
-         <div>
-          {/* <Image
-          src="../images/serachBg.png"
-          fill
-          /> */}
-         </div>
-          </div>
+<div className="SearchPageLayout">
+  {/* Filters Section */}
+  {/* {!showFilter && ( */}
+
+  {isScreenSmall ? (
+          showFilter ? (
+    <div className="filtersLayout">
+      <div className="filterParent">
+        <div className="filterHeader">
+          <p>Filter</p>
         </div>
-        <div
-          className={`carsLayout ${isScreenSmall && showFilter ? "hideElement" : ""
-            }`}
-        >
-          <div className="cardHeader">
-            <LocationDateTimePicker actionHandler={fetchCars} />
-            <div className="filtersIcon" onClick={handleToggle}>
-              <TuneIcon />
+        <div className="closeButton" onClick={handleToggle}>
+          <CloseIcon />
+        </div>
+      </div>
+
+      <div className="sortfilterHeader">
+        <p>
+          Sort <MdArrowDropDown size={40} />
+        </p>
+        <div className="reset">
+          <CssButtonSolid
+            title="Reset"
+            backgroundColor="#FFFFFF"
+            textColor="#276EBC"
+            margin="0 1rem 0 1rem"
+            padding="10px 30px"
+            width="0"
+            height="0"
+            fontSize="1rem"
+            onClick={() => resetSelected()}
+          />
+        </div>
+      </div>
+
+      {Object.values(filtersData).map((filter) => (
+        <div className="filtersList" key={filter.type}>
+          {getFilterComponent(filter)}
+        </div>
+      ))}
+
+      <div className="showDownloadImg">
+        <div className="download-container">
+          {/* Left Side */}
+          <div className="download-text">
+            <h2>
+              Car booking is <br /> only supported on <br /> the mobile app
+            </h2>
+            <button className="download-btn">Download the App</button>
+          </div>
+
+          {/* Right Side (Image) */}
+          <div className="download-image">
+            <div className="phone-wrapper">
+              <Image
+                src={SearchPageAssets.searchBg}
+                alt="Phone Mockup"
+                width={100}
+                height={700}
+              />
+
+              <div className="app-screen">
+                <Image
+                  src={assets.images.appwhitelogo}
+                  alt="BidrYde App"
+                  fill
+                  style={{ objectFit: "cover", borderRadius: "20px" }}
+                />
+              </div>
             </div>
           </div>
-          <p className="sideHeaderTextStyling">
-            Cars available for rental in Hyderabad
-          </p>
-          <div>
-            {!isLoading ? (
-              <div
-                className={`carsGridLayout${filteredCars.length == 0 ? " gridAlignCenter" : ""
-                  }`}
-              >
-                {getCarsList()}
+        </div>
+      </div>
+    </div>
+ 
+
+
+
+) : (
+    <div className="carsLayout">
+      <div className="cardHeader">
+        <div className="arrow" onClick={handleToggle}>
+          <MdOutlineArrowBack style={{ fontSize: "37px" }} className="filterIc" />
+        </div>
+
+        <LocationDateTimePicker actionHandler={fetchCars} />
+
+        <div className="filtersIcon" onClick={handleToggle}>
+          <TuneIcon style={{ fontSize: "37px" }} className="filterIc" />
+        </div>
+      </div>
+
+      <div className="headingwebparent">
+        <p className="sideHeaderTextStyling">
+          Cars available for rental in Hyderabad
+        </p>
+        <p className="sorticonweb">
+          <span>Sort by</span>
+          <IoIosArrowDown size={22} className="sorticonwebs" />
+        </p>
+      </div>
+
+      <div>
+        {!isLoading ? (
+          <div
+            className={`carsGridLayout${
+              filteredCars.length === 0 ? " gridAlignCenter" : ""
+            }`}
+          >
+            {getCarsList()}
+          </div>
+        ) : (
+          <Backdrop
+            sx={{
+              color: "#00",
+              zIndex: (theme) => theme.zIndex.drawer + 1,
+              position: "relative",
+              height: "70vh",
+              backgroundColor: "#fff",
+            }}
+            open={isLoading}
+          >
+            <CircularProgress color="inherit" />
+          </Backdrop>
+        )}
+      </div>
+    </div>
+  )
+) : (
+  <>
+    <div className="filtersLayout">
+      <div className="filterParent">
+        <div className="filterHeader">
+          <p>Filter</p>
+        </div>
+        <div className="closeButton" onClick={handleToggle}>
+          <CloseIcon />
+        </div>
+      </div>
+
+      <div className="sortfilterHeader">
+        <p>
+          Sort <MdArrowDropDown size={40} />
+        </p>
+        <div className="reset">
+          <CssButtonSolid
+            title="Reset"
+            backgroundColor="#FFFFFF"
+            textColor="#276EBC"
+            margin="0 1rem 0 1rem"
+            padding="10px 30px"
+            width="0"
+            height="0"
+            fontSize="1rem"
+            onClick={() => resetSelected()}
+          />
+        </div>
+      </div>
+
+      {Object.values(filtersData).map((filter) => (
+        <div className="filtersList" key={filter.type}>
+          {getFilterComponent(filter)}
+        </div>
+      ))}
+
+      <div className="showDownloadImg">
+        <div className="download-container">
+          {/* Left Side */}
+          <div className="download-text">
+            <h2>
+              Car booking is <br /> only supported on <br /> the mobile app
+            </h2>
+            <button className="download-btn">Download the App</button>
+          </div>
+
+          {/* Right Side (Image) */}
+          <div className="download-image">
+            <div className="phone-wrapper">
+              <Image
+                src={SearchPageAssets.searchBg}
+                alt="Phone Mockup"
+                width={100}
+                height={700}
+              />
+
+              <div className="app-screen">
+                <Image
+                  src={assets.images.appwhitelogo}
+                  alt="BidrYde App"
+                  fill
+                  style={{ objectFit: "cover", borderRadius: "20px" }}
+                />
               </div>
-            ) : (
-              <Backdrop
-                sx={{
-                  color: "#00",
-                  zIndex: (theme) => theme.zIndex.drawer + 1,
-                  position: "relative",
-                  height: "70vh",
-                  backgroundColor: "#fff",
-                }}
-                open={isLoading}
-              >
-                <CircularProgress color="inherit" />
-              </Backdrop>
-            )}
+            </div>
           </div>
         </div>
       </div>
-      <div className="floatingButton">
-        <FloatingButton />
+    </div>
+
+    <div className="carsLayout">
+      <div className="cardHeader">
+        <div className="arrow" onClick={handleToggle}>
+          <MdOutlineArrowBack style={{ fontSize: "37px" }} className="filterIc" />
+        </div>
+
+        <LocationDateTimePicker actionHandler={fetchCars} />
+
+        <div className="filtersIcon" onClick={handleToggle}>
+          <TuneIcon style={{ fontSize: "37px" }} className="filterIc" />
+        </div>
       </div>
+
+      <div className="headingwebparent">
+        <p className="sideHeaderTextStyling">
+          Cars available for rental in Hyderabad
+        </p>
+        <p className="sorticonweb">
+          <span>Sort by</span>
+          <IoIosArrowDown size={22} className="sorticonwebs" />
+        </p>
+      </div>
+
+      <div>
+        {!isLoading ? (
+          <div
+            className={`carsGridLayout${
+              filteredCars.length === 0 ? " gridAlignCenter" : ""
+            }`}
+          >
+            {getCarsList()}
+          </div>
+        ) : (
+          <Backdrop
+            sx={{
+              color: "#00",
+              zIndex: (theme) => theme.zIndex.drawer + 1,
+              position: "relative",
+              height: "70vh",
+              backgroundColor: "#fff",
+            }}
+            open={isLoading}
+          >
+            <CircularProgress color="inherit" />
+          </Backdrop>
+        )}
+      </div>
+    </div>
+</>
+)}
+</div>
+
+
+
+      
+      <div className="floatingButton downlodImg">
+
+  
+        <FloatingButton />
+
+
+
+       
+      </div>
+
+      <div className="download-container downlodparent">
+      {/* Left Side */}
+      <div className="download-text">
+        <h2>
+          Car booking is <br /> only supported on <br /> the mobile app
+        </h2>
+        <button className="download-btn">Download the App</button>
+      </div>
+
+      {/* Right Side (Image) */}
+      <div className="download-image">
+      {/* Phone Mockup Image */}
+      <div className="phone-wrapper">
+        <Image 
+          src={SearchPageAssets.searchBg} 
+          alt="Phone Mockup"
+          width={100}
+          height={700}
+        />
+
+        {/* App Screen inside Phone */}
+        <div className="app-screen">
+        <Image
+              src={assets.images.appwhitelogo}
+              alt="BidrYde App"
+              fill
+
+              style={{ objectFit: "cover", borderRadius: "20px" }}
+            />
+        
+        </div>
+      </div>
+    </div>
+    </div>
       <Modal
         open={showBookNowCard}
-      // sx={{
-      //   display: "flex",
-      //   justifyContent: "center",
-      //   alignItems: "center",
-      // }}
+   
       >
         <BookNowCard onClose={closeBookNowCardModal} />
       </Modal>

@@ -16,6 +16,10 @@
   height: 330px;
 }
 
+.cardWedge1, .cardWedge{
+display: none;
+}
+
 .cardContainer {
   width: 100%;
   display: flex;
@@ -271,3 +275,516 @@
 //     width: 240px;
 //   }
 // }
+
+
+
+ @media screen and (max-width: 480px){
+  .cardWedge1, .cardWedge{
+    display: block;
+    }
+  .stepsToBid{
+    // width: 90%;
+  }
+  .stepsToBidContainer .stepsToBidCardContainer{
+
+    width: 100%;
+  
+  }  
+
+  .carImgg{
+    width: 200px!important;
+  }
+    .stepsToBid{
+      margin-top: 2rem;
+      .cardcontainer{
+        // width: 59vw;
+      }
+    }
+    .leftShadow .fourth{
+      margin-top: 5rem!important;
+      padding-bottom: 3rem;
+    }
+    .leftShadow .cardContainer{
+      // margin-top: 7rem!important;
+    }
+   .leftShadow{
+    margin-top: 2rem;
+    margin-right: 10px;
+    // margin-left: 9rem;
+    .secondImgFirstLine{
+      padding-top: 33px!important;
+    }
+    .cardImage{
+      // margin-left: 5rem;
+    }
+   }
+  
+    .rightShadow{
+      box-shadow: 26px 0 3px 0px #bedeff;
+      width: 72%;
+    }
+  
+    .stepsToBidContainer .stepsToBidAnimation {
+      position: relative;
+      width: 100%;
+      // height: 1450px;
+      height: 1220px;
+      display: flex
+  ;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1rem;
+      margin-top: 9rem;
+       margin-bottom: 0;
+  
+       svg{
+        height: 100%;
+       }
+  }
+  
+  
+    .leftAlign{
+      // margin-left: -4rem!important;
+    }
+    
+    .cardHeading{
+      font-size: 5rem;
+      top: -1rem;
+      font-weight: 500;
+  
+    }
+    .translateLeft{
+      left: 1.5rem;
+    }
+    .translateRight{
+      transform: unset;
+      top: 0.7rem!important;
+      right: 12rem;
+    }
+  
+    .card h6{
+      font-size: 17px;
+    }
+    
+    .stepsToBidContainer{
+      max-width: unset;
+      width: 100%;
+      .card{
+        width:100%;
+      }
+      .SectionTitle {
+  max-width: unset;
+  margin: 0 1.5rem;
+      h1{
+        text-align: center;
+        font-size: 56px;
+      }
+      p{
+        text-align: center;
+        font-size: 26px;
+        padding-bottom: 5px;
+      }
+    }
+    }
+    .divider .line{
+      height: 8px!important;
+    }
+    .divider .circle{
+      width: 15px!important;
+      height: 15px!important;
+    }
+
+    .leftAlign,.rightAlign{
+      width:260px!important;
+      flex-direction: unset!important;
+    }
+
+    .stepsToBidContainer .SectionTitle p{
+      font-size: 14px!important;
+    }
+
+
+    .stepsToBidCardContainer {
+      width: 100%;
+      left: 0 !important;
+      display: flex;
+      flex-direction: column; /* yaha sahi karo */
+    }
+    
+    .stepsToBidCardContainer .leftAlign {
+      align-self: flex-start; /* left side me chipka rahega */
+    }
+    
+    .stepsToBidCardContainer .rightAlign {
+      align-self: flex-end; /* right side me chale jaayega */
+    }
+    .leftShadow{
+      margin: 20px 10px 20px 0;
+    }
+ 
+    .leftAlign{
+      width: 60vw!important;
+    }
+.rightAlign{
+  width:60vw !important;
+}
+  .cardImage{
+
+    width: 168px;
+    margin-left: 2rem;
+  }
+
+  .card{
+    height: 258px;
+  }
+  .cardContainer{
+    margin-top: 46px;
+  }
+  .PromisesAndCommitments{
+    margin-top: 8rem!important;
+  }
+  .stepsToBidContainer .stepsToBidCardContainer{
+    gap: 10rem;
+  }
+  .stepsToBidContainer .stepsToBidAnimation{
+    margin:0;
+
+height: 1478px;
+    width: unset;
+    margin-top: 9rem;
+
+    margin-left: 16px;
+  }
+
+  .card{
+    padding: 30px 9px;
+    h6{
+      font-size: 16px;
+      
+      padding-left: 10px;
+      
+    }
+  }
+
+  .leftShadow .secondImgFirstLine{
+    padding-top: 0!important;
+  }
+
+
+  .cardcontainer{
+    position: relative;
+  }
+  .cardWedge{
+  position: absolute;
+  top: 3rem;
+  left: -6rem;
+  z-index: -1;
+  }
+
+  .cardWedge1{
+    position: absolute;
+    top: 3rem;
+    z-index: -1;
+    right: -8rem;
+    /* left: 5rem; */
+  }
+
+  
+
+    }
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  
+  .stepsToBid{
+    // width: 90%;
+  }
+  .stepsToBidContainer .stepsToBidCardContainer{
+
+    width: 100%;
+    gap: 5rem!important;
+  
+  }  
+
+  .carImgg{
+    width: 200px!important;
+  }
+    .stepsToBid{
+      margin-top: 2rem;
+      .cardcontainer{
+        // width: 59vw;
+      }
+    }
+    .leftShadow .fourth{
+      margin-top: 5rem!important;
+      padding-bottom: 3rem;
+    }
+    .leftShadow .cardContainer{
+      // margin-top: 7rem!important;
+    }
+   .leftShadow{
+    margin-top: 2rem;
+    // margin-left: 9rem;
+    .secondImgFirstLine{
+      padding-top: 33px!important;
+    }
+    .cardImage{
+      // margin-left: 5rem;
+    }
+   }
+  
+    .rightShadow{
+      box-shadow: 26px 0 3px 0px #bedeff;
+      width: 72%;
+    }
+  
+    .stepsToBidContainer .stepsToBidAnimation {
+      position: relative;
+      width: 100%;
+      // height: 1450px;
+      height:1250px;
+      display: flex
+  ;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1rem;
+      margin-top: 9rem;
+       margin-bottom: 0;
+  
+       svg{
+        height: 100%;
+       }
+  }
+  
+  
+    .leftAlign{
+      // margin-left: -4rem!important;
+    }
+    
+    .cardHeading{
+      font-size: 5rem;
+      top: -1rem;
+      font-weight: 500;
+  
+    }
+    .translateLeft{
+      left: 0.5rem;
+    }
+    .translateRight{
+      transform: unset;
+      top: 0rem !important;
+      right: 0rem;
+      left: -3rem;
+      text-align: left;
+    }
+  
+    .card h6{
+      font-size: 15px;
+    }
+    
+    .stepsToBidContainer{
+      max-width: unset;
+      width: 90%;
+      .card{
+        width:100%;
+      }
+      .SectionTitle {
+  max-width: unset;
+  margin: 0;
+      h1{
+        text-align: center;
+        font-size: 56px;
+      }
+      p{
+        text-align: center;
+        font-size: 26px;
+        padding-bottom: 5px;
+      }
+    }
+    }
+    .divider .line{
+      height: 8px!important;
+    }
+    .divider .circle{
+      width: 15px!important;
+      height: 15px!important;
+    }
+
+    .leftAlign,.rightAlign{
+      width:260px!important;
+      flex-direction: unset!important;
+    }
+
+    .stepsToBidContainer .SectionTitle p{
+      font-size: 15px!important;
+    }
+
+
+    .stepsToBidCardContainer {
+      width: 100%;
+      left: 0 !important;
+      display: flex;
+      flex-direction: column; /* yaha sahi karo */
+    }
+    
+    .stepsToBidCardContainer .leftAlign {
+      align-self: flex-start; /* left side me chipka rahega */
+    }
+    
+    .stepsToBidCardContainer .rightAlign {
+      align-self: flex-end; /* right side me chale jaayega */
+    }
+    .leftShadow{
+      margin: 20px 0;
+    }
+ 
+    .leftAlign{
+      width: 48vw!important;
+    }
+.rightAlign{
+  width:48vw !important;
+}
+  .cardImage{
+
+    width: 168px;
+    margin-left: 1rem;
+  }
+
+  .card{
+    height: 258px;
+  }
+  .cardContainer{
+    margin-top: 46px;
+  }
+  .PromisesAndCommitments{
+    margin-top: 0rem!important;
+  }
+  .stepsToBidContainer .stepsToBidCardContainer{
+    gap: 1rem;
+  }
+  .stepsToBidContainer .stepsToBidAnimation{
+    margin-left:34px;
+
+
+    width: unset;
+    margin-top: 12rem;
+  }
+
+  .card{
+    padding: 30px 17px;
+  }
+
+  .leftShadow .secondImgFirstLine{
+    padding-top: 0!important;
+  }
+    }
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.carImgg{
+  width: 200px!important;
+}
+  .stepsToBid{
+    margin-top: 2rem;
+  }
+  .leftShadow .fourth{
+    margin-top: 5rem!important;
+    padding-bottom: 3rem;
+  }
+  .leftShadow .cardContainer{
+    // margin-top: 7rem!important;
+  }
+ .leftShadow{
+  margin-top: 2rem;
+  .secondImgFirstLine{
+    padding-top: 33px!important;
+  }
+  .cardImage{
+    margin-left: 5rem;
+  }
+ }
+
+  .rightShadow{
+    box-shadow: 26px 0 3px 0px #bedeff;
+  }
+
+  .stepsToBidContainer .stepsToBidAnimation {
+    position: relative;
+    width: 100%;
+    height: 1450px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 9rem;
+     margin-bottom: 0;
+
+     svg{
+      height: 100%;
+     }
+}
+
+
+  .leftAlign{
+    margin-left: -7rem!important;
+  }
+  .rightAlign{
+    width:80vw!important;
+  }
+  .cardHeading{
+    font-size: 5rem;
+    top: 1rem;
+    font-weight: 500;
+
+  }
+  .translateLeft{
+    left: 0.5rem;
+  }
+  .translateRight{
+    transform: unset;
+    top: 0.7rem!important;
+    right: 19rem;
+  }
+
+  .card h6{
+    font-size: 23px;
+  }
+  
+  .stepsToBidContainer{
+    max-width: unset;
+    .card{
+      width: 346px;
+    }
+    .SectionTitle {
+max-width: unset;
+margin: 0;
+    h1{
+      text-align: center;
+      font-size: 56px;
+    }
+    p{
+      text-align: center;
+      font-size: 26px;
+      padding-bottom: 5px;
+    }
+  }
+  }
+  .divider .line{
+    height: 8px!important;
+  }
+  .divider .circle{
+    width: 15px!important;
+    height: 15px!important;
+  }
+  }
+
+
+  
+  
+
+ 

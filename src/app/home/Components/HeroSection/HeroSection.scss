@@ -235,12 +235,18 @@ padding: 20px 10px;
 // }
 
 
-@media (max-width: 480px) {
-
+@media (max-width: 767px) {
+  .homebtn button{
+    width: 100% !important;
+    font-size: 20px !important;
+    margin :0 13px!important;
+  }
+ 
   .heroSection {
     background-color: #276EBC;
     overflow: unset;
     width: 100%;
+    border-radius: 20px;
     .heroSectionContainer {
       width: 100%;
       /* max-width: 1800px; */
@@ -301,6 +307,8 @@ padding: 20px 10px;
   }
 
   .homeMainContainer {
+    border-bottom: 7px solid #0F4582!important;
+    
     display: flex;
 box-shadow: 0px 4px 10px 0px #0000001A;
 
@@ -412,3 +420,75 @@ margin-bottom: 8px;
 }
 
 }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .homebtn button{
+    width: 100% !important;
+    font-size: 18px !important;
+    margin :10px 13px!important;
+  }
+  .homeMainContainer{
+    gap: 0 !important;
+    padding: 10px 0!important;
+  }
+.heroSectionContainer__left {
+  width: 59%;
+  padding: clamp(1rem, 2vw, 3rem);
+  display: flex
+;
+  flex-direction: column;
+}
+
+
+.heroSectionContainer__right img {
+  width: 349px;
+  /* object-fit: contain; */
+  /* height: auto; */
+  height: 442px;
+  object-fit: unset;
+}
+
+.homeMainContainer {
+  flex-direction: column;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  gap: 0rem;
+  padding: 10px 0px 10px 0px;
+}
+}
+
+@media (max-width: 480px) {
+
+  .heroSection .heroSectionContainer .heroSectionContainer__left{
+    padding: 10px   10px;
+  }
+  .heroSection .heroSectionContainer p{
+    color: #fff;
+    font-size: 16px !important;
+    padding: 9px 0px;
+    text-align: center;
+  }
+  }
+  
+
+  @media (max-width: 400px) {
+    .heroSection .heroSectionContainer h1{
+      font-size: 50px;
+    }
+
+    .heroSection .heroSectionContainer p{
+      color: #fff;
+      font-size: 13px !important;
+      padding: 9px 0px;
+      text-align: center;
+    }
+
+    .heroSection .infoCardHome .titleContainerHome .descriptionHome{
+      font-size: 17px;
+    }
+
+
+
+  }

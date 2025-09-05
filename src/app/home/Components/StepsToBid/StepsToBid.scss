@@ -81,182 +81,184 @@
 }
 
 // Medium Desktop (1200px - 1399px)
-@media (max-width: 1399px) {
-  .stepsToBid {
-    height: 1330px;
+// @media (max-width: 1399px) {
+//   .stepsToBid {
+//     height: 1330px;
 
-    &Container {
-      width: 80%;
+//     &Container {
+//       width: 80%;
 
-      .SectionTitle {
-        h1 {
-          font-size: 2.75rem;
-        }
+//       .SectionTitle {
+//         h1 {
+//           font-size: 2.75rem;
+//         }
 
-        p {
-          font-size: 1.25rem;
-        }
-      }
+//         p {
+//           font-size: 1.25rem;
+//         }
+//       }
 
-      .stepsToBidAnimation {
-        height: 1260px;
-        margin-top: 3.5rem;
+//       .stepsToBidAnimation {
+//         height: 1260px;
+//         margin-top: 3.5rem;
 
-        svg {
-          height: 85%;
-        }
-      }
+//         svg {
+//           height: 85%;
+//         }
+//       }
 
-      .stepsToBidCardContainer {
-        gap: 1.75rem;
-      }
+//       .stepsToBidCardContainer {
+//         gap: 1.75rem;
+//       }
 
-      .cardcontainer {
-        width: 60vw;
-      }
-    }
-  }
-}
+//       .cardcontainer {
+//         width: 60vw;
+//       }
+//     }
+//   }
+// }
 
-// Small Desktop (1024px - 1199px)
-@media (max-width: 1199px) {
-  .stepsToBid {
-    height: 1200px;
+// // Small Desktop (1024px - 1199px)
+// @media (max-width: 1199px) {
+//   .stepsToBid {
+//     height: 1200px;
 
-    &Container {
-      width: 85%;
+//     &Container {
+//       width: 85%;
 
-      .SectionTitle {
-        h1 {
-          font-size: 2.5rem;
-        }
+//       .SectionTitle {
+//         h1 {
+//           font-size: 2.5rem;
+//         }
 
-        p {
-          font-size: 1.125rem;
-        }
-      }
+//         p {
+//           font-size: 1.125rem;
+//         }
+//       }
 
-      .stepsToBidAnimation {
-        height: 1100px;
-        margin-top: 2rem;
+//       .stepsToBidAnimation {
+//         height: 1100px;
+//         margin-top: 2rem;
 
-        svg {
-          height: 80%;
-        }
-      }
+//         svg {
+//           height: 80%;
+//         }
+//       }
 
-      .stepsToBidCardContainer {
-        gap: 1.5rem;
-        left: 12%;
-      }
+//       .stepsToBidCardContainer {
+//         gap: 1.5rem;
+//         left: 12%;
+//       }
 
-      .cardcontainer {
-        width: 55vw;
-      }
-    }
-  }
-}
+//       .cardcontainer {
+//         width: 55vw;
+//       }
+//     }
+//   }
+// }
 
-// Tablet (768px - 1023px)
-@media (max-width: 1023px) {
-  .stepsToBid {
-    height: auto;
-    min-height: 100vh;
-    padding: 2rem 0;
+// // Tablet (768px - 1023px)
+// @media (max-width: 1023px) {
+//   .stepsToBid {
+//     height: auto;
+//     min-height: 100vh;
+//     padding: 2rem 0;
 
-    &Container {
-      width: 90%;
+//     &Container {
+//       width: 90%;
 
-      .SectionTitle {
-        margin: 0 auto 2rem;
-        text-align: center;
+//       .SectionTitle {
+//         margin: 0 auto 2rem;
+//         text-align: center;
 
-        h1 {
-          font-size: 2.25rem;
-        }
+//         h1 {
+//           font-size: 2.25rem;
+//         }
 
-        p {
-          font-size: 1rem;
-        }
-      }
+//         p {
+//           font-size: 1rem;
+//         }
+//       }
 
-      .stepsToBidAnimation {
-        height: auto;
-        margin: 2rem 0;
+//       .stepsToBidAnimation {
+//         height: auto;
+//         margin: 2rem 0;
 
-        svg {
-          height: auto;
-          max-height: 600px;
-        }
-      }
+//         svg {
+//           height: auto;
+//           max-height: 600px;
+//         }
+//       }
 
-      .stepsToBidCardContainer {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin: 2rem auto;
-        gap: 2rem;
-      }
+//       .stepsToBidCardContainer {
+//         position: relative;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         margin: 2rem auto;
+//         gap: 2rem;
+//       }
 
-      .cardcontainer {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-      }
+//       .cardcontainer {
+//         width: 100%;
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 1.5rem;
+//       }
 
-      .rightAlign {
-        flex-direction: column;
-      }
+//       .rightAlign {
+//         flex-direction: column;
+//       }
 
-      .svgPath {
-        width: 70%;
-      }
-    }
-  }
-}
+//       .svgPath {
+//         width: 70%;
+//       }
+//     }
+//   }
+// }
 
-// Mobile (max-width: 767px)
-@media (max-width: 767px) {
-  .stepsToBid {
-    padding: 1rem;
+// // Mobile (max-width: 767px)
+// @media (max-width: 767px) {
+//   .stepsToBid {
+//     padding: 1rem;
 
-    &Container {
-      width: 95%;
+//     &Container {
+//       width: 95%;
 
-      .SectionTitle {
-        margin-bottom: 1.5rem;
+//       .SectionTitle {
+//         margin-bottom: 1.5rem;
 
-        h1 {
-          font-size: 2rem;
-        }
+//         h1 {
+//           font-size: 2rem;
+//         }
 
-        p {
-          font-size: 0.875rem;
-        }
-      }
+//         p {
+//           font-size: 0.875rem;
+//         }
+//       }
 
-      .stepsToBidAnimation {
-        margin: 2rem 0;
+//       .stepsToBidAnimation {
+//         margin: 2rem 0;
 
-        svg {
-          max-height: 400px;
-        }
-      }
+//         svg {
+//           max-height: 400px;
+//         }
+//       }
 
-      .stepsToBidCardContainer {
-        margin: 1rem auto;
-        gap: 1rem;
-      }
+//       .stepsToBidCardContainer {
+//         margin: 1rem auto;
+//         gap: 1rem;
+//       }
 
-      .cardcontainer {
-        gap: 1rem;
-      }
+//       .cardcontainer {
+//         gap: 1rem;
+//       }
 
-      .svgPath {
-        width: 100%;
-      }
-    }
-  }
-}
+//       .svgPath {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+

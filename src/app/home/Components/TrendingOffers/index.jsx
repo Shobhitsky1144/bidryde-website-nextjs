@@ -10,7 +10,7 @@ import offer2 from "@/assets/images/TrendingOffers/offer2.png";
 const TrendingOffers = () => {
   const [trendingOffers, setTrendingOffers] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [cardsPerSlide, setCardsPerSlide] = useState(3); // 👈 default 3 cards per slide
+  const [cardsPerSlide, setCardsPerSlide] = useState(3);
 
   const staticOffers = [
     {
@@ -28,9 +28,16 @@ const TrendingOffers = () => {
       photo_url: offer2,
     },
     {
-      title: "Holiday Special",
+      title: "Special Offer",
       content: "25% off on every drive",
-      code: "HOL01",
+      code: "SPC01",
+      validity: "valid till 15 November",
+      photo_url: offer2,
+    },
+    {
+      title: "Mega Offer",
+      content: "40% off on every drive",
+      code: "MEG01",
       validity: "valid till 15 November",
       photo_url: offer2,
     },
@@ -39,11 +46,10 @@ const TrendingOffers = () => {
   useEffect(() => {
     setTrendingOffers(staticOffers);
 
-    // Adjust cards per slide based on screen width
     const updateCardsPerSlide = () => {
       if (window.innerWidth < 768) setCardsPerSlide(1);
       else if (window.innerWidth < 1024) setCardsPerSlide(2);
-      else setCardsPerSlide(3); // 👈 show 3 cards on large screens
+      else setCardsPerSlide(3);
     };
 
     updateCardsPerSlide();
@@ -58,9 +64,26 @@ const TrendingOffers = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
   };
 
+  const goToPrevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
   useEffect(() => {
     const interval = setInterval(goToNextSlide, 3000);
     return () => clearInterval(interval);
+  }, [totalSlides]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "ArrowRight") {
+        goToNextSlide();
+      } else if (e.key === "ArrowLeft") {
+        goToPrevSlide();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [totalSlides]);
 
   return (
@@ -73,43 +96,37 @@ const TrendingOffers = () => {
         </div>
 
         <div className="carousel">
-          <div className="trendingOffersContainerCards">
-            {trendingOffers
-              .slice(
-                currentSlide * cardsPerSlide,
-                currentSlide * cardsPerSlide + cardsPerSlide
-              )
-              .map((offer, index) => (
-                <div className="trendingCardContainer" key={index}>
-                  <Image
-                    src={offer.photo_url}
-                    alt={offer.title}
-                    className="offerImage"
-                    width={180}
-                    height={210}
-                  />
-                  <div className="offerContent">
-                    <h3>{offer.title}</h3>
-                    <p>{offer.content}</p>
-                    <p className="customOfferCode">Code: {offer.code}</p>
-                    <p className="customOfferValidity">{offer.validity}</p>
-                  </div>
+          <div
+            className="carouselTrack"
+            style={{
+              transform: `translateX(-${currentSlide * 100}%)`,
+            }}
+          >
+            {trendingOffers.map((offer, index) => (
+              <div
+                className="trendingCardContainer"
+                key={index}
+                style={{
+                  flex: `0 0 ${100 / cardsPerSlide}%`,
+                  margin: "2px 8px", // horizontal spacing
+                }}
+              >
+                <Image
+                  src={offer.photo_url}
+                  alt={offer.title}
+                  className="offerImage"
+                  width={180}
+                  height={210}
+                />
+                <div className="offerContent">
+                  <h3>{offer.title}</h3>
+                  <p className="offer_desc">{offer.content}</p>
+                  <p className="customOfferCode">Code: {offer.code}</p>
+                  <p className="customOfferValidity">{offer.validity}</p>
                 </div>
-              ))}
+              </div>
+            ))}
           </div>
-
-          <div className="dots">
-  {(totalSlides > 1 && !(cardsPerSlide === 3 && trendingOffers.length <= 3)) && (
-    Array.from({ length: totalSlides }).map((_, i) => (
-      <span
-        key={i}
-        className={`dot ${i === currentSlide ? "active" : ""}`}
-        onClick={() => setCurrentSlide(i)}
-      ></span>
-    ))
-  )}
-</div>
-
         </div>
       </div>
     </div>

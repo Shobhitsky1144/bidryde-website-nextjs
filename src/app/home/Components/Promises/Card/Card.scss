@@ -3,8 +3,10 @@
   align-items: center;
   background-color: #d4e9ff;
   border-radius: 20px;
-  max-width: 100%;
-  min-height: 27.25rem; // Default to 420px for mobile
+  // max-width: 100%;
+
+width: 100%;
+  min-height: 23rem; // Default to 420px for mobile
   font-family: "Archivo", sans-serif;
   text-align: left;
   position: relative;
@@ -70,143 +72,84 @@
 }
 
 @media (max-width: 1920px) {
-  .promiseCard {
-    max-width: 450px;
-    min-height: 420px;
-  }
+  // .promiseCard {
+  //   max-width: 450px;
+  //   min-height: 420px;
+  // }
 }
 
-@media (max-width: 1400px) {
-  .promiseCard {
-    max-width: 420px;
-    min-height: 400px;
-  }
-  .PromisesAndCommitments {
-    margin-top: 3.5rem;
-    width: 100vw;
-    max-width: 100vw;
-    justify-content: center;
-    background-color: #276ebc;
+// @media (max-width: 1400px) {
+//   .promiseCard {
+//    width: 92%;
+   
+//   }
+// }
 
-    &Container {
-      padding: 1.4rem 2.1rem;
-      gap: 1.4rem;
-    }
+// @media (max-width: 968px) {
+//   .promiseCard {
+//     display: block;
+//     max-width: 100%;
+//     min-height: 400px;
+//     font-family: "Archivo", sans-serif;
+//     text-align: left;
 
-    .scrollControllers {
-      gap: 0.7rem;
+//     &Container {
+//       width: 100%;
+//       padding: 1rem 1.5rem;
+//     }
 
-      button {
-        padding: 0.35rem;
-      }
-    }
+//     img {
+//       height: auto;
+//       width: 8rem;
+//     }
+//   }
 
-    &Right {
-      gap: 1.4rem;
-      .SectionTitle {
-        h1 {
-          font-size: 2.19rem;
-        }
-        p {
-          font-size: 0.91rem;
-        }
-      }
-      .CardSection {
-        gap: 1.4rem;
-      }
-    }
+//   .PromisesAndCommitments {
+//     margin-top: 3rem;
+//     justify-content: center;
 
-    .swiper {
-      margin-left: 42px;
-      margin-right: 28px;
-    }
+//     &Container {
+//       padding: 1.2rem 1.8rem;
+//       gap: 1rem;
+//     }
 
-    .scrollControllers {
-      padding-top: 52.5px;
-      margin-left: 2.28rem;
-      margin-right: 2.1rem;
-    }
+//     .scrollControllers {
+//       gap: 0.5rem;
+//       button {
+//         padding: 0.3rem;
+//       }
+//     }
 
-    .SectionTitle {
-      margin-left: -45.5%;
-    }
-  }
+//     &Right {
+//       gap: 1rem;
+//       .SectionTitle {
+//         h1 {
+//           font-size: 1.8rem;
+//         }
+//         p {
+//           font-size: 0.85rem;
+//         }
+//       }
+//       .CardSection {
+//         gap: 1rem;
+//       }
+//     }
 
-  .CardSection {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+//     .swiper {
+//       margin-left: 20px;
+//       margin-right: 20px;
+//     }
+//   }
 
-  .CardSection::-webkit-scrollbar {
-    display: none;
-  }
-}
+//   .CardSection {
+//     -ms-overflow-style: none;
+//     scrollbar-width: none;
+//   }
 
-@media (max-width: 968px) {
-  .promiseCard {
-    display: block;
-    max-width: 100%;
-    min-height: 400px;
-    font-family: "Archivo", sans-serif;
-    text-align: left;
-
-    &Container {
-      width: 100%;
-      padding: 1rem 1.5rem;
-    }
-
-    img {
-      height: auto;
-      width: 8rem;
-    }
-  }
-
-  .PromisesAndCommitments {
-    margin-top: 3rem;
-    justify-content: center;
-
-    &Container {
-      padding: 1.2rem 1.8rem;
-      gap: 1rem;
-    }
-
-    .scrollControllers {
-      gap: 0.5rem;
-      button {
-        padding: 0.3rem;
-      }
-    }
-
-    &Right {
-      gap: 1rem;
-      .SectionTitle {
-        h1 {
-          font-size: 1.8rem;
-        }
-        p {
-          font-size: 0.85rem;
-        }
-      }
-      .CardSection {
-        gap: 1rem;
-      }
-    }
-
-    .swiper {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  }
-
-  .CardSection {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .CardSection::-webkit-scrollbar {
-    display: none;
-  }
-}
+//   .CardSection::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
 
 @media (max-width: 768px) {
   .promiseCard {

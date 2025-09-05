@@ -88,7 +88,7 @@
     min-width: 8rem;
 
     .locationCardContainer {
-      width: 150px;
+      width: 170px;
     }
 
     &Container {
@@ -111,11 +111,16 @@
 @media screen and (max-width: 480px) {
   .locationCard {
     min-width: 6rem;
-
+z-index: 9999;
     &Container {
-      width: 100%;
-      padding: 0.5rem;
-      margin: 2px auto;
+
+      padding: 1rem 4.5rem;
+      margin: 2px 0rem;
+      box-shadow: 0px 4px 10px 0px #0000001A;
+      width: 170px;
+      // width: 100%;
+      // padding: 0.5rem;
+      // margin: 2px auto;
 
       img {
         width: 3rem;
@@ -126,4 +131,17 @@
       }
     }
   }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.locationCardContainer img{
+  // width: 7rem!important;
+}
+.locationCard{
+  min-width: unset;
+}
+
 }

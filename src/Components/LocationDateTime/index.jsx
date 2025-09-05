@@ -12,7 +12,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
 
 import { CssButtonOutline, CssButtonSolid } from "../CssButton";
-import { Divider, InputLabel, MenuItem, Modal, Select } from "@mui/material";
+import { Divider, InputLabel, MenuItem, Modal, Select, useMediaQuery, useTheme } from "@mui/material";
 import { useEffect } from "react";
 
 import SearchPageHeading from "../SearchPageHeading";
@@ -20,6 +20,28 @@ import { getLatLong, getLocations } from "@/app/SearchPage/utils/utils";
 import { useRouter } from "next/navigation";
 
 import { setCookie, getCookie } from "cookies-next";
+
+function useResponsiveValue(values) {
+    
+  const theme = useTheme();
+  
+
+
+  // MUI breakpoints order: xs < sm < md < lg < xl
+  const matches = {
+    xl: useMediaQuery(theme.breakpoints.up("xl")),
+    lg: useMediaQuery(theme.breakpoints.up("lg")),
+    md: useMediaQuery(theme.breakpoints.up("md")),
+    sm: useMediaQuery(theme.breakpoints.up("sm")),
+    xs: true, // default fallback
+  };
+
+  if (matches.xl && values.xl !== undefined) return values.xl;
+  if (matches.lg && values.lg !== undefined) return values.lg;
+  if (matches.md && values.md !== undefined) return values.md;
+  if (matches.sm && values.sm !== undefined) return values.sm;
+  return values.xs;
+}
 
 const SLIDER_MARKS = {
   0: "12:00 AM",
@@ -61,6 +83,8 @@ const LocationDateTimePicker = ({ actionHandler }) => {
   const [tempStartTime, setTempStartTime] = useState(null);
   const [endTime, setEndTime] = useState(null);
   const [tempEndTime, setTempEndTime] = useState(null);
+
+  const monthsToShow = useResponsiveValue({ xs: 1,sm:1, md: 2, lg: 3 });
 
   const getValidDate = (d, type) => {
     if (type == "start") {
@@ -363,7 +387,7 @@ const LocationDateTimePicker = ({ actionHandler }) => {
       <div className="locationMainContainer">
         <div onClick={handleLocationOpen}>
           <SearchPageHeading
-            icon={<LocationOnIcon fontSize="small" color="primary" />}
+            icon={<LocationOnIcon fontSize="small" color="primary" className="LocationOnIcon" />}
             title="Location"
             description={`${area} , ${city}`}
           />
@@ -379,22 +403,53 @@ const LocationDateTimePicker = ({ actionHandler }) => {
         >
           <div className="locationOptionsContainer">
             <div
-              style={{
-                padding: "0 2%",
-              }}
+            
             >
               <InputLabel
                 htmlFor="city"
-                style={{ marginTop: "1rem", marginBottom: "1rem" }}
+                style={{
+                  marginTop: "1rem",
+                  marginBottom: "0.3rem",
+                  color: "#000000", // Black color for label text
+                  fontSize: "1rem",
+                }}
               >
                 {" "}
-                Please Select City :{" "}
+                 Select City
               </InputLabel>
               <Select
                 id="city"
+                className="popupDropdown"
                 value={city}
                 onChange={handleCityChange}
-                sx={{ width: "300px" }}
+                IconComponent={(props) => (
+                  <div
+                    {...props}
+                    style={{
+                      position: "relative",
+                      marginLeft: "10px",
+                      marginRight: "10px",
+                      marginTop: "7px",
+                      width: "16px",
+                      height: "10px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 0,
+                        height: 0,
+                        borderLeft: "8px solid transparent",
+                        borderRight: "8px solid transparent",
+                        borderTop: "10px solid #276EBC",
+                        borderRadius: "3px 3px 0 0",
+                      }}
+                    />
+                  </div>
+                )}
+                sx={{
+                  width: "100%",
+                  borderRadius: "8px",
+                }}
               >
                 {CitiesList.map((option, index) => (
                   <MenuItem key={index} value={option} disabled={index != 0}>
@@ -407,16 +462,49 @@ const LocationDateTimePicker = ({ actionHandler }) => {
             <div>
               <InputLabel
                 htmlFor="area"
-                style={{ marginTop: "1rem", marginBottom: "1rem" }}
+                style={{
+                  marginTop: "1rem",
+                  marginBottom: "0.3rem",
+                  color: "#000000",
+                  fontSize: "1rem",
+                }}
               >
                 {" "}
-                Please SelectArea :{" "}
+                 Select Hub 
               </InputLabel>
               <Select
+              className="popupDropdown"
                 id="area"
                 value={temparea || area}
                 onChange={handleAreaChange}
-                sx={{ width: "300px" }}
+                IconComponent={(props) => (
+                  <div
+                    {...props}
+                    style={{
+                      position: "relative",
+                      marginLeft: "10px",
+                      marginRight: "10px",
+                      marginTop: "7px",
+                      width: "16px",
+                      height: "10px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 0,
+                        height: 0,
+                        borderLeft: "8px solid transparent",
+                        borderRight: "8px solid transparent",
+                        borderTop: "10px solid #276EBC",
+                        borderRadius: "3px 3px 0 0",
+                      }}
+                    />
+                  </div>
+                )}
+                sx={{
+                  width: "100%",
+                  borderRadius: "8px",
+                }}
               >
                 {AreasList.map((option, index) => (
                   <MenuItem key={index} value={option}>
@@ -425,28 +513,36 @@ const LocationDateTimePicker = ({ actionHandler }) => {
                 ))}
               </Select>
             </div>
-            <div className="ModalButtonContainer" style={{ margin: "5% 0" }}>
-              <CssButtonOutline
-                title="Cancel"
-                backgroundColor="#FFFFFF"
-                textColor="#276EBC"
-                margin={!isMobile ? "0 1.3rem 0 0" : "0 0 0 0"}
-                fontSize="1rem"
-                width="140px"
-                height="38px"
-                border="1px solid #276EBC"
-                onClick={() => handleLocationCancel()}
-              />
-              <CssButtonSolid
-                title="Okay"
-                backgroundColor="#276EBC"
-                textColor="#fff"
-                fontSize="0.8rem"
-                width="140px"
-                height="38px"
-                border="1px solid #276EBC"
-                onClick={() => handleLocationClose()}
-              />
+            <div className="ModalButtonContainer"   style={{
+                  display: "flex",
+                  justifyContent: "end",
+                  gap: "19px", // Space between buttons
+                  marginTop: "1.5rem",
+                }}>
+               <CssButtonOutline
+                  title="Cancel"
+                  backgroundColor="#FFFFFF"
+                  textColor="#276EBC"
+                  fontSize="1rem"
+                  borderRadius="9px"
+                  width="100px"
+                  height="42px"
+                  fontWeight="normal"
+                  border="1px solid #276EBC"
+                  onClick={() => handleLocationCancel()}
+                />
+                <CssButtonSolid
+                  title="Ok"
+                  backgroundColor="#276EBC"
+                  textColor="#fff"
+                  fontSize="1rem"
+                  borderRadius="9px"
+                  fontWeight="normal"
+                  width="100px"
+                  height="42px"
+                  border="1px solid #276EBC"
+                  onClick={() => handleLocationClose()}
+                />
             </div>
           </div>
         </Modal>
@@ -461,33 +557,76 @@ const LocationDateTimePicker = ({ actionHandler }) => {
             alignItems: "center",
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              zIndex: 1000,
-              backgroundColor: "#ffffff",
-              borderRadius: "10px",
-              padding: "1%",
-              height: "90vh",
-              overflowY: "scroll",
-            }}
-          >
+        
+        <div
+        className="datepickerParent"
+          style={{
+            position: "absolute",
+            zIndex: 1000,
+            backgroundColor: "#ffffff",
+            boxShadow: "1px 1px 1px 1px #EFEFEF",
+            borderRadius: "20px",
+            padding: "2%",
+            outline:'none',
+            // height: isMobile ? "90vh" : "80vh",
+            maxHeight: "1000px",
+            overflowY: "scroll",
+            // width: isMobile ? "90%" : "auto",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+           
+          }}
+        >
             <DateRange
               ranges={tempDateRange || dateRange}
+              showMonthAndYearPickers={true}
               onChange={handleDateRangeSelect}
               staticRanges={defaultStaticRanges}
-              showMonthAndYearPickers={true}
+       
               minDate={getMinDate()}
               maxDate={getMaxDate()}
-              months={3}
+              months={monthsToShow}
               // months={isMobile ? 1 : 2}
               direction="horizontal"
               color="#276ebc"
-              className="popupdaterange"
-              startDatePlaceholder="Start Date"
-              endDatePlaceholder="End Date"
+              // className="popupdaterange"
+              // startDatePlaceholder="Start Date"
+              // endDatePlaceholder="End Date"
+
+
+           
+
+              renderMonthAndYear={(month, date) => (
+                <div
+                  className="rdrMonthName"
+                  data-month={format(date, "MMMM")} 
+                >
+                  {format(date, "MMMM")}
+                </div>
+              )}
+
+              
             />
-            <div style={{ margin: "10px" }}>
+              <div
+                  style={{
+                    display: "flex",
+                    flexDirection: isMobile ? "column" : "row",
+                    justifyContent: "space-between",
+                    margin: "10px",
+                    gap: isMobile ? "20px" : "50px",
+                    marginTop: "30px", // Added more space between calendar and sliders
+                  }}
+                >
+            <div 
+            style={{
+              flex: 1,
+              // fontFamily: "Archivo",
+              fontWeight: "400",
+              fontSize: "14px",
+
+            }}
+            >
               <label>Start Time:</label>
               
               <Slider
@@ -498,10 +637,15 @@ const LocationDateTimePicker = ({ actionHandler }) => {
                 onChange={(value) => handleSliderChange(value, "start")}
                 tipFormatter={handleSliderTooltip}
                 marks={getSlideMarks("start")}
-                style={{ margin: "5% 0" }}
+                style={{ margin: "2% 0" }}
               />
             </div>
-            <div style={{ margin: "10px" }}>
+            <div  style={{
+                      flex: 1,
+                      fontFamily: "Archivo",
+                      fontWeight: "400",
+                      fontSize: "14px",
+                    }}>
               <label>End Time:</label>
               <Slider
                 min={0}
@@ -511,33 +655,44 @@ const LocationDateTimePicker = ({ actionHandler }) => {
                 onChange={(value) => handleSliderChange(value, "end")}
                 tipFormatter={handleSliderTooltip}
                 marks={getSlideMarks("end")}
-                style={{ margin: "5% 0" }}
+                style={{ margin: "2% 0" }}
               />
             </div>
+            </div>
+            <div
+                style={{
+                  display: "flex",
+                  justifyContent: "end",
+                  marginTop: "30px", // Increased margin top
+                  marginBottom: "20px", // Added margin bottom
+                  gap: "1rem",
+                }}
+              >
+                <CssButtonOutline
+                  title="Cancel"
+                  backgroundColor="#FFFFFF"
+                  textColor="#276EBC"
+                  margin="0"
+                  fontSize="1rem"
+                  width="100px"
+                  height="45px"
+                  borderRadius="11px"
+                  border="1px solid #276EBC"
+                  onClick={() => handleDateCancel()}
+                />
+                <CssButtonSolid
+                  title="Ok"
+                  backgroundColor="#276EBC"
+                  textColor="#FFFFFF"
+                  fontSize="1rem"
+                  width="100px"
+                  height="45px"
+                                    borderRadius="11px"
 
-            <div className="ModalButtonContainer">
-              <CssButtonOutline
-                title="Cancel"
-                backgroundColor="#FFFFFF"
-                textColor="#276EBC"
-                margin="0 0.8rem 0 0.8rem"
-                fontSize="1rem"
-                width="200px"
-                height="38px"
-                border="1px solid #276EBC"
-                onClick={() => handleDateCancel()}
-              />
-              <CssButtonSolid
-                title="Okay"
-                backgroundColor="#276EBC"
-                textColor="#fff"
-                fontSize="0.8rem"
-                width="200px"
-                height="38px"
-                border="1px solid #276EBC"
-                onClick={() => handleDateClose()}
-              />
-            </div>
+                  border="1px solid #276EBC"
+                  onClick={() => handleDateClose()}
+                />
+              </div>
           </div>
         </Modal>
 
@@ -548,34 +703,37 @@ const LocationDateTimePicker = ({ actionHandler }) => {
                 fontSize="small"
                 color="primary"
                 style={{ marginRight: "11px" }}
+                className="searchPageTimeLeft" 
               />
             }
             title="Start Date & Time"
             description={formatDate(dateRange[0].startDate, "start")}
           />
-          <div style={{ paddingLeft: "10px", paddingRight: "10px" }}>
+          <div style={{ paddingLeft: "10px", paddingRight: "10px" }} className="arrowparent">
             {" "}
-            <ArrowForwardIcon color="primary" fontSize="small" />{" "}
+            <ArrowForwardIcon color="primary" fontSize="small" className="searchPageTime arrowIc"/>{" "}
           </div>
           <SearchPageHeading
-            icon={<WatchLaterIcon fontSize="small" color="primary" />}
+            icon={<WatchLaterIcon fontSize="small" color="primary" className="searchPageTime" />}
             title="End Date & Time"
             description={formatDate(dateRange[0].endDate, "end")}
           />
         </div>
       </div>
-      <CssButtonSolid
+
+      <div className="search_btn"> <CssButtonSolid
         title="Modify Search"
         backgroundColor="#276EBC"
         textColor="#fff"
-        margin="0 1rem  1rem"
-        padding="7px 30px"
+        margin="0 0rem 0 0rem"
+        padding="8px 30px"
         fontSize="1rem"
         border="1px solid #276EBC"
-        width="100%"
+        width="200px"
         height="20%"
         onClick={handleGetCar}
-      />
+      /></div>
+     
     </div>
   );
 };

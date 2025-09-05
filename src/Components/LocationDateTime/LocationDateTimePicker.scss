@@ -1,35 +1,34 @@
 .mainContainer {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 93%;
   background-color: #ffffff;
-  padding: 1%;
+  padding: 15px 10px;
   border-radius: 10px;
   align-items: center;
 }
 
 .locationMainContainer {
-  width: 20%;
+  width: 18%;
   cursor: pointer;
 }
 
 .locationOptionsContainer {
-  position: absolute;
-
-  z-index: 1000;
-  background-color: #ffffff;
-  box-shadow: 1px 1px 1px 1px #cfcfcf;
+  :focus-visible {
+    outline: none!important;
+    border: none!important;
+  }
+  
+  width: 100%;
+  max-width: 500px;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
-  padding: 1%;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
 }
 
 .timeMainContainer {
-  width: 40%;
+  width: 46%;
   cursor: pointer;
 }
 
@@ -69,11 +68,297 @@
   }
 
   .ModalButtonContainer {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     margin-top: 10%;
+  }
+}
+
+
+.popupDropdown {
+  border-radius: 12px;
+  // border:1px solid rgb(39, 110, 188);
+  .MuiOutlinedInput-input {
+    padding: 12px 12px !important; /* apne hisaab se adjust karo */
+    box-sizing: border-box;
+    border:unset!important;
+    outline:unset!important;
+  
+  }
+  }
+  
+
+
+  @media screen and (max-width: 390px) {
+    .datepickerParent{
+      width: 94%!important;
+      padding: 0!important;
+    }
+    
+    
+    }
+
+    .timeMainContainer {
+      // width: 90%;
+      // margin: 2% 0;
+    }
+  
+
+
+    /* Increase rc-slider track and rail thickness */
+.rc-slider-rail {
+  height: 8px !important;   // default ~4px hota hai
+  background-color: #e0e0e0; // rail color (optional)
+  border-radius: 6px;
+}
+
+.rc-slider-track {
+  height: 8px !important;
+  background-color: #276EBC; // active track color (blue)
+  border-radius: 6px;
+}
+
+.rc-slider-handle {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: -7px !important; // center align handle on thick bar
+  border: 2px solid #276EBC;
+}
+
+.rdrDateDisplayWrapper{
+  display: none;
+}
+
+
+/* Calendar styles */
+.rdrDateDisplayWrapper {
+  display: none;
+}
+
+
+
+.rdrYearPicker {
+  display: block;
+}
+
+.rdrMonthAndYearPickers{
+  color: #276ebc!important;
+  font-size: 20px;
+}
+/* Month and Year Picker Styles */
+.rdrMonthAndYearPickers select {
+  pointer-events: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: clamp(6px, 1.5vw, 10px) clamp(15px, 2.5vw, 30px);
+  border-radius: 4px;
+  outline: 0;
+  color: #276ebc!important;
+  font-family: "archivo", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-weight: 500;
+}
+
+.rdrMonthAndYearPickers select:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* Navigation Buttons */
+.rdrNextPrevButton {
+  background: #ffffff;
+  width: clamp(28px, 4vw, 40px);
+  height: clamp(28px, 4vw, 40px);
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.rdrNextPrevButton:hover {
+  background: #999a9c;
+}
+
+
+
+/* Navigation Arrows */
+.rdrNextButton i {
+  margin: 0 0 0 clamp(5px, 1vw, 10px);
+  border-width: clamp(4px, 0.5vw, 6px) clamp(4px, 0.5vw, 6px)
+    clamp(4px, 0.5vw, 6px) clamp(6px, 0.8vw, 10px);
+  border-color: transparent transparent transparent #276ebc;
+  transform: translate(clamp(3px, 0.5vw, 5px), 0);
+}
+
+.rdrPprevButton i {
+  border-width: clamp(4px, 0.5vw, 6px) clamp(6px, 0.8vw, 10px)
+    clamp(4px, 0.5vw, 6px) clamp(4px, 0.5vw, 6px);
+  border-color: transparent #276ebc transparent transparent;
+  transform: translate(clamp(-3px, -0.5vw, -5px), 0);
+}
+
+/* Month Name */
+.rdrMonthName {
+
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff !important;
+  padding: clamp(8px, 1.5vw, 20px);
+  background-color: #276ebc;
+  height: clamp(32px, 4vw, 38px);
+  border-radius: clamp(4px, 0.8vw, 6.2px);
+  width: fit-content;
+  margin: auto;
+  font-weight:normal;
+  font-size: clamp(0.875rem, 1.2vw, 14px);
+}
+
+/* Slider styles */
+.rc-slider-track {
+  background-color: #276ebc;
+  height: clamp(3px, 0.5vw, 4px);
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 768px) {
+  .rdrMonthAndYearPickers select {
+    padding: 6px 15px;
+    font-size: 1rem;
+  }
+
+  .rdrNextPrevButton {
+    width: 32px;
+    height: 32px;
+  }
+
+  .rdrMonthName {
+    padding: 8px 15px;
+    height: 32px;
+    font-size: 0.875rem;
+  }
+}
+
+
+/* Large screens */
+@media screen and (min-width: 1440px) {
+  .rdrMonthAndYearPickers select {
+    padding: 10px 30px;
+    font-size: 1.3rem;
+  }
+
+  .rdrNextPrevButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rdrMonthName {
+    padding: 0 20px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .rdrNextPrevButton {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .rdrMonthAndYearPickers select {
+    min-height: 44px;
+  }
+}
+
+.rdrMonthName {
+  font-size:14px;
+}
+
+
+
+
+
+/* LocationDateTimePicker.scss */
+
+/* Sab months ka background remove kar do */
+.rdrMonthName {
+  background: none !important;
+}
+.rdrMonthsVertical .rdrMonthName,
+.rdrMonthsHorizontal .rdrMonthName {
+  color: rgb(39, 110, 188) !important; /* apna desired background */
+  // border-radius: 6px;
+  // padding: 4px;
+}
+
+/* Sirf current month ka background dikhao */
+.rdrMonthsVertical > div:first-child .rdrMonthName,
+.rdrMonthsHorizontal > div:first-child .rdrMonthName {
+  background-color: rgb(39, 110, 188) !important; /* apna desired background */
+  color:#fff !important; 
+  border-radius: 6px;
+  padding:15px;
+}
+
+
+.rdrMonthAndYearWrapper{
+  height: 97px;
+}
+
+
+.rdrMonthPicker {
+  display: none!important;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .LocationOnIcon{
+    font-size: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .timeMainContainer .searchPageTimeLeft, .timeMainContainer .searchPageTime{
+  
+    font-size: 15px!important;
+    
+  }
+  .rdrMonthAndYearPickers select {
+    padding: 4px 10px;
+    // font-size: 0.875rem;
+    font-size: 23px;
+  }
+
+  .rdrNextPrevButton {
+    width: 28px;
+    height: 28px;
+  }
+
+  .rdrMonthName {
+    padding: 6px 12px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+
+  .rc-slider-track {
+    height: 3px;
+  }
+}
+
+
+.locationOptionsContainer {
+  &:focus-visible {
+    outline: none !important;
+    border: none !important;
   }
 }
 

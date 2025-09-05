@@ -1,4 +1,7 @@
 import appLogo from "./appLogo.png";
+import democar from './democar.png';
+import offer from './offer.png'
+import appwhitelogo from './appwhitelogo.png';
 import appLogoMobile from "./appLogoMobile.png";
 import heroBgMobile from "./heroBgMobile.png";
 import heroBgWeb from "./heroBgWeb.png";
@@ -7,6 +10,8 @@ import GoogleButton from "./Google download button.png";
 import WhatsappButton from "./whatsapp icon.png";
 import MenuIcon from "./menu-icon.png";
 import nofoundmobileimg from "./nofoundmobileimg.png";
+
+import offerImg from './offerImg.png'
 
 import iphoneImage from  "./iphoneImage.png"
 
@@ -87,8 +92,14 @@ import {
   automaticTransmission,
   manualTransmission,
   NoCarsImage,
-  // iPhoneImage,
-  BookNowCardBackground
+  fastTag,
+  searchBg,
+  BookNowCardBackground,
+
+  graySeaterIcon,
+  grayFuelIcon,
+  grayGearIcon
+
 } from "./SearchPage";
 
 import {
@@ -113,6 +124,10 @@ import feePolicyImg from "./feePolicy";
 
 export const images = {
   appLogo,
+  offer,
+  offerImg,
+  democar,
+  appwhitelogo,
   appLogoMobile,
   heroBgMobile,
   nofoundmobileimg,
@@ -212,8 +227,15 @@ export const images = {
     automaticTransmission,
     manualTransmission,
     NoCarsImage,
+    fastTag,
+    searchBg,
     // iPhoneImage,
-    BookNowCardBackground
+    BookNowCardBackground,
+
+
+    graySeaterIcon,
+    grayFuelIcon,
+    grayGearIcon
   },
   howToBid: {
     car,

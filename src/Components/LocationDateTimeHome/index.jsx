@@ -394,7 +394,7 @@ const monthsToShow = useResponsiveValue({ xs: 1,sm:1, md: 2, lg: 3 });
         <div className="homelocationMainContainer">
           <div onClick={handleLocationOpen} style={{ cursor: "pointer" }}>
             <SearchPageHeadingHome
-              icon={<LocationOnIcon fontSize="medium" color="primary" />}
+              icon={<LocationOnIcon fontSize="medium" color="primary"  />}
               title="Location"
               description={
                 isLocationSelected ? (
@@ -630,9 +630,9 @@ className="popupDropdown"
                   renderMonthAndYear={(month, date) => (
                     <div
                       className="rdrMonthName"
-                      data-month={format(date, "MMMM")} // 👈 sirf month inject
+                      data-month={format(date, "MMMM")} 
                     >
-                      {format(date, "MMMM")} {/* Sirf month name */}
+                      {format(date, "MMMM")}
                     </div>
                   )}
                 />
@@ -765,8 +765,10 @@ className="popupDropdown"
           justifyContent: "center",
           alignItems: "center",
         }}
+        className="homebtn"
       >
         <CssButtonSolid
+     
           title={
             isLoading ? (
               <div
@@ -783,7 +785,7 @@ className="popupDropdown"
               //   {window.innerWidth < 768 ? "Get Your Car" : "Search Cars"}
               // </span>
               <span className="responsive-text" >
-              {isMobile ? "Get Your Car" : "Search Cars"}
+            Search Cars
             </span>
             
             )

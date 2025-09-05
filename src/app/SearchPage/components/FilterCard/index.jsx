@@ -6,7 +6,8 @@ function FilterCard({ title, filters, handleOnTapCarsTypes, selectedFilters, isN
 
 
   return (
-    <div className="filterCard"><p  className="filterCardTitle" >{title}</p>
+    <div className="filterCard">
+      <p  className="filterCardTitle" >{title}</p>
       <div className="filterCardLayout">
         <div className="filterIconGrid">
           {filters.map((item) => {

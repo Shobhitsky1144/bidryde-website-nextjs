@@ -70,7 +70,7 @@
 
   .swiper {
     margin-left: 42px;
-    margin-right: 97px;
+    margin-right: 37px;
     position: relative;
     overflow: hidden;
     list-style: none;
@@ -82,6 +82,7 @@
   .scrollControllers {
     padding-top: 75px;
     padding-left: 1rem;
+    padding-right: 1rem;
     // margin-left: 3.25rem;
     // margin-right: 3rem;
   }
@@ -101,234 +102,444 @@
   }
 
   // Media Queries for responsiveness
-  @media (min-width: 1200px) and (max-width: 1400px) {
-    .PromisesAndCommitments {
-      margin-top: 3.5rem; // Reduce margin by 30%
-      width: 100vw;
-      max-width: 100vw;
-      justify-content: center;
-      background-color: #276ebc;
+ 
 
-      &Container {
-        width: 100%;
-        display: flex;
-        padding: 1.4rem 2.1rem 2.8rem 2.8rem; // Reduce padding by 30%
-        height: 100%;
-        gap: 1.4rem; // Reduce gap by 30%
+  // @media screen and (max-width: 960px) {
+  //   .PromisesAndCommitments {
+  //     margin-top: 5rem;
+  //     width: 100vw;
+  //     max-width: 100vw;
+  //     background-color: white;
 
-        .scrollControllers {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 0.7rem; // Reduce gap by 30%
+  //     &Container {
+  //       width: 100%;
+  //       display: flex;
+  //       padding: 1rem 1rem 1rem 1rem;
+  //       height: 100%;
+  //       gap: 2rem;
+  //       background-color: white;
 
-          button {
-            padding: 0.35rem; // Reduce padding by 30%
-            color: white;
-            border: 4px solid white;
-            border-radius: 99px;
-          }
-        }
+  //       .scrollControllers {
+  //         display: none;
 
-        &Right {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1.4rem; // Reduce gap by 30%
-          overflow: hidden;
+  //         button {
+  //           padding: 0.5rem;
+  //           color: white;
+  //           border: 2px solid white;
+  //           border-radius: 99px;
+  //         }
+  //       }
 
-          .SectionTitle {
-            color: white;
-            max-width: fit-content;
-            text-align: start;
-            margin-left: -62.5% !important;
+  //       &Right {
+  //         display: flex;
+  //         flex-direction: column;
+  //         gap: 3rem;
+  //         overflow: hidden;
 
-            h1 {
-              font-size: 2.19rem; // Reduce font size by 30%
-              font-family: "Archivo Black";
-            }
+  //         .SectionTitle {
+  //           color: black;
+  //           max-width: fit-content;
+  //           margin: 10px auto;
+  //           text-align: center;
 
-            p {
-              font-weight: 300;
-              font-size: 0.91rem; // Reduce font size by 30%
-            }
-          }
+  //           h1 {
+  //             font-weight: 500;
+  //             margin-bottom: 1rem;
+  //             font-family: "Archivo", sans-serif;
+  //           }
 
-          .CardSection {
-            display: flex;
-            gap: 1.4rem; // Reduce gap by 30%
-            justify-content: center;
-            max-width: 100%;
-            overflow: auto;
-          }
-        }
+  //           p {
+  //             margin-bottom: 5px;
+  //           }
+  //         }
 
-        &Top {
-          color: white;
-        }
-      }
+  //         .CardSection {
+  //           display: flex;
+  //           gap: 2rem;
+  //           max-width: 100%;
+  //           overflow: auto;
+  //         }
+  //       }
 
-      .swiper {
-        margin-left: 42px; // Reduce left margin by 30%
-        margin-right: 28px; // Reduce right margin by 30%
-        position: relative;
-        overflow: hidden;
-        list-style: none;
-        padding: 0;
-        z-index: 1;
-        display: block;
-      }
+  //       &Top {
+  //         color: white;
+  //       }
+  //     }
+  //   }
 
-      .scrollControllers {
-        padding-top: 52.5px; // Reduce padding-top by 30%
-        margin-left: 2.28rem; // Reduce left margin by 30%
-        margin-right: 2.1rem; // Reduce right margin by 30%
-      }
+  //   // ColorCarousel.module.scss
 
-      .SectionTitle {
-        // Reduce margin-left by 30%
-      }
-    }
+  //   .dot-indicators {
+  //     display: flex;
+  //     justify-content: center;
+  //     margin-top: 20px;
+  //     color: white;
+  //     background-color: white;
 
-    .CardSection {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
+  //     .dot {
+  //       width: 8px;
+  //       height: 10px;
+  //       background-color: #ccc;
+  //       border-radius: 50%;
+  //       margin: 0 5px;
+  //       cursor: pointer;
+  //       transition: background-color 0.3s ease;
 
-    .CardSection::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 960px) {
-    .PromisesAndCommitments {
-      margin-top: 5rem;
-      width: 100vw;
-      max-width: 100vw;
-      background-color: white;
-
-      &Container {
-        width: 100%;
-        display: flex;
-        padding: 1rem 1rem 1rem 1rem;
-        height: 100%;
-        gap: 2rem;
-        background-color: white;
-
-        .scrollControllers {
-          display: none;
-
-          button {
-            padding: 0.5rem;
-            color: white;
-            border: 2px solid white;
-            border-radius: 99px;
-          }
-        }
-
-        &Right {
-          display: flex;
-          flex-direction: column;
-          gap: 3rem;
-          overflow: hidden;
-
-          .SectionTitle {
-            color: black;
-            max-width: fit-content;
-            margin: 10px auto;
-            text-align: center;
-
-            h1 {
-              font-weight: 500;
-              margin-bottom: 1rem;
-              font-family: "Archivo", sans-serif;
-            }
-
-            p {
-              margin-bottom: 5px;
-            }
-          }
-
-          .CardSection {
-            display: flex;
-            gap: 2rem;
-            max-width: 100%;
-            overflow: auto;
-          }
-        }
-
-        &Top {
-          color: white;
-        }
-      }
-    }
-
-    // ColorCarousel.module.scss
-
-    .dot-indicators {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      color: white;
-      background-color: white;
-
-      .dot {
-        width: 8px;
-        height: 10px;
-        background-color: #ccc;
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-
-        &.active {
-          background-color: #276ebc;
-          width: 50px;
-          border-radius: 30px;
-        }
-      }
-    }
-  }
+  //       &.active {
+  //         background-color: #276ebc;
+  //         width: 50px;
+  //         border-radius: 30px;
+  //       }
+  //     }
+  //   }
+  // }
 
   // Additional responsiveness for smaller screens
-  @media screen and (max-width: 768px) {
-    .PromisesAndCommitments {
-      margin-top: 4rem;
-      &Container {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1.5rem;
-      }
+  // @media screen and (max-width: 768px) {
+  //   .PromisesAndCommitments {
+  //     margin-top: 4rem;
+  //     &Container {
+  //       flex-direction: column;
+  //       padding: 1rem;
+  //       gap: 1.5rem;
+  //     }
 
-      .CardSection {
-        flex-direction: column;
-      }
+  //     .CardSection {
+  //       flex-direction: column;
+  //     }
 
-      .SectionTitle {
-        margin-left: 0;
-        text-align: center;
-      }
+  //     .SectionTitle {
+  //       margin-left: 0;
+  //       text-align: center;
+  //     }
+  //   }
+  // }
+
+  // @media screen and (max-width: 480px) {
+  //   .PromisesAndCommitments {
+  //     &Container {
+  //       padding: 1rem;
+  //     }
+
+  //     .scrollControllers {
+  //       padding-top: 40px;
+  //     }
+
+  //     .SectionTitle h1 {
+  //       font-size: 1.8rem;
+      
+  //     }
+
+  //     .CardSection {
+  //       gap: 1rem;
+  //       padding: 0 1rem;
+  //     }
+  //   }
+  // }
+}
+
+// @media screen and (max-width: 480px) {
+//   .PromisesAndCommitments{
+//   background-color: #fff;
+  
+  
+//   }
+//   .testimonialsContainer{
+//     padding: 0 2rem!important;
+//   }
+//   .testimonialCard p{
+//     padding: 0!important;
+//     font-size: 15px!important;
+  
+//   }
+//   .testimonialCardContainerProfile{
+//     margin-left: 0!important;
+//   }
+//   .SectionTitle{
+//      h1{
+//     font-size: 45px!important;
+//   color: black;
+//   text-align: center;}
+//   p{
+//     color: black ;
+//     font-size: 18px!important;
+//     font-weight: 400!important;
+//   }
+//   .homedivider .homecircle,.homeline{
+//     background-color: #276EBC;
+//   }
+//   }
+  
+//   .availability .availabilityContainerTitle p{
+//     font-size: 19px!important;
+//   }
+//   .availability::after {
+//     content: "";
+//     position: absolute;
+//     background-image: url(/_next/static/media/ring.ca2f54a5.png);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 148px;
+//     height: 170px;
+//     top: -60rem!important;
+//     /* margin-right: -100px; */
+//     right: -69px!important;
+//     z-index: 1;
+//   }
+//   }
+@media screen and (max-width: 480px)  {
+
+  .promiseCard {
+   width: 90%!important;
+    margin: 0 1.6rem!important;
+    .promiseCardContainer{
+      width: 100%!important;
     }
+}
+  .swiper-pagination {
+    display: none !important;
+  }
+.PromisesAndCommitments{
+background-color: #fff;
+
+
+}
+.availability::after{
+  top: -50rem!important;
+}
+.PromisesAndCommitments .swiper{
+  margin: 0;
+}
+
+.testimonialsContainer{
+  padding: 0 2rem!important;
+}
+.testimonialCard p{
+  padding: 0!important;
+  font-size: 15px!important;
+
+}
+.testimonialCardContainerProfile{
+  margin-left: 0!important;
+}
+.SectionTitle{
+  padding: 0!important;
+  max-width: unset!important;
+   h1{
+  font-size: 37px!important;
+color: black;
+text-align: center!important;;}
+p{
+  color: black ;
+  font-size: 15px!important;
+  font-weight: 400!important;
+  text-align: center!important;
+  margin-bottom: 4px!important;
+
+}
+.homedivider .homecircle,.homeline{
+  background-color: #276EBC;
+}
+}
+
+.availability .availabilityContainerTitle p{
+  font-size: 19px!important;
+}
+.availability::after {
+  content: "";
+  position: absolute;
+  background-image: url(/_next/static/media/ring.ca2f54a5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 170px;
+  top: -50rem!important;
+  /* margin-right: -100px; */
+  right: -69px!important;
+  z-index: 1;
+}
+
+.PromisesAndCommitmentsContainerRight {
+ 
+
+  align-items: center!important;
+}
+
+.testimonialCard p{
+  margin-bottom: 4rem!important;
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .promiseCard {
+   width: 90%!important;
+    margin: 0 1.6rem!important;
+    .promiseCardContainer{
+      width: 100%!important;
+    }
+}
+  .swiper-pagination {
+    display: none !important;
+  }
+.PromisesAndCommitments{
+background-color: #fff;
+
+
+}
+.PromisesAndCommitments .swiper{
+  margin: 0;
+}
+
+.testimonialsContainer{
+  padding: 0 2rem!important;
+}
+.testimonialCard p{
+  padding: 0!important;
+  font-size: 15px!important;
+
+}
+.testimonialCardContainerProfile{
+  margin-left: 0!important;
+}
+.SectionTitle{
+  padding: 0!important;
+  max-width: unset!important;
+   h1{
+  font-size: 45px!important;
+color: black;
+text-align: center;}
+p{
+  color: black ;
+  font-size: 18px!important;
+  font-weight: 400!important;
+  text-align: center!important;
+
+}
+.homedivider .homecircle,.homeline{
+  background-color: #276EBC;
+}
+}
+
+.availability .availabilityContainerTitle p{
+  font-size: 19px!important;
+}
+.availability::after {
+  content: "";
+  position: absolute;
+  background-image: url(/_next/static/media/ring.ca2f54a5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 170px;
+  top: -60rem!important;
+  /* margin-right: -100px; */
+  right: -69px!important;
+  z-index: 1;
+}
+
+.PromisesAndCommitmentsContainerRight {
+ 
+
+  align-items: center!important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+  .heroSectionContainer{
+    margin: 0 1rem;
   }
 
-  @media screen and (max-width: 480px) {
-    .PromisesAndCommitments {
-      &Container {
-        padding: 1rem;
-      }
+  .availabilityContainerTitle h1{
+    font-size: 27px;
+  }
+  .availabilityRightImage {
+    position: absolute;
+    left: 63%;
+    bottom: 0rem;
+    top: -6rem;
+    width: 36%;
+    object-fit: contain;
+    height: 420px;
+    z-index: 2;
+  }
+  .availabilityContainer{
+    padding: 5rem 3.5rem;
+  }
 
-      .scrollControllers {
-        padding-top: 40px;
-      }
+  .avail__bottom__title{
+    padding: 0;
+    font-size: 17px!important;
+  }
+  .availabilityContainerContent p{
+    margin: 0;
+    padding: 14px 15px 0 0;
+  }
+  .PromisesAndCommitments .swiper{
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+  .promiseCardContainer h3
+  {
+    font-size: 16px!important;
+  }
 
-      .SectionTitle h1 {
-        font-size: 1.8rem;
-      }
+  .PromisesAndCommitmentsContainerRight .SectionTitle{
+    padding: 0;
+  }
+}
 
-      .CardSection {
-        gap: 1rem;
-        padding: 0 1rem;
-      }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+  .availabilityContainerTitle h1{
+    font-size: 33px;
+  }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+
+  .PromisesAndCommitments {
+    margin-top: 26.5rem; 
+
+
+  }
+
+  .promiseCard{
+    width: 100%!important;
+    max-width: unset!important;
+  }
+
+ .divi{
+  width: 100%;
+ }
+
+ 
+
+
+}
+
+
+.dash-indicators {
+  display: flex;
+  justify-content: center;
+  // margin-top: 15px;
+  gap: 8px;
+
+  .dash {
+    width: 24px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &.active {
+      background-color: #276EBC;
+      transform: scaleX(1.2);
     }
   }
 }

@@ -1,6 +1,6 @@
 "use client"; // Add this line at the top of the file
 
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "./Promises.scss";
@@ -9,10 +9,11 @@ import { IconButton } from "@mui/material";
 import { assets } from "@/assets";
 import Card from "./Card";
 import { uid } from "react-uid";
-import { useRef, useEffect, useState } from "react";
-import SwiperCore from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
+import { Pagination, Navigation, Keyboard } from "swiper/modules"; // ✅ v11+ सही import
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const cardsInfo = [
   {
@@ -78,92 +79,116 @@ const cardsInfo = [
 ];
 
 const PromisesAndCommitments = () => {
-  const swiperRef = useRef(null);
-  const goNext = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
-    }
-  };
-
-  const goPrev = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
-
+  const [swiperInstance, setSwiperInstance] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [isTab, setIsTab] = useState(false);
 
+  const goNext = () => {
+    if (swiperInstance) swiperInstance.slideNext();
+  };
+
+  const goPrev = () => {
+    if (swiperInstance) swiperInstance.slidePrev();
+  };
+
+  const handleDashClick = (index) => {
+    setActiveIndex(index);
+    if (swiperInstance) swiperInstance.slideTo(index);
+  };
+
   useEffect(() => {
     const handleResize = () => {
-      const isMobileDevice = window.innerWidth <= 500;
+      const isMobileDevice = window.innerWidth <= 767;  // ✅ पहले 500px था, अब 767px कर दिया
       const isTabDevice = window.innerWidth <= 1354;
       setIsMobile(isMobileDevice);
       setIsTab(isTabDevice);
     };
     handleResize();
-
+  
     window.addEventListener("resize", handleResize);
   }, []);
+  
 
-  const handleSlideChange = (swiper) => {
-    setActiveIndex(swiper.activeIndex);
-  };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     const isMobileDevice = window.innerWidth <= 500;
+  //     const isTabDevice = window.innerWidth <= 1354;
+  //     setIsMobile(isMobileDevice);
+  //     setIsTab(isTabDevice);
+  //   };
+  //   handleResize();
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleDotClick = (index) => {
-    setActiveIndex(index);
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(index);
-    }
-  };
+  //   window.addEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <div className="PromisesAndCommitments">
       <div className="PromisesAndCommitmentsContainer">
-        <div className="scrollControllers">
-          <IconButton onClick={goPrev}>
-            <ArrowBackIcon />
-          </IconButton>
-        </div>
+        {/* Left Arrow Button (Hide on Mobile) */}
+        {!isMobile && (
+          <div className="scrollControllers">
+            <IconButton onClick={goPrev}>
+              <ArrowBackIcon />
+            </IconButton>
+          </div>
+        )}
+
         <div className="PromisesAndCommitmentsContainerRight">
           <div className="SectionTitle">
             <h1>Why BidrYde</h1>
             <p>Our Promise and commitments to you</p>
-            <div>
-              <Divider data={"home"}/>
+            <div className="divi">
+              <Divider data={"home"} />
             </div>
           </div>
 
           <div className="CardSection">
-            <Swiper
-              spaceBetween={isMobile ? 40 : isTab ? 80 : 30}
-              slidesPerView={isMobile ? 1 : isTab ? 2 : 3}
-              ref={swiperRef}
-              onSlideChange={handleSlideChange}
-            >
-              {cardsInfo.map((card) => (
-                <SwiperSlide key={uid(card)}>
-                  <Card data={card} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <Swiper
+  modules={[Pagination, Navigation, Keyboard]}
+  slidesPerView={isMobile ? 1 : isTab ? 2 : 3}
+  spaceBetween={20}
+  loop={true}
+  pagination={isMobile ? { clickable: true } : false}  // ✅ dots सिर्फ mobile में enable
+  grabCursor={true}
+  keyboard={{ enabled: true }}
+  onSwiper={(swiper) => setSwiperInstance(swiper)}
+  onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+>
+  {cardsInfo.map((card) => (
+    <SwiperSlide key={uid(card)}>
+      <Card data={card} />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
           </div>
         </div>
+
+        {/* Right Arrow Button (Hide on Mobile) */}
+        {!isMobile && (
+          <div className="scrollControllers">
+            <IconButton onClick={goNext}>
+              <ArrowForwardIcon />
+            </IconButton>
+          </div>
+        )}
       </div>
 
-      {isMobile && (
-        <div className="dot-indicators">
-          {cardsInfo.map((_, index) => (
-            <div
-              key={index}
-              className={`dot ${activeIndex === index ? "active" : ""}`}
-              onClick={() => handleDotClick(index)}
-            ></div>
-          ))}
-        </div>
-      )}
+      {/* Dash indicators only on Mobile */}
+{/* Dash indicators only on screens ≤ 767px */}
+{isMobile && window.innerWidth <= 767 && (
+  <div className="dash-indicators">
+    {cardsInfo.map((_, index) => (
+      <div
+        key={index}
+        className={`dash ${activeIndex === index ? "active" : ""}`}
+        onClick={() => handleDashClick(index)}
+      ></div>
+    ))}
+  </div>
+)}
+       
     </div>
   );
 };

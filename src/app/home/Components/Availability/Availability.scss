@@ -261,3 +261,39 @@
 //     font-size: 0.9rem;
 //   }
 // }
+
+
+@media screen and (max-width: 480px)  {
+.testimonials{
+  margin-bottom: 0!important;
+}
+.availability{
+  margin-top: 0 !important;
+}
+.availability::after{
+  top: -50rem!important;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .testimonials{
+    margin-bottom: 0!important;
+  }
+  .availability{
+    margin-top: 0 !important;
+  }
+
+  .testimonialsContainer .SectionTitle{
+    max-width: unset!important;
+    h1{
+      text-align: center!important;
+    }
+    p{
+      text-align: center!important;
+    }
+  }
+  
+  
+  }
