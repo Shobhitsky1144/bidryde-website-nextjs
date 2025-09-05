@@ -787,4 +787,31 @@ margin: 0;
   
   
 
- 
+  @media (min-width: 1400px) {
+   
+    .stepsToBidContainer .stepsToBidAnimation {
+      position: relative;
+      width: 100%;
+      height: 1800px;
+      display: flex
+  ;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0rem;
+      margin-top: -3rem;
+      margin-bottom: -200px;
+  }
+
+  .stepsToBidContainer .stepsToBidAnimation svg{
+    width: 45%;
+  }
+
+
+.leftAlign{
+  margin-left: 5rem!important;
+      }
+      .rightAlign{
+        margin-left: -4rem!important;
+      }
+
+    }

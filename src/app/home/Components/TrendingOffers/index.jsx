@@ -96,38 +96,39 @@ const TrendingOffers = () => {
         </div>
 
         <div className="carousel">
-          <div
-            className="carouselTrack"
-            style={{
-              transform: `translateX(-${currentSlide * 100}%)`,
-            }}
-          >
-            {trendingOffers.map((offer, index) => (
-              <div
-                className="trendingCardContainer"
-                key={index}
-                style={{
-                  flex: `0 0 ${100 / cardsPerSlide}%`,
-                  margin: "2px 8px", // horizontal spacing
-                }}
-              >
-                <Image
-                  src={offer.photo_url}
-                  alt={offer.title}
-                  className="offerImage"
-                  width={180}
-                  height={210}
-                />
-                <div className="offerContent">
-                  <h3>{offer.title}</h3>
-                  <p className="offer_desc">{offer.content}</p>
-                  <p className="customOfferCode">Code: {offer.code}</p>
-                  <p className="customOfferValidity">{offer.validity}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+  <div
+    className="carouselTrack"
+    style={{
+      transform: `translateX(-${currentSlide * 100}%)`,
+      gap: "16px", // spacing between cards
+    }}
+  >
+    {trendingOffers.map((offer, index) => (
+      <div
+        className="trendingCardContainer"
+        key={index}
+        style={{
+          flex: `0 0 ${100 / cardsPerSlide}%`,
+        }}
+      >
+        <Image
+          src={offer.photo_url}
+          alt={offer.title}
+          className="offerImage"
+          width={180}
+          height={210}
+        />
+        <div className="offerContent">
+          <h3>{offer.title}</h3>
+          <p className="offer_desc">{offer.content}</p>
+          <p className="customOfferCode">Code: {offer.code}</p>
+          <p className="customOfferValidity">{offer.validity}</p>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
   );
