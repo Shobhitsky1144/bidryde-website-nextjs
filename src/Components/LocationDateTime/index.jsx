@@ -642,7 +642,7 @@ const LocationDateTimePicker = ({ actionHandler }) => {
             </div>
             <div  style={{
                       flex: 1,
-                      fontFamily: "Archivo",
+                      // fontFamily: "Archivo",
                       fontWeight: "400",
                       fontSize: "14px",
                     }}>

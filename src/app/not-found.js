@@ -28,7 +28,7 @@ export default function Custom404() {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    fontFamily: "archivo",
+    // fontFamily: "archivo",
     textAlign: "center",
     padding: "2rem",
     maxWidth: "100%",
