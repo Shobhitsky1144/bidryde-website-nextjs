@@ -356,6 +356,56 @@
 
 }
 
+
+.locationOptionsContainer {
+  &:focus-visible {
+    outline: none !important;
+    border: none !important;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .mainContainer,.parentDiv{
+    width: 97%;
+  }
+  
+.mobileLocationIcon{
+  display: none;
+}
+.LocationOnIcon{
+  display: block;
+}
+
+.locationMainContainer {
+  width: 22%;
+
+}
+.timeMainContainer {
+  width: 51%;
+  cursor: pointer;
+  padding-left: 7px;
+  padding-right: 3px;
+
+}
+
+.search_btn {
+  button{
+  width: 168px!important;
+  margin-left: 5px!important;
+  }
+}
+
+}
+
+
+@media  (min-width: 481px) and (max-width: 767px) {
+.description{
+  font-size: 17px!important;
+}
+
+}
+
 @media screen and (max-width: 480px) {
 
   .timeMainContainer .searchPageTimeLeft, .timeMainContainer .searchPageTime{
@@ -414,37 +464,8 @@
 }
 
 }
-.locationOptionsContainer {
-  &:focus-visible {
-    outline: none !important;
-    border: none !important;
-  }
-}
 
-
-@media screen and (min-width: 1025px) {
-  .mainContainer,.parentDiv{
-    width: 97%;
-  }
-  
-.mobileLocationIcon{
-  display: none;
-}
-.LocationOnIcon{
-  display: block;
-}
-
-}
-
-
-@media  (min-width: 481px) and (max-width: 767px) {
-.description{
-  font-size: 17px!important;
-}
-
-}
-
-@media screen and (max-width: 462px) {
+@media screen and (max-width: 362px) {
 
   .mainContainer {
     padding: 9px 5px 9px 35px !important;
@@ -465,3 +486,6 @@ font-size: 10px!important;
   }
 
 }
+
+
+
