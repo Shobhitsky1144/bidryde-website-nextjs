@@ -71,6 +71,10 @@ function BookNowCard({ onClose }) {
               width={500}
               height={450}
                style={{ objectFit: "cover" }}
+
+
+            
+              //  priority   
             />
           </Box>
           {/* <Box

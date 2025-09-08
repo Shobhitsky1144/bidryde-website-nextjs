@@ -341,7 +341,10 @@ function SearchPage() {
   return (
     <>
    {/* {showFilter && */}
-    <Navbar />
+
+ 
+   {!isScreenSmall && <Navbar />}
+
     {/* } */}
 
 <div className="SearchPageLayout">
@@ -353,7 +356,7 @@ function SearchPage() {
     <div className="filtersLayout">
       <div className="filterParent">
         <div className="filterHeader">
-          <p>Filter</p>
+          <p>Filters</p>
         </div>
         <div className="closeButton" onClick={handleToggle}>
           <CloseIcon />
@@ -477,7 +480,7 @@ function SearchPage() {
     <div className="filtersLayout">
       <div className="filterParent">
         <div className="filterHeader">
-          <p>Filter</p>
+          <p>Filters</p>
         </div>
         <div className="closeButton" onClick={handleToggle}>
           <CloseIcon />

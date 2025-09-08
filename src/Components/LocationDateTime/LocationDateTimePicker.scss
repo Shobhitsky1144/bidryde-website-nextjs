@@ -318,8 +318,39 @@
 
 
 @media screen and (max-width: 1024px) {
-  .LocationOnIcon{
-    font-size: 30px;
+  // .mobileLocationIcon{
+  //   .LocationOnIcon{
+  //     font-size: 35px!important;
+  //   }
+   
+  // }
+
+  .iconContainer{
+    display: none!important;
+  }
+  .parentDiv{
+    position: relative!important;
+    width: 100%!important;
+  }
+  
+  .mobileLocationIcon{
+    position: absolute!important;
+    top: 16px!important;
+    left: 18px!important;
+    /* padding: 10px; */
+    .LocationOnIcon {
+      font-size: 55px !important;
+  }
+  }
+  
+  .mainContainer{
+    padding: 20px 9px 7px 70px!important;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .timingContainer{
+    align-items: center!important;
   }
 
 
@@ -352,9 +383,37 @@
   .rc-slider-track {
     height: 3px;
   }
+  .description{
+    font-size: 12px!important;
+  }
+
+  .iconContainer{
+    display: none!important;
+  }
+
+  
+  .mobileLocationIcon{
+    position: absolute!important;
+    top: 13px!important;
+    left: 14px!important;
+    /* padding: 10px; */
+    .LocationOnIcon {
+      font-size: 35px !important;
+  }
+  }
+  
+  .mainContainer{
+    padding: 9px 9px 9px 42px!important;
+    gap: 9px;
+  }
+  .miniContainer1{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+  
 }
 
-
+}
 .locationOptionsContainer {
   &:focus-visible {
     outline: none !important;
@@ -363,3 +422,46 @@
 }
 
 
+@media screen and (min-width: 1025px) {
+  .mainContainer,.parentDiv{
+    width: 97%;
+  }
+  
+.mobileLocationIcon{
+  display: none;
+}
+.LocationOnIcon{
+  display: block;
+}
+
+}
+
+
+@media  (min-width: 481px) and (max-width: 767px) {
+.description{
+  font-size: 17px!important;
+}
+
+}
+
+@media screen and (max-width: 462px) {
+
+  .mainContainer {
+    padding: 9px 5px 9px 35px !important;
+    gap: 4px;
+}
+
+  .description{
+
+font-size: 10px!important;
+  }
+
+  .mobileLocationIcon .LocationOnIcon{
+    font-size: 29px!important;
+  }
+
+  .BookNowCardMainContainer .appTitle{
+    font-size: 23px!important;
+  }
+
+}

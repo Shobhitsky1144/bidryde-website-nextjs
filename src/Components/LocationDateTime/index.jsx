@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { DateRange, defaultStaticRanges } from "react-date-range";
 import "react-date-range/dist/styles.css";
@@ -148,24 +149,44 @@ const LocationDateTimePicker = ({ actionHandler }) => {
     return SLIDER_MARKS[index];
   };
 
-  const formatDate = (date, type) => {
-    var timestamp = null;
-    if (type === "start") {
-      timestamp = getTimefromSlider(startTime);
-    } else {
-      timestamp = getTimefromSlider(endTime);
-    }
+  // const formatDate = (date, type) => {
+  //   var timestamp = null;
+  //   if (type === "start") {
+  //     timestamp = getTimefromSlider(startTime);
+  //   } else {
+  //     timestamp = getTimefromSlider(endTime);
+  //   }
 
+  //   return (
+  //     new Date(date).toLocaleDateString("en-US", {
+  //       month: "short",
+  //       day: "numeric",
+  //       year: "numeric",
+  //     }) +
+  //     ", " +
+  //     timestamp
+  //   );
+  // };
+
+  const formatDate = (date, type) => {
+    let timestamp = type === "start"
+      ? getTimefromSlider(startTime)
+      : getTimefromSlider(endTime);
+  
+    // Fallback if timestamp is undefined
+    if (!timestamp) timestamp = "00:00 am";
+  
     return (
-      new Date(date).toLocaleDateString("en-US", {
+      new Date(date).toLocaleString("en-GB", {
+        day: "2-digit",
         month: "short",
-        day: "numeric",
-        year: "numeric",
       }) +
-      ", " +
-      timestamp
+      " " +
+      timestamp.toLowerCase()
     );
   };
+  
+  
 
   const handleSliderChange = (value, type) => {
     var dateRangeHolder = null;
@@ -283,73 +304,80 @@ const LocationDateTimePicker = ({ actionHandler }) => {
     setTempArea(event.target.value);
   };
 
-  const handleGetCar = () => {
-    if (area === "Please select Area") {
-      toast.info("Please select valid location", {
-        position: "bottom-left",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        draggable: true,
-        theme: "light",
-      });
-      return;
-    }
+  // const handleGetCar = () => {
+  //   if (area === "Please select Area") {
+  //     toast.info("Please select valid location", {
+  //       position: "bottom-left",
+  //       autoClose: 5000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       draggable: true,
+  //       theme: "light",
+  //     });
+  //     return;
+  //   }
 
-    const [latittude, longitude] = getLatLong(area);
-    var fetchCardParamsObj = {
-      hub: area,
-      enddate: `${new Date(dateRange[0].endDate)
-        .toISOString()
-        .slice(0, 10)} ${endTime}:00:00.000`,
-      startdate: `${new Date(dateRange[0].startDate)
-        .toISOString()
-        .slice(0, 10)} ${startTime}:00:00.000`,
-    };
+  //   const [latittude, longitude] = getLatLong(area);
+  //   var fetchCardParamsObj = {
+  //     hub: area,
+  //     enddate: `${new Date(dateRange[0].endDate)
+  //       .toISOString()
+  //       .slice(0, 10)} ${endTime}:00:00.000`,
+  //     startdate: `${new Date(dateRange[0].startDate)
+  //       .toISOString()
+  //       .slice(0, 10)} ${startTime}:00:00.000`,
+  //   };
 
-    // Function to convert UTC Date to IST
-    function convertToIST(input) {
-      let date;
+  //   // Function to convert UTC Date to IST
+  //   function convertToIST(input) {
+  //     let date;
 
-      // Convert input to a Date object
-      if (input instanceof Date) {
-        date = input; // Already a Date object
-      } else if (typeof input === "string" || typeof input === "number") {
-        date = new Date(input); // Parse strings or timestamps
-      } else {
-        throw new TypeError(
-          "Invalid input: Expected a Date object, string, or number"
-        );
-      }
+  //     // Convert input to a Date object
+  //     if (input instanceof Date) {
+  //       date = input; // Already a Date object
+  //     } else if (typeof input === "string" || typeof input === "number") {
+  //       date = new Date(input); // Parse strings or timestamps
+  //     } else {
+  //       throw new TypeError(
+  //         "Invalid input: Expected a Date object, string, or number"
+  //       );
+  //     }
 
-      // Check if the date is valid
-      if (isNaN(date.getTime())) {
-        throw new TypeError("Invalid date: Unable to parse the provided input");
-      }
+  //     // Check if the date is valid
+  //     if (isNaN(date.getTime())) {
+  //       throw new TypeError("Invalid date: Unable to parse the provided input");
+  //     }
 
-      // IST offset: 5 hours 30 minutes
-      const istOffset = 5 * 60 * 60 * 1000 + 30 * 60 * 1000;
-      return new Date(date.getTime() + istOffset);
-    }
+  //     // IST offset: 5 hours 30 minutes
+  //     const istOffset = 5 * 60 * 60 * 1000 + 30 * 60 * 1000;
+  //     return new Date(date.getTime() + istOffset);
+  //   }
 
-    // Create the localStorage object with converted dates
-    var localStorageObj = {
-      city: area,
-      dateObj: dateRange.map((date) => ({
-        startDate: convertToIST(date.startDate).toISOString(), // Convert to IST and to ISO string
-        endDate: convertToIST(date.endDate).toISOString(), // Convert to IST and to ISO string
-        key: date.key,
-      })),
-      areaLocation: area,
-      e_time: endTime,
-      s_time: startTime,
-    };
+  //   // Create the localStorage object with converted dates
+  //   var localStorageObj = {
+  //     city: area,
+  //     dateObj: dateRange.map((date) => ({
+  //       startDate: convertToIST(date.startDate).toISOString(), // Convert to IST and to ISO string
+  //       endDate: convertToIST(date.endDate).toISOString(), // Convert to IST and to ISO string
+  //       key: date.key,
+  //     })),
+  //     areaLocation: area,
+  //     e_time: endTime,
+  //     s_time: startTime,
+  //   };
 
-    // Save to localStorage
-    localStorage.setItem("carSearchParams", JSON.stringify(localStorageObj)); // Store as string
-    console.log("Stored localStorageObj:", localStorageObj);
-    actionHandler(localStorageObj);
-  };
+  //   // Save to localStorage
+  //   localStorage.setItem("carSearchParams", JSON.stringify(localStorageObj)); // Store as string
+  //   console.log("Stored localStorageObj:", localStorageObj);
+  //   actionHandler(localStorageObj);
+  // };
+
+
+
+const handleGetCar=()=>{
+  router.push("/", { scroll: false }); 
+}
+
 
   useEffect(() => {
     const temp = getCookie("carSearchParams");
@@ -382,16 +410,37 @@ const LocationDateTimePicker = ({ actionHandler }) => {
     };
   }, []);
 
+  const isScreenSmall = useMediaQuery("(max-width: 1024px)");
+
+
   return (
+    <div className="parentDiv">
+    
+    <div className="mobileLocationIcon">
+
+
+<LocationOnIcon fontSize="medium" color="primary" className="LocationOnIcon" />
+</div>
+  
     <div className="mainContainer">
+       
       <div className="locationMainContainer">
-        <div onClick={handleLocationOpen}>
+        {/* <div onClick={handleLocationOpen}> */}
+
+     
+        <div   style={{  cursor: "not-allowed" }}
+        >
+        
           <SearchPageHeading
             icon={<LocationOnIcon fontSize="small" color="primary" className="LocationOnIcon" />}
             title="Location"
             description={`${area} , ${city}`}
           />
         </div>
+
+
+
+
 
         <Modal
           open={showLocationPicker}
@@ -410,7 +459,7 @@ const LocationDateTimePicker = ({ actionHandler }) => {
                 style={{
                   marginTop: "1rem",
                   marginBottom: "0.3rem",
-                  color: "#000000", // Black color for label text
+                  color: "#000000", 
                   fontSize: "1rem",
                 }}
               >
@@ -547,7 +596,9 @@ const LocationDateTimePicker = ({ actionHandler }) => {
           </div>
         </Modal>
       </div>
-      <Divider orientation="vertical" variant="fullWidth" flexItem />
+      {!isScreenSmall && <Divider orientation="vertical" variant="fullWidth" flexItem   sx={{
+    borderWidth: 1.5,
+  }}/>}
       <div className="timeMainContainer">
         <Modal
           open={showPicker}
@@ -696,7 +747,9 @@ const LocationDateTimePicker = ({ actionHandler }) => {
           </div>
         </Modal>
 
-        <div onClick={handleDateOpen} className="timingContainer">
+        {/* <div onClick={handleDateOpen} className="timingContainer"> */}
+        <div  className="timingContainer"   style={{ cursor: "not-allowed" }}
+        >
           <SearchPageHeading
             icon={
               <WatchLaterIcon
@@ -735,7 +788,12 @@ const LocationDateTimePicker = ({ actionHandler }) => {
       /></div>
      
     </div>
+    </div>
   );
 };
 
 export default LocationDateTimePicker;
+
+
+
+
