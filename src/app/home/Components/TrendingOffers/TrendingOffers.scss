@@ -370,3 +370,43 @@ p{
   padding: 1rem;
   box-sizing: border-box;
 }
+@media screen and (min-width: 327px) and (max-width:364px){
+  .trendingOffersContainer .offerContent .customOfferCode{
+    font-size: 15px!important;
+  }
+
+  .trendingOffersContainer .offerContent h3{
+    font-size: 17px;
+  }
+
+  .trendingOffersContainer .offerContent p{
+    font-size: 11px!important;
+  }
+
+  .trendingOffersContainer .offerImage{
+
+width: 94px;
+height: 94px;
+  }
+.card h6{
+  font-size: 12px!important;
+}
+.stepsToBidContainer .SectionTitle p{
+  font-size: 11px!important;
+}
+
+.rightShadow{
+  margin:20px 14px;
+}
+
+.rightAlign{
+  width: 68vw!important;
+}
+.heroSection .infoCardHome .titleContainerHome .descriptionHome{
+  font-size: 12px!important;
+}
+
+.card__2__3{
+  flex-direction: column!important;
+}
+}

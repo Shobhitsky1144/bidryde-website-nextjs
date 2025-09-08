@@ -334,6 +334,13 @@ font-size: 16px;
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
+  .heroSectionContainer__left{
+    width: 69%!important;
+  }
+  .heroSectionContainer__left>p{
+    padding-top: 9px;
+  }
+
 .testimonialCardContainer{
   width: 100%;
 }
@@ -352,10 +359,12 @@ font-size: 16px;
   justify-content: center;
   align-items: center;
 }
-
+.testimonialCardContainer{
+  height: 15rem;
+}
 .testimonialCardContainerProfile{
   // margin-top: -5px;
-  align-items: unset;
+  // align-items: unset;
 }
 .profileName{
    margin-top: -10px;

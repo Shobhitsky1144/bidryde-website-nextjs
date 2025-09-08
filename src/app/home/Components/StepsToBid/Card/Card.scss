@@ -276,9 +276,34 @@ display: none;
 //   }
 // }
 
+@media screen and (min-width: 327px){
+.operatingZonesContainer .SectionTitle h1{
+  font-size: 28px!important;
+}
+
+.stepsToBidContainer .SectionTitle p{
+  font-size: 11px!important;
+}
 
 
- @media screen and (max-width: 480px){
+
+.card h6{
+  font-size: 13px!important;
+}
+}
+
+
+
+
+ @media screen  and (max-width: 480px){
+
+  .heroSection .infoCardHome .titleContainerHome .descriptionHome{
+    font-size: 17px!important;
+  }
+
+  .availability .availabilityContainerTitle p{
+    font-size: 16px!important;
+  }
   .cardWedge1, .cardWedge{
     display: block;
     }
@@ -292,7 +317,7 @@ display: none;
   }  
 
   .carImgg{
-    width: 200px!important;
+    width: 84px!important;
   }
     .stepsToBid{
       margin-top: 2rem;
@@ -328,7 +353,7 @@ display: none;
       position: relative;
       width: 100%;
       // height: 1450px;
-      height: 1220px;
+      height: 1250px;
       display: flex
   ;
       align-items: center;
@@ -363,7 +388,7 @@ display: none;
     }
   
     .card h6{
-      font-size: 17px;
+      font-size: 15px!important;
     }
     
     .stepsToBidContainer{
@@ -497,6 +522,10 @@ height: 1478px;
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+
+  .card h6{
+    font-size: 14px!important;
+  }
   
   .stepsToBid{
     // width: 90%;
@@ -685,6 +714,45 @@ height: 1478px;
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+  .stepsToBidContainer .stepsToBidCardContainer{
+    gap: 10rem !important;
+  }
+
+  .PromisesAndCommitments{
+    margin-top: 29rem!important;
+  }
+  .stepsToBidContainer .stepsToBidAnimation{
+    height: 1566px!important;
+  }
+
+
+  .trendingOffersContainer .offerContent p{
+    font-size: 14px!important;
+  }
+
+
+  .locationCard .locationCardContainer .comingSoonStyle{
+    font-size: 13px!important;
+  }
+
+  .card h6{
+    font-size: 21px!important;
+  }
+
+
+  .homeTimeMainContainer{
+    width: 100%!important;
+  }
+
+  .infoCardHome{
+    margin-bottom: 0!important;
+  }
+
+  .infoCardHome .titleContainerHome .miniContainerHome .titleHome,.infoCardHome .titleContainerHome .descriptionHome{
+    font-size: 13px!important;
+  }
+
+
 .carImgg{
   width: 200px!important;
 }
@@ -784,10 +852,27 @@ margin: 0;
   }
 
 
-  
-  
+  @media (min-width: 1200px) and (max-width: 1400px) {
+  .stepsToBidContainer .stepsToBidAnimation{
+    position: relative;
+    width: 100%;
+    height: 1583px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0rem;
+    margin-top: -5rem;
+    margin-bottom: -200px;
+  }
+  .SectionTitle{
+    align-items: unset!important;
+  }
+  .trendingOffersContainer .offerContent p{
+    font-size: 11px!important;
+  }
+}
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1401px) {
    
     .stepsToBidContainer .stepsToBidAnimation {
       position: relative;
@@ -808,10 +893,11 @@ margin: 0;
 
 
 .leftAlign{
-  margin-left: 5rem!important;
+  margin-left: 11rem!important;
       }
       .rightAlign{
         margin-left: -4rem!important;
       }
 
     }
+
