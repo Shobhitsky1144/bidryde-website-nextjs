@@ -271,6 +271,21 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+  .SectionTitle p{
+    font-size: 19px!important;
+  }
+
+  .operatingZonesContainer{
+    align-items: center!important;
+  }
+
+  .operatingZonesContainer .SectionTitle{
+    margin: 0!important;
+    h1{
+      font-size: 38px!important;
+    }
+  }
   .trendingOffers{
     padding: 15rem 2rem 2rem 2rem!important;
   }
