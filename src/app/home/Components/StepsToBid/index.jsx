@@ -207,9 +207,7 @@ const StepsToBid = () => {
               ) : index == 2 ? (
                 <svg
                   className="cardWedge1"
-                  // viewBox="0 0 326 356"
-                  viewBox="-156 0 481 356"
-
+                  viewBox="0 0 326 356"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -221,13 +219,12 @@ const StepsToBid = () => {
                   </g>
                   <defs>
                     <filter
-                    filterUnits="objectBoundingBox"
                       id="filter0_d_1_20168"
                       x="-156"
                       y="0.707275"
                       width="481.174"
                       height="354.53"
-                      // filterUnits="userSpaceOnUse"
+                      filterUnits="userSpaceOnUse"
                       colorInterpolationFilters="sRGB"
                     >
                       <feFlood floodOpacity="0" result="BackgroundImageFix" />
