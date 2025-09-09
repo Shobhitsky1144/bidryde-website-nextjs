@@ -455,21 +455,21 @@ p{
     font-size: 27px!important;
   }
   .availabilityRightImage {
-    position: absolute;
-    left: 63%;
-    bottom: 0rem;
-    top: -6rem;
-    width: 36%;
-    object-fit: contain;
-    height: 420px;
-    z-index: 2;
+    position: absolute!important;
+    left: 63%!important;
+    bottom: 0rem!important;
+    top: -6rem!important;
+    width: 36%!important;
+    object-fit: contain!important;
+    height: 420px!important;
+    z-index: 2!important;
   }
   .availabilityContainer{
-    padding: 5rem 3.5rem;
+    padding: 5rem 3.5rem!important;
   }
 
   .avail__bottom__title{
-    padding: 0;
+    padding: 0!important;
     font-size: 17px!important;
   }
   .availabilityContainerContent p{
@@ -495,7 +495,7 @@ p{
 
 
   .availabilityContainerTitle h1{
-    font-size: 33px;
+    font-size: 33px!important;
   }
 
 }
