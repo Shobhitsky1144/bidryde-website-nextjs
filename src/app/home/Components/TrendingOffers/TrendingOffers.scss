@@ -371,6 +371,12 @@ p{
   box-sizing: border-box;
 }
 @media screen and (min-width: 327px) and (max-width:364px){
+
+  .heroSection .heroSectionContainer .homeMainContainer{
+    padding: 20px 0px;
+    left: 1rem;
+    right: 1rem;
+  }
   .trendingOffersContainer .offerContent .customOfferCode{
     font-size: 15px!important;
   }
@@ -408,5 +414,119 @@ height: 94px;
 
 .card__2__3{
   flex-direction: column!important;
+}
+}
+
+@media screen and (min-width: 365px) and (max-width:400px){
+  .trendingOffersContainer .offerContent .customOfferCode{
+    font-size: 15px!important;
+  }
+
+  .trendingOffersContainer .offerContent h3{
+    font-size: 17px;
+  }
+
+  .trendingOffersContainer .offerContent p{
+    font-size: 14px!important;
+  }
+
+  .trendingOffersContainer .offerImage{
+
+width: 94px;
+height: 94px;
+  }
+.card h6{
+  font-size: 12px!important;
+}
+.stepsToBidContainer .SectionTitle p{
+  font-size: 11px!important;
+}
+
+.rightShadow{
+  margin:20px 14px;
+}
+
+.rightAlign{
+  width: 68vw!important;
+}
+.heroSection .infoCardHome .titleContainerHome .descriptionHome{
+  font-size: 17px!important;
+}
+
+.card__2__3{
+  // flex-direction: column!important;
+}
+.trendingOffersContainer .SectionTitle h1{
+  font-size: 37px!important;
+}
+
+.availability .availabilityContainerTitle p{
+  font-size: 15px!important;
+}
+
+.availabilityContainerContentBadges{
+  display: flex;
+  justify-content: center;
+}
+
+.availabilityContainerContentBadges img{
+  width:140px!important
+}
+.stepsToBidContainer .SectionTitle p{
+  font-size: 13px!important;
+}
+
+.heroSection .heroSectionContainer .homeMainContainer{
+  padding: 20px 0px;
+  left: 1rem;
+  right: 1rem;
+}
+
+.heroSection .heroSectionContainer p{
+  font-size: 15px!important;
+  padding: 9px 0;
+}
+
+.trendingOffers{
+  padding: 16rem 1rem 2rem 1rem!important;
+}
+
+.trendingOffersContainer .SectionTitle p{
+  font-size: 15px!important;
+}
+
+.trendingOffersContainer .offerContent h3{
+  margin-bottom: 0px;
+}
+
+.trendingOffersContainer .offerContent .customOfferCode{
+  padding: 0 14px;
+}
+
+.stepsToBidContainer .SectionTitle{
+  margin: 0 1rem!important;
+  h1{
+    font-size: 37px!important;
+  }
+  p{
+
+  }
+}
+
+.card h6{
+  font-size: 15px!important;
+}
+
+.operatingZonesContainer .SectionTitle h1{
+  font-size: 32px!important;
+}
+
+.locationCard .locationCardContainer{
+  width: 155px;
+  margin-top: 10px;
+}
+
+.locationCardContainer h3{
+  font-size: 18px!important;
 }
 }
