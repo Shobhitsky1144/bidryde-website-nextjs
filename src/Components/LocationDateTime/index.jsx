@@ -434,7 +434,7 @@ const handleGetCar=()=>{
           <SearchPageHeading
             icon={<LocationOnIcon fontSize="small" color="primary" className="LocationOnIcon" />}
             title="Location"
-            description={`${area} , ${city}`}
+            description={`${area}, ${city}`}
           />
         </div>
 

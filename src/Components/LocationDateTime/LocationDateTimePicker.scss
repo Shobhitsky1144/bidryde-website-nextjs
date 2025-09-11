@@ -12,7 +12,13 @@
   width: 18%;
   cursor: pointer;
 }
-
+.arrowparent{
+  display: flex;
+  align-items: center;
+  svg{
+    font-size: 35px;
+  }
+}
 .locationOptionsContainer {
   :focus-visible {
     outline: none!important;

@@ -37,10 +37,10 @@ function CarCard({ image, carName, rating, bidrydePrice, price, fuel, gear, seat
       <div className="textContainer">
         <div className="miniContainer1">
           <p className="textStyling">{carName}</p>
-          <span className="starparent">
+          {/* <span className="starparent">
   <FaStar className="star" /> 
   <span className="rating-number">4.3</span>
-</span>
+</span> */}
 
 
         </div>

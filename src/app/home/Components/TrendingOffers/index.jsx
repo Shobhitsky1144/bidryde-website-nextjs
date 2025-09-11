@@ -99,8 +99,9 @@ const TrendingOffers = () => {
   <div
     className="carouselTrack"
     style={{
+      display: "flex",
+      transition: "transform 0.5s ease-in-out",
       transform: `translateX(-${currentSlide * 100}%)`,
-      gap: "16px", // spacing between cards
     }}
   >
     {trendingOffers.map((offer, index) => (
@@ -108,7 +109,9 @@ const TrendingOffers = () => {
         className="trendingCardContainer"
         key={index}
         style={{
-          flex: `0 0 ${100 / cardsPerSlide}%`,
+          flex: `0 0 calc(${100 / cardsPerSlide}% - 16px)`, // equal width with gap
+          marginRight: "16px",
+          boxSizing: "border-box",
         }}
       >
         <Image

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { assets } from "@/assets";
 import "./HeroSection.scss";
 
@@ -9,13 +9,32 @@ import Image from "next/image";
 import LocationDateTimePickerHome from "@/Components/LocationDateTimeHome";
 import { setCookie } from "cookies-next";
 
+function useResponsive() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return { isMobile };
+}
+
 const HeroSection = () => {
   const router = useRouter();
+  const { isMobile } = useResponsive();
+
 
   const handleGetYourCar = (searchObj) => {
     setCookie("carSearchParams", JSON.stringify(searchObj));
     router.push("/SearchPage");
   };
+
+  // const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
 
   return (
     <section className="heroSection" role="banner" aria-label="Hero Section">
@@ -25,7 +44,9 @@ const HeroSection = () => {
           <p>Best self-drive car rentals at affordable prices</p>
           <div className="heroSectionContainer__right">
             <Image
-              src={assets.images.heroBgWeb}
+                  src={isMobile ? assets.images.mobileBgWeb : assets.images.heroBgWeb}
+
+              // src={assets.images.heroBgWeb ?? assets.images.mobileBgWeb}
               alt="Hero section illustration"
               width={500}
               height={500}

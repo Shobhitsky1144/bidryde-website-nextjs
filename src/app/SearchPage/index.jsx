@@ -81,21 +81,21 @@ const filtersData = {
       { icon: SearchPageAssets.AutomaticTransmission, title: "Automatic" },
     ],
   },
-  Ratings: {
-    type: "Ratings",
-    filters: [
-      {  title: "4+ rate" },
-      { title: "3+ rate" },
-      { title: "All" },
-    ],
-  },
-  AddOns: {
-    type: "Add ons",
-    filters: [
-      { icon: SearchPageAssets.fastTag, title: "FAStag" },
+  // Ratings: {
+  //   type: "Ratings",
+  //   filters: [
+  //     {  title: "4+ rate" },
+  //     { title: "3+ rate" },
+  //     { title: "All" },
+  //   ],
+  // },
+  // AddOns: {
+  //   type: "Add ons",
+  //   filters: [
+  //     { icon: SearchPageAssets.fastTag, title: "FAStag" },
  
-    ],
-  },
+  //   ],
+  // },
 
 };
 
@@ -364,7 +364,7 @@ function SearchPage() {
       </div>
 
       <div className="sortfilterHeader">
-        <p>
+        <p style={{visibility:'hidden'}}>
           Sort <MdArrowDropDown size={40} />
         </p>
         <div className="reset">
@@ -443,10 +443,10 @@ function SearchPage() {
         <p className="sideHeaderTextStyling">
           Cars available for rental in Hyderabad
         </p>
-        <p className="sorticonweb">
+        {/* <p className="sorticonweb">
           <span>Sort by</span>
           <IoIosArrowDown size={22} className="sorticonwebs" />
-        </p>
+        </p> */}
       </div>
 
       <div>
@@ -563,10 +563,10 @@ function SearchPage() {
         <p className="sideHeaderTextStyling">
           Cars available for rental in Hyderabad
         </p>
-        <p className="sorticonweb">
+        {/* <p className="sorticonweb">
           <span>Sort by</span>
           <IoIosArrowDown size={22} className="sorticonwebs" />
-        </p>
+        </p> */}
       </div>
 
       <div>

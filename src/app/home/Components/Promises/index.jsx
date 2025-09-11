@@ -37,11 +37,11 @@ const cardsInfo = [
     },
   },
   {
-    image: assets.images.promisesAndCommitments.zerosecuritydepositcard,
+    image: assets.images.promisesAndCommitments.doorstepdeliverycard,
     firstLine: "Zero Security ",
     secondLine: "Deposit",
     overlayContent: {
-      title: "Doorstep Delivery",
+      title: "Doorstep Delivery and Return",
       content:
         "No need to navigate through traffic or visit rental offices – our team delivers the vehicle directly to your location at your preferred time, saving you time and effort.",
     },
@@ -99,7 +99,7 @@ const PromisesAndCommitments = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobileDevice = window.innerWidth <= 767;  // ✅ पहले 500px था, अब 767px कर दिया
+      const isMobileDevice = window.innerWidth <= 767;  
       const isTabDevice = window.innerWidth <= 1354;
       setIsMobile(isMobileDevice);
       setIsTab(isTabDevice);

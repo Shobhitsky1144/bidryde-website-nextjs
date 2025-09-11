@@ -10,6 +10,7 @@ import GoogleButton from "./Google download button.png";
 import WhatsappButton from "./whatsapp icon.png";
 import MenuIcon from "./menu-icon.png";
 import nofoundmobileimg from "./nofoundmobileimg.png";
+import mobileBgWeb from './mobileBgWeb.png'
 
 import offerImg from './offerImg.png'
 
@@ -132,6 +133,7 @@ export const images = {
   heroBgMobile,
   nofoundmobileimg,
   heroBgWeb,
+  mobileBgWeb,
   iphoneImage,
   AppleButton,
   GoogleButton,

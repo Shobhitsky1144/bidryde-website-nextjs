@@ -346,6 +346,7 @@ width: auto;    /* content-based width */
 
     .descriptionHome{
       font-size: 21px;
+      padding-left: 24px;
     }
 
     .miniContainerHome{
@@ -394,7 +395,7 @@ margin-bottom: 8px;
   background-image: url(../../../../assets/images/Availability/minimalist-photorealistic-desert-road.png)!important;
   .availabilityContainerTitle p {
     font-size: 1rem!important;
-    letter-spacing: 1px!important;
+    letter-spacing: 0px!important;
     font-weight: 500!important;
     text-align: center!important;
     // padding-top: 6rem!important;
@@ -405,6 +406,7 @@ margin-bottom: 8px;
   p{
   text-align: center!important;
   font-size: 16px!important;
+  padding: 0!important;
 }
 }
 
@@ -470,6 +472,8 @@ margin-bottom: 8px;
     padding: 9px 0px;
     text-align: center;
   }
+
+  
   }
   
 

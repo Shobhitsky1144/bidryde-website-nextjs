@@ -82,8 +82,8 @@ display: none;
 .card h6 {
   color: #2b3970;
   margin: 0;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size:16px;
+  font-weight: 500;
   padding-top: 10px;
   // padding-bottom: 0;;
 }
@@ -276,7 +276,14 @@ display: none;
 //   }
 // }
 
-@media screen and (min-width: 327px){
+// .stepsToBidContainer .SectionTitle p {
+//   // margin-bottom: 1.5rem;
+//   font-size: 16px!important;
+
+// }
+
+
+@media screen and (min-width: 327px)  and (max-width: 480px) {
 .operatingZonesContainer .SectionTitle h1{
   font-size: 28px!important;
 }
@@ -302,7 +309,7 @@ display: none;
   }
 
   .availability .availabilityContainerTitle p{
-    font-size: 16px!important;
+    font-size: 19px!important;
   }
   .cardWedge1, .cardWedge{
     display: block;
@@ -893,7 +900,7 @@ margin: 0;
 
 
 .leftAlign{
-  margin-left: 11rem!important;
+  margin-left: 6rem!important;
       }
       .rightAlign{
         margin-left: -4rem!important;

@@ -31,7 +31,8 @@
     /* font-family: Archivo; */
     font-size: 25px;
     line-height: 24px;
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
+    font-weight: 400;
     margin: 0%;
   }
   .cardcontainer p {
