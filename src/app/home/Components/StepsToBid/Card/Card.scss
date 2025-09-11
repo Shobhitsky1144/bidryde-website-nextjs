@@ -284,8 +284,12 @@ display: none;
 
 
 @media screen and (min-width: 327px)  and (max-width: 480px) {
+
+  .operatingZonesContainer .SectionTitle{
+    margin: 0!important;
+  }
 .operatingZonesContainer .SectionTitle h1{
-  font-size: 28px!important;
+  font-size: 37px!important;
 }
 
 .stepsToBidContainer .SectionTitle p{
