@@ -168,10 +168,12 @@ width: 100%;
 
 @media (max-width: 480px) {
   .promiseCard {
-  height: 480px;
+  min-height: 430px;
     font-size: 0.75rem;
     align-items: unset;
-
+    .promiseCardContainer h3{
+      display: none;
+    }
     
   }
   .promiseCardContainer{
@@ -220,4 +222,18 @@ position: unset;
     }
   }
 
+}
+
+
+@media  screen and (max-width: 360px) {
+  .promiseCard {
+    min-height: 460px;
+  }
+
+  .promiseCardContainer__Content .promiseCardContainer__ContentTitle{
+    font-size: 21px;
+  }
+  .promiseCardContainer__Content .promiseCardContainer__ContentContent{
+    font-size: 16px;
+  }
 }
