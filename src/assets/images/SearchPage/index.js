@@ -1,6 +1,6 @@
 import hatchback from "./hatchback.png";
 import sedan from "./sedan.png";
-import eCar from "./electricCar.png";
+import eCar from "./eCar.png";
 import carImage from "./carSearch.png";
 import suv from "./suv.png";
 import muv from "./muv.png";``
