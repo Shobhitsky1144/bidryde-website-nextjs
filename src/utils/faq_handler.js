@@ -251,7 +251,7 @@ const FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  host_a_car: [
+  attach_your_car: [
     {
       header: "What is bidryde?",
       content: "Best car rentals at affordable price",
@@ -548,7 +548,7 @@ const HOST_FAQ_LIST = {
       content: "Best car rentals at affordable price",
     },
   ],
-  host_a_car: [
+  attach_your_car: [
     {
       header: "What is bidryde?",
       content: "Best car rentals at affordable price",

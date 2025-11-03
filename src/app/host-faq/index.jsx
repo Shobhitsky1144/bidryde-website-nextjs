@@ -38,14 +38,14 @@ const faqOptions = [
     link: "paymentCharges",
   },
   {
-    title: "Host a car",
+    title: "Attach your Car",
     icon: assets.images.faqPage.HostCar,
-    link: "hostACar",
+    link: "attach_your_car",
   },
   {
-    title: "Host a car",
+    title: "Attach your Car",
     icon: assets.images.faqPage.HostCar,
-    link: "host_a_car",
+    link: "attach_your_car",
   },
 ];
 

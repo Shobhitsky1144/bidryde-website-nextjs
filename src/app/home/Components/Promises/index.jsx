@@ -17,44 +17,52 @@ import "swiper/css/navigation";
 
 const cardsInfo = [
   {
-    image: assets.images.promisesAndCommitments.rideinfinitykmscard,
-    firstLine: "Ride Infinity",
-    secondLine: "Kilometers",
-    overlayContent: {
-      title: "Unlimited Adventures or Endless Journeys",
-      content:
-        "Whether it's a spontaneous road trip or an extensive travel plan, our infinity kilometers policy ensures you have the freedom to explore to your heart's content.",
-    },
-  },
-  {
     image: assets.images.promisesAndCommitments.askyourpricecard,
     firstLine: "Ask your Price",
     secondLine: "",
     overlayContent: {
-      title: "Your Price, Your Way",
+      title: "Ask your Price",
       content:
-        "With our innovative system, get the rental car at your affordable price. Simply tell us what you're willing to pay, and we'll work to match your offer.",
-    },
+"Set your own price for the trip by placing a bid. Accept the flexible counter offers directly from car owners."    },
   },
   {
+    image: assets.images.promisesAndCommitments.rideinfinitykmscard,
+    firstLine: "Ride Unlimited",
+    secondLine: "Kilometers",
+    overlayContent: {
+      title: "Ryde Unlimited Kilometers",
+      content:
+"Count memories - not kilometers, because BidrYde provides unlimited kilometers for your journey."    },
+  },
+ 
+  {
     image: assets.images.promisesAndCommitments.doorstepdeliverycard,
-    firstLine: "Zero Security ",
-    secondLine: "Deposit",
+    firstLine: "Doorstep Delivery ",
+    secondLine: "and Return",
     overlayContent: {
       title: "Doorstep Delivery and Return",
       content:
-        "No need to navigate through traffic or visit rental offices – our team delivers the vehicle directly to your location at your preferred time, saving you time and effort.",
-    },
+"Convenience at your fingertips! We’ll deliver the car to your doorstep and collect it once your trip is done."    },
   },
   {
-    image: assets.images.promisesAndCommitments.freeCancellation,
-    firstLine: "100% free cancellation",
-    secondLine: "before 9 hours",
+    image: assets.images.promisesAndCommitments.zerosecuritydepositcard,
+    firstLine: "24/7 Support &",
+    secondLine: " Roadside Assistance",
     overlayContent: {
-      title: "100% free cancellation before 9 hours",
+      title: "24/7 Support & Roadside Assistance",
       content:
-        "This policy ensures that your booking experience is risk-free, allowing you to plan with confidence. Experience worry-free planning with our 100% free cancellation policy, available up to 9 hours before your scheduled booking.",
-    },
+"Day or night — we’ve got your back. We’re just a call away for any booking support or roadside assistance, round the clock."    },
+  },
+
+
+  {
+    image: assets.images.promisesAndCommitments.freeCancellation,
+    firstLine: "Free Cancellation",
+    secondLine: "",
+    overlayContent: {
+      title: "Free Cancellation",
+      content:
+"Change of plans? Cancel for free, no questions asked. No regrets for cancellation up to 24 hours before your trip starts."    },
   },
   {
     image: assets.images.promisesAndCommitments.freeReschedule,
@@ -63,19 +71,10 @@ const cardsInfo = [
     overlayContent: {
       title: "Reschedule for Free",
       content:
-        "Enjoy the flexibility of rescheduling without any additional fees! Life can be unpredictable, and we understand that plans might change. With our hassle-free policy, you can modify your booking dates at no extra cost.",
+"Trip postponed? No worries! Reschedule anytime at no extra cost — on your own schedule."
     },
   },
-  {
-    image: assets.images.promisesAndCommitments.zerosecuritydepositcard,
-    firstLine: "Trust Over Deposits",
-    secondLine: "Deposit",
-    overlayContent: {
-      title: "Trust Over Deposits",
-      content:
-        "Rent with ease, drive with peace of mind, and cherish every moment on the road with our no-security-deposit policy.",
-    },
-  },
+ 
 ];
 
 const PromisesAndCommitments = () => {
@@ -136,7 +135,7 @@ const PromisesAndCommitments = () => {
 
         <div className="PromisesAndCommitmentsContainerRight">
           <div className="SectionTitle">
-            <h1>Why BidrYde</h1>
+            <h1>Why BidrYde?</h1>
             <p>Our Promise and commitments to you</p>
             <div className="divi">
               <Divider data={"home"} />

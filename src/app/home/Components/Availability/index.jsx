@@ -18,7 +18,7 @@ const Availability = () => {
             Hit the Road: Schedule Your Drive
           </h1>
           <p className="avail__bottom__title">
-            30% OFF on first ride, bid your ride now{" "}
+          Upto ₹1000 OFF on your first rYde. Book your rYde now 
           </p>
         </div>
         <div className="availabilityContainerContent">

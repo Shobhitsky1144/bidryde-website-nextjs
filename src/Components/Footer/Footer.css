@@ -364,7 +364,7 @@ margin-bottom: 30px;
     background-size: cover; /* This ensures the image covers the whole area */
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 64px 2% 28px;
+    padding: 18px 2% 28px;
   }
   .footerLeft .footerText{
 font-size: 16px;

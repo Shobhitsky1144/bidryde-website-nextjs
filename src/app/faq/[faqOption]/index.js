@@ -23,7 +23,7 @@ const FaqOption = ({ params }) => {
     if (!text) return "";
   
     // Special case: if it's exactly "host_a_car"
-    if (text === "host_a_car") return "Host a Car";
+    if (text === "attach_your_car") return "Attach your Car";
 
     if (text === "paymentCharges") return "Payment & Charges";
 
@@ -58,7 +58,7 @@ const FaqOption = ({ params }) => {
 </h1>
 
         <div className="faqOptionContainerQuestions">
-          {faqData.map((question) => (
+          {faqData?.map((question) => (
             <div className="colored_Item" key={uid(question)}>
               <CollapsiblePanel data={question} />
             </div>

@@ -59,10 +59,11 @@ function Form() {
         </label>
 
         <label className="text-start">
-          Email
+          Car Name
           <br />
           <input
-            type="email"
+             type="text"
+            // type="email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
@@ -72,8 +73,7 @@ function Form() {
         </label>
 
         <label className="text-start">
-          Phone
-          <br />
+        Mobile Number          <br />
           <input
             type="tel"
             name="phone"

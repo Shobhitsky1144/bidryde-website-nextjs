@@ -14,33 +14,33 @@ const TrendingOffers = () => {
 
   const staticOffers = [
     {
-      title: "First Ride",
-      content: "30% off on every drive",
-      code: "RYD01",
-      validity: "valid till 15 November",
+      title: "Upto ₹1000 Off*",
+      content: "10% off on first booking ",
+      code: "RYDE1000",
+      validity: "Valid till 31 December",
       photo_url: offer1,
     },
     {
-      title: "Diwali Offer",
-      content: "20% off on every drive",
-      code: "DIW01",
-      validity: "valid till 15 November",
+      title: "Free Delivery",
+      content: "Within 10 Kms from hub",
+      code: "FREEDD",
+      validity: "Valid till 31 December",
       photo_url: offer2,
     },
     {
-      title: "Special Offer",
-      content: "25% off on every drive",
-      code: "SPC01",
-      validity: "valid till 15 November",
+      title: "Flat ₹200 - ₹1000 Off*",
+      content: "only on weekdays",
+      code: "RYDEWD",
+      validity: "Valid till 31 December",
       photo_url: offer2,
     },
-    {
-      title: "Mega Offer",
-      content: "40% off on every drive",
-      code: "MEG01",
-      validity: "valid till 15 November",
-      photo_url: offer2,
-    },
+    // {
+    //   title: "Mega Offer",
+    //   content: "40% off on every drive",
+    //   code: "MEG01",
+    //   validity: "Valid till 31 December",
+    //   photo_url: offer2,
+    // },
   ];
 
   useEffect(() => {

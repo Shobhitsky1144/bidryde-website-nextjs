@@ -48,8 +48,10 @@ function Form() {
     <div className="formDiv">
       
       <form onSubmit={handleSubmit}>
+        <h1 style={{paddingBottom:'1rem'}}>Apply for Loan</h1>
         <label>
-          Full Name <span className="required-star">*</span>
+          Full Name 
+          {/* <span className="required-star">*</span> */}
           <br />
           <input
             type="text"
@@ -61,7 +63,21 @@ function Form() {
         </label>
 
         <label>
-          Job Title <span className="required-star">*</span>
+        Mobile Number 
+        {/* <span className="required-star">*</span> */}
+          <br />
+          <input
+            type="tel"
+            name="contactNo"
+            value={formData.contactNo}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+
+        <label>
+         City 
+         {/* <span className="required-star">*</span> */}
           <br />
           <input
             type="text"
@@ -73,7 +89,8 @@ function Form() {
         </label>
 
         <label>
-          Business Name <span className="required-star">*</span>
+          Car Name 
+          {/* <span className="required-star">*</span> */}
           <br />
           <input
             type="text"
@@ -84,20 +101,11 @@ function Form() {
           />
         </label>
 
-        <label>
-          Contact No <span className="required-star">*</span>
-          <br />
-          <input
-            type="tel"
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
+      
 
         <label style={{marginBottom:'30px'}}>
-          Email <span className="required-star">*</span>
+        Required Loan Amount 
+        {/* <span className="required-star">*</span> */}
           <br />
           <input
             type="email"
@@ -109,7 +117,7 @@ function Form() {
         </label>
 
         <CssButtonSolid
-          title="Connect"
+          title="Submit"
           backgroundColor="#276EBC"
           textColor="#fff"
           borderRadius="10px"

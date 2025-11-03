@@ -34,7 +34,7 @@ import {
   hyderabad,
   chennai,
 } from "./OperatingZones";
-import { sofia, arthim, testimonialIcon } from "./Testimonials";
+import { sofia, arthim, testimonialIcon ,sunny,appstore} from "./Testimonials";
 import {
   faqAccountCategoryIcon,
   faqBidCategoryIcon,
@@ -163,7 +163,9 @@ export const images = {
   testimonials: {
     sofia,
     arthim,
+    sunny,
     testimonialIcon,
+    appstore
   },
   faq: {
     faqAccountCategoryIcon,

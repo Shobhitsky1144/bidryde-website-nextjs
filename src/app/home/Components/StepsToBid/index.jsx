@@ -13,24 +13,24 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 const cardsInfo = [
   {
     image: assets.images.howToBid.illustration_01,
-    firstLine: "Select location and ",
-    secondLine: "travel dates",
+    firstLine: "Select your pickup" ,
+    secondLine: "location and trip dates",
   },
   {
     image: assets.images.howToBid.illustration_02,
-    firstLine: "Choose car and ",
-    secondLine: "verify yourself",
+    firstLine: "Choose your preferred ",
+    secondLine: "car and place a bid ",
   },
   {
     image: assets.images.howToBid.illustration_03,
-    firstLine: "Place your bid and win ",
-    secondLine: "the car at your price",
+    firstLine: "Accept best price directly ",
+    secondLine: "from car owners and make the payment",
   },
   {
     image: assets.images.howToBid.illustration_04,
-    firstLine: "Make payment and get the ",
-    secondLine: "car delivered at your ",
-    thirdLine: " doorstep",
+    firstLine: "Car delivered to your ",
+        secondLine: "doorstep – drive with no ",
+    thirdLine: " kilometer limits!  ",
   },
 ];
 
@@ -85,8 +85,8 @@ const StepsToBid = () => {
     <div className="stepsToBid">
       <div className="stepsToBidContainer">
         <div className="SectionTitle">
-          <h1>How To Bid</h1>
-          <p>Bid a car for rent at your price in just 4 simple steps</p>
+          <h1>How To Book</h1>
+          <p>Rent a car at your price in just 4 simple steps</p>
           <Divider />
         </div>
 

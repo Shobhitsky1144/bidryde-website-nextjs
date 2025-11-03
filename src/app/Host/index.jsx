@@ -36,22 +36,20 @@ const hostImages = {
 const features = [
   {
     img: hostImages.convenienceIcon,
-    feature: "Convenience",
+    feature: "Transparent Earnings",
     description:
-      "Your buddy is always with you, except when you are busy doing other chores. We make sure that relation is intact and forever.",
-  },
-  {
-    img: hostImages.privacyIcon,
-    feature: "100% Privacy",
-    description:
-      "Being our partners, we value your privacy. Apart from us no other person will know who you are or your whereabouts.",
+"Earn monthly payouts from bookings through the Host App, with complete transparency on customer payments."
   },
   {
     img: hostImages.hassleFreeIcon,
-    feature: "Hassle Free",
+    feature: "Damages and General Servicing",
     description:
-      "Service Excellence is what we preach and we make sure you see that. Your buddy will be taken and handed over safe and sound by our delivery partners without any trouble.",
-  },
+"We take responsibility for all damages and provide free general maintenance every 10,000 kms."  },
+  {
+    img: hostImages.hosturcarResponsive,
+    feature: "Dedicated Support Manager",
+    description:
+"A dedicated Support Manager will handle all your hosting needs — from onboarding to payouts — ensuring a seamless hosting experience."  },
 ];
 
 function Host() {
@@ -66,8 +64,8 @@ function Host() {
         <div className="hostIntro">
           <div className="hostIntroLeft">
             <div className="hostIntroHeader">
-              <p className="p1">Share your ryde</p>
-              <p className="p2">Earn on your terms</p>
+              <p className="p2">Earn ₹20K – ₹60K Monthly on Your Idle Car</p>
+              <p className="p1">Turn your car into a money-making machine — let it pay its own EMIs and generate extra income for you!</p>
            
             </div>
 
@@ -101,7 +99,7 @@ function Host() {
             <h1>Host your Car</h1>
             <div style={{ display: 'inline-block' }}>
 
-            <p className="p__header__host">Host a car in just 3 simple steps</p>
+            <p className="p__header__host">Attach your idle car in just 3 simple steps</p>
        
               <Divider />
             </div>
@@ -118,8 +116,7 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                Join us by filling the form and our experts will reach out for onboarding process.
-                </div>
+                Join us by filling out the form, and our onboarding team will reach out to you.          </div>
               </div>
 
               <div className="step__ step__2">
@@ -136,8 +133,7 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                After fixing the appointment, our expert will visit to inspect and install safety devices to your car
-                </div>
+                Our team will book an appointment at your convenience to inspect and install a GPS device in your car.                </div>
               </div>
 
               <div className="step__ step__3">
@@ -149,9 +145,7 @@ function Host() {
                   />
                 </div>
                 <div className="matter__host">
-                Upon confirmation, you will be part 
-of next generation Host enablement 
-platform to achieve your financial freedom
+                Upon signing the agreement, your car will be onboarded to the Host App and ready to earn.
                 </div>
               </div>
             </div>
@@ -193,7 +187,7 @@ platform to achieve your financial freedom
             </div>
             <div className="formSectionHeader">
               <p className="p1">Your Car&apos;s New Role</p>
-              <p className="p2">Generating Income as a host</p>
+              <p className="p2">Generating income as an asset</p>
             </div>
           </div>
           <div className="form" id="InterestForm">
@@ -205,7 +199,7 @@ platform to achieve your financial freedom
             <h1 className="h1_headr__2">Why host with us?</h1>
             <div style={{ display: 'inline-block' }}>
 
-            <p className="p__header__host">Trust and security at the core</p>
+            <p className="p__header__host">Trust and Transparency at the core</p>
             <Divider />
             </div>
           </div>
@@ -223,7 +217,10 @@ platform to achieve your financial freedom
             ))}
           </Grid>
         </div>
-        <Faq  isHost={true}/>
+        {/* <Faq  isHost={true}/> */}
+        <div style={{paddingBottom:'1rem'}}>
+        <Faq data="home"/>
+        </div>
         <Footer />
         <div className="floatingButton">
           <FloatingButton />

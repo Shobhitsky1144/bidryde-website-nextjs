@@ -2,13 +2,14 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 0rem;
   margin-bottom: 50px;
+  width: 33%;
 
   /* Add space between the icon and content */
   p {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 22px;
+    margin-right: 22px;
     margin-top: -1.5rem;
     font-size: 16px;
     padding-right: 0.25rem;
@@ -71,163 +72,11 @@
 
 .profileName {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
   margin: 0;
   justify-content: center;
 }
 
-/* Large Desktop */
-// @media (min-width: 1400px) and (max-width: 1699px) {
-//   .testimonialCard {
-//     gap: 1.5rem;
-//     margin-bottom: 40px;
-
-//     p {
-//       margin-left: 20px;
-//       margin-right: 20px;
-//       font-size: 15px;
-//     }
-
-//     img {
-//       width: 40px;
-//       height: 40px;
-//       margin-top: -20px;
-//     }
-
-//     &Container {
-//       width: 400px;
-//       height: 14rem;
-//       border-radius: 30px;
-//       gap: 0.8rem;
-//     }
-
-//     &ContainerProfile {
-//       gap: 0.8rem;
-//     }
-//   }
-
-//   .profileImageWrapper {
-//     width: 50px;
-//     height: 50px;
-//     margin-left: 1.5rem;
-//   }
-
-//   .profileName {
-//     font-size: 0.9rem;
-//   }
-// }
-
-// /* Desktop */
-// @media (min-width: 1198px) and (max-width: 1400px) {
-//   .testimonialCard {
-//     gap: 1.5rem;
-//     margin-bottom: 40px;
-
-//     p {
-//       margin-left: 20px;
-//       margin-right: 20px;
-//       font-size: 15px;
-//     }
-
-//     img {
-//       width: 40px;
-//       height: 40px;
-//       margin-top: -20px;
-//     }
-
-//     &Container {
-//       width: 300px;
-//       height: 14rem;
-//       border-radius: 30px;
-//       gap: 0.8rem;
-//     }
-
-//     &ContainerProfile {
-//       gap: 0.8rem;
-//     }
-//   }
-
-//   .profileImageWrapper {
-//     width: 50px;
-//     height: 50px;
-//     margin-left: 1.5rem;
-//   }
-
-//   .profileName {
-//     font-size: 0.9rem;
-//   }
-// }
-
-// /* Tablet */
-// @media screen and (max-width: 1198px) {
-//   .testimonialCard {
-//     gap: 1rem;
-
-//     p {
-//       margin-left: 20px;
-//       margin-right: 20px;
-//       font-size: 14px;
-//     }
-
-//     img {
-//       width: 40px;
-//       height: 40px;
-//     }
-
-//     &Container {
-//       width: 90vw;
-//     }
-//   }
-// }
-
-// /* Small Tablet */
-// @media screen and (max-width: 968px) {
-//   .testimonialCard {
-//     flex-direction: column;
-//     align-items: center;
-
-//     img {
-//       width: 32px;
-//       height: 32px;
-//     }
-
-//     &Container {
-//       width: 75vw;
-//       padding: 1rem;
-//       border-radius: 15px;
-//     }
-//   }
-// }
-
-// /* Mobile */
-// @media screen and (max-width: 600px) {
-//   .testimonialCard {
-//     p {
-//       margin-left: 10px;
-//       margin-right: 10px;
-//       font-size: 12px;
-//     }
-
-//     img {
-//       width: 28px;
-//       height: 28px;
-//     }
-
-//     &Container {
-//       width: 80vw;
-//       padding: 0.5rem;
-//     }
-//   }
-
-//   .profileImageWrapper {
-//     width: 40px;
-//     height: 40px;
-//   }
-
-//   .profileName {
-//     font-size: 0.9rem;
-//   }
-// }
 
 
 
@@ -266,7 +115,7 @@ font-size: 16px;
   .testimonialsContainerCards {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 2rem;
     margin-top: 2rem;
   }
   
@@ -296,7 +145,8 @@ font-size: 16px;
   .testimonialCardContainerProfile{
     // margin-top: -5px;
     align-items: center;
-    margin-left: 15px;
+    // margin-left: 15px;
+    bottom: 3rem!important;
   }
   .profileName{
      margin-top: -10px;
@@ -334,6 +184,14 @@ font-size: 16px;
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
+  .testimonialsContainerCards{
+    gap: 1rem!important;
+    
+  }
+
+  .testimonialCard{
+    // width:45%!important;
+  }
   .heroSectionContainer__left{
     width: 69%!important;
   }
@@ -373,7 +231,9 @@ font-size: 16px;
 
 
 .testimonialCardContainerProfile{
-  margin: 0 1rem;
+  // margin: 0 1rem;
+  position: absolute;
+    bottom: 1rem;
 }
 
 .profileImageWrapper{

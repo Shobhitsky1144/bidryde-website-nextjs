@@ -39,9 +39,9 @@ const faqOptions = [
     link: "paymentCharges",
   },
   {
-    title: "Host a car",
+    title: "Attach your Car",
     icon: assets.images.faqPage.HostCar,
-    link: "host_a_car",
+    link: "attach_your_car",
   },
 ];
 
@@ -54,7 +54,7 @@ const Faq = () => {
           <div className="faqHeader">
             <div className="titleContainer">
               <div className="title">FAQ&apos;s</div>
-              <div className="subtitle">Answers towards the road</div>
+              <div className="subtitle">On the road to answers</div>
               <Divider />
             </div>
             <div className="searchField">

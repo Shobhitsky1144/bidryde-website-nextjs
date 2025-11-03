@@ -27,20 +27,20 @@ function Footer() {
             <div className="footerLogo">
               <Image src={footerAssets.carLogo} alt="Car Logo" />
             </div>
-            <p className="footerText footerweb">
-              A self-drive car rental marketplace where
+            <p className="footerText ">
+              A self-drive car rental platform where
              you can book any car you want and at the 
-              same time, host any car you have.
+              same time,host any car you have.
 
             
             </p>
 
-            <p className="footerText footermobile">
+            {/* <p className="footerText footermobile">
             A car-sharing marketplace where you <br/>
               can book any car you want and at the <br/>
                same time, host any car you have.
 
-               </p>
+               </p> */}
 
             <div className="socialIcons">
               <Grid container spacing={2}>
@@ -142,13 +142,12 @@ function Footer() {
               <Grid container spacing={3}>
                 <Grid item xs={12} md={12}>
                   <Link href="/Host" className="footerLink">
-                    Host Car
+                  Attach your Car
                   </Link>
                 </Grid>
                 <Grid item xs={12} md={12}>
                   <Link href="/joinWithUs" className="footerLink">
-                    Join us
-                  </Link>
+                  FinCorp                  </Link>
                 </Grid>
                 <Grid item xs={12} md={12}>
                   <Link href="/faq" className="footerLink">

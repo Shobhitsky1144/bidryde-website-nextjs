@@ -11,6 +11,75 @@
 
 }
 
+.common_btn{
+  margin-top: 18px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+ 
+}
+
+ .work_parent{
+  margin: 6% auto;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: unset;
+
+h1{
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+p{
+  margin-top: 0px;
+  	font-size: 15px;
+    margin-bottom: 1%;
+    letter-spacing: 1px;
+    width: max-content;
+    padding-bottom: 15px;
+  
+}
+
+ .btn_grp{
+  display: flex;
+  justify-content: space-between;
+  // background-color: red;
+  width: 100%;
+ 
+  .englishBtn{
+  
+    background:#276EBC;
+    font-size: 20px;
+    padding: 10px 40px;
+    }
+    .teluguBtn{
+    color: #276EBC;
+    background: #fff;
+    border:1px solid #276EBC;
+    font-size: 20px;
+    padding: 10px 40px;
+    
+    
+    }
+    >div{
+      text-align: center;
+    }
+}
+
+
+
+}
+
+
+
+
 .intro {
   background-color: #276EBC;
   width: 100%;
@@ -23,7 +92,7 @@
 
 .intro .clouds {
   width: 100%;
-  height: 65px;
+  height: 55px;
   background-image: url('../../assets/images/JoinWithUs/clouds.png');
   background-size: cover;
   background-position: center;
@@ -37,7 +106,7 @@
 
 .intro_text {
   width: 50%;
-  padding: 8% 5%;
+  padding: 3% 5%;
 }
 
 .intro_text p {
@@ -201,103 +270,6 @@ p.tagLinesTextStyling.undefined{
   font-size: 14px;
 }
 
-// @media screen and (max-width: 1024px) {
-
-//   .intro {
-//       height: 50vh;
-//   }
-
-//   .intro .clouds {
-//       background-size: contain;
-//       background-repeat: no-repeat;
-//       background-image: url('../../assets/images/JoinWithUs/cloudsMobileAboutbg.png');
-//   }
-
-//   .intro_content {
-//       flex-direction: column;
-//       justify-content: center;
-//   }
-
-//   .intro_text {
-//       width: 100%;
-//       padding: 3% 5%;
-//   }
-
-//   .intro_text p {
-//     color: white;
-//     font-size: 16px;
-//     text-align: center;
-//     margin-top: -21px;
-//   }
-
-//   .intro_text span {
-//       font-size: 22px;
-//   }
-
-//   .intro_image {
-//       width: 100%;
-//   }
-
-//   .intro_image img {
-//       width: 80%;
-//       height: 70%;
-//   }
-
-//   .cards>p {
-//       font-family: Archivo;
-//       font-size: 16px;
-//       font-weight: 600;
-//   }
-
-//   .cards .p{
-//     font-size: 18px;
-//   }
-
-//   .formSection {
-//       flex-direction: column;
-//   }
-
-//   .heading{
-//       width: 100%;
-//   }
-
-//   .heading img{
-//       display: none;
-//   }
-
-//   .form{
-    
-//     align-self: center;
-//       // width: 70%;
-//   }
-
-//   .joinSectionHeader__top{
-//     margin: 18% auto;
-//     margin-bottom: 2%;
-//   }
-
-//   .joinSectionHeader__bottom{
-//     margin: 5% auto;
-//     margin-bottom: 2%;
-    
-//   }
-
-//   .joinSectionHeader__bottom h1{
-//     font-size: 18px;
-//     margin-bottom: 3%;
-//   }
-
-//   .joinSectionHeader__bottom p{
-//     margin: 1% auto;
-//     text-align: center;
-//     font-size: 14px;
-//     margin-bottom: 3%;
-
-//   }
-// }
-
-
-
 
 @media only screen and (max-width: 500px) {
   .cards {
@@ -386,83 +358,6 @@ p.tagLinesTextStyling.undefined{
 }
 
 
-
-
-
-// @media only screen and (max-width: 1024px) {
-  
-//   .joinSectionHeader__top p{
-//     font-size: 100%;
-//     margin-bottom: 3%;
-//   }
-
-//   .formSection{
-//     width: 100%;
-//   }
-
-
-
-
-// }
-
-
-// @media only screen and  (max-width:480px) {
-//   .left_right_margin{
-//     padding: 0px 16px!important;
-//   }
-
-//   .intro_text{
-//     p{
-//       padding-top: 60px!important;
-//     }
-   
-  
-//   }
-//   .heading{
-//     font-size: 13px!important;
-//     letter-spacing: 0!important;
-//   }
-
-//   .intro_image img {
-// top: -26px!important;
-//   }
-//   .joinSectionHeader__top{
-//    margin-top: 70px!important;
-//   }
-//   .joinSectionHeader__top p{
-//     margin-top: 5px!important;
-//     letter-spacing: 1px!important;
-//     font-size: 11px!important;
-//   }
-//   .cards .p{
-//     font-size: 15px!important;
-//     font-weight: 500!important;
-//   }
-//   .plainText{
-//     letter-spacing: 0!important;
-//   }
-//   .cardDiv{
-//     margin: 4% 0!important;
-//   }
-//   .joinSectionHeader__bottom h1{
-//     height: unset!important;
-//     font-size: 20px!important;
-//   }
-//   .joinSectionHeader__bottom_parent{
-//     width: 100%!important;
-//     // width: fit-content!important;
-//   }
-//   .form{
-//     margin-top: 20px!important;
-//     margin-bottom: 35px!important;
-//     width: 90%!important;
-//   }
- 
-//   .intro_text p{
-//     padding: 29px 0!important;
-//     font-size: 14px!important;
-//   }
-// }
 
 @media only screen and  (max-width:480px) {
   .left_right_margin{

@@ -286,14 +286,14 @@ function SearchPage() {
         <div className="circle circle4"></div>
 
         {/* Content */}
-        <h2 className="titless">Diwali Offer</h2>
+        <h2 className="titless">Welcome Offer</h2>
 
         <div className="offer-box">
-          <p className="offer-text">20% off on every drive</p>
+          <p className="offer-text">10% off on first drive</p>
 
           <div className="offerdiv">
-          <button className="offer-code">Code: DIW01</button>
-          <p className="validity">valid till 15 November</p>
+          <button className="offer-code">Code: RYDE1000</button>
+          <p className="validity">Valid till 31 December</p>
           </div>
         </div>
       </div>

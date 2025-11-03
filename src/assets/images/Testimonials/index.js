@@ -1,5 +1,7 @@
-import sofia from './sofia.png';
-import arthim from './arthim.png';
+import sofia from './sofia.jpg';
+import arthim from './arthim.jpg';
+import sunny from './sunny.jpg';
 import testimonialIcon from './testimonial-icon.png'
+import appstore from './appstore.png';
 
-export { sofia, arthim, testimonialIcon };
+export { sofia, arthim, sunny,testimonialIcon,appstore };

@@ -38,15 +38,16 @@ export default function Custom404() {
     margin: "2%",
     fontSize: "clamp(2rem, 8vw, 3rem)",
     lineHeight: "1.2",
-    letterSpacing:"1px"
+    letterSpacing:"1px",
+    fontWeight:"800",
     // fontWeight:"bold"
   };
 
   const subHeadingStyle = {
     // margin: "5%",
-    fontSize: "clamp(1rem, 4vw, 1.5rem)",
+    fontSize: "20px",
     lineHeight: "1.3",
-    fontWeight:"100",
+    fontWeight:"400",
     marginBottom:'15px'
   };
 

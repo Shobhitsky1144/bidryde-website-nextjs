@@ -112,7 +112,7 @@ function Navbar({ home, hidePageButtons }) {
           {button && !hidePageButtons && (
             <div className="navbar__buttons">
             <CssButtonOutline
-  title="Attach Us"
+  title="FinCorp"
   backgroundColor="#FFFFFF"
   textColor="#276EBC"
   margin="0 0.8rem 0 0.8rem"
@@ -127,7 +127,7 @@ function Navbar({ home, hidePageButtons }) {
 
 
 <CssButtonSolid
-  title="Become a Host"
+  title="Attach your Car"
   backgroundColor="#276EBC"
   textColor="#fff"
   fontSize="17px"
