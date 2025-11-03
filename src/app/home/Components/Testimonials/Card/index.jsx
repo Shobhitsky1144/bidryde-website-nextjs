@@ -38,7 +38,7 @@ const Card = ({ data }) => {
           <h5 className='profileName'>{data.name}</h5>
         
         </div>
-        <div style={{position:'absolute',bottom:'5px',right:'56px',fontWeight:'300'}}>
+        <div  className="review" style={{position:'absolute',bottom:'5px',right:'56px',fontWeight:'300'}}>
             source:  {data.name=="Pasam Sunny" ?
            
            <Image

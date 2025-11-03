@@ -48,7 +48,7 @@ const TrendingOffers = () => {
 
     const updateCardsPerSlide = () => {
       if (window.innerWidth < 768) setCardsPerSlide(1);
-      else if (window.innerWidth < 1024) setCardsPerSlide(2);
+      else if (window.innerWidth < 1200) setCardsPerSlide(2);
       else setCardsPerSlide(3);
     };
 
