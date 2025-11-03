@@ -329,7 +329,7 @@ p.tagLinesTextStyling.undefined{
 
   .joinSectionHeader__top{
     margin: 15% auto;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
   }
 
   .cards .p{
@@ -341,10 +341,9 @@ p.tagLinesTextStyling.undefined{
 
 @media screen and (max-width: 380px) {
 
-  
-  
-
-  
+  .intro_text h1{
+    margin-top: 2rem;
+  }
   .joinSectionHeader__top{
     margin-top: 30%;
   }
@@ -360,6 +359,32 @@ p.tagLinesTextStyling.undefined{
 
 
 @media only screen and  (max-width:480px) {
+  .cloud_web{
+    display: none;
+  }
+  .cloud_mobile{
+    display: block;
+  }
+
+  .work_parent .btn_grp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+.frame{
+  width: 100%!important;
+}
+
+.formDiv h1{
+  text-align: center;
+  font-size: 26px;
+}
+
+.telugu_section{
+  margin-top: 60px!important;
+}
+
   .left_right_margin{
     padding: 0px 26px!important;
   }
@@ -370,10 +395,24 @@ p.tagLinesTextStyling.undefined{
   .intro_content{
     display: block;
   }
-
+.telugu_section>div{
+  padding-top: 1rem!important;
+}
+.english_section>div{
+  padding-top: 1rem!important;
+}
   .intro_text{
     width: 100%;
     padding: 0% 9%;
+    text-align: center;
+    h1{
+      font-size: 22px;
+      font-weight: normal;
+      margin-top: 2rem;
+    }
+    h3{
+      font-size: 16px;
+    }
     p{
    
       font-size: 13px!important;
@@ -418,6 +457,7 @@ height: 100%;
 
   .joinSectionHeader__bottom {
     margin: 0px auto!important;
+    display: flex;
   }
   .joinSectionHeader__bottom h1{
     // height: unset!important;
@@ -526,6 +566,30 @@ height: 100%;
 
 
 @media  (min-width:481px) and  (max-width:767px) {
+  .cloud_web{
+    display: none;
+  }
+  .cloud_mobile{
+    display: block;
+  }
+
+  .work_parent .btn_grp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+.frame{
+  width: 100%!important;
+}
+
+.telugu_section{
+  margin-top: 60px!important;
+}
+.formDiv h1{
+  text-align: center;
+}
+
   .left_right_margin{
     padding: 0px 26px!important;
   }
@@ -537,6 +601,8 @@ height: 100%;
   .intro_text{
     width: 100%;
     padding: 0% 9%;
+    text-align: center;
+
     p{
       padding-top: 0px 0px!important;
     }
@@ -590,6 +656,7 @@ height: 100%;
     margin-bottom: 35px!important;
     width: 100%!important;
   }
+ 
   .intro_text p{
     padding: 29px 0!important;
     font-size: 14px!important;
@@ -643,13 +710,28 @@ height: 100%;
   .heading{
     letter-spacing: 0!important;
   }
+  .intro_text h1{
+    margin-top: 2rem;
+  }
 }
 
 
 @media  (min-width:768px) and  (max-width:991px) {
+  .cloud_web{
+    display: block;
+  }
+  .clouds_mobile{
+    display: none;
+  }
 
+  .frame{
+    width: 330px!important;
+  }
   .left_right_margin{
     padding: 30px 30px;
+  }
+  .intro_image{
+    width: 50%;
   }
 
   .intro_image img{
@@ -680,12 +762,27 @@ height: 100%;
   
   }
   .intro_text{
-    width: 60%;
+    width: 50%;
+  }
+  .intro_text h1{
+    margin-top: 2rem;
   }
 }
 
 @media  (min-width:992px) and  (max-width:1199px) {
+  .intro_image{
+    width: 50%;
+  }
 
+  .cloud_web{
+    display: block;
+  }
+  .clouds_mobile{
+    display: none;
+  }
+  .frame{
+    width: 350px!important;
+  }
   .cardDiv{
     margin:4% 0!important;
   }
@@ -744,5 +841,35 @@ height: 100%;
   .intro_image img{
     top: 112px;
   }
+  .intro_text h1{
+    margin-top: 2rem;
+  }
 }
 
+@media  (min-width:1200px) and  (max-width:1300px) {
+  .cloud_web{
+    display: block;
+  }
+  .clouds_mobile{
+    display: none;
+  }
+  .frame{
+    width: 440px!important;
+  }
+
+  .intro_image{
+    width: 50%;
+  }
+}
+
+@media  (min-width:1301px) {
+  .intro_image{
+    width: 50%;
+  }
+  .cloud_web{
+    display: block;
+  }
+  .clouds_mobile{
+    display: none;
+  }
+}

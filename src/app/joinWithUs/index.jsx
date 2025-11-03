@@ -61,15 +61,15 @@ function JoinWithUs() {
       <div className="left_right_margin">
       <div className="intro">
      
-        {/* <div className="cloudsz">
-        <Image 
+        <div className="clouds clouds_mobile">
+        {/* <Image 
     src={clouds} 
     width={500} 
     height={500} 
     alt="Intro Image" 
-  />
+  /> */}
 
-        </div> */}
+        </div>
         <div className="intro_content">
           <div className="intro_text">
             {/* <p>
@@ -101,7 +101,7 @@ that pays itself !
      </div> */}
      
      <div className="intro_image">
-     <div className="clouds">
+     <div className="clouds cloud_web">
         
 
         </div>
@@ -150,7 +150,7 @@ that pays itself !
             </p>
            
 <div className="btn_grp">
-  <div>
+  <div className="english_section">
   <button className="common_btn englishBtn" >English</button>
 
   <div style={{paddingTop:'3rem'}}>
@@ -158,7 +158,7 @@ that pays itself !
     </div>
 
   </div>
-  <div>
+  <div className="telugu_section">
   <button className="common_btn teluguBtn" >Telugu</button>
   <div style={{paddingTop:'3rem'}}>
   <YouTubeEmbed videoId="dQw4w9WgXcQ" />

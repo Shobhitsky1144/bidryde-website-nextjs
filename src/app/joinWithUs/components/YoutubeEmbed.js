@@ -1,4 +1,5 @@
 import React from "react";
+import './../JoinWithUs.scss'
 
 const YouTubeEmbed = ({ videoId }) => {
   return (
@@ -7,7 +8,7 @@ const YouTubeEmbed = ({ videoId }) => {
         width="500"
   height="260"
   style={{borderRadius:'25px'}}
-        className="absolute top-0 left-0 w-full h-full rounded-xl"
+        className="frame absolute top-0 left-0 w-full h-full rounded-xl"
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video player"
         frameBorder="0"
