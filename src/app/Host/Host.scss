@@ -1,5 +1,7 @@
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@600&family=Archivo+Black&display=swap");
+@import "@fontsource/archivo"; /* defaults to 400 weight */
+
 
 /* Base Layout */
 .hostLayout {
@@ -15,6 +17,7 @@
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 3px;
+  font-family: "Archivo";
 }
 
 .hostCircle{
@@ -359,11 +362,15 @@
   // margin-bottom: 0.5rem;
   font-weight: 400;
   font-weight: 800;
+
+  font-family: "Archivo"
+  
 }
 
 .hostSectionHeader p,
 .hostSectionHeader__ p {
   font-size: clamp(1rem, 3vw, 15px);
+  font-family: "Archivo";
   // margin-bottom: 0.5rem;
 }
 
@@ -382,6 +389,8 @@
 }
 .p__header__host{
   padding:4px 0px;
+  font-family: "Archivo";
+  letter-spacing: 1px;
 }
 .hostCardSection .MuiGrid-container .MuiGrid-item {
   display: flex;
