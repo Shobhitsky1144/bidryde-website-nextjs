@@ -1,0 +1,198 @@
+// @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+// .faq {
+//   display: flex;
+//   flex-direction: column;
+//   overflow-x: hidden;
+//   width: 100%;
+//   align-items: center;
+//   padding: 0 10px; /* Ensure proper spacing */
+// }
+
+// .titleContainer {
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   margin-bottom: 20px;
+// }
+
+// .title {
+//   // font-family: "Archivo Black", sans-serif;
+//   font-weight: 400;
+//   font-size: 3rem;
+//   color: #000000;
+//   margin-bottom: 10px;
+//   text-align: center;
+// }
+
+// .subtitle {
+//   // font-family: "Archivo", sans-serif;
+//   font-weight: 500;
+//   font-size: 22px;
+//   line-height: 23.94px;
+//   letter-spacing: 2%;
+//   text-align: center;
+//   margin-bottom: 4px;
+//   color: #000000;
+// }
+
+// .searchField {
+//   width: 60vw;
+//   height: 55px;
+//   margin-top: 20px;
+//   padding: 10px 15px;
+//   display: flex;
+//   align-items: center;
+//   background-color: #f6f1f1;
+//   border-radius: 9px;
+//   max-width: 100%; /* Make it fluid */
+// }
+
+// .searchField input {
+//   outline-width: 0;
+//   border: none;
+//   background-color: transparent;
+//   color: #000;
+//   flex-grow: 1;
+//   font-size: 16px;
+// }
+
+// .hostFaqContainer {
+//   margin-top: 25px;
+//   padding-left: 8%;
+//   padding-right: 8%;
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+// }
+
+// .hostFaqHeader {
+//   display: flex;
+//   flex-direction: row;
+//   width: 100%;
+//   justify-content: space-between;
+//   align-items: flex-end;
+// }
+
+// .hostFaqOptions {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   justify-content: space-between;
+//   margin-top: 25px;
+//   width: 100%;
+// }
+
+// .hostFaqOptionCard {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   width: 22vw;
+//   min-width: 250px; /* Ensure card does not get too small */
+//   height: 90px;
+//   background-color: #d4e9ff;
+//   border-radius: 10px;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+//   padding: 15px;
+//   font-weight: 600;
+//   line-height: 24px;
+//   letter-spacing: 0.02em;
+//   box-sizing: border-box;
+//   transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+// }
+
+// .hostFaqOptionCard:hover {
+//   transform: translateY(-5px); /* Slight hover effect */
+// }
+
+// /* Media Queries for Responsiveness */
+
+// @media only screen and (max-width: 1200px) {
+//   .faq {
+//     padding-left: 5%;
+//     padding-right: 5%;
+//   }
+
+//   .title {
+//     font-size: 2.5rem;
+//   }
+
+//   .searchField {
+//     width: 50vw;
+//   }
+
+//   .hostFaqOptionCard {
+//     width: 48%; /* Adjust to 2 cards per row */
+//   }
+// }
+
+// @media only screen and (max-width: 900px) {
+//   .faq {
+//     padding-left: 5%;
+//     padding-right: 5%;
+//   }
+
+//   .searchField {
+//     width: 100%; /* Full width on smaller screens */
+//   }
+
+//   .hostFaqContainer {
+//     padding-left: 5%;
+//     padding-right: 5%;
+//   }
+
+//   .hostFaqOptionCard {
+//     width: 90%; /* Take more width for better spacing */
+//     height: 80px;
+//     margin-top: 5px;
+//     margin-bottom: 10px;
+//   }
+
+//   .hostFaqOptions {
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .titleContainer {
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//   }
+
+//   .title {
+//     font-size: 2rem;
+//   }
+
+//   .subtitle {
+//     font-size: 18px;
+//   }
+// }
+
+// @media only screen and (max-width: 600px) {
+//   .title {
+//     font-size: 1.5rem;
+//     padding: 30px;
+//     width: 100%;
+//   }
+
+//   .titleContainer {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   .subtitle {
+//     font-size: 16px;
+//   }
+
+//   .searchField {
+//     width: 100%;
+//   }
+
+//   .hostFaqOptionCard {
+//     width: 100%; /* Full width on very small screens */
+//     height: 70px;
+//   }
+// }
