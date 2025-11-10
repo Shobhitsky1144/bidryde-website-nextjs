@@ -40,6 +40,7 @@ export default function Custom404() {
     lineHeight: "1.2",
     letterSpacing:"1px",
     fontWeight:"800",
+    fontFamily: "Archivo"
     // fontWeight:"bold"
   };
 

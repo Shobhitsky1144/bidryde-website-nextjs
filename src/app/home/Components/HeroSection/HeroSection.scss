@@ -20,6 +20,7 @@ padding: 20px 10px;
     letter-spacing: 3px;
     font-weight: 600;
     padding-top: 4rem;
+    font-family: "Archivo";
   }
 }
 
@@ -29,9 +30,11 @@ padding: 20px 10px;
   display: flex;
   flex-direction: column;
   p{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     color: #262626;
+    font-family: "Archivo";
+    letter-spacing: 1px;
   }
 }
 
