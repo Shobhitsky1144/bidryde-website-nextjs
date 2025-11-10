@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "./JoinWithUs.scss";
 import Image from "next/image";
 
@@ -26,7 +28,7 @@ const JoinWithUsAssets = {
 const cardData = [
   {
     title: "No CIBIL Score Required",
-    text: "BNo credit score? No problem. Take a loan against your car without worrying – BidrYde FinCorp approves loans based on your car, not your credit history.",
+    text: "No credit score? No problem. Take a loan against your car without worrying – BidrYde FinCorp approves loans based on your car, not your credit history.",
     illustration: JoinWithUsAssets.OrganicReach,
 
   },
@@ -54,6 +56,10 @@ const cardData = [
 ];
 
 function JoinWithUs() {
+
+const [selectedLanguage, setselectedLanguage] = useState("english")
+
+
   return (
     <>     <Navbar />
     <div className="joinWithUsLayout">
@@ -87,7 +93,7 @@ that pays itself !
             Get Instant cash by keeping your car — and let it repay loan itself for every kilometer it runs.
             </h3>
 
-            <button className="common_btn">Apply for Loan</button>
+            <button className=" apply_btn">Apply for Loan</button>
           </div>
 
           {/* <div> */}
@@ -124,8 +130,9 @@ that pays itself !
 
           <div className="joinSectionHeader__top">
             <h1 align="center">Why BidrYde FinCorp?</h1>
-            <p className="p__header__join__top" align="center">Empowering You to Borrow Car Loan Smarter</p>
-            <Divider data="about"/>
+            <p className="p__header__join__top" align="center">Empowering You to Borrow Car Loan Smarter  
+              <Divider data="about"/></p>
+          
           </div>
       <div className="cards">
         {/* <p>BidRyde Pioneers</p>
@@ -145,13 +152,21 @@ that pays itself !
 <div className=" work_parent">
 <h1 align="center">How it works?</h1>
             <p className="p__header__join__top" align="center">Watch how BidrYde FinCorp works in a video<br/> 
-            
+            <div style={{paddingTop:'3px'}}>
             <Divider data="about"/> 
+            </div>
+            <br/>
             </p>
            
 <div className="btn_grp">
   <div className="english_section">
-  <button className="common_btn englishBtn" >English</button>
+  <button 
+  className={`common_btn ${
+    selectedLanguage === "english" ? "activeBtn" : ""
+  }`}
+  onClick={() => setselectedLanguage("english")}
+
+  >English</button>
 
   <div style={{paddingTop:'3rem'}}>
   <YouTubeEmbed videoId="dQw4w9WgXcQ" />
@@ -159,7 +174,12 @@ that pays itself !
 
   </div>
   <div className="telugu_section">
-  <button className="common_btn teluguBtn" >Telugu</button>
+  <button 
+    className={`common_btn ${
+      selectedLanguage === "telugu" ? "activeBtn" : ""
+    }`}
+    onClick={() => setselectedLanguage("telugu")}
+  >Telugu</button>
   <div style={{paddingTop:'3rem'}}>
   <YouTubeEmbed videoId="dQw4w9WgXcQ" />
     </div>

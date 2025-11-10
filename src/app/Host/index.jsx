@@ -14,7 +14,7 @@ import { assets } from "@/assets";
 import { Form, HostSquareCard } from "./components";
 import { uid } from "react-uid";
 import FloatingButton from "@/Components/FloatingButton";
-import Faq from "./components/Faq";
+import Faq from "../home/Components/Faq";
 import Link from "next/link";
 
 const hostImages = {
@@ -64,7 +64,7 @@ function Host() {
         <div className="hostIntro">
           <div className="hostIntroLeft">
             <div className="hostIntroHeader">
-              <p className="p2">Earn ₹20K – ₹60K Monthly on Your Idle Car</p>
+              <p className="p2">Earn ₹20K – ₹60K <br/> Monthly on Your Idle Car</p>
               <p className="p1">Turn your car into a money-making machine — let it pay its own EMIs and generate extra income for you!</p>
            
             </div>
@@ -96,7 +96,7 @@ function Host() {
 
         <div className="route">
           <div className="hostSectionHeader">
-            <h1>Host your Car</h1>
+            <h1>Host Your Car</h1>
             <div style={{ display: 'inline-block' }}>
 
             <p className="p__header__host">Attach your idle car in just 3 simple steps</p>
@@ -196,7 +196,7 @@ function Host() {
         </div>
         <div className="hostSection2">
           <div className="hostSectionH hostseader__ hostsecond">
-            <h1 className="h1_headr__2">Why host with us?</h1>
+            <h1 className="h1_headr__2">Why Host with Us?</h1>
             <div style={{ display: 'inline-block' }}>
 
             <p className="p__header__host">Trust and Transparency at the core</p>
@@ -218,7 +218,7 @@ function Host() {
           </Grid>
         </div>
         {/* <Faq  isHost={true}/> */}
-        <div style={{paddingBottom:'1rem'}}>
+        <div style={{paddingBottom:'1rem'}} className="home">
         <Faq data="home"/>
         </div>
         <Footer />

@@ -774,7 +774,7 @@ const handleGetCar=()=>{
         </div>
       </div>
 
-      <div className="search_btn"> <CssButtonSolid
+      <div className="search_btn" > <CssButtonSolid
         title="Modify Search"
         backgroundColor="#276EBC"
         textColor="#fff"

@@ -18,21 +18,21 @@ import "swiper/css/navigation";
 const cardsInfo = [
   {
     image: assets.images.promisesAndCommitments.askyourpricecard,
-    firstLine: "Ask your Price",
+    firstLine: "Ask Your Price",
     secondLine: "",
     overlayContent: {
-      title: "Ask your Price",
+      title: "Ask Your Price",
       content:
 "Set your own price for the trip by placing a bid. Accept the flexible counter offers directly from car owners."    },
   },
   {
     image: assets.images.promisesAndCommitments.rideinfinitykmscard,
-    firstLine: "Ride Unlimited",
+    firstLine: "Ryde Unlimited",
     secondLine: "Kilometers",
     overlayContent: {
       title: "Ryde Unlimited Kilometers",
       content:
-"Count memories - not kilometers, because BidrYde provides unlimited kilometers for your journey."    },
+"Count memories — not kilometers, because BidrYde provides unlimited kilometers for your journey."    },
   },
  
   {
@@ -136,7 +136,7 @@ const PromisesAndCommitments = () => {
         <div className="PromisesAndCommitmentsContainerRight">
           <div className="SectionTitle">
             <h1>Why BidrYde?</h1>
-            <p>Our Promise and commitments to you</p>
+            <p>Our Promise and Commitments to you</p>
             <div className="divi">
               <Divider data={"home"} />
             </div>

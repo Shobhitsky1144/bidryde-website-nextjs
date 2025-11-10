@@ -108,8 +108,9 @@ function CssButtonSolid({
       type={type === "submit" ? "submit" : "button"}
       style={styles}
       disabled={disabled}
+      
     >
-      {title}
+     <span style={{ cursor: "pointer" }}>{title}</span>
     </button>
   );
 }

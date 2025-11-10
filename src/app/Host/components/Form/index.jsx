@@ -44,7 +44,7 @@ function Form() {
   return (
     <div className="hformDiv">
       <form onSubmit={handleSubmit} className="hForm">
-        <p className="hFormHeading">Submit Your interest</p>
+        <p className="hFormHeading">Submit Your Interest</p>
         <label className="text-start">
           Full Name
           <br />

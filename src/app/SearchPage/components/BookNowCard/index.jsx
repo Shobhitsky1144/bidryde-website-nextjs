@@ -13,6 +13,10 @@ function BookNowCard({ onClose }) {
     onClose();
   };
 
+  const handlePhoneClick = () => {
+    window.location.href = "tel:8074814296";
+  };
+
   return (
     <Box
       className="BookNowCardMainContainer"
@@ -125,7 +129,7 @@ function BookNowCard({ onClose }) {
               </a>
 
               <a
-                href="https://apps.apple.com/us/app/bid-ryde-self-drive-cars/id6448796800"
+                href="https://apps.apple.com/in/app/bidryde-self-drive-cars/id6448796800"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -160,7 +164,7 @@ function BookNowCard({ onClose }) {
 
             <Box className="numberParent">
             <p className="offerSubSecond">connect with us</p>
-            <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+            <div style={{display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer'}} onClick={handlePhoneClick}>
               <div><svg className="phoneIcon" width="30" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="30" cy="30" r="30" fill="#EEEEEE"/>
 <path d="M21.057 28.1748C23.5146 33.0047 27.4741 36.9471 32.304 39.4218L36.0586 35.6671C36.5194 35.2063 37.2021 35.0527 37.7994 35.2575C39.7109 35.889 41.776 36.2303 43.8922 36.2303C44.8309 36.2303 45.5989 36.9983 45.5989 37.937V43.8932C45.5989 44.8319 44.8309 45.5999 43.8922 45.5999C27.8666 45.5999 14.8789 32.6122 14.8789 16.5865C14.8789 15.6479 15.6469 14.8799 16.5856 14.8799H22.5589C23.4976 14.8799 24.2656 15.6479 24.2656 16.5865C24.2656 18.7199 24.6069 20.7679 25.2384 22.6794C25.4261 23.2767 25.2896 23.9423 24.8117 24.4202L21.057 28.1748Z" fill="black"/>

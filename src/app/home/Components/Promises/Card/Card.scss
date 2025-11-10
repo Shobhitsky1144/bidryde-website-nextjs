@@ -11,6 +11,7 @@ width: 100%;
   text-align: left;
   position: relative;
 
+  
   &Container {
     width: 80%;
     height: 70%;
@@ -49,9 +50,9 @@ width: 100%;
     }
 
     h3 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      line-height: 34px;
+      line-height: 26px;
       letter-spacing: 0.05em;
     }
 
@@ -68,6 +69,12 @@ width: 100%;
   // Hover effect for content visibility
   &:hover .promiseCardContainer__Content {
     opacity: 1;
+    border: 2px solid #d4e9ff;
+   
+      .promiseCardContainer__ContentTitle{
+        font-weight: 600;
+      }
+    
   }
 }
 
@@ -208,6 +215,7 @@ position: unset;
       color: #262626;
       font-size: 28px;
       font-weight: 500;
+     
       
     }
     .promiseCardContainer__ContentContent{
@@ -236,4 +244,8 @@ position: unset;
   .promiseCardContainer__Content .promiseCardContainer__ContentContent{
     font-size: 16px;
   }
+}
+
+.promiseCardContainer__ContentTitle{
+  width: 100%;
 }

@@ -14,7 +14,8 @@
     font-size: 16px;
     padding-right: 0.25rem;
     padding-left: 0.85rem;
-    color: #444;
+    color: #555555;
+    font-weight: 400;
   }
 
   img {
@@ -34,7 +35,7 @@
   }
 
   &Container {
-    width: 92%;
+    width: 95%;
     
     display: flex;
     flex-direction: column;
@@ -42,7 +43,7 @@
     background-color: #f6f1f1;
   
 
-    height: 14rem;
+    height: 16rem;
     border-radius: 30px;
     gap: 0.8rem;
   }
@@ -98,7 +99,7 @@
 
 
 /* below 992px */
-@media (max-width: 991px) {
+@media screen and (max-width: 1200px)  {
 
   .review{
   position: absolute;
@@ -189,58 +190,12 @@ text-align: center;
 
 
 
-@media (min-width: 992px) and (max-width: 1200px) {
-
-  .testimonialsContainerCards{
-    gap: 1rem!important;
-    
-  }
-
-  .testimonialCard{
-    // width:45%!important;
-  }
-  .heroSectionContainer__left{
-    width: 69%!important;
-  }
-  .heroSectionContainer__left>p{
-    padding-top: 9px;
-  }
-
-.testimonialCardContainer{
-  width: 100%;
-}
-.testimonialCard img{
-  margin-bottom: 0px;
-  // margin-top: 0;
-}
-
-.profileImageWrapper {
-  border-radius: 50%;
-  margin-top: 0;
-  margin-left: 2rem;
-  overflow: unset;
-  display: flex
-;
-  justify-content: center;
-  align-items: center;
-}
-.testimonialCardContainer{
-  height: 15rem;
-}
-.testimonialCardContainerProfile{
-  // margin-top: -5px;
-  // align-items: unset;
-}
-.profileName{
-   margin-top: -10px;
-}
-}
 
 
 .testimonialCardContainerProfile{
   // margin: 0 1rem;
   position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
 }
 
 .profileImageWrapper{

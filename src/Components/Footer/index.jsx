@@ -1,3 +1,6 @@
+"use client";
+
+
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { assets } from "@/assets";
@@ -19,6 +22,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Footer() {
+ 
+  const handleEmailClick = () => {
+    const gmailURL =
+      "https://mail.google.com/mail/?view=cm&fs=1&to=support@bidryde.in&su=Support%20Request&body=Hi%20BidRyde%20Team,";
+    window.open(gmailURL, "_blank", "noopener,noreferrer");
+  };
+
+  // ☎️ Handle phone click
+  const handlePhoneClick = () => {
+    window.location.href = "tel:04048957007";
+  };
   return (
     <div className="footer">
       <Grid container className="x" style={{paddingBottom:'60px'}}>
@@ -30,63 +44,58 @@ function Footer() {
             <p className="footerText ">
               A self-drive car rental platform where
              you can book any car you want and at the 
-              same time,host any car you have.
+              same time, host any car you have.
 
             
             </p>
 
-            {/* <p className="footerText footermobile">
-            A car-sharing marketplace where you <br/>
-              can book any car you want and at the <br/>
-               same time, host any car you have.
-
-               </p> */}
 
             <div className="socialIcons">
-              <Grid container spacing={2}>
-                <Grid item xs={2}>
+              <Grid container spacing={0}>
+                <Grid item >
                   <a
+                  
                     href="https://www.facebook.com/bidryde?mibextid=ZbWKwL"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image src={footerAssets.fbIcon} alt="facebook" />
+                    <Image src={footerAssets.fbIcon} alt="facebook" className="socialImg"/>
                   </a>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item >
                   <a
                     href="https://twitter.com/bidryde/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image src={footerAssets.twitter} alt="X" />
+                    <Image src={footerAssets.twitter} alt="X" className="socialImg"/>
                   </a>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item >
                   <a
                     href="https://www.linkedin.com/company/bidryde/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image src={footerAssets.linkedIn} alt="linkedIn" />
+                    <Image src={footerAssets.linkedIn} alt="linkedIn" className="socialImg"/>
                   </a>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item >
                   <a
                     href="https://www.youtube.com/c/Bidryde"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image src={footerAssets.youtube} alt="youtube" />
+                    <Image src={footerAssets.youtube} alt="youtube" className="socialImg"/>
                   </a>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item >
                   <a
                     href="https://www.instagram.com/bidryde/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image src={footerAssets.instagram} alt="instagram" />
+                    <Image src={footerAssets.instagram} alt="instagram" className="socialImg"/>
                   </a>
                 </Grid>
               </Grid>
@@ -165,7 +174,8 @@ function Footer() {
         <div className="footerRight">
   <Grid container className="iconGrid">
     <Grid item className="iconGridItem">
-      <div className="iconContent">
+      <div className="iconContent"   onClick={handlePhoneClick}
+                style={{ cursor: "pointer" }}>
         <svg
           className="milIconImg"
           xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +195,7 @@ function Footer() {
     </Grid>
 
     <Grid item className="iconGridItem">
-      <div className="iconContent">
+      <div className="iconContent"   onClick={handleEmailClick}  style={{ cursor: "pointer" }}>
         <Image
           src={footerAssets.mailIcon}
           alt="mailIcon"

@@ -129,7 +129,7 @@ const Faq = ({data}) => {
   };
 
   const handleViewAllClick = () => {
-    router.push("/faq");
+    router.push("/faq/attach_your_car");
   }
 
   return (
@@ -141,23 +141,13 @@ const Faq = ({data}) => {
           <p>On the road to answers</p>
           <Divider />
         </div>
-        {/* TODO: This section to move into the new seperate FAQ page */}
-        {/* <div className='faqContainerCategories'>
-          {
-            faqs.map((faq) => (
-              <div className={`faqChip ${activeChip === faq.name ? 'active' : ''}`} key={uid(faq)} onClick={() => handleFaqChange(faq)}>
-                <Image src={faq.icon} alt={faq.name} />
-                <p>{faq.name}</p>
-              </div>
-            ))
-          }
-        </div> */}
+     
         <div className="faqContainerQuestions">
-  {questions.map((question) => (
+  {questions?.map((question) => (
     <CollapsiblePanel 
       data={question} 
       key={uid(question)} 
-      bgColor="WHITE" // Set background color to white on Home page
+      bgColor="WHITE" 
     />
   ))}
 </div>
@@ -167,16 +157,7 @@ const Faq = ({data}) => {
 
               
           <button onClick={handleViewAllClick} className="btn__FAQ">View All</button>
-            {/* <CssButtonOutline
-              title="View All"
-              backgroundColor="#FFFFFF"
-              textColor="#276EBC"
-              margin="2rem 1rem"
-              padding="10px 30px"
-              fontSize="1rem"
-              border="1px solid #276EBC"
-              onClick={handleViewAllClick}
-            /> */}
+         
         
       </div>
     </div>

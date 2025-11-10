@@ -10,6 +10,7 @@ const Card = ({ data, comingSoon }) => {
           src={data.image}
           alt="location"
           style={{ background: data.bgColor }}
+          className={comingSoon ? "comingSoonStyleImg" : "avaliableStyleImg"}
         />
         <h3>{data.location}</h3>
 

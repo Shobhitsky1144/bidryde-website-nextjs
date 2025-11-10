@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div className="heroSectionContainer">
         <div className="heroSectionContainer__left">
           <h1>BID YOUR RYDE</h1>
-          <p>Best self-drive car rentals starting @ ₹69/hr with unlimited kilometers</p>
+          <p>Best self-drive car rentals starting @ ₹69/hr<br></br> with unlimited kilometers</p>
           <div className="heroSectionContainer__right">
             <Image
                   src={isMobile ? assets.images.mobileBgWeb : assets.images.heroBgWeb}

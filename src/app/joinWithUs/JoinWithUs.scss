@@ -10,18 +10,40 @@
   // width: 90%;
 
 }
-
-.common_btn{
+.apply_btn{
   margin-top: 18px;
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
   border-radius: 10px;
   padding: 12px 20px;
   font-size: 17px;
   outline: none;
   border: none;
- 
 }
+.common_btn {
+  background-color: #fff;
+  color: #276EBC;
+  border: 1px solid #276EBC;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  font-size: 20px;
+  padding: 10px 40px;
+}
+
+.common_btn:hover {
+  background-color: #276EBC; /* blue */
+color: #fff;
+}
+
+.activeBtn {
+  background-color: #276EBC; /* blue */
+  color: white;
+  // border: 1px solid #276EBC;
+}
+
 
  .work_parent{
   margin: 6% auto;
@@ -95,7 +117,7 @@ p{
   height: 55px;
   background-image: url('../../assets/images/JoinWithUs/clouds.png');
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   z-index: -1;
 }
 
@@ -135,6 +157,7 @@ letter-spacing: 1px;
 
   position: relative;
   top: 60px;
+  
 }
 
 .sectionHeader {
@@ -177,7 +200,7 @@ letter-spacing: 1px;
 }
 
 .form{
-  width: 45%;
+  width: 40%;
 }
 
 p.sectionTitleTextStyling.undefined{
@@ -209,10 +232,12 @@ p.tagLinesTextStyling.undefined{
 }
 
 .joinSectionHeader__top p{
-  margin-top: 0px;
+  margin-top: 5px;
   	font-size: 15px;
-    margin-bottom: 1%;
+    margin-bottom: 5px;
+
     letter-spacing: 1px;
+    width: max-content;
   
 }
 
@@ -220,9 +245,9 @@ p.tagLinesTextStyling.undefined{
   width: 100%;
   font-size: 15px;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 5px;
   font-size: 14px;
-  margin-bottom: 2%;
+  margin-bottom: 5px;
 
 
   
@@ -246,19 +271,22 @@ p.tagLinesTextStyling.undefined{
   font-weight: 600;
   margin: 0;
   padding: 0;
-  height: 70px;
+  // height: 70px;
   // letter-spacing: 2px;
   width: max-content ;
+  line-height: 1;
+  margin-bottom: 5px;
 }
 
 .p__header__join__bottom{
   width: 100%;
   font-size: 18px;
   align-items: center;
-  margin-top: -2%;
+  // margin-top: 5px;
   font-weight: 400;
   padding-left: 5px;
-  
+
+line-height: 23px;
 }
 
 .divider{
@@ -769,7 +797,7 @@ height: 100%;
   }
 }
 
-@media  (min-width:992px) and  (max-width:1199px) {
+@media  (min-width:956px) and  (max-width:1199px) {
   .intro_image{
     width: 50%;
   }
@@ -839,7 +867,7 @@ height: 100%;
     gap: 40px;
   }
   .intro_image img{
-    top: 112px;
+    top: 60px;
   }
   .intro_text h1{
     margin-top: 2rem;
@@ -871,5 +899,19 @@ height: 100%;
   }
   .clouds_mobile{
     display: none;
+  }
+}
+
+
+@media  (min-width:1301px) {
+  .intro_image img{
+left: 60px;
+
+
+  }
+
+  .intro .clouds {
+    height: 100px;
+    width: 100%;
   }
 }
