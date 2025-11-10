@@ -1,3 +1,3 @@
-import ContactUs from './index';
+// import ContactUs from './index';
 
-export default ContactUs;
+// export default ContactUs;
