@@ -82,7 +82,7 @@ function Footer() {
                 </Grid>
                 <Grid item >
                   <a
-                    href="https://www.youtube.com/c/Bidryde"
+                    href="https://youtube.com/@bidryde"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

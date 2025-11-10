@@ -97,7 +97,7 @@ function Form() {
           />
         </label>
 
-        <button type="submit">Submit</button>
+        <button type="submit" style={{fontSize:'16px'}}>Submit</button>
         {formSubmitted ? (
           <p>Form submitted successfully!</p>
         ) : (
