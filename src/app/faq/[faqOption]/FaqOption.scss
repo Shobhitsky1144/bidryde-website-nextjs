@@ -1,190 +1,190 @@
-// .faqOption {
-//   display: flex;
-//   flex-direction: column;
-//   overflow-x: hidden;
-//   width: 100wv;
-//   align-items: center;
+.faqOption {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100wv;
+  align-items: center;
 
-//   &Container {
-//     margin-top: 2rem;
-//     margin-bottom: 2rem;
+  &Container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
-//     width: 83%;
-//     display: flex;
-//     flex-direction: column;
-//     // gap: 2rem;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    // gap: 2rem;
 
-//     &Questions {
-//       margin-top: 3rem;
-//       display: flex;
-//       flex-direction: column;
-//       gap: 1rem;
-//     }
-//   }
-// }
+    &Questions {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
 
-// .faqHeading {
-//   display: flex;
-//   align-items: center; /* Align FAQ's > with the title vertically */
-//   gap: 8px; /* Add space between the breadcrumb and title */
-//   font-size: 24px;
-//   font-weight: bold;
-// }
+.faqHeading {
+  display: flex;
+  align-items: center; /* Align FAQ's > with the title vertically */
+  gap: 8px; /* Add space between the breadcrumb and title */
+  font-size: 24px;
+  font-weight: bold;
+}
 
-// .breadcrumb {
-//   font-size: 40px;
-//   color: #000000; /* Link color for FAQ's > */
-//   cursor: pointer;
-//   text-decoration: none;
-//   letter-spacing:3px;
-//   font-weight:900!important;
-// }
+.breadcrumb {
+  font-size: 40px;
+  color: #000000; /* Link color for FAQ's > */
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing:3px;
+  font-weight:900!important;
+}
 
-// .pageTitle {
-//   font-size: 40px;
-//   color: #808080; /* Gray color for the title */
-//   letter-spacing:2px;
-//   font-weight:900!important;}
+.pageTitle {
+  font-size: 40px;
+  color: #808080; /* Gray color for the title */
+  letter-spacing:2px;
+  font-weight:900!important;}
 
-// .colored_Item {
-//   border-radius: 20px;
-// }
+.colored_Item {
+  border-radius: 20px;
+}
 
-// .coloredem {
-//   border-radius: 6px;
-// }
+.coloredem {
+  border-radius: 6px;
+}
 
-// @media only screen and (max-width: 900px) {
-//   .faqOption {
-//     &Container {
-//       width: 85%;
-//     }
-//     .faqHeading {
-//       font-size: 30px; /* Adjust heading size */
+@media only screen and (max-width: 900px) {
+  .faqOption {
+    &Container {
+      width: 85%;
+    }
+    .faqHeading {
+      font-size: 30px; /* Adjust heading size */
 
-//       .breadcrumb {
-//         font-size: 30px; /* Smaller breadcrumb size */
-//       }
+      .breadcrumb {
+        font-size: 30px; /* Smaller breadcrumb size */
+      }
 
-//       .pageTitle {
-//         // margin-top: 8px;
-//         font-size: 30px; /* Smaller title size */
-//       }
-//     }
-//   }
-// }
-
-
+      .pageTitle {
+        // margin-top: 8px;
+        font-size: 30px; /* Smaller title size */
+      }
+    }
+  }
+}
 
 
 
 
-// @media (min-width: 481px)  and (max-width:767px){
-
-//   .faqOption .faqHeading{
-//     // font-size: 31px; 
-//     .breadcrumb {
-//       font-size: 31px; 
-//       letter-spacing: 3px;
-//     }
-//     .pageTitle{
-//       font-size: 31px;
-//       letter-spacing: 3px;
-//     }
-
-//   }
 
 
-// }
+@media (min-width: 481px)  and (max-width:767px){
 
-// @media screen and (max-width: 480px) {
+  .faqOption .faqHeading{
+    // font-size: 31px; 
+    .breadcrumb {
+      font-size: 31px; 
+      letter-spacing: 3px;
+    }
+    .pageTitle{
+      font-size: 31px;
+      letter-spacing: 3px;
+    }
 
-
-
-//   .faqOption .faqHeading{
-//     font-size: 17px; 
-//     letter-spacing: 1px;
-//     .breadcrumb {
-//       font-size: 28px; 
-//       letter-spacing: 3px;
-//     }
-//     .pageTitle{
-//       font-size: 28px;
-//       letter-spacing: 2px;
-//       color: #26262673;
-//     }
-
-//   }
+  }
 
 
-//   .colored_Item {
-//     border-radius: 5px;
-//   }
-//   .faqOptionContainerQuestions {
-//     margin-top:1rem;
-//   }
+}
 
-//   .open .collapsiblePanel__content{
-//     margin-top: 1rem;
-//     }
+@media screen and (max-width: 480px) {
+
+
+
+  .faqOption .faqHeading{
+    font-size: 17px; 
+    letter-spacing: 1px;
+    .breadcrumb {
+      font-size: 28px; 
+      letter-spacing: 3px;
+    }
+    .pageTitle{
+      font-size: 28px;
+      letter-spacing: 2px;
+      color: #26262673;
+    }
+
+  }
+
+
+  .colored_Item {
+    border-radius: 5px;
+  }
+  .faqOptionContainerQuestions {
+    margin-top:1rem;
+  }
+
+  .open .collapsiblePanel__content{
+    margin-top: 1rem;
+    }
   
-// }
+}
 
-// @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
-//   .breadcrumb {
-//     font-size: 23px!important; 
+  .breadcrumb {
+    font-size: 23px!important; 
     
-//   }
-//   .pageTitle{
-//     font-size: 23px!important;
-//     letter-spacing: 2px;
-//   }
+  }
+  .pageTitle{
+    font-size: 23px!important;
+    letter-spacing: 2px;
+  }
 
 
 
-// }
+}
 
 
-// @media screen and (max-width: 333px) {
+@media screen and (max-width: 333px) {
 
-//   .breadcrumb {
-//     font-size: 17px!important; 
+  .breadcrumb {
+    font-size: 17px!important; 
     
-//   }
-//   .pageTitle{
-//     font-size: 17px!important;
-//     letter-spacing: 2px;
-//   }
+  }
+  .pageTitle{
+    font-size: 17px!important;
+    letter-spacing: 2px;
+  }
 
 
 
-// }
+}
 
-// .faqOptionContainerQuestions{
-//   margin-top:0.8rem;
-// }
-
-
+.faqOptionContainerQuestions{
+  margin-top:0.8rem;
+}
 
 
 
 
-// .faqHeading {
-//   display: flex;
-//   flex-wrap: wrap; 
-//   gap: 6px;
-//   align-items: center;
-// }
 
-// .faqHeading .breadcrumb {
-//   white-space: nowrap; 
-//   flex-shrink: 0;
-// }
 
-// .faqHeading .pageTitle {
-//   // white-space: nowrap;     
-//   overflow: hidden;        
-//   text-overflow: ellipsis; 
-// }
+.faqHeading {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 6px;
+  align-items: center;
+}
+
+.faqHeading .breadcrumb {
+  white-space: nowrap; 
+  flex-shrink: 0;
+}
+
+.faqHeading .pageTitle {
+  // white-space: nowrap;     
+  overflow: hidden;        
+  text-overflow: ellipsis; 
+}
 

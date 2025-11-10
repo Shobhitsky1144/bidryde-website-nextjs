@@ -1,256 +1,256 @@
-// .faqPage {
-//   display: flex;
-//   flex-direction: column;
-//   overflow-x: hidden;
-//   width: 100%;
-//   align-items: center;
+.faqPage {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  align-items: center;
 
-//   &Container {
-//     margin-top: 25px;
-//     padding-left: 8%;
-//     padding-right: 8%;
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     margin-bottom: 20px;
+  &Container {
+    margin-top: 25px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
 
-//     @media only screen and (max-width: 900px) {
-//       width: 100%;
-//       padding-left: 0;
-//       padding-right: 0;
-//     }
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
 
-//     .faqHeader {
-//       display: flex;
-//       flex-direction: row;
-//       width: 100%;
-//       justify-content: space-between;
-//       align-items: flex-end;
-//       @media only screen and (max-width: 900px) {
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         align-self: flex-end;
-//         width: 100vw;
-//       }
+    .faqHeader {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        width: 100vw;
+      }
 
-//       .titleContainer {
-//         @media only screen and (max-width: 900px) {
-//           justify-content: center;
-//           align-content: end;
-//           width: 80vw;
-//         }
+      .titleContainer {
+        @media only screen and (max-width: 900px) {
+          justify-content: center;
+          align-content: end;
+          width: 80vw;
+        }
 
-//         .title {
-//           // font-family: "Archivo Black", sans-serif;
-//           font-weight: 400;
-//           font-size: 3rem;
-//           color: #000000;
-//           margin-bottom: 5px;
+        .title {
+          // font-family: "Archivo Black", sans-serif;
+          font-weight: 400;
+          font-size: 3rem;
+          color: #000000;
+          margin-bottom: 5px;
 
-//           @media only screen and (max-width: 900px) {
-//             text-align: center;
-//           }
-//         }
+          @media only screen and (max-width: 900px) {
+            text-align: center;
+          }
+        }
 
-//         .subtitle {
-//           // font-family: "Archivo", sans-serif;
-//           font-weight: 500;
-//           font-size: 22px;
-//           line-height: 23.94px;
-//           letter-spacing: 2%;
-//           text-align: center;
-//           margin-bottom: 4px;
-//           color: #000000;
-//         }
-//       }
+        .subtitle {
+          // font-family: "Archivo", sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 23.94px;
+          letter-spacing: 2%;
+          text-align: center;
+          margin-bottom: 4px;
+          color: #000000;
+        }
+      }
 
-//       .searchField {
-//         width: 40vw;
-//         height: 55px;
-//         margin-right:33px;
-//         @media only screen and (max-width: 900px) {
-//           width: 100%;
-//           height: 55px;
-//           margin-top: 20px;
-//           display: flex;
-//           align-items: center;
-//           justify-content: center;
-//         }
-//       }
-//     }
-//     .faqOptions {
-//       display: flex;
-//       flex-wrap: wrap;
-//       align-items: center;
-//       gap: 13px 25px;
-//       margin-top: 25px;
-//       margin-bottom: 30px;
+      .searchField {
+        width: 40vw;
+        height: 55px;
+        margin-right:33px;
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+          height: 55px;
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .faqOptions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 13px 25px;
+      margin-top: 25px;
+      margin-bottom: 30px;
 
-//       @media only screen and (max-width: 900px) {
-//         width: 100vw;
-//         margin-top: 15px;
-//         align-items: center;
-//         justify-content: center;
-//       }
+      @media only screen and (max-width: 900px) {
+        width: 100vw;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+      }
 
-//       .faqOptionCard {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         width: 19vw;
-//         height: 90px;
-//         background-color: #d4e9ff;
-//         border-radius: 10px;
-//         margin-top: 10px;
-//         margin-bottom: 0px;
-//         padding: 15px;
-//         font-weight: 600;
-//         line-height: 24px;
-//         letter-spacing: 0.02em;
-//         .faq-title {
-//           align-self: flex-start;
-//           margin-top: 0;
-//           padding-top: 0;
-//         }
-//         @media only screen and (max-width: 900px) {
-//           width: 90vw;
-//           height: 80px;
-//           margin-top: 5px;
-//         }
-//       }
-//     }
-//   }
-// }
-// .faq-title{
-//   padding-top:5px;
-// }
+      .faqOptionCard {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 19vw;
+        height: 90px;
+        background-color: #d4e9ff;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 15px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        .faq-title {
+          align-self: flex-start;
+          margin-top: 0;
+          padding-top: 0;
+        }
+        @media only screen and (max-width: 900px) {
+          width: 90vw;
+          height: 80px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+.faq-title{
+  padding-top:5px;
+}
 
 
-// @media only screen and (max-width: 480px) {
-// .faqPageContainer .faqHeader .searchField {
-//   width: 100%;
-//   height: 55px;
-//   margin-top: 40px;
-//   margin-bottom: 0px;
-//     display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-right:0px!important;
+@media only screen and (max-width: 480px) {
+.faqPageContainer .faqHeader .searchField {
+  width: 100%;
+  height: 55px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right:0px!important;
 
-// }
+}
 
-// .faq-title{
-// font-size: 16px;
-// }
-// .faqPageContainer .faqOptions{
-//   gap:5px
-// }
+.faq-title{
+font-size: 16px;
+}
+.faqPageContainer .faqOptions{
+  gap:5px
+}
 
-// .title {
+.title {
  
-//   font-size: 27px!important;
-//   margin-bottom:2px !important;
+  font-size: 27px!important;
+  margin-bottom:2px !important;
 
-// }
-// .subtitle{
-//   font-size: 18px!important;
-//   margin-top:0px;
-// }
-
-
-
-// }
-
-// .faqPageContainer{
-//   margin-bottom:0px;
-// }
+}
+.subtitle{
+  font-size: 18px!important;
+  margin-top:0px;
+}
 
 
-// .title {
+
+}
+
+.faqPageContainer{
+  margin-bottom:0px;
+}
+
+
+.title {
  
-//   font-size: 30px;
-// font-weight:900!important;
-// letter-spacing:3px;
+  font-size: 30px;
+font-weight:900!important;
+letter-spacing:3px;
 
-// }
-
-
+}
 
 
-// @media (min-width: 768px) and (max-width: 991px){
 
 
-//   .faqPageContainer .faqOptions .faqOptionCard{
-// width: 42vw;
-
-//   }
-//   .faqPageContainer .faqOptions{
-//     justify-content: flex-start;
-//     // padding-left: 34px;
-//   }
-//   .searchbar{
-//     width: 100%;
-//   }
-//   .faqPageContainer{
-//     padding-left: 6%;
-//     padding-right: 6%;
-//   }
-//   .faqPageContainer .faqOptions{
-//     padding-left: 0;
-//   }
-
-//   .faqPageContainer .faqHeader {
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//     align-self: unset;
-//     width: 100%;
-// }
-// .faqPageContainer .faqHeader .titleContainer .title{
-//   text-align: left;
-// }
-// .faqPageContainer .faqHeader .titleContainer .subtitle{
-//   text-align:left;
-// }
-// .faqPageContainer .faqHeader .searchField{
-//   justify-content: end;
-// }
-// }
-
-// @media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 768px) and (max-width: 991px){
 
 
-//   .faqPageContainer .faqOptions .faqOptionCard{
-//     width: 40vw;
+  .faqPageContainer .faqOptions .faqOptionCard{
+width: 42vw;
+
+  }
+  .faqPageContainer .faqOptions{
+    justify-content: flex-start;
+    // padding-left: 34px;
+  }
+  .searchbar{
+    width: 100%;
+  }
+  .faqPageContainer{
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .faqPageContainer .faqOptions{
+    padding-left: 0;
+  }
+
+  .faqPageContainer .faqHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: unset;
+    width: 100%;
+}
+.faqPageContainer .faqHeader .titleContainer .title{
+  text-align: left;
+}
+.faqPageContainer .faqHeader .titleContainer .subtitle{
+  text-align:left;
+}
+.faqPageContainer .faqHeader .searchField{
+  justify-content: end;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+
+  .faqPageContainer .faqOptions .faqOptionCard{
+    width: 40vw;
     
-//       }
-//       .searchbar{
-//         width: 100%;
-//       }
-// }
+      }
+      .searchbar{
+        width: 100%;
+      }
+}
 
-// @media (min-width: 1200px) and (max-width: 1439px){
-//   // .faqPageContainer .faqOptions .faqOptionCard{
-//   //   width: 40vw;
+@media (min-width: 1200px) and (max-width: 1439px){
+  // .faqPageContainer .faqOptions .faqOptionCard{
+  //   width: 40vw;
     
-//   //     }
-// }
+  //     }
+}
 
-// @media (min-width: 1440px){
+@media (min-width: 1440px){
 
-//  .faqPageContainer .faqOptions .faqOptionCard{
-//     width: 19vw;
+ .faqPageContainer .faqOptions .faqOptionCard{
+    width: 19vw;
     
-//       }
+      }
 
-// }
+}
 
 
-// .title{
-//   font-size: 38px!important;
-// }
-// .subtitle{
-//   font-size:20px!important;
-//   font-weight:normal!important;
-// }
+.title{
+  font-size: 38px!important;
+}
+.subtitle{
+  font-size:20px!important;
+  font-weight:normal!important;
+}

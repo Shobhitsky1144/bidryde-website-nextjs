@@ -1,3 +1,3 @@
-// import FaqOption from './index';
+import FaqOption from './index';
 
-// export default FaqOption;
+export default FaqOption;
