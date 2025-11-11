@@ -395,7 +395,7 @@ function SearchPage() {
             <h2>
               Car booking is <br /> only supported on <br /> the mobile app
             </h2>
-            <button className="download-btn">Download the App</button>
+            <button className="download-btn" onClick={openBookNowCardModal}>Download the App</button>
           </div>
 
           {/* Right Side (Image) */}
@@ -519,7 +519,7 @@ function SearchPage() {
             <h2>
               Car booking is <br /> only supported on <br /> the mobile app
             </h2>
-            <button className="download-btn">Download the App</button>
+            <button className="download-btn" onClick={openBookNowCardModal}>Download the App</button>
           </div>
 
           {/* Right Side (Image) */}
