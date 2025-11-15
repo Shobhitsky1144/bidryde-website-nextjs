@@ -65,7 +65,7 @@ function Host() {
           <div className="hostIntroLeft">
             <div className="hostIntroHeader">
               <p className="p2">Earn ₹20K – ₹60K <br/> Monthly on Your Idle Car</p>
-              <p className="p1">Turn your car into a money-making machine — let it pay its own EMIs and generate extra income for you!</p>
+              <p className="p1">Turn your car into a money-making machine — let it <br/> pay its own EMIs and generate extra income for you!</p>
            
             </div>
 

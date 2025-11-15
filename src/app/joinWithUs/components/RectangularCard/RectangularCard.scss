@@ -18,12 +18,19 @@
 
 .image{
     width: 25%;
-    text-align: center;
+    text-align: right;
 }
 
 .image img{
-    width: 45%;
+    // width: 45%;
+    // height: 100px;
+    width: 200px;
     height: 100px;
+    object-fit: contain;
+}
+
+.img_0 , .img_2 , .img_4{
+    text-align: left;
 }
 
 .text{

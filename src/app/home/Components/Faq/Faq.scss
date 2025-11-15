@@ -1,3 +1,6 @@
+@import "@fontsource/archivo-black";
+
+
 .faq {
   margin-top: 5rem;
   width: 100%;
@@ -29,11 +32,11 @@
       font-size: 40px;
         letter-spacing: 4px;
         padding-top: 1rem;
-        font-weight: 900;
-        font-family: "Archivo";
-        // font-family: 'Archivo Black';
+        font-weight: 400;
+        // font-family: "Archivo";
+        font-family: 'Archivo Black';
         margin-bottom: 2px;
-      }
+      } 
 
       p {
         font-size: 18px;

@@ -2,10 +2,10 @@ import React from 'react'
 import './RectangularCard.scss'
 import Image from 'next/image'
 
-function RectangularCard({title, text, illustration, switchDirection}) {
+function RectangularCard({title, text, illustration, switchDirection,index}) {
     return (
         <div className={`cardDiv ${switchDirection && 'flexReverse'}`}>
-            <div className="image">
+            <div className={`image img_${index}`}>
                 <Image
                     src={illustration}
                     alt="avatar"

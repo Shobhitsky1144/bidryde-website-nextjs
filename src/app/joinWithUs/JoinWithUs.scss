@@ -37,10 +37,10 @@
   padding: 10px 40px;
 }
 
-.common_btn:hover {
-  background-color: #276EBC; /* blue */
-color: #fff;
-}
+// .common_btn:hover {
+//   background-color: #276EBC; /* blue */
+// color: #fff;
+// }
 
 .activeBtn {
   background-color: #276EBC; /* blue */
@@ -215,6 +215,7 @@ letter-spacing: 1px;
 
 .form{
   width: 40%;
+  max-width: 420px;
 }
 
 p.sectionTitleTextStyling.undefined{
@@ -933,7 +934,7 @@ left: 60px;
   }
 
   .intro .clouds {
-    height: 100px;
+    // height: 100px;
     width: 100%;
   }
 }

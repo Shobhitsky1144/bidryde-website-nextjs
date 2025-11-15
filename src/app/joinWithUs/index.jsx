@@ -85,7 +85,12 @@ const [selectedLanguage, setselectedLanguage] = useState("english")
               available throughout Bidryde&apos;s service areas.
             </p> */}
             <h1 style={{color:'#fff'}}>
-            India’s First Smart Car Loan
+            India’s First Smart Car Loan 
+
+
+            </h1>
+            <h1 style={{color:'#fff',margin:0,padding:0}}>
+          
 
 that pays itself !
             </h1>
@@ -144,6 +149,7 @@ that pays itself !
             title={data.title}
             text={data.text}
             illustration={data.illustration}
+            index={index}
           />
         ))}
       </div>

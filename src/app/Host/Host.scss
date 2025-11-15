@@ -1,7 +1,9 @@
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@600&family=Archivo+Black&display=swap");
 @import "@fontsource/archivo"; /* defaults to 400 weight */
+@import "@fontsource/krona-one";
 
+@import "@fontsource/inter";
 
 /* Base Layout */
 .hostLayout {
@@ -73,13 +75,17 @@
 
 .hostIntroHeader .p2 {
   // font-family: "Krona One", sans-serif;
-  font-size: clamp(1.5rem, 5vw, 40px);
+  font-size: clamp(1.5rem, 5vw, 34px);
   line-height: 1.2;
-  font-weight: 500;
+  // font-weight: 400;
   text-align: start;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
-  font-family: "Archivo";
+  // font-family: "Archivo";
+  font-family: "Krona One";
+  color: #262626;
+  font-weight: normal;
+ 
   
 }
 
@@ -286,6 +292,7 @@
   font-weight: 600;
   line-height: 1.2;
   padding-top: 28px;
+  font-family: "Inter";
 }
 
 .hformSection .p2 {
