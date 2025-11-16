@@ -38,18 +38,19 @@ const Card = ({ data }) => {
           <h5 className='profileName'>{data.name}</h5>
         
         </div>
-        <div  className="review" style={{position:'absolute',bottom:'10px',right:'56px',fontWeight:'300'}}>
+        <div  className="review" style={{position:'absolute',bottom:'10px',right:'56px',fontWeight:'300',color:'#000000'}}>
             source:  {data.name=="Pasam Sunny" ?
            
            <Image
            src={assets.images.testimonials.appstore}
-         style={{marginTop:0,marginBottom:0,width:'20px',height:'20px',position:'absolute'}}
+         style={{marginTop:0,marginBottom:0,width:'20px',height:'20px',position:'absolute',verticalAlign:'middle',top:'1px'}}
            alt='testimonial icon'
            width={25}
            height={26}
+     
          
          />
-            :<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            :<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" style={{margin:'0 2px',verticalAlign:'middle'}}>
 <g clip-path="url(#clip0_353_1370)">
 <path d="M8.66441 9.13936C10.086 8.2287 11.1637 7.53479 11.2566 7.48087C11.5538 7.29647 11.8606 6.80852 11.2566 6.42949C11.0616 6.31033 10.0116 5.63798 8.66441 4.771L6.79688 6.97135L8.66441 9.13936Z" fill="#FFD900"/>
 <path d="M6.79605 6.97168L0.849609 13.9637C0.989178 13.9852 1.14677 13.9421 1.33255 13.8229C1.7226 13.5738 5.85743 10.9394 8.66359 9.14023L6.79605 6.97168Z" fill="#F43249"/>
@@ -62,7 +63,7 @@ const Card = ({ data }) => {
 </clipPath>
 </defs>
 </svg>}
-{data.name=="Pasam Sunny"?<span style={{paddingLeft:'20px',fontSize:'14px'}}>App Store</span>:<span style={{paddingLeft:'',fontSize:'14px'}}>Play Store</span>}
+{data.name=="Pasam Sunny"?<span style={{paddingLeft:'23px',fontSize:'14px',color:'#303030',fontWeight:'400',letterSpacing:'0.5px'}}>App Store</span>:<span style={{paddingLeft:'',fontSize:'14px',color:'#303030',fontWeight:'400',letterSpacing:'0.5px'}}>Play Store</span>}
           </div>
       </div>
     </div>

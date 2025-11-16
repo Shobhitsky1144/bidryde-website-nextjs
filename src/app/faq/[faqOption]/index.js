@@ -52,7 +52,7 @@ const FaqOption = ({ params }) => {
         </h1> */}
         <h1 className="faqHeading">
   <Link href="/faq">
-    <span className="breadcrumb">FAQ&apos;s &gt;</span>
+    <span className="breadcrumb">FAQ&#8217;s &gt;</span>
   </Link>
   <span className="pageTitle">{formatTitle(params.faqOption)}</span>
 </h1>

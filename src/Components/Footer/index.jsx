@@ -55,7 +55,7 @@ function Footer() {
                 <Grid item >
                   <a
                   
-                    href="https://www.facebook.com/bidryde?mibextid=ZbWKwL"
+                    href="https://www.facebook.com/bidryde"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

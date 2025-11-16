@@ -186,7 +186,7 @@ function Host() {
               />
             </div>
             <div className="formSectionHeader">
-              <p className="p1">Your Car&apos;s New Role</p>
+              <p className="p1">Your Car&#8217;s New Role</p>
               <p className="p2">Generating income as an asset</p>
             </div>
           </div>

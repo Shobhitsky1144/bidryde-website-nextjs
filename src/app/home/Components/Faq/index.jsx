@@ -137,7 +137,7 @@ const Faq = ({data}) => {
       <div className={`faqContainer `} >
 
         <div className="SectionTitle">
-          <h1>FAQ&apos;s</h1>
+          <h1>FAQ&#8217;s</h1>
           <p>On the road to answers</p>
           <Divider />
         </div>

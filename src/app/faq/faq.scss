@@ -1,3 +1,8 @@
+@import "@fontsource/archivo-black";
+
+
+
+
 .faqPage {
   display: flex;
   flex-direction: column;
@@ -47,7 +52,7 @@
           font-size: 3rem;
           color: #000000;
           margin-bottom: 2px;
-          font-family: "Archivo";
+          font-family: 'Archivo Black';
 
           @media only screen and (max-width: 900px) {
             text-align: center;
@@ -172,7 +177,7 @@ font-size: 16px;
 .title {
  
   font-size: 30px;
-font-weight:900!important;
+font-weight:400!important;
 letter-spacing:3px;
 
 }
