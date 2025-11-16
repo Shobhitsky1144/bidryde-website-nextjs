@@ -118,7 +118,7 @@ const faqs = [
   },
 ];
 
-const Faq = ({data}) => {
+const Faq = ({data,isHome}) => {
   const [questions, setQuestions] = useState(faqs[0].questions);
   const [activeChip, setActiveChip] = useState("General");
   const router = useRouter();
@@ -129,7 +129,12 @@ const Faq = ({data}) => {
   };
 
   const handleViewAllClick = () => {
-    router.push("/faq/attach_your_car");
+    if(data=="home" && isHome==true){
+      router.push("/faq");
+    }else{
+      router.push("/faq/attach_your_car");
+    }
+   
   }
 
   return (

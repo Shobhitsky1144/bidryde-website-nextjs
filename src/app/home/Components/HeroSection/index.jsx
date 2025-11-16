@@ -70,7 +70,7 @@ const HeroSection = () => {
                 />
               </a>
               <a
-                href="https://apps.apple.com/us/app/bid-ryde-self-drive-cars/id6448796800"
+                href="https://apps.apple.com/in/app/bidryde-self-drive-cars/id6448796800"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Apple App Store"

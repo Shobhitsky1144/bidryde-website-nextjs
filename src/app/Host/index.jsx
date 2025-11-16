@@ -219,7 +219,7 @@ function Host() {
         </div>
         {/* <Faq  isHost={true}/> */}
         <div style={{paddingBottom:'1rem'}} className="home">
-        <Faq data="home"/>
+        <Faq data="home" isHome={false}/>
         </div>
         <Footer />
         <div className="floatingButton">
