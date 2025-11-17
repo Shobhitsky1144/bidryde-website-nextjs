@@ -27,7 +27,7 @@
       flex-direction: column;
       color: Black;
       // max-width: fit-content;
-
+text-align: center;
       h1 {
       font-size: 40px;
         letter-spacing: 4px;
@@ -173,7 +173,6 @@ p{
 @media (min-width: 1200px) and (max-width: 1399px) {
 
   .SectionTitle {
-   
     display: flex;
     align-items: center;
     flex-direction: column;

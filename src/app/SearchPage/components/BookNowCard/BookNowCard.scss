@@ -363,7 +363,7 @@ padding: 0;
     .offerMain { font-size :40px; }
   }
 
-  @media (min-width: 992px) and (max-width: 1191px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     width: 60vw;
     height: 480px;
     .codeContainer {
@@ -399,42 +399,47 @@ padding: 0;
   
   }
 
-  @media (min-width: 1192px) and (max-width: 1439px) {
-    width: 55vw;
-    height: 450px;
-    .imgg{
-      display: none!important;
-    }
-    .secondGrid{
-      width: 100%;
-    }
-    .appTitle{
-      margin: 42px 0px 10px 0px;
-      font-size: 45px!important;
-    }
-    .codeContainer {
+  @media (min-width: 1200px) and (max-width: 1439px) {
 
-      display: flex;
-      justify-content: center;
-      border: 1px solid #ffffff;
-      border-radius: 6px;
-      overflow: hidden;
-      width: 68%;
-      margin-bottom: 16px;
-      margin: 0 auto;
-    
-    
-    .codeLeft{
-      width: 50%!important;
-      padding: 6px 12px;
-    }
-    .codeRight{
-      width: 50%!important;
-      padding: 6px 12px;
-    }
-    
-   
+  width: 73vw;
+  height: 430px;
+  .phnImg{
+    width: 26rem;
   }
+  .imgg{
+    display: block!important;
+    width: 50%!important;
+  }
+  .imgParent{
+    height: 100%!important;
+  }
+  .codeContainer {
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 68%;
+    margin-bottom: 16px;
+    margin: 0 auto;
+  
+  
+  .codeLeft{
+    width: 50%!important;
+    padding: 6px 12px;
+  }
+  .codeRight{
+    width: 50%!important;
+    padding: 6px 12px;
+  }
+  .appTitle{
+    margin: 42px 0px 10px 0px;
+  }
+ 
+
+}
+  
   }
 
   @media (min-width: 1440px) {
