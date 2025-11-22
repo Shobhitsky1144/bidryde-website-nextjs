@@ -42,7 +42,7 @@
 /* Ensure content stays above overlay */
 .footer * {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Main content grid - Mobile layout */
@@ -337,7 +337,8 @@
 
 @media (max-width: 480px) {
   .socialImg{
-    margin-right: 20px;
+    /* margin-right: 20px; */
+    margin-right: 33px;
   } 
   .socialIcons{
 margin-top: 0px;
@@ -353,6 +354,7 @@ margin-bottom: 30px;
     padding-left: 10px;
     padding-bottom:0px;
     margin-top:0px!important;
+    padding-top: 0;
   }
   .footerweb{
     display:none;

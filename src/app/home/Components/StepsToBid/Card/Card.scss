@@ -33,7 +33,7 @@ display: none;
   .cardContainer{
     margin-top: 45px!important;
     h6{
-      text-align: right;
+      // text-align: right;
       width: 100%;
     }
     .translateRight{
@@ -136,7 +136,7 @@ display: none;
 /* Shadow effects */
 .leftShadow {
   box-shadow: -20px 0 3px 0px #bedeff;
-  text-align: right;
+  // text-align: right;
 }
 
 .rightShadow {
@@ -291,7 +291,7 @@ display: none;
       p{
         text-align: center;
         font-size: 26px;
-        padding-bottom: 5px;
+        // padding-bottom: 5px;
       }
     }
     }
@@ -332,10 +332,10 @@ display: none;
     }
  
     .leftAlign{
-      width: 60vw!important;
+      width: 69vw!important;
     }
 .rightAlign{
-  width:60vw !important;
+  width:69vw !important;
 }
   .cardImage{
 
@@ -376,12 +376,13 @@ height: 1478px;
   }
 
   .leftShadow .secondImgFirstLine{
-    padding-top: 0!important;
+    // padding-top: 0!important;
   }
 
 
   .cardcontainer{
     position: relative;
+    
   }
   .cardWedge{
   position: absolute;
@@ -398,7 +399,17 @@ height: 1478px;
     /* left: 5rem; */
   }
 
-  
+  .cardContainer{
+    display: block!important;
+    .cardImage{
+      width: 145px!important;
+      margin-left: 3.4rem!important;
+    }
+    .leftShadow .cardContainer h6{
+      padding-top: 10px;
+      text-align: center!important;
+    }
+  }
 
     }
 
@@ -590,7 +601,7 @@ height: 1478px;
   }
 
   .leftShadow .secondImgFirstLine{
-    padding-top: 0!important;
+    // padding-top: 0!important;
   }
     }
 

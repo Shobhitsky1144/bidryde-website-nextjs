@@ -167,23 +167,24 @@ const monthsToShow = useResponsiveValue({ xs: 1,sm:1, md: 2, lg: 3 });
     return SLIDER_MARKS[index];
   };
 
-  const formatDate = (date, type) => {
-    var timestamp = null;
-    if (type === "start") {
-      timestamp = getTimefromSlider(startTime);
-    } else {
-      timestamp = getTimefromSlider(endTime);
-    }
+  // const formatDate = (date, type) => {
+  //   var timestamp = null;
+  //   if (type === "start") {
+  //     timestamp = getTimefromSlider(startTime);
+  //   } else {
+  //     timestamp = getTimefromSlider(endTime);
+  //   }
 
-    return (
-      date.toLocaleDateString("en-US", {
-        month: "short",
-        day: "numeric",
-      }) +
-      ", " +
-      timestamp
-    );
-  };
+  //   return (
+  //     date.toLocaleDateString("en-US", {
+  //       month: "short",
+  //       day: "numeric",
+  //     }) +
+  //     ", " +
+  //     timestamp
+  //   );
+  // };
+  const formatDate = (d,t)=>`${String(d.getDate()).padStart(2,"0")} ${d.toLocaleString("en-US",{month:"short"})} ${getTimefromSlider(t==="start"?startTime:endTime)}`;
 
   const handleSliderChange = (value, type) => {
     var dateRangeHolder = null;

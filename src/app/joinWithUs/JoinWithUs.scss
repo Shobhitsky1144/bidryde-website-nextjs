@@ -1,5 +1,5 @@
 
-@import "@fontsource/archivo"; /* defaults to 400 weight */
+@import "@fontsource/archivo-black"; /* defaults to 400 weight */
 
 
 .joinWithUsLayout {
@@ -243,9 +243,9 @@ p.tagLinesTextStyling.undefined{
 
 .joinSectionHeader__top h1{
   font-size: 40px;
-  letter-spacing: 3px;
-  font-weight: 800;
-  font-family: "Archivo"; 
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: "Archivo Black"; 
   margin-bottom: 2px;
 }
 
@@ -411,6 +411,10 @@ font-family: "Archivo";
 
 
 @media only screen and  (max-width:480px) {
+
+  .english_section button{
+    margin-top: 1rem;
+  }
   .cloud_web{
     display: none;
   }
@@ -492,7 +496,8 @@ height: 100%;
    margin-top: 40px!important;
   }
   .joinSectionHeader__top p{
-    margin-top: 5px!important;
+    // margin-top: 5px!important;
+    margin-bottom: 4px!important;
     letter-spacing: 1px!important;
     // font-size: 11px!important;
   }
@@ -545,18 +550,20 @@ height: 100%;
     margin: 0;
     padding:0;
     height: unset;
+    margin-bottom: 2px;
 
   }
   .p__header__join__bottom{
     font-size: 15px;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    // padding-top: 15px;
+    padding-bottom: 4px;
     text-align: center;
   }
 
   .joinSectionHeader__top{
     h1{
       font-size: 24px!important;
+      letter-spacing: 1px;
     }
   }
   .p__header__join__top{
@@ -604,7 +611,7 @@ height: 100%;
 
   .joinSectionHeader__top p{
     letter-spacing: 0px!important;
-    font-size: 11px!important;
+    font-size: 13px!important;
   }
 
   .intro 

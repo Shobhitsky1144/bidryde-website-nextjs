@@ -1018,15 +1018,16 @@ align-items: center;
  
 }
 .hostIntroHeader .p2{
-  font-size: 22px;
+  font-size: 26px;
   text-align: center;
   padding: 0 16px;
 }
 .hostIntroHeader .p1{
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
   padding: 0 16px;
+  font-weight: 400;
 }
 
 .hostSectionHeader, .hostSectionHeader__{
@@ -1120,7 +1121,7 @@ align-items: center;
     font-size: 12px;
   }
   .hostSection2{
-    margin: 0;
+    // margin: 0;
   }
   .hostsecond{
     text-align: center;
@@ -1153,6 +1154,21 @@ align-items: center;
   }
   .hForm label{
     // width: 70%;
+  }
+
+  .hostSectionHeader h1, .hostSectionHeader__ h1{
+    margin-bottom: 2px;
+  }
+  .hostSectionHeader p, .hostSectionHeader__ p{
+    margin-bottom: 4px!important;
+  }
+
+  .hostSection2{
+    margin: 0;
+    padding-top: 3rem!important;
+  }
+  .p__header__host{
+    margin-bottom: 4px!important;
   }
  
 }

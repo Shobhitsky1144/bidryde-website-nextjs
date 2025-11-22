@@ -215,7 +215,7 @@ padding: 20px 10px;
       img {
         width: 85%;
         object-fit: contain;
-        margin-top: 14rem;
+        margin-top: 7rem;
         height: auto;
     }
   }
@@ -310,7 +310,7 @@ margin-bottom: 8px;
   font-size: 32px!important;
   font-weight: 500!important;
   padding-bottom: 7px!important;
-  padding-top: 11rem!important;
+  padding-top: 2rem!important;
 }
 
 .availability{
@@ -319,12 +319,12 @@ margin-bottom: 8px;
   // background-image: url(../../../../assets/images/Availability/hill.jpeg)!important;
   background-image: url(../../../../assets/images/Availability/minimalist-photorealistic-desert-road.png)!important;
   .availabilityContainerTitle p {
-    font-size: 1rem!important;
-    letter-spacing: 0px!important;
-    font-weight: 500!important;
+    font-size: 0.3rem!important;
+    letter-spacing: 1px!important;
+    font-weight: 400!important;
     text-align: center!important;
     // padding-top: 6rem!important;
-    padding: 0rem 3px 6rem 3px!important;
+    padding: 1rem 3px 6rem 3px!important;
 }
 .availabilityContainerContent{
   width: 100%!important;
@@ -344,6 +344,10 @@ margin-bottom: 8px;
     height: 100%!important;
     object-fit: contain!important;
   }
+}
+
+.heroSectionContainer h1{
+  padding-top: 0rem;
 }
 
 }

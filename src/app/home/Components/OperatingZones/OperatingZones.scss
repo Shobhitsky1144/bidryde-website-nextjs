@@ -44,7 +44,7 @@
 
       &BG {
         position: absolute;
-        z-index: -2;
+        z-index: -1;
         top: 50%;
         transform: translateY(-50%);
 
@@ -56,7 +56,7 @@
       }
 
       &Location {
-        z-index: 99;
+        z-index: 1;
         position: absolute;
         img {
           object-fit: contain;
@@ -121,7 +121,7 @@
   .operatingZonesContainer .SectionTitle p{
   text-align: center;
   width: 100%;
-  padding-bottom: 4px!important;
+  // padding-bottom: 4px!important;
   
   }
   .operatingZones{
@@ -132,7 +132,7 @@
   }
   
   .operatingZonesContainerContentLocation {
-    z-index: 99;
+    z-index: 1;
     position: absolute;
     top: -11rem;
     left: 8rem;
@@ -205,7 +205,7 @@ padding-bottom: 4px!important;
 }
 
 .operatingZonesContainerContentLocation {
-  z-index: 99;
+  z-index: 1;
   position: absolute;
   top: -11rem;
   left: 11rem;

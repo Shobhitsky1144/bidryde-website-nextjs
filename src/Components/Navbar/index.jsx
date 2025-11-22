@@ -97,12 +97,12 @@ function Navbar({ home, hidePageButtons }) {
                     href="/joinWithUs"
                     className="nav-links-mobile outlineBG"
                   >
-                    Join us
+                    FinCorp
                   </Link>
                 </li>
                 <li>
                   <Link href="/Host" className="nav-links-mobile solidBG">
-                    Become Host
+                   Attach your Car
                   </Link>
                 </li>
               </ul>

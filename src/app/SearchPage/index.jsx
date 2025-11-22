@@ -30,6 +30,7 @@ import { MdArrowDropDown, MdOutlineArrowBack } from "react-icons/md";
 import { getCookie } from "cookies-next";
 import BookNowCard from "./components/BookNowCard";
 import { FaArrowLeft } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const SearchPageAssets = {
   Hatchback: assets.images.searchPage.hatchback,
@@ -102,6 +103,10 @@ const filtersData = {
 
 
 function SearchPage() {
+
+  const router = useRouter();
+
+
   const [isLoading, setIsLoading] = useState(false);
 
 
@@ -333,8 +338,11 @@ function SearchPage() {
       return <NoCars />;
     }
   };
+
+
   
   const handleToggle = () => {
+    // router.push("/");
     setShowFilter((prevState) => !prevState);
   };
 
@@ -428,7 +436,7 @@ function SearchPage() {
 ) : (
     <div className="carsLayout">
       <div className="cardHeader">
-        <div className="arrow" onClick={handleToggle}>
+        <div className="arrow" onClick={()=>router.push("/")}>
           <MdOutlineArrowBack style={{ fontSize: "37px" }} className="filterIc" />
         </div>
 
