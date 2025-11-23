@@ -88,6 +88,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .popup_btn{
+    justify-content: center!important;
+  }
   .homeMainContainer {
     flex-direction: column;
     padding-bottom: 3%;

@@ -693,6 +693,7 @@ className="popupDropdown"
               </div>
 
               <div
+              className="popup_btn"
                 style={{
                   display: "flex",
                   justifyContent: "end",
