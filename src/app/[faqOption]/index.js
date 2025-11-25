@@ -15,26 +15,31 @@ const FaqOption = ({ params }) => {
   };
 
   useEffect(() => {
-    const option = params.faqOption;
-    setfaqData(getFAQ(option));
+    const raw = params.faqOption.replace("faq-", "");
+        setfaqData(getFAQ(raw));
   }, [params.faqOption]);
 
   const formatTitle = (text) => {
     if (!text) return "";
   
-    // Special case: if it's exactly "host_a_car"
-    if (text === "attach_your_car") return "Attach your Car";
-
-    if (text === "paymentCharges") return "Payment & Charges";
-
-    if (text === "deliveryCollection") return "Delivery & Collection";
+    // 1. Remove "faq-" from the start
+    let cleaned = text.replace(/^faq-/, "");
   
-    // Default: Convert to Title Case
-    return text
-      .split('_')
+    // 2. Convert special cases
+    if (cleaned === "attach_your_car") return "Attach your Car";
+    if (cleaned === "paymentCharges") return "Payment & Charges";
+    if (cleaned === "deliveryCollection") return "Delivery & Collection";
+  
+    // 3. Replace underscores with spaces
+    cleaned = cleaned.replace(/_/g, " ");
+  
+    // 4. Convert to Title Case
+    return cleaned
+      .split(" ")
       .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(' ');
+      .join(" ");
   };
+  
   
   
 
