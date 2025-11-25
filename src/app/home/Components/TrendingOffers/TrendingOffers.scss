@@ -1,3 +1,7 @@
+
+@import "@fontsource/archivo"; 
+@import "@fontsource/archivo-black"; 
+
 .trendingOffers {
   width: 100%;
   height: 100%;
@@ -25,11 +29,11 @@
 
       h1 {
         // font-family: "Archivo Black";
-        font-weight: 800;
+        font-weight: 400;
         font-size: 40px;
         text-align: center;
         letter-spacing: 3px;
-        font-family: "Archivo";
+        font-family: "Archivo Black";
         margin-bottom: 2px;
       }
 
@@ -495,7 +499,13 @@ height: 94px;
   // flex-direction: column!important;
 }
 .trendingOffersContainer .SectionTitle h1{
-  font-size: 37px!important;
+  font-size: 30px!important;
+  margin-bottom: 5px;
+}
+.trendingOffersContainer .SectionTitle p{
+  font-size: 16px!important;
+  font-weight: 400!important;
+  margin-bottom: 3px!important;
 }
 
 .availability .availabilityContainerTitle p{
@@ -529,9 +539,7 @@ height: 94px;
   padding: 16rem 1rem 2rem 1rem!important;
 }
 
-.trendingOffersContainer .SectionTitle p{
-  font-size: 15px!important;
-}
+
 
 .trendingOffersContainer .offerContent h3{
   margin-bottom: 0px;
@@ -544,11 +552,12 @@ height: 94px;
 .stepsToBidContainer .SectionTitle{
   margin: 0 1rem!important;
   h1{
-    font-size: 37px!important;
+    font-size: 30px!important;
   }
   p{
-    font-size: 15px!important;
-    font-weight: 600!important;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    margin-bottom: 3px!important;
   }
 }
 

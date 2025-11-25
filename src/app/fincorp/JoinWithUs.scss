@@ -1,5 +1,6 @@
 
 @import "@fontsource/archivo-black"; /* defaults to 400 weight */
+@import "@fontsource/archivo"; /* defaults to 400 weight */
 
 
 .joinWithUsLayout {
@@ -310,6 +311,7 @@ p.tagLinesTextStyling.undefined{
 
 line-height:1;
 font-family: "Archivo";
+margin-bottom: 1px;
 // letter-spacing: 1px;
 }
 
@@ -404,7 +406,7 @@ font-family: "Archivo";
     font-size: 2rem;
   }
   .joinSectionHeader__top p{
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -420,6 +422,26 @@ font-family: "Archivo";
   }
   .cloud_mobile{
     display: block;
+  }
+  .work_parent{
+    h1{
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-family: "Archivo Black";
+      margin-bottom: 3px;
+      margin-top: 18px;
+    }
+    .p__header__join__top{
+      font-size: 15px!important;
+      font-weight: 400;
+      font-family: 'Archivo';
+      letter-spacing: 1%!important;
+      margin-bottom: 0px;
+      margin-top: 4px;
+      line-height: 10px;
+
+    }
   }
 
   .work_parent .btn_grp{
@@ -516,10 +538,7 @@ height: 100%;
     margin: 0px auto!important;
     display: flex;
   }
-  .joinSectionHeader__bottom h1{
-    // height: unset!important;
-    // font-size: 30px!important;
-  }
+ 
   .joinSectionHeader__bottom_parent{
     width: 100%!important;
     // width: fit-content!important;
@@ -534,7 +553,7 @@ height: 100%;
     // margin-top: 0!important;
   }
   .aboutdivider{
-    padding: 0px 0px!important;
+    padding: 2px 0px!important;
   }
 
   .formImg{
@@ -546,11 +565,16 @@ height: 100%;
     margin-top: 40px;
   }
   .joinSectionHeader__bottom h1{
-    font-size: 20px;
+    font-size: 24px;
     margin: 0;
     padding:0;
     height: unset;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 27px;
 
   }
   .p__header__join__bottom{
@@ -558,16 +582,20 @@ height: 100%;
     // padding-top: 15px;
     padding-bottom: 4px;
     text-align: center;
+    padding-left: 0;
+    // margin-top: 4px;
+    line-height: 10px;
   }
 
   .joinSectionHeader__top{
     h1{
       font-size: 24px!important;
       letter-spacing: 1px;
+      margin-bottom: 3px!important;
     }
   }
   .p__header__join__top{
-    font-size: 10px!important;
+    font-size: 15px!important;
    p{
     letter-spacing: 0px!important;
    }
@@ -610,8 +638,11 @@ height: 100%;
   }
 
   .joinSectionHeader__top p{
-    letter-spacing: 0px!important;
-    font-size: 13px!important;
+    letter-spacing: 1px!important;
+    font-size: 15px!important;
+  }
+  .aboutdivider{
+    padding-top: 10px;
   }
 
   .intro 
@@ -724,7 +755,7 @@ height: 100%;
     // margin-top: 0!important;
   }
   .aboutdivider{
-    padding: 0px 0px!important;
+    padding: 5px 0px!important;
   }
 
   .formImg{

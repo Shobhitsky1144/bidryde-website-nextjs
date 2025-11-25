@@ -1,3 +1,5 @@
+@import "@fontsource/archivo-black"; 
+
 .PromisesAndCommitments {
   margin-top: 10rem;
   width: 100vw;
@@ -42,9 +44,9 @@
         h1 {
           font-size: 40px;
           // font-family: "Archivo Black";
-          font-weight: 700;
+          font-weight: 400;
           letter-spacing: 4px;
-          font-family: "Archivo";
+          font-family: "Archivo Black";
           margin-bottom: 2px;
         }
 
@@ -52,7 +54,7 @@
           font-weight: 300;
           font-size: 18px;
           // padding-top: 1px;
-          // padding-bottom: 2px;
+          padding-bottom: 2px;
           font-family: "Archivo";
           letter-spacing: 1px;
         }
@@ -160,21 +162,32 @@ background-color: #fff;
 .testimonialCardContainerProfile{
   margin-left: 0!important;
 }
+.testimonialsContainer {
+p{
+  padding-top: 2px;
+  // padding-bottom: 1px;
+}
+}
 .SectionTitle{
   padding: 0!important;
   max-width: unset!important;
    h1{
-  font-size: 37px!important;
+  font-size: 30px!important;
 color: black;
-text-align: center!important;;}
+text-align: center!important;;
+letter-spacing: 2px!important;
+   }
 p{
   color: black ;
-  font-size: 17px!important;
-  font-weight: 600!important;
+  font-size: 16px!important;
+  font-weight: 400!important;
   text-align: center!important;
-  margin-bottom: 4px!important;
+  margin-bottom: 2px!important;
   letter-spacing: 0px!important;
 
+}
+.faqContainer .SectionTitle p{
+  letter-spacing: 1px!important;
 }
 .homedivider .homecircle,.homeline{
   background-color: #276EBC;

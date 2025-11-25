@@ -41,7 +41,7 @@ function Navbar({ home, hidePageButtons }) {
 
   const handleJoin = (mobile) => {
     if (mobile) closeMobileMenu();
-    router.push("/joinWithUs", { scroll: false });
+    router.push("/fincorp", { scroll: false });
   };
 
   const handleBecomeHost = (mobile) => {
@@ -94,7 +94,7 @@ function Navbar({ home, hidePageButtons }) {
               <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li>
                   <Link
-                    href="/joinWithUs"
+                    href="/fincorp"
                     className="nav-links-mobile outlineBG"
                   >
                     FinCorp

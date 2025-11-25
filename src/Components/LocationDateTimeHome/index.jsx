@@ -14,7 +14,7 @@ import { CssButtonOutline, CssButtonSolid } from "../CssButton";
 import { Divider, InputLabel, MenuItem, Modal, Select } from "@mui/material";
 import { useEffect } from "react";
 import SearchPageHeadingHome from "../SearchPageHeadingHome";
-import { getLatLong, getLocations } from "@/app/SearchPage/utils/utils";
+import { getLatLong, getLocations } from "@/app/available-cars/utils/utils";
 import { Black_And_White_Picture } from "next/font/google";
 import { toast } from "react-toastify";
 

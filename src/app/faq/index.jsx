@@ -64,7 +64,7 @@ const Faq = () => {
 
           <div className="faqOptions">
             {faqOptions.map((faq, index) => (
-              <Link href={"faq/" + faq.link} key={index}>
+              <Link href={"faq" + faq.link} key={index}>
                 <div className="faqOptionCard">
                   <p className="faq-title">{faq.title}</p>
                   <Image src={faq.icon} alt="faq Option" />

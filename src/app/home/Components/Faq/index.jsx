@@ -143,7 +143,7 @@ const Faq = ({data,isHome}) => {
 
         <div className="SectionTitle">
           <h1>FAQ&#8217;s</h1>
-          <p>On the road to answers</p>
+          <p id="faqhome">On the road to answers</p>
           <Divider />
         </div>
      

@@ -30,7 +30,7 @@ const HeroSection = () => {
 
   const handleGetYourCar = (searchObj) => {
     setCookie("carSearchParams", JSON.stringify(searchObj));
-    router.push("/SearchPage");
+    router.push("/available-cars");
   };
 
   // const isMobile = typeof window !== "undefined" && window.innerWidth < 768;

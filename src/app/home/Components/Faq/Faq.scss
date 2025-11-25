@@ -40,7 +40,7 @@ text-align: center;
 
       p {
         font-size: 18px;
-        // margin-bottom: 5px;
+        margin-bottom: 1px;
         font-family: "Archivo";
         letter-spacing: 1px;
       }
@@ -210,6 +210,14 @@ margin-bottom: 3rem;
 
 #home .faqContainer{
 width: 87%;
+}
+
+}
+
+
+@media screen and (max-width:480px) {
+#faqhome{
+  letter-spacing: 1px!important;
 }
 
 }

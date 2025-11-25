@@ -5,7 +5,7 @@ import { cookies } from 'next/headers'
 export function middleware(request) {
 
 
-  if (request.nextUrl.pathname.startsWith('/SearchPage')) {
+  if (request.nextUrl.pathname.startsWith('/available-cars')) {
     try {
       const cookiesList = cookies();
       const hasCarSearchParamsCookie = cookiesList.has('carSearchParams')  

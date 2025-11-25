@@ -40,7 +40,7 @@ const Searchbar = ({ suggestions }) => {
       {filteredSuggestions.length > 0 && (
         <ul className="suggestionList">
           {filteredSuggestions.map((option, index) => (
-            <Link href={"faq/" + option.link} key={index}>
+            <Link href={"faq" + option.link} key={index}>
               <li key={index} onClick={() => handleSuggestionClick(option)}>
                 {option.title}
               </li>

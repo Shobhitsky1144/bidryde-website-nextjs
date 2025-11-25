@@ -155,7 +155,7 @@ function Footer() {
                   </Link>
                 </Grid>
                 <Grid item xs={12} md={12}>
-                  <Link href="/joinWithUs" className="footerLink">
+                  <Link href="/fincorp" className="footerLink">
                   FinCorp                  </Link>
                 </Grid>
                 <Grid item xs={12} md={12}>

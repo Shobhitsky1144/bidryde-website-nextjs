@@ -1,2 +1,0 @@
-1. faq page -> font size
-2. Host -> fullname, email on the left

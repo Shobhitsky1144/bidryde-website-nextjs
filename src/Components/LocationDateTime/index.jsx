@@ -17,7 +17,7 @@ import { Divider, InputLabel, MenuItem, Modal, Select, useMediaQuery, useTheme }
 import { useEffect } from "react";
 
 import SearchPageHeading from "../SearchPageHeading";
-import { getLatLong, getLocations } from "@/app/SearchPage/utils/utils";
+import { getLatLong, getLocations } from "@/app/available-cars/utils/utils";
 import { useRouter } from "next/navigation";
 
 import { setCookie, getCookie } from "cookies-next";

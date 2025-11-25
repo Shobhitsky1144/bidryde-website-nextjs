@@ -40,6 +40,7 @@ const FaqOption = ({ params }) => {
 
   return (
     <>
+    {console.log("PARAMS:", params)}
     <Navbar />
     <div className="faqOption">
       <div className="faqOptionContainer">
