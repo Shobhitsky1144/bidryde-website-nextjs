@@ -11,9 +11,9 @@
 }
 
 .contentContainer h5 {
-  font-family: "Archivo Black", sans-serif;
+  // font-family: "Archivo Black", sans-serif;
   font-size: clamp(20px, 2.5vw, 25px);
-  font-weight: bold;
+  font-weight:300;
   text-align: center;
   margin: 2% 0;
 }
@@ -26,7 +26,8 @@
 
 .introTextContainer p {
   font-size: clamp(14px, 1.6vw, 16px);
-  font-family: "Archivo", sans-serif;
+  // font-family: "Archivo", sans-serif;
+  font-family: serif;
   line-height: 1.5;
   margin: 1% 0;
   text-align: justify;
@@ -34,7 +35,8 @@
 
 .introTextContainer h3 {
   font-size: clamp(16px, 1.8vw, 18px);
-  font-family: "Archivo", sans-serif;
+  // font-family: "Archivo", sans-serif;
+  font-family: serif;
 }
 
 .introTextContainer ul {
@@ -102,7 +104,7 @@
 }
 
 .contentContainer h5 {
-  font-family: "Archivo Black", sans-serif;
+  // font-family: "Archivo Black", sans-serif;
   font-size: clamp(20px, 2.5vw, 25px);
   font-weight: bold;
   text-align: center;
@@ -117,7 +119,8 @@
 
 .introTextContainer p {
   font-size: clamp(14px, 1.6vw, 16px);
-  font-family: "Archivo", sans-serif;
+  // font-family: "Archivo", sans-serif;
+  font-family: serif;
   line-height: 1.5;
   margin: 1% 0;
   text-align: justify;
@@ -125,7 +128,8 @@
 
 .introTextContainer h3 {
   font-size: clamp(16px, 1.8vw, 18px);
-  font-family: "Archivo", sans-serif;
+  // font-family: "Archivo", sans-serif;
+  font-family: serif;
 }
 
 .introTextContainer ul {

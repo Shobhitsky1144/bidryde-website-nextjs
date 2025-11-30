@@ -35,7 +35,7 @@ function CollapsiblePanel({ data, bgColor = "#F6F1F1" }) {
         </div>
       </div>
       <div className="collapsiblePanel__content">
-        <Collapse in={isCollapse} timeout={1000}>
+        <Collapse in={isCollapse} timeout={1000} style={{marginTop:'20px'}}>
           {data.content && <p>{data.content}</p>}
           {data.component && data.component}
         </Collapse>
