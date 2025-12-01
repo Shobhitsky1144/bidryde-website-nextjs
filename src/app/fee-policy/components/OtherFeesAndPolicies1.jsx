@@ -201,8 +201,8 @@ function OtherFeesAndPolicies1() {
         </p>
       </div>
       <div
-        id="comp-lh99huzt"
-        class="c9GqVL QxJLC3 comp-lh99huzt wixui-rich-text"
+        id="comp-lh99em10"
+        class="c9GqVL QxJLC3 comp-lh99em10 wixui-rich-text"
         data-testid="richTextElement"
       >
         <h3>Loss of documents</h3>

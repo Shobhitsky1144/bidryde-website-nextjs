@@ -767,6 +767,56 @@ function TermsOfService() {
               the Host and Lessee.
             </p>
           </div>
+
+
+          <div
+            id="comp-lgz5fu7h"
+            class="c9GqVL QxJLC3 comp-lgz5fu7h wixui-rich-text"
+            data-testid="richTextElement"
+          >
+            <h3>
+              <span >
+              REFUND POLICY              </span>
+            </h3>
+          </div>
+          <div
+            id="comp-lgz5hhgi"
+            class="c9GqVL QxJLC3 comp-lgz5hhgi wixui-rich-text"
+            data-testid="richTextElement"
+          >
+            <p >
+            We strive to ensure that all our customers are completely satisfied with their booking. If, for any reason, you want to cancel your booking, you may request a refund. To initiate a refund, please contact our customer service team from the mobile app with your booking details, and they will guide you through the process.
+            </p>
+          </div>
+         
+
+          <div
+            id="comp-lgz5ia0c"
+            class="c9GqVL QxJLC3 comp-lgz5ia0c wixui-rich-text"
+            data-testid="richTextElement"
+          >
+            <p >
+            Refunds will be processed to the original source of payment. However, we understand that customers may prefer an alternative method of reimbursement. If you wish to receive your refund via another option (such as store credit, bank transfer, or another payment method), please specify your preferred choice when requesting a refund. We will do our best to accommodate your preference within reasonable limits.
+
+
+            </p>
+          </div>
+
+          <div
+            id="comp-lgz5ia0c"
+            class="c9GqVL QxJLC3 comp-lgz5ia0c wixui-rich-text"
+            data-testid="richTextElement"
+          >
+            <p >
+            Please note that refunds will only be granted for bookings that have not been fully utilized, and any associated services or products remain unused. Once the refund is approved, the amount will be credited back to the original payment method or customer’s desired option, typically within 5-7 business days, depending on your payment method.
+
+            </p>
+          </div>
+
+
+
+
+
           <div
             id="comp-lgz5fu7h"
             class="c9GqVL QxJLC3 comp-lgz5fu7h wixui-rich-text"
@@ -880,6 +930,8 @@ function TermsOfService() {
               those of this Agreement, the terms of this Agreement shall govern.
             </p>
           </div>
+
+
           <div
             id="comp-lgz5o2au"
             class="c9GqVL QxJLC3 comp-lgz5o2au wixui-rich-text"
