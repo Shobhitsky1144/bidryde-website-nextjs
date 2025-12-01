@@ -36,7 +36,7 @@ function CollapsiblePanel({ data, bgColor = "#F6F1F1" }) {
       </div>
       <div className="collapsiblePanel__content">
         <Collapse in={isCollapse} timeout={1000} style={{marginTop:'20px'}}>
-          {data.content && <p>{data.content}</p>}
+          {data.content && <p style={{ whiteSpace: "pre-line" }}>{data.content}</p>}
           {data.component && data.component}
         </Collapse>
       </div>
