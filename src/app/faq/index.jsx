@@ -16,32 +16,32 @@ const faqOptions = [
   {
     title: "Bid Help",
     icon: assets.images.faqPage.BidHelp,
-    link: "bid_help",
+    link: "bid-help",
   },
   {
     title: "Trip Help",
     icon: assets.images.faqPage.TripIcon,
-    link: "trip_help",
+    link: "trip-help",
   },
   {
     title: "Delivery & Collection",
     icon: assets.images.faqPage.DeliveryCollection,
-    link: "deliveryCollection",
+    link: "delivery-collection",
   },
   {
     title: "Account Help",
     icon: assets.images.faqPage.accountHelp,
-    link: "account_help",
+    link: "account-help",
   },
   {
     title: "Payment & Charges",
     icon: assets.images.faqPage.PaymentCharges,
-    link: "paymentCharges",
+    link: "payment-charges",
   },
   {
     title: "Attach your Car",
     icon: assets.images.faqPage.HostCar,
-    link: "attach_your_car",
+    link: "attach-your-car",
   },
 ];
 
@@ -64,7 +64,7 @@ const Faq = () => {
 
           <div className="faqOptions">
             {faqOptions.map((faq, index) => (
-              <Link href={"faq-" + faq.link} key={index}>
+              <Link href={"faq/" + faq.link} key={index}>
                 <div className="faqOptionCard">
                   <p className="faq-title">{faq.title}</p>
                   <Image src={faq.icon} alt="faq Option" />

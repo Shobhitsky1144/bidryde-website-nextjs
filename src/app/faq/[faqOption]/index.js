@@ -15,30 +15,45 @@ const FaqOption = ({ params }) => {
   };
 
   useEffect(() => {
-    const raw = params.faqOption.replace("faq-", "");
-        setfaqData(getFAQ(raw));
+    let raw = params.faqOption.replace("faq/", "");
+  
+    // Convert dash-case to snake_case
+    raw = raw.replace(/-/g, "_");
+  
+    setfaqData(getFAQ(raw));
   }, [params.faqOption]);
+  
 
   const formatTitle = (text) => {
     if (!text) return "";
   
-    // 1. Remove "faq-" from the start
-    let cleaned = text.replace(/^faq-/, "");
+    // Remove prefix like "faq/" , "faq-"
+    let cleaned = text.replace(/^faq[\/-]?/, "");
   
-    // 2. Convert special cases
-    if (cleaned === "attach_your_car") return "Attach your Car";
-    if (cleaned === "paymentCharges") return "Payment & Charges";
-    if (cleaned === "deliveryCollection") return "Delivery & Collection";
+    // Special cases mapping
+    const specialMap = {
+      attach_your_car: "Attach your Car",
+      paymentCharges: "Payment & Charges",
+      deliveryCollection: "Delivery & Collection",
+    };
   
-    // 3. Replace underscores with spaces
+    if (specialMap[cleaned]) return specialMap[cleaned];
+  
+    // Convert '-' to space
+    cleaned = cleaned.replace(/-/g, " ");
+  
+    // Convert '_' to space
     cleaned = cleaned.replace(/_/g, " ");
   
-    // 4. Convert to Title Case
+    // Convert to Title Case
     return cleaned
       .split(" ")
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .filter(Boolean)
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
       .join(" ");
   };
+  
+  
   
   
   

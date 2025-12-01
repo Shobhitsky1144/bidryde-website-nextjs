@@ -150,7 +150,7 @@ function Footer() {
               </h4>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={12}>
-                  <Link href="/Host" className="footerLink">
+                  <Link href="/host" className="footerLink">
                   Attach your Car
                   </Link>
                 </Grid>

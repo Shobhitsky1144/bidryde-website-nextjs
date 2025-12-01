@@ -46,7 +46,7 @@ function Navbar({ home, hidePageButtons }) {
 
   const handleBecomeHost = (mobile) => {
     if (mobile) closeMobileMenu();
-    router.push("/Host", { scroll: false });
+    router.push("/host", { scroll: false });
   };
 
   const homeStyles = {
@@ -101,7 +101,7 @@ function Navbar({ home, hidePageButtons }) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Host" className="nav-links-mobile solidBG">
+                  <Link href="/host" className="nav-links-mobile solidBG">
                    Attach your Car
                   </Link>
                 </li>

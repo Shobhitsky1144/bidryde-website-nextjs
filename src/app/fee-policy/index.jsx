@@ -40,7 +40,7 @@ function FeePolicy() {
             <CollapsiblePanel data={question} key={uid(question)} />
           ))}
         </div>
-        <h5>Host Fee Policies</h5>
+        <h5 style={{paddingTop:'55px'}}>Host Fee Policies</h5>
         <div className="introTextContainer">
           {HOST_FEE_POLICIES.map((question) => (
             <CollapsiblePanel data={question} key={uid(question)} />

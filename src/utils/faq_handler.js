@@ -18,7 +18,7 @@ const FAQ_LIST = {
     {
       header: "What are the security deposit policies?",
       content:
-        "We offer three options for the security deposit. You must provide one of the following as a security deposit:\n• Vehicle + RC: Scooters, bikes, or cars with a valid RC and in good condition are accepted.\n• Expensive Electronic: Laptops, mobiles, tablets, or other gadgets with a current value above ₹30,000 are accepted.\n• Money Deposit: A deposit of ₹7,000 / ₹10,000 / ₹15,000 must be paid at the time of pickup based on car. This amount will be refunded within 3–5 working days after the trip is completed."
+      "We offer three options for the security deposit. You must provide one of the following as a security deposit:\n1. <strong>Vehicle + RC:</strong> Scooters, bikes, or cars with a valid RC and in good condition are accepted.\n2. <strong>Expensive Electronic:</strong> Laptops, mobiles, tablets, or other gadgets with a current value above ₹30,000 are accepted.\n3. <strong>Money Deposit:</strong> A deposit of ₹7,000 / ₹10,000 / ₹15,000 must be paid at the time of pickup based on car. This amount will be refunded within 3–5 working days after the trip is completed."
     },
     {
       header: "Is there a km limit to how much I can drive?",
@@ -28,12 +28,12 @@ const FAQ_LIST = {
     {
       header: "What is the process for making a reservation with BidrYde?",
       content:
-        "Our online mobile application makes it easy to book a car on-the-go!\n• Select your pickup location and trip dates.\n• Choose your preferred car and place a bid.\n• Accept best price directly from car owners and make a payment through credit card or debit card or UPI.\n• Car delivered to your doorstep or you can pick up from car location — drive with no kilometer limits!"
+        "Our online mobile application makes it easy to book a car on-the-go!\n1. Select your pickup location and trip dates.\n2. Choose your preferred car and place a bid.\n3. Accept best price directly from car owners and make a payment through credit card or debit card or UPI.\n4. Car delivered to your doorstep or you can pick up from car location — drive with no kilometer limits!"
     },
     {
       header: "If I have an emergency situation, how can I book a car immediately?",
       content:
-        "In that case, click on the PROCEED WITH HOST PRICE button and make the payment. We suggest choosing Self Pickup. Once your booking is confirmed, please rush to the car location mentioned on the booking details screen."
+        "In that case, click on the <strong>PROCEED WITH HOST</strong> PRICE button and make the payment. We suggest choosing <strong>Self Pickup.</strong> Once your booking is confirmed, please rush to the car location mentioned on the booking details screen."
     },
     {
       header: "Is there any specific minimum or maximum booking period?",
@@ -102,7 +102,7 @@ bid_help: [
   {
     header: "What is the process for placing a bid?",
     content:
-      "After selecting the start time and end time, then you will get all the cars available in the selected time range.\n• Now click on the book button for a desired car.\n• Enter your bid price which you think will be worthful and click on submit button.\n• After some time counter for your bid will arrive. You can decide whether to accept it or place another bid as per the options available."
+      "After selecting the start time and end time, then you will get all the cars available in the selected time range.\n1. Now click on the book button for a desired car.\n2. Enter your bid price which you think will be worthful and click on submit button.\n3. After some time counter for your bid will arrive. You can decide whether to accept it or place another bid as per the options available."
   },
   {
     header: "How much time it will take to get a counter price?",
@@ -140,7 +140,7 @@ bid_help: [
     {
       header: "What is the start check-list for my booking?",
       content:
-        "Once your booking is confirmed, if it is:\n• Self-pickup: Visit the car location shown in your booking details.\n• Doorstep delivery: Our delivery partner will bring the car to your home.\n\nBefore handing over the keys, our executive will take 15+ photos of the car, FASTag balance, and other vehicle details. We also recommend that you take your own photos or videos and check the FASTag balance, fuel level and any vehicle issues for your reference. If you notice any problems/issues, please inform the executive immediately or contact us right away."
+        "Once your booking is confirmed, if it is:\n• <strong>Self-pickup:</strong> Visit the car location shown in your booking details.\n• <strong>Doorstep delivery:</strong> Our delivery partner will bring the car to your home.\n\nBefore handing over the keys, our executive will take 15+ photos of the car, FASTag balance, and other vehicle details. We also recommend that you take your own photos or videos and check the FASTag balance, fuel level and any vehicle issues for your reference. If you notice any problems/issues, please inform the executive immediately or contact us right away."
     },
     {
       header: "What is the end check-list for my booking?",
@@ -170,7 +170,7 @@ bid_help: [
     {
       header: "What is the process for extending the end time of my booking?",
       content:
-        "Extensions are subject to vehicle availability and must be done before your booking ends. To extend your booking, open the BidrYde app, go to Trips, select your booking, and tap Extend Booking. Choose your new end time and make the payment immediately to confirm.\nIf you don’t pay right away, the extension will be reversed and you must return the car at the original end time. Any late return without extension could incur late fees and charges as per Fee Policy."
+        "Extensions are subject to vehicle availability and must be done before your booking ends. To extend your booking, open the BidrYde app, go to <strong>Trips</strong>, select your booking, and tap <strong>Extend Booking.</strong> Choose your new end time and make the payment immediately to confirm.\nIf you don’t pay right away, the extension will be reversed and you must return the car at the original end time. Any late return without extension could incur late fees and charges as per Fee Policy."
     },
     {
       header: "What is the cost of an in-trip extension?",
@@ -199,7 +199,7 @@ bid_help: [
     }
   ],
   
-  deliveryCollection: [
+  delivery_collection: [
     {
       header: "When will I receive the details of the delivery executive?",
       content: "Delivery executive details will be shared two hours prior to your booking start time and end time to your registered mobile number/email. The delivery executive will call you one hour before the booking starts or ends and also after reaching your place."
@@ -265,7 +265,7 @@ bid_help: [
     }
   ],
   
-  paymentCharges: [
+  payment_charges: [
     {
       header: "What modes of payments are accepted?",
       content: "At BidrYde, we offer various payment options such as credit cards, debit cards, net banking, UPI and wallets for your convenience. Payments are required to be made in advance through our mobile app. Sorry, we do not accept cash."
@@ -312,7 +312,7 @@ bid_help: [
     {
       header: "What is the BidrYde Host Program and how does it work?",
       content:
-        "BidrYde Host is a car-sharing program that allows car owners (hosts/lessors) to list their vehicles on the BidrYde platform and earn money by renting them out to customers on an hourly basis. This helps you reduce ownership and maintenance costs while generating additional income.\n\nHow it works:\n• Sign Up: Visit the BidrYde website or app and click on “Attach your Car.” Fill out the basic details in the signup form.\n• Onboarding: Our team will book an appointment at your convenience to inspect your vehicle and install a GPS device.\n• Agreement & Start Earning: After signing the agreement, your car will be added to the BidrYde Host app and you will receive confirmation. Log in to the Host app and start earning by renting out your vehicle."
+        "BidrYde Host is a car-sharing program that allows car owners (hosts/lessors) to list their vehicles on the BidrYde platform and earn money by renting them out to customers on an hourly basis. This helps you reduce ownership and maintenance costs while generating additional income.\n\nHow it works:\n1. <strong>Sign Up:</strong> Visit the BidrYde website or app and click on “Attach your Car.” Fill out the basic details in the signup form.\n2. <strong>Onboarding:</strong> Our team will book an appointment at your convenience to inspect your vehicle and install a GPS device.\n3. <strong>Agreement & Start Earning:</strong> After signing the agreement, your car will be added to the BidrYde Host app and you will receive confirmation. Log in to the Host app and start earning by renting out your vehicle."
     },
     {
       header: "What is booking revenue and revenue share model?",
@@ -322,7 +322,7 @@ bid_help: [
     {
       header: "When will I receive pay-outs from BidrYde?",
       content:
-        "You will receive your payout of 60% booking revenue share earned from each booking either weekly or monthly, as per your agreement. You can track all your earnings and payouts anytime in the “Earnings” section of the BidrYde Host app."
+        "You will receive your payout of 60% booking revenue share earned from each booking either weekly or monthly, as per your agreement. You can track all your earnings and payouts anytime in the <strong>“Earnings”</strong> section of the BidrYde Host app."
     },
     {
       header: "Who will be responsible for the service and maintenance?",
@@ -347,7 +347,7 @@ bid_help: [
     {
       header: "How does BidrYde handle accidents during a booking, and who covers the damage cost?",
       content:
-        "We hope you never have to face such situations, but in the unfortunate event of any damages to the vehicle while it was in booking:\n• If the damage is below the agreed threshold amount: BidrYde will take care of repair expenses raised to that booking.\n• If the damage exceeds the agreed threshold amount: We will initiate an insurance claim for the vehicle. BidrYde will bear only the insurance claiming charges.\n• For minor scratches or small dents: These will not be repaired immediately. They will be fixed when a major repair for that specific part is required."
+        "We hope you never have to face such situations, but in the unfortunate event of any damages to the vehicle while it was in booking:\n• <strong>If the damage is below the agreed threshold amount:</strong> BidrYde will take care of repair expenses raised to that booking.\n• <strong>If the damage exceeds the agreed threshold amount:</strong> We will initiate an insurance claim for the vehicle. BidrYde will bear only the insurance claiming charges.\n• <strong>For minor scratches or small dents:</strong> These will not be repaired immediately. They will be fixed when a major repair for that specific part is required."
     },
     {
       header: "What are immediately repairable and non-immediately repairable damages?",
@@ -357,7 +357,7 @@ bid_help: [
     {
       header: "Can the Host expect any compensation while their car is in the garage for repairs?",
       content:
-        "• If an accident or damage is caused by the customer or BidrYde, the host shall be entitled to a downtime compensation of ₹ 300 - ₹ 500 per day.\n• The compensation amount starts from 48 hours after the car is sent to the designated workshop and will be provided for a maximum of 4 weeks until the vehicle is in the designated workshop.\n• Please note that no downtime compensation will be provided if the host car is out of production as it may be difficult to find spare parts for such vehicles."
+        "a. If an accident or damage is caused by the customer or BidrYde, the host shall be entitled to a downtime compensation of ₹ 300 - ₹ 500 per day.\nb. The compensation amount starts from 48 hours after the car is sent to the designated workshop and will be provided for a maximum of 4 weeks until the vehicle is in the designated workshop.\nc. Please note that no downtime compensation will be provided if the host car is out of production as it may be difficult to find spare parts for such vehicles."
     },
     {
       header: "Where will my car be repaired?",
